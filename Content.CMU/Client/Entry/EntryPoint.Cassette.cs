@@ -11,7 +11,8 @@ public sealed partial class EntryPoint
     private void InitializeCMUDynamicCassetteNetwork()
     {
         _cmuCassetteNet.RegisterNetMessage<CMUCassetteUploadPermitRequestMsg>();
-        _cmuCassetteNet.RegisterNetMessage<CMUCassetteUploadMsg>();
+        _cmuCassetteNet.RegisterNetMessage<CMUCassetteUploadStartMsg>();
+        _cmuCassetteNet.RegisterNetMessage<CMUCassetteUploadChunkMsg>();
         _cmuCassetteNet.RegisterNetMessage<CMUCassetteUploadPermitMsg>(message =>
             _entitySystemManager.GetEntitySystem<CMUDynamicCassetteSystem>().OnUploadPermit(message));
         _cmuCassetteNet.RegisterNetMessage<CMUCassetteTrackDataMsg>(message =>

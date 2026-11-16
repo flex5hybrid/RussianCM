@@ -5,7 +5,7 @@ ent-CMUCassetteSpeakerPortable = кассетный бумбокс
 
 cmu-cassette-upload-started = Загрузка трека началась.
 cmu-cassette-upload-success = Трек записан на кассету.
-cmu-cassette-upload-invalid-file = Нужен исправный моно OGG Vorbis до 3 МБ и 15 минут.
+cmu-cassette-upload-invalid-file = Нужен исправный моно OGG Vorbis до 3 МБ, 48 кГц и 10 минут.
 cmu-cassette-upload-cassette-full = На кассете уже записано три трека.
 cmu-cassette-upload-round-full = Хранилище музыки этого раунда заполнено.
 cmu-cassette-upload-user-full = Вы исчерпали лимит музыки на этот раунд.

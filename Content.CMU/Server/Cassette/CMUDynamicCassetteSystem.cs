@@ -7,6 +7,7 @@ using Content.Shared._RMC14.Cassette;
 using Content.Server._RMC14.Cassette;
 using Robust.Server.Player;
 using Robust.Shared.Audio;
+using Robust.Shared.Audio.Components;
 using Robust.Shared.Containers;
 using Robust.Shared.ContentPack;
 using Robust.Shared.Enums;
@@ -33,13 +34,21 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
     private readonly MemoryContentRoot _content = new();
     private readonly Dictionary<Guid, byte[]> _tracks = new();
     private readonly Dictionary<Guid, UploadPermit> _permits = new();
+    private readonly Dictionary<Guid, PendingUpload> _uploads = new();
     private readonly Dictionary<NetUserId, Guid> _activePermits = new();
     private readonly Dictionary<NetUserId, TimeSpan> _lastPermits = new();
     private readonly Dictionary<NetUserId, int> _userStoredBytes = new();
     private readonly Dictionary<NetUserId, HashSet<Guid>> _clientTracks = new();
     private readonly HashSet<NetUserId> _clientTrackCachesReceived = new();
+    private readonly Dictionary<NetUserId, CacheRequest> _cacheRequests = new();
+    private readonly Queue<TrackDelivery> _trackDeliveries = new();
+    private readonly HashSet<TrackDelivery> _pendingTrackDeliveries = new();
     private int _storedBytes;
+    private int _pendingUploadBytes;
     private TimeSpan _nextTrackDelivery;
+    private TimeSpan _nextTrackScan;
+
+    private const int MaxPendingTrackDeliveries = 256;
 
     public override void Initialize()
     {
@@ -62,11 +71,18 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
-        if (_timing.CurTime < _nextTrackDelivery)
-            return;
+        if (_timing.CurTime >= _nextTrackDelivery)
+        {
+            _nextTrackDelivery = _timing.CurTime + TimeSpan.FromMilliseconds(100);
+            DeliverNextTrack();
+        }
 
-        _nextTrackDelivery = _timing.CurTime + TimeSpan.FromMilliseconds(500);
-        DeliverTracksInRange();
+        if (_timing.CurTime >= _nextTrackScan)
+        {
+            _nextTrackScan = _timing.CurTime + TimeSpan.FromMilliseconds(500);
+            RemoveExpiredTransfers();
+            QueueTracksInRange();
+        }
     }
 
     private void OnCassettePickedUp(Entity<CMUDynamicCassetteComponent> cassette, ref GotEquippedHandEvent args)
@@ -80,12 +96,12 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
             Loc.GetString("cmu-cassette-tape-owner-name", ("owner", cassette.Comp.OwnerName)));
     }
 
-    internal void OnUpload(CMUCassetteUploadMsg message)
+    internal void OnUploadStart(CMUCassetteUploadStartMsg message)
     {
         if (!_players.TryGetSessionByChannel(message.MsgChannel, out var session) ||
             session.AttachedEntity is not { } user)
         {
-            Reply(message, CMUCassetteUploadStatus.InvalidEntity);
+            Reply(message.MsgChannel, CMUCassetteUploadStatus.InvalidEntity);
             return;
         }
 
@@ -93,7 +109,7 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
             uploadPermit.UserId != session.UserId ||
             uploadPermit.ExpiresAt < _timing.CurTime)
         {
-            Reply(message, CMUCassetteUploadStatus.InvalidPermit);
+            Reply(message.MsgChannel, CMUCassetteUploadStatus.InvalidPermit);
             return;
         }
 
@@ -104,60 +120,137 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
         if (!TryComp(cassette, out CMUDynamicCassetteComponent? dynamicCassette) ||
             !TryComp(cassette, out CassetteTapeComponent? tape))
         {
-            Reply(message, CMUCassetteUploadStatus.InvalidEntity);
+            Reply(message.MsgChannel, CMUCassetteUploadStatus.InvalidEntity);
             return;
         }
 
         if (!_interaction.InRangeUnobstructed(user, cassette) || !_hands.IsHolding(user, cassette))
         {
-            Reply(message, CMUCassetteUploadStatus.OutOfRange);
+            Reply(message.MsgChannel, CMUCassetteUploadStatus.OutOfRange);
             return;
         }
 
         if (dynamicCassette.Tracks.Count >= dynamicCassette.MaxTracks)
         {
-            Reply(message, CMUCassetteUploadStatus.CassetteFull);
+            Reply(message.MsgChannel, CMUCassetteUploadStatus.CassetteFull);
             return;
         }
 
-        if (message.Data.Length == 0 ||
-            message.Data.Length > CMUDynamicCassetteLimits.MaxTrackBytes ||
-            !CMUDynamicCassetteLimits.IsTitleValid(message.Title) ||
-            !CMUDynamicCassetteLimits.IsValidOggVorbis(message.Data))
+        if (message.TotalBytes <= 0 ||
+            message.TotalBytes > CMUDynamicCassetteLimits.MaxTrackBytes ||
+            !CMUDynamicCassetteLimits.IsTitleValid(message.Title))
         {
-            Reply(message, CMUCassetteUploadStatus.InvalidFile);
+            Reply(message.MsgChannel, CMUCassetteUploadStatus.InvalidFile);
             return;
         }
 
         if (_tracks.Count >= CMUDynamicCassetteLimits.MaxTracksPerRound ||
-            _storedBytes > CMUDynamicCassetteLimits.MaxRoundBytes - message.Data.Length)
+            _storedBytes + _pendingUploadBytes > CMUDynamicCassetteLimits.MaxRoundBytes - message.TotalBytes)
         {
-            Reply(message, CMUCassetteUploadStatus.RoundStorageFull);
+            Reply(message.MsgChannel, CMUCassetteUploadStatus.RoundStorageFull);
             return;
         }
 
         var userStored = _userStoredBytes.GetValueOrDefault(session.UserId);
-        if (userStored > CMUDynamicCassetteLimits.MaxUserBytesPerRound - message.Data.Length)
+        if (userStored > CMUDynamicCassetteLimits.MaxUserBytesPerRound - message.TotalBytes)
         {
-            Reply(message, CMUCassetteUploadStatus.UserStorageFull);
+            Reply(message.MsgChannel, CMUCassetteUploadStatus.UserStorageFull);
+            return;
+        }
+
+        _uploads[message.Permit] = new PendingUpload(session.UserId,
+            cassette,
+            message.Title,
+            new byte[message.TotalBytes],
+            _timing.CurTime + CMUDynamicCassetteLimits.UploadPermitLifetime);
+        _pendingUploadBytes += message.TotalBytes;
+    }
+
+    internal void OnUploadChunk(CMUCassetteUploadChunkMsg message)
+    {
+        if (!_players.TryGetSessionByChannel(message.MsgChannel, out var session) ||
+            !_uploads.TryGetValue(message.Permit, out var upload) ||
+            upload.UserId != session.UserId)
+        {
+            Reply(message.MsgChannel, CMUCassetteUploadStatus.InvalidPermit);
+            return;
+        }
+
+        if (upload.ExpiresAt < _timing.CurTime ||
+            message.Offset != upload.ReceivedBytes ||
+            message.Data.Length == 0 ||
+            message.Data.Length > upload.Data.Length - upload.ReceivedBytes)
+        {
+            RemoveUpload(message.Permit);
+            Reply(message.MsgChannel, CMUCassetteUploadStatus.InvalidPermit);
+            return;
+        }
+
+        message.Data.CopyTo(upload.Data, upload.ReceivedBytes);
+        upload.ReceivedBytes += message.Data.Length;
+        if (upload.ReceivedBytes != upload.Data.Length)
+            return;
+
+        RemoveUpload(message.Permit);
+        CompleteUpload(message.MsgChannel, session, upload);
+    }
+
+    private void CompleteUpload(INetChannel channel, ICommonSession session, PendingUpload upload)
+    {
+        if (session.AttachedEntity is not { } user ||
+            !TryComp(upload.Cassette, out CMUDynamicCassetteComponent? dynamicCassette) ||
+            !TryComp(upload.Cassette, out CassetteTapeComponent? tape))
+        {
+            Reply(channel, CMUCassetteUploadStatus.InvalidEntity);
+            return;
+        }
+
+        if (!_interaction.InRangeUnobstructed(user, upload.Cassette) || !_hands.IsHolding(user, upload.Cassette))
+        {
+            Reply(channel, CMUCassetteUploadStatus.OutOfRange);
+            return;
+        }
+
+        if (dynamicCassette.Tracks.Count >= dynamicCassette.MaxTracks)
+        {
+            Reply(channel, CMUCassetteUploadStatus.CassetteFull);
+            return;
+        }
+
+        if (!CMUDynamicCassetteLimits.IsValidOggVorbis(upload.Data))
+        {
+            Reply(channel, CMUCassetteUploadStatus.InvalidFile);
+            return;
+        }
+
+        if (_tracks.Count >= CMUDynamicCassetteLimits.MaxTracksPerRound ||
+            _storedBytes > CMUDynamicCassetteLimits.MaxRoundBytes - upload.Data.Length)
+        {
+            Reply(channel, CMUCassetteUploadStatus.RoundStorageFull);
+            return;
+        }
+
+        var userStored = _userStoredBytes.GetValueOrDefault(session.UserId);
+        if (userStored > CMUDynamicCassetteLimits.MaxUserBytesPerRound - upload.Data.Length)
+        {
+            Reply(channel, CMUCassetteUploadStatus.UserStorageFull);
             return;
         }
 
         var trackId = Guid.NewGuid();
         var relativePath = CMUDynamicCassetteLimits.RelativePath(trackId);
-        var storedTrackData = (byte[]) message.Data.Clone();
-        _content.AddOrUpdateFile(relativePath, storedTrackData);
-        _tracks.Add(trackId, storedTrackData);
-        _storedBytes += storedTrackData.Length;
-        _userStoredBytes[session.UserId] = userStored + storedTrackData.Length;
+        _content.AddOrUpdateFile(relativePath, upload.Data);
+        _tracks.Add(trackId, upload.Data);
+        _storedBytes += upload.Data.Length;
+        _userStoredBytes[session.UserId] = userStored + upload.Data.Length;
 
         dynamicCassette.Tracks.Add(trackId);
-        dynamicCassette.Titles.Add(message.Title);
-        _cassette.AppendSong((cassette, tape), new SoundPathSpecifier(CMUDynamicCassetteLimits.FullPath(trackId)));
-        Dirty(cassette, dynamicCassette);
+        dynamicCassette.Titles.Add(upload.Title);
+        _cassette.AppendSong((upload.Cassette, tape), new SoundPathSpecifier(CMUDynamicCassetteLimits.FullPath(trackId)));
+        Dirty(upload.Cassette, dynamicCassette);
 
         GetClientTracks(session.UserId).Add(trackId);
-        Reply(message, CMUCassetteUploadStatus.Success, trackId);
+        Reply(channel, CMUCassetteUploadStatus.Success, trackId);
     }
 
     private void OnPlayerStatusChanged(object? sender, SessionStatusEventArgs args)
@@ -166,20 +259,35 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
         {
             _clientTracks.Remove(args.Session.UserId);
             _clientTrackCachesReceived.Remove(args.Session.UserId);
+            _cacheRequests.Remove(args.Session.UserId);
+            RemoveUploads(args.Session.UserId);
+            if (_activePermits.Remove(args.Session.UserId, out var permit))
+                _permits.Remove(permit);
             return;
         }
 
-        if (args.NewStatus != SessionStatus.Connected)
+        if (args.NewStatus == SessionStatus.Connected)
+        {
+            _clientTracks[args.Session.UserId] = new HashSet<Guid>();
+            _clientTrackCachesReceived.Remove(args.Session.UserId);
+            _cacheRequests.Remove(args.Session.UserId);
+            return;
+        }
+
+        if (args.NewStatus != SessionStatus.InGame)
             return;
 
-        _clientTracks[args.Session.UserId] = new HashSet<Guid>();
-        _clientTrackCachesReceived.Remove(args.Session.UserId);
-        _net.ServerSendMessage(new CMUCassetteTrackCacheRequestMsg(), args.Session.Channel);
+        var request = new CacheRequest(Guid.NewGuid(), _timing.CurTime + TimeSpan.FromSeconds(30));
+        _cacheRequests[args.Session.UserId] = request;
+        _net.ServerSendMessage(new CMUCassetteTrackCacheRequestMsg { RequestId = request.Id }, args.Session.Channel);
     }
 
     internal void OnTrackCache(CMUCassetteTrackCacheMsg message)
     {
-        if (!_players.TryGetSessionByChannel(message.MsgChannel, out var session))
+        if (!_players.TryGetSessionByChannel(message.MsgChannel, out var session) ||
+            !_cacheRequests.Remove(session.UserId, out var request) ||
+            request.Id != message.RequestId ||
+            request.ExpiresAt < _timing.CurTime)
             return;
 
         var clientTracks = GetClientTracks(session.UserId);
@@ -230,6 +338,7 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
 
         if (_activePermits.Remove(session.UserId, out var oldPermit))
             _permits.Remove(oldPermit);
+        RemoveUploads(session.UserId);
 
         var permitId = Guid.NewGuid();
         _permits[permitId] = new UploadPermit(session.UserId,
@@ -245,50 +354,67 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
         return CMUCassetteUploadStatus.Success;
     }
 
-    private void Reply(CMUCassetteUploadMsg request, CMUCassetteUploadStatus status, Guid trackId = default)
-    {
-        Reply(request.MsgChannel, status, trackId);
-    }
-
     private void Reply(INetChannel channel, CMUCassetteUploadStatus status, Guid trackId = default) =>
         _net.ServerSendMessage(new CMUCassetteUploadResultMsg { Status = status, TrackId = trackId }, channel);
 
-    private void OnRoundRestart(RoundRestartCleanupEvent args) => ClearTracks();
+    private void OnRoundRestart(RoundRestartCleanupEvent args)
+    {
+        ClearTracks();
+        foreach (var session in _players.Sessions)
+        {
+            if (session.Status is SessionStatus.Disconnected or SessionStatus.Zombie)
+                continue;
+
+            _clientTracks[session.UserId] = new HashSet<Guid>();
+            _clientTrackCachesReceived.Add(session.UserId);
+        }
+    }
 
     private void ClearTracks()
     {
         _tracks.Clear();
         _permits.Clear();
+        _uploads.Clear();
         _activePermits.Clear();
         _lastPermits.Clear();
         _userStoredBytes.Clear();
         _clientTracks.Clear();
         _clientTrackCachesReceived.Clear();
+        _cacheRequests.Clear();
+        _trackDeliveries.Clear();
+        _pendingTrackDeliveries.Clear();
         _content.Clear();
         _storedBytes = 0;
+        _pendingUploadBytes = 0;
         _nextTrackDelivery = default;
+        _nextTrackScan = default;
     }
 
-    private void DeliverTracksInRange()
+    private void QueueTracksInRange()
     {
         if (_tracks.Count == 0 || _clientTrackCachesReceived.Count == 0)
             return;
 
-        var players = _players.Sessions;
         var speakers = EntityQueryEnumerator<CassettePlayerComponent, CMUPublicCassettePlayerComponent>();
         while (speakers.MoveNext(out var speaker, out var player, out _))
         {
+            if (player.State != AudioState.Playing)
+                continue;
+
             if (!_containers.TryGetContainer(speaker, player.ContainerId, out var container) ||
                 !container.ContainedEntities.TryFirstOrNull(out var cassette) ||
-                !TryComp(cassette, out CMUDynamicCassetteComponent? dynamicCassette))
+                !TryComp(cassette, out CMUDynamicCassetteComponent? dynamicCassette) ||
+                player.Tape < 0 ||
+                player.Tape >= dynamicCassette.Tracks.Count)
             {
                 continue;
             }
 
+            var trackId = dynamicCassette.Tracks[player.Tape];
             var deliveryRange = player.AudioParams.MaxDistance + 2f;
-            foreach (var session in players)
+            foreach (var userId in _clientTrackCachesReceived)
             {
-                if (!_clientTrackCachesReceived.Contains(session.UserId) ||
+                if (!_players.TryGetSessionById(userId, out var session) ||
                     session.Status is SessionStatus.Disconnected or SessionStatus.Zombie ||
                     session.AttachedEntity is not { } user ||
                     !_transform.InRange(user, speaker, deliveryRange))
@@ -296,17 +422,104 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
                     continue;
                 }
 
-                var clientTracks = GetClientTracks(session.UserId);
-                foreach (var trackId in dynamicCassette.Tracks)
-                {
-                    if (clientTracks.Contains(trackId) || !_tracks.TryGetValue(trackId, out var trackData))
-                        continue;
+                var clientTracks = GetClientTracks(userId);
+                var delivery = new TrackDelivery(userId, trackId);
+                if (clientTracks.Contains(trackId) ||
+                    !_tracks.ContainsKey(trackId) ||
+                    _trackDeliveries.Count >= MaxPendingTrackDeliveries ||
+                    !_pendingTrackDeliveries.Add(delivery))
+                    continue;
 
-                    _net.ServerSendMessage(new CMUCassetteTrackDataMsg { TrackId = trackId, Data = trackData },
-                        session.Channel);
-                    clientTracks.Add(trackId);
-                }
+                _trackDeliveries.Enqueue(delivery);
             }
+        }
+    }
+
+    private void DeliverNextTrack()
+    {
+        while (_trackDeliveries.TryDequeue(out var delivery))
+        {
+            _pendingTrackDeliveries.Remove(delivery);
+            if (!_clientTrackCachesReceived.Contains(delivery.UserId) ||
+                !_players.TryGetSessionById(delivery.UserId, out var session) ||
+                session.AttachedEntity is not { } user ||
+                !_tracks.TryGetValue(delivery.TrackId, out var trackData) ||
+                GetClientTracks(delivery.UserId).Contains(delivery.TrackId) ||
+                !IsTrackAudibleTo(user, delivery.TrackId))
+            {
+                continue;
+            }
+
+            _net.ServerSendMessage(new CMUCassetteTrackDataMsg
+            {
+                TrackId = delivery.TrackId,
+                Data = trackData,
+            }, session.Channel);
+            GetClientTracks(delivery.UserId).Add(delivery.TrackId);
+            return;
+        }
+    }
+
+    private bool IsTrackAudibleTo(EntityUid user, Guid trackId)
+    {
+        var speakers = EntityQueryEnumerator<CassettePlayerComponent, CMUPublicCassettePlayerComponent>();
+        while (speakers.MoveNext(out var speaker, out var player, out _))
+        {
+            if (player.State != AudioState.Playing ||
+                !_containers.TryGetContainer(speaker, player.ContainerId, out var container) ||
+                !container.ContainedEntities.TryFirstOrNull(out var cassette) ||
+                !TryComp(cassette, out CMUDynamicCassetteComponent? dynamicCassette) ||
+                player.Tape < 0 ||
+                player.Tape >= dynamicCassette.Tracks.Count ||
+                dynamicCassette.Tracks[player.Tape] != trackId)
+            {
+                continue;
+            }
+
+            if (_transform.InRange(user, speaker, player.AudioParams.MaxDistance + 2f))
+                return true;
+        }
+
+        return false;
+    }
+
+    private void RemoveUploads(NetUserId userId)
+    {
+        foreach (var (permit, upload) in _uploads.ToArray())
+        {
+            if (upload.UserId == userId)
+                RemoveUpload(permit);
+        }
+    }
+
+    private void RemoveUpload(Guid permit)
+    {
+        if (_uploads.Remove(permit, out var upload))
+            _pendingUploadBytes -= upload.Data.Length;
+    }
+
+    private void RemoveExpiredTransfers()
+    {
+        foreach (var (permit, upload) in _uploads.ToArray())
+        {
+            if (upload.ExpiresAt < _timing.CurTime)
+                RemoveUpload(permit);
+        }
+
+        foreach (var (permit, uploadPermit) in _permits.ToArray())
+        {
+            if (uploadPermit.ExpiresAt >= _timing.CurTime)
+                continue;
+
+            _permits.Remove(permit);
+            if (_activePermits.GetValueOrDefault(uploadPermit.UserId) == permit)
+                _activePermits.Remove(uploadPermit.UserId);
+        }
+
+        foreach (var (userId, request) in _cacheRequests.ToArray())
+        {
+            if (request.ExpiresAt < _timing.CurTime)
+                _cacheRequests.Remove(userId);
         }
     }
 
@@ -321,5 +534,15 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
     }
 
     private readonly record struct UploadPermit(NetUserId UserId, EntityUid Cassette, TimeSpan ExpiresAt);
+    private sealed record PendingUpload(NetUserId UserId,
+        EntityUid Cassette,
+        string Title,
+        byte[] Data,
+        TimeSpan ExpiresAt)
+    {
+        public int ReceivedBytes;
+    }
+    private readonly record struct CacheRequest(Guid Id, TimeSpan ExpiresAt);
+    private readonly record struct TrackDelivery(NetUserId UserId, Guid TrackId);
 
 }

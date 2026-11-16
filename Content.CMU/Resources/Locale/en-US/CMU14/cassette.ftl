@@ -5,7 +5,7 @@ ent-CMUCassetteSpeakerPortable = cassette boombox
 
 cmu-cassette-upload-started = Track upload started.
 cmu-cassette-upload-success = Track was written to the cassette.
-cmu-cassette-upload-invalid-file = A valid mono OGG Vorbis file up to 3 MB and 15 minutes is required.
+cmu-cassette-upload-invalid-file = A valid mono OGG Vorbis file up to 3 MB, 48 kHz, and 10 minutes is required.
 cmu-cassette-upload-cassette-full = The cassette already contains three tracks.
 cmu-cassette-upload-round-full = This round's music storage is full.
 cmu-cassette-upload-user-full = You have reached your music limit for this round.

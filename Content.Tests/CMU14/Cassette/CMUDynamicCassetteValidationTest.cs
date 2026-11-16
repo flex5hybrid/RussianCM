@@ -47,6 +47,12 @@ public sealed class CMUDynamicCassetteValidationTest
     }
 
     [Test]
+    public void RejectsExcessiveSampleRate()
+    {
+        Assert.That(CMUDynamicCassetteLimits.IsValidOggVorbis(MakeStream(60, sampleRate: 96000)), Is.False);
+    }
+
+    [Test]
     public void TitleLimitUsesUtf8Bytes()
     {
         Assert.Multiple(() =>
@@ -73,9 +79,8 @@ public sealed class CMUDynamicCassetteValidationTest
         });
     }
 
-    private static byte[] MakeStream(int seconds, byte channels = 1)
+    private static byte[] MakeStream(int seconds, byte channels = 1, uint sampleRate = 48000)
     {
-        const uint sampleRate = 48000;
         int[] packetLengths = [30, 7, 7, 1];
         var data = new byte[27 + packetLengths.Length + packetLengths.Sum()];
         "OggS"u8.CopyTo(data);

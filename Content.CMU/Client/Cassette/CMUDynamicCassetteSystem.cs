@@ -72,12 +72,23 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
         {
             ExpiresAt = _timing.CurTime + CMUDynamicCassetteLimits.UploadPermitLifetime,
         };
-        _net.ClientSendMessage(new CMUCassetteUploadMsg
+        _net.ClientSendMessage(new CMUCassetteUploadStartMsg
         {
             Permit = message.Permit,
             Title = pending.Title,
-            Data = pending.TrackData,
+            TotalBytes = pending.TrackData.Length,
         });
+
+        for (var offset = 0; offset < pending.TrackData.Length; offset += CMUDynamicCassetteLimits.MaxUploadChunkBytes)
+        {
+            var length = Math.Min(CMUDynamicCassetteLimits.MaxUploadChunkBytes, pending.TrackData.Length - offset);
+            _net.ClientSendMessage(new CMUCassetteUploadChunkMsg
+            {
+                Permit = message.Permit,
+                Offset = offset,
+                Data = pending.TrackData.AsSpan(offset, length).ToArray(),
+            });
+        }
     }
 
     internal void OnTrackData(CMUCassetteTrackDataMsg message)
@@ -95,6 +106,7 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
         _knownTracks.CopyTo(trackIds);
         _net.ClientSendMessage(new CMUCassetteTrackCacheMsg
         {
+            RequestId = message.RequestId,
             TrackIds = trackIds,
         });
     }

@@ -12,11 +12,13 @@ public static class CMUDynamicCassetteLimits
 {
     public const int MaxTracksPerCassette = 3;
     public const int MaxTrackBytes = 3 * 1024 * 1024;
+    public const int MaxUploadChunkBytes = 64 * 1024;
     public const int MaxTitleBytes = 128;
     public const int MaxRoundBytes = 128 * 1024 * 1024;
     public const int MaxUserBytesPerRound = 24 * 1024 * 1024;
     public const int MaxTracksPerRound = 64;
-    public const int MaxDurationSeconds = 15 * 60;
+    public const int MaxDurationSeconds = 10 * 60;
+    public const uint MaxSampleRate = 48000;
     public static readonly TimeSpan UploadPermitLifetime = TimeSpan.FromSeconds(30);
     public static readonly ResPath ContentPrefix = new("/Audio/CMU14/DynamicCassettes");
 
@@ -188,7 +190,7 @@ public static class CMUDynamicCassetteLimits
 
                         var channels = segment[11];
                         sampleRate = BinaryPrimitives.ReadUInt32LittleEndian(segment[12..]);
-                        if (channels != 1 || sampleRate is < 8000 or > 192000)
+                        if (channels != 1 || sampleRate is < 8000 or > MaxSampleRate)
                             return false;
                     }
                 }
@@ -210,7 +212,8 @@ public static class CMUDynamicCassetteLimits
 
         return pageCount > 0 && foundEnd && foundAudioPacket && !packetContinues &&
                sampleRate != 0 && finalGranule > 0 &&
-               finalGranule <= (ulong) sampleRate * MaxDurationSeconds;
+               finalGranule <= (ulong) sampleRate * MaxDurationSeconds &&
+               finalGranule <= (ulong) MaxSampleRate * MaxDurationSeconds;
     }
 
     public static ResPath RelativePath(Guid id) => new($"{id:N}.ogg");
@@ -232,14 +235,26 @@ public static class CMUDynamicCassetteLimits
         for (var i = 0; i < page.Length; i++)
         {
             var value = i is >= 22 and < 26 ? (byte) 0 : page[i];
-            checksum ^= (uint) value << 24;
-            for (var bit = 0; bit < 8; bit++)
-                checksum = (checksum & 0x80000000) != 0
-                    ? (checksum << 1) ^ 0x04C11DB7
-                    : checksum << 1;
+            checksum = checksum << 8 ^ OggCrcLookup[(byte) (checksum >> 24) ^ value];
         }
 
         return checksum == expected;
+    }
+
+    private static readonly uint[] OggCrcLookup = CreateOggCrcLookup();
+
+    private static uint[] CreateOggCrcLookup()
+    {
+        var lookup = new uint[256];
+        for (var i = 0; i < lookup.Length; i++)
+        {
+            var value = (uint) i << 24;
+            for (var bit = 0; bit < 8; bit++)
+                value = (value & 0x80000000) != 0 ? value << 1 ^ 0x04C11DB7 : value << 1;
+            lookup[i] = value;
+        }
+
+        return lookup;
     }
 }
 
@@ -293,27 +308,33 @@ public sealed class CMUCassetteUploadPermitMsg : NetMessage
     }
 }
 
-public sealed class CMUCassetteUploadMsg : NetMessage
+public sealed class CMUCassetteUploadStartMsg : NetMessage
 {
     public override MsgGroups MsgGroup => MsgGroups.Command;
-    public override NetDeliveryMethod DeliveryMethod => NetDeliveryMethod.ReliableUnordered;
+    public override NetDeliveryMethod DeliveryMethod => NetDeliveryMethod.ReliableOrdered;
 
     public Guid Permit;
     public string Title = string.Empty;
-    public byte[] Data = Array.Empty<byte>();
+    public int TotalBytes;
+
+    public override int EstimateBufferSize() => 24 + Encoding.UTF8.GetByteCount(Title);
 
     public override void ReadFromBuffer(NetIncomingMessage buffer, IRobustSerializer serializer)
     {
         Permit = buffer.ReadGuid();
         Title = ReadBoundedString(buffer, CMUDynamicCassetteLimits.MaxTitleBytes);
-        Data = ReadBoundedBytes(buffer, CMUDynamicCassetteLimits.MaxTrackBytes);
+        TotalBytes = buffer.ReadVariableInt32();
+        if (TotalBytes <= 0 || TotalBytes > CMUDynamicCassetteLimits.MaxTrackBytes)
+            throw new InvalidOperationException($"Cassette payload length {TotalBytes} exceeds the limit {CMUDynamicCassetteLimits.MaxTrackBytes}.");
     }
 
     public override void WriteToBuffer(NetOutgoingMessage buffer, IRobustSerializer serializer)
     {
         buffer.Write(Permit);
         WriteBoundedString(buffer, Title, CMUDynamicCassetteLimits.MaxTitleBytes);
-        WriteBoundedBytes(buffer, Data, CMUDynamicCassetteLimits.MaxTrackBytes);
+        if (TotalBytes <= 0 || TotalBytes > CMUDynamicCassetteLimits.MaxTrackBytes)
+            throw new InvalidOperationException($"Cassette payload length {TotalBytes} exceeds the limit {CMUDynamicCassetteLimits.MaxTrackBytes}.");
+        buffer.WriteVariableInt32(TotalBytes);
     }
 
     internal static byte[] ReadBoundedBytes(NetIncomingMessage buffer, int maximum)
@@ -335,7 +356,7 @@ public sealed class CMUCassetteUploadMsg : NetMessage
         buffer.Write(data);
     }
 
-    private static string ReadBoundedString(NetIncomingMessage buffer, int maximumBytes)
+    internal static string ReadBoundedString(NetIncomingMessage buffer, int maximumBytes)
     {
         var bytes = ReadBoundedBytes(buffer, maximumBytes);
         if (!CMUDynamicCassetteLimits.IsValidUtf8(bytes))
@@ -344,7 +365,7 @@ public sealed class CMUCassetteUploadMsg : NetMessage
         return Encoding.UTF8.GetString(bytes);
     }
 
-    private static void WriteBoundedString(NetOutgoingMessage buffer, string value, int maximumBytes)
+    internal static void WriteBoundedString(NetOutgoingMessage buffer, string value, int maximumBytes)
     {
         if (!CMUDynamicCassetteLimits.IsTitleValid(value))
             throw new InvalidOperationException("Cassette title is invalid.");
@@ -354,24 +375,52 @@ public sealed class CMUCassetteUploadMsg : NetMessage
     }
 }
 
-public sealed class CMUCassetteTrackDataMsg : NetMessage
+public sealed class CMUCassetteUploadChunkMsg : NetMessage
 {
     public override MsgGroups MsgGroup => MsgGroups.Command;
     public override NetDeliveryMethod DeliveryMethod => NetDeliveryMethod.ReliableOrdered;
 
+    public Guid Permit;
+    public int Offset;
+    public byte[] Data = Array.Empty<byte>();
+
+    public override int EstimateBufferSize() => 26 + Data.Length;
+
+    public override void ReadFromBuffer(NetIncomingMessage buffer, IRobustSerializer serializer)
+    {
+        Permit = buffer.ReadGuid();
+        Offset = buffer.ReadVariableInt32();
+        Data = CMUCassetteUploadStartMsg.ReadBoundedBytes(buffer, CMUDynamicCassetteLimits.MaxUploadChunkBytes);
+    }
+
+    public override void WriteToBuffer(NetOutgoingMessage buffer, IRobustSerializer serializer)
+    {
+        buffer.Write(Permit);
+        buffer.WriteVariableInt32(Offset);
+        CMUCassetteUploadStartMsg.WriteBoundedBytes(buffer, Data, CMUDynamicCassetteLimits.MaxUploadChunkBytes);
+    }
+}
+
+public sealed class CMUCassetteTrackDataMsg : NetMessage
+{
+    public override MsgGroups MsgGroup => MsgGroups.Command;
+    public override NetDeliveryMethod DeliveryMethod => NetDeliveryMethod.ReliableUnordered;
+
     public Guid TrackId;
     public byte[] Data = Array.Empty<byte>();
+
+    public override int EstimateBufferSize() => 21 + Data.Length;
 
     public override void ReadFromBuffer(NetIncomingMessage buffer, IRobustSerializer serializer)
     {
         TrackId = buffer.ReadGuid();
-        Data = CMUCassetteUploadMsg.ReadBoundedBytes(buffer, CMUDynamicCassetteLimits.MaxTrackBytes);
+        Data = CMUCassetteUploadStartMsg.ReadBoundedBytes(buffer, CMUDynamicCassetteLimits.MaxTrackBytes);
     }
 
     public override void WriteToBuffer(NetOutgoingMessage buffer, IRobustSerializer serializer)
     {
         buffer.Write(TrackId);
-        CMUCassetteUploadMsg.WriteBoundedBytes(buffer, Data, CMUDynamicCassetteLimits.MaxTrackBytes);
+        CMUCassetteUploadStartMsg.WriteBoundedBytes(buffer, Data, CMUDynamicCassetteLimits.MaxTrackBytes);
     }
 }
 
@@ -379,12 +428,16 @@ public sealed class CMUCassetteTrackCacheRequestMsg : NetMessage
 {
     public override MsgGroups MsgGroup => MsgGroups.Command;
 
+    public Guid RequestId;
+
     public override void ReadFromBuffer(NetIncomingMessage buffer, IRobustSerializer serializer)
     {
+        RequestId = buffer.ReadGuid();
     }
 
     public override void WriteToBuffer(NetOutgoingMessage buffer, IRobustSerializer serializer)
     {
+        buffer.Write(RequestId);
     }
 }
 
@@ -392,10 +445,12 @@ public sealed class CMUCassetteTrackCacheMsg : NetMessage
 {
     public override MsgGroups MsgGroup => MsgGroups.Command;
 
+    public Guid RequestId;
     public Guid[] TrackIds = Array.Empty<Guid>();
 
     public override void ReadFromBuffer(NetIncomingMessage buffer, IRobustSerializer serializer)
     {
+        RequestId = buffer.ReadGuid();
         var count = buffer.ReadByte();
         if (count > CMUDynamicCassetteLimits.MaxTracksPerRound)
             throw new InvalidOperationException($"Cassette track cache count {count} exceeds the limit {CMUDynamicCassetteLimits.MaxTracksPerRound}.");
@@ -411,6 +466,7 @@ public sealed class CMUCassetteTrackCacheMsg : NetMessage
         if (TrackIds.Length > CMUDynamicCassetteLimits.MaxTracksPerRound)
             throw new InvalidOperationException($"Cassette track cache count {TrackIds.Length} exceeds the limit {CMUDynamicCassetteLimits.MaxTracksPerRound}.");
 
+        buffer.Write(RequestId);
         buffer.Write((byte) TrackIds.Length);
         foreach (var trackId in TrackIds)
             buffer.Write(trackId);

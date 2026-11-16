@@ -12,8 +12,10 @@ public sealed partial class EntryPoint
     {
         _cmuCassetteNet.RegisterNetMessage<CMUCassetteUploadPermitRequestMsg>(message =>
             _entSys.GetEntitySystem<CMUDynamicCassetteSystem>().OnPermitRequest(message));
-        _cmuCassetteNet.RegisterNetMessage<CMUCassetteUploadMsg>(message =>
-            _entSys.GetEntitySystem<CMUDynamicCassetteSystem>().OnUpload(message));
+        _cmuCassetteNet.RegisterNetMessage<CMUCassetteUploadStartMsg>(message =>
+            _entSys.GetEntitySystem<CMUDynamicCassetteSystem>().OnUploadStart(message));
+        _cmuCassetteNet.RegisterNetMessage<CMUCassetteUploadChunkMsg>(message =>
+            _entSys.GetEntitySystem<CMUDynamicCassetteSystem>().OnUploadChunk(message));
         _cmuCassetteNet.RegisterNetMessage<CMUCassetteUploadPermitMsg>();
         _cmuCassetteNet.RegisterNetMessage<CMUCassetteTrackDataMsg>();
         _cmuCassetteNet.RegisterNetMessage<CMUCassetteTrackCacheRequestMsg>();

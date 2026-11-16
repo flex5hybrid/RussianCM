@@ -485,7 +485,8 @@ public abstract partial class SharedCassetteSystem : EntitySystem
                     ("current", dynamicCassette.Tracks.Count),
                     ("maximum", dynamicCassette.MaxTracks)));
                 foreach (var title in dynamicCassette.Titles)
-                    args.PushMarkup(Loc.GetString("cmu-cassette-tape-dynamic-track", ("title", title)));
+                    args.PushMarkup(Loc.GetString("cmu-cassette-tape-dynamic-track",
+                        ("title", FormattedMessage.EscapeText(title))));
             }
             else if (ent.Comp.Custom)
                 args.PushMarkup(Loc.GetString("rmc-cassette-tape-custom")); // CMU14 End
