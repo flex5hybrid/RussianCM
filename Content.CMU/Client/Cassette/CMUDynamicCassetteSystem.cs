@@ -13,7 +13,9 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
     [Dependency] private readonly IGameTiming _timing = default!;
 
     private readonly MemoryContentRoot _content = new();
+    private readonly HashSet<Guid> _knownTracks = new();
     private PendingUpload? _pendingUpload;
+    private PendingUpload? _uploadInFlight;
 
     public event Action<CMUCassetteUploadStatus, Guid>? UploadFinished;
 
@@ -29,9 +31,11 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
     public override void FrameUpdate(float frameTime)
     {
         base.FrameUpdate(frameTime);
-        if (_pendingUpload is { } pending && pending.ExpiresAt < _timing.CurTime)
+        if ((_pendingUpload is { } pending && pending.ExpiresAt < _timing.CurTime) ||
+            (_uploadInFlight is { } inFlight && inFlight.ExpiresAt < _timing.CurTime))
         {
             _pendingUpload = null;
+            _uploadInFlight = null;
             UploadFinished?.Invoke(CMUCassetteUploadStatus.InvalidPermit, default);
         }
     }
@@ -39,6 +43,7 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
     public bool TryQueueUpload(EntityUid cassette, string title, byte[] trackData)
     {
         if (_pendingUpload != null ||
+            _uploadInFlight != null ||
             !CMUDynamicCassetteLimits.IsTitleValid(title) ||
             !CMUDynamicCassetteLimits.IsValidOggVorbis(trackData))
         {
@@ -63,6 +68,10 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
             return;
 
         _pendingUpload = null;
+        _uploadInFlight = pending with
+        {
+            ExpiresAt = _timing.CurTime + CMUDynamicCassetteLimits.UploadPermitLifetime,
+        };
         _net.ClientSendMessage(new CMUCassetteUploadMsg
         {
             Permit = message.Permit,
@@ -77,18 +86,60 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
             return;
 
         _content.AddOrUpdateFile(CMUDynamicCassetteLimits.RelativePath(message.TrackId), message.Data);
+        RememberTrack(message.TrackId);
+    }
+
+    internal void OnTrackCacheRequest(CMUCassetteTrackCacheRequestMsg message)
+    {
+        var trackIds = new Guid[_knownTracks.Count];
+        _knownTracks.CopyTo(trackIds);
+        _net.ClientSendMessage(new CMUCassetteTrackCacheMsg
+        {
+            TrackIds = trackIds,
+        });
     }
 
     internal void OnUploadResult(CMUCassetteUploadResultMsg message)
     {
+        if (message.Status == CMUCassetteUploadStatus.Success &&
+            message.TrackId != Guid.Empty &&
+            _uploadInFlight is { } upload)
+        {
+            _content.AddOrUpdateFile(CMUDynamicCassetteLimits.RelativePath(message.TrackId), upload.TrackData);
+            RememberTrack(message.TrackId);
+        }
+
         _pendingUpload = null;
+        _uploadInFlight = null;
         UploadFinished?.Invoke(message.Status, message.TrackId);
     }
 
     private void ClearRoundData()
     {
         _content.Clear();
+        _knownTracks.Clear();
         _pendingUpload = null;
+        _uploadInFlight = null;
+    }
+
+    private void RememberTrack(Guid trackId)
+    {
+        if (_knownTracks.Contains(trackId))
+            return;
+
+        if (_knownTracks.Count >= CMUDynamicCassetteLimits.MaxTracksPerRound)
+        {
+            var forgottenTrack = Guid.Empty;
+            foreach (var knownTrack in _knownTracks)
+            {
+                forgottenTrack = knownTrack;
+                break;
+            }
+
+            _knownTracks.Remove(forgottenTrack);
+        }
+
+        _knownTracks.Add(trackId);
     }
 
     private sealed record PendingUpload(NetEntity Cassette, string Title, byte[] TrackData, TimeSpan ExpiresAt);

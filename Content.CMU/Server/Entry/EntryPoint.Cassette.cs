@@ -16,6 +16,9 @@ public sealed partial class EntryPoint
             _entSys.GetEntitySystem<CMUDynamicCassetteSystem>().OnUpload(message));
         _cmuCassetteNet.RegisterNetMessage<CMUCassetteUploadPermitMsg>();
         _cmuCassetteNet.RegisterNetMessage<CMUCassetteTrackDataMsg>();
+        _cmuCassetteNet.RegisterNetMessage<CMUCassetteTrackCacheRequestMsg>();
+        _cmuCassetteNet.RegisterNetMessage<CMUCassetteTrackCacheMsg>(message =>
+            _entSys.GetEntitySystem<CMUDynamicCassetteSystem>().OnTrackCache(message));
         _cmuCassetteNet.RegisterNetMessage<CMUCassetteUploadResultMsg>();
     }
 }

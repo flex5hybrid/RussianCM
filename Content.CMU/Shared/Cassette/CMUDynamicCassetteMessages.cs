@@ -375,6 +375,48 @@ public sealed class CMUCassetteTrackDataMsg : NetMessage
     }
 }
 
+public sealed class CMUCassetteTrackCacheRequestMsg : NetMessage
+{
+    public override MsgGroups MsgGroup => MsgGroups.Command;
+
+    public override void ReadFromBuffer(NetIncomingMessage buffer, IRobustSerializer serializer)
+    {
+    }
+
+    public override void WriteToBuffer(NetOutgoingMessage buffer, IRobustSerializer serializer)
+    {
+    }
+}
+
+public sealed class CMUCassetteTrackCacheMsg : NetMessage
+{
+    public override MsgGroups MsgGroup => MsgGroups.Command;
+
+    public Guid[] TrackIds = Array.Empty<Guid>();
+
+    public override void ReadFromBuffer(NetIncomingMessage buffer, IRobustSerializer serializer)
+    {
+        var count = buffer.ReadByte();
+        if (count > CMUDynamicCassetteLimits.MaxTracksPerRound)
+            throw new InvalidOperationException($"Cassette track cache count {count} exceeds the limit {CMUDynamicCassetteLimits.MaxTracksPerRound}.");
+
+        buffer.AssertAtLeastSize(count * 16);
+        TrackIds = new Guid[count];
+        for (var i = 0; i < count; i++)
+            TrackIds[i] = buffer.ReadGuid();
+    }
+
+    public override void WriteToBuffer(NetOutgoingMessage buffer, IRobustSerializer serializer)
+    {
+        if (TrackIds.Length > CMUDynamicCassetteLimits.MaxTracksPerRound)
+            throw new InvalidOperationException($"Cassette track cache count {TrackIds.Length} exceeds the limit {CMUDynamicCassetteLimits.MaxTracksPerRound}.");
+
+        buffer.Write((byte) TrackIds.Length);
+        foreach (var trackId in TrackIds)
+            buffer.Write(trackId);
+    }
+}
+
 public sealed class CMUCassetteUploadResultMsg : NetMessage
 {
     public override MsgGroups MsgGroup => MsgGroups.Command;

@@ -58,6 +58,7 @@ public sealed class CMUNetworkMessageBoundsTest
             b.Write((byte) 'x');
         }, suffix: "Audio");
         yield return Case(new CMUCassetteTrackDataMsg(), prefix: b => b.Write(Guid.Empty.ToByteArray()));
+        yield return Case(new CMUCassetteTrackCacheMsg(), prefix: b => b.Write(byte.MaxValue));
     }
 
     [TestCaseSource(nameof(TruncatedMessages))]
@@ -110,6 +111,17 @@ public sealed class CMUNetworkMessageBoundsTest
         mentors.Messages.Add(new MentorMessage(destination, "Marine", destination, "Mentor", "Help", time, true, false, false));
         var receivedMentors = RoundTrip(mentors, new MentorMessagesReceivedMsg());
         Assert.That(receivedMentors.Messages, Is.EqualTo(mentors.Messages));
+
+        var cache = new CMUCassetteTrackCacheMsg
+        {
+            TrackIds = new[]
+            {
+                Guid.Parse("5d5ae21f-61de-4b88-845e-7bf8d1271f0d"),
+                Guid.Parse("e2bf70f3-22fa-4607-bf64-7c60ec7c297f"),
+            },
+        };
+        var receivedCache = RoundTrip(cache, new CMUCassetteTrackCacheMsg());
+        Assert.That(receivedCache.TrackIds, Is.EqualTo(cache.TrackIds));
     }
 
     [Test]

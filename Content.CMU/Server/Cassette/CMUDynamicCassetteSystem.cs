@@ -7,11 +7,13 @@ using Content.Shared._RMC14.Cassette;
 using Content.Server._RMC14.Cassette;
 using Robust.Server.Player;
 using Robust.Shared.Audio;
+using Robust.Shared.Containers;
 using Robust.Shared.ContentPack;
 using Robust.Shared.Enums;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
+using Robust.Shared.Utility;
 
 namespace Content.Server.CMU14.Cassette;
 
@@ -19,11 +21,13 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
 {
     [Dependency] private readonly SharedInteractionSystem _interaction = default!;
     [Dependency] private readonly SharedHandsSystem _hands = default!;
+    [Dependency] private readonly SharedContainerSystem _containers = default!;
     [Dependency] private readonly MetaDataSystem _metaData = default!;
     [Dependency] private readonly IServerNetManager _net = default!;
     [Dependency] private readonly IPlayerManager _players = default!;
     [Dependency] private readonly IResourceManager _resources = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
+    [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly CassetteSystem _cassette = default!;
 
     private readonly MemoryContentRoot _content = new();
@@ -32,7 +36,10 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
     private readonly Dictionary<NetUserId, Guid> _activePermits = new();
     private readonly Dictionary<NetUserId, TimeSpan> _lastPermits = new();
     private readonly Dictionary<NetUserId, int> _userStoredBytes = new();
+    private readonly Dictionary<NetUserId, HashSet<Guid>> _clientTracks = new();
+    private readonly HashSet<NetUserId> _clientTrackCachesReceived = new();
     private int _storedBytes;
+    private TimeSpan _nextTrackDelivery;
 
     public override void Initialize()
     {
@@ -50,6 +57,16 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
         _players.PlayerStatusChanged -= OnPlayerStatusChanged;
         ClearTracks();
         base.Shutdown();
+    }
+
+    public override void Update(float frameTime)
+    {
+        base.Update(frameTime);
+        if (_timing.CurTime < _nextTrackDelivery)
+            return;
+
+        _nextTrackDelivery = _timing.CurTime + TimeSpan.FromMilliseconds(500);
+        DeliverTracksInRange();
     }
 
     private void OnCassettePickedUp(Entity<CMUDynamicCassetteComponent> cassette, ref GotEquippedHandEvent args)
@@ -139,20 +156,41 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
         _cassette.AppendSong((cassette, tape), new SoundPathSpecifier(CMUDynamicCassetteLimits.FullPath(trackId)));
         Dirty(cassette, dynamicCassette);
 
-        _net.ServerSendToAll(new CMUCassetteTrackDataMsg { TrackId = trackId, Data = storedTrackData });
+        GetClientTracks(session.UserId).Add(trackId);
         Reply(message, CMUCassetteUploadStatus.Success, trackId);
     }
 
     private void OnPlayerStatusChanged(object? sender, SessionStatusEventArgs args)
     {
+        if (args.NewStatus is SessionStatus.Disconnected or SessionStatus.Zombie)
+        {
+            _clientTracks.Remove(args.Session.UserId);
+            _clientTrackCachesReceived.Remove(args.Session.UserId);
+            return;
+        }
+
         if (args.NewStatus != SessionStatus.Connected)
             return;
 
-        foreach (var (trackId, trackData) in _tracks)
+        _clientTracks[args.Session.UserId] = new HashSet<Guid>();
+        _clientTrackCachesReceived.Remove(args.Session.UserId);
+        _net.ServerSendMessage(new CMUCassetteTrackCacheRequestMsg(), args.Session.Channel);
+    }
+
+    internal void OnTrackCache(CMUCassetteTrackCacheMsg message)
+    {
+        if (!_players.TryGetSessionByChannel(message.MsgChannel, out var session))
+            return;
+
+        var clientTracks = GetClientTracks(session.UserId);
+        clientTracks.Clear();
+        foreach (var trackId in message.TrackIds)
         {
-            _net.ServerSendMessage(new CMUCassetteTrackDataMsg { TrackId = trackId, Data = trackData },
-                args.Session.Channel);
+            if (_tracks.ContainsKey(trackId))
+                clientTracks.Add(trackId);
         }
+
+        _clientTrackCachesReceived.Add(session.UserId);
     }
 
     internal void OnPermitRequest(CMUCassetteUploadPermitRequestMsg message)
@@ -224,8 +262,62 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
         _activePermits.Clear();
         _lastPermits.Clear();
         _userStoredBytes.Clear();
+        _clientTracks.Clear();
+        _clientTrackCachesReceived.Clear();
         _content.Clear();
         _storedBytes = 0;
+        _nextTrackDelivery = default;
+    }
+
+    private void DeliverTracksInRange()
+    {
+        if (_tracks.Count == 0 || _clientTrackCachesReceived.Count == 0)
+            return;
+
+        var players = _players.Sessions;
+        var speakers = EntityQueryEnumerator<CassettePlayerComponent, CMUPublicCassettePlayerComponent>();
+        while (speakers.MoveNext(out var speaker, out var player, out _))
+        {
+            if (!_containers.TryGetContainer(speaker, player.ContainerId, out var container) ||
+                !container.ContainedEntities.TryFirstOrNull(out var cassette) ||
+                !TryComp(cassette, out CMUDynamicCassetteComponent? dynamicCassette))
+            {
+                continue;
+            }
+
+            var deliveryRange = player.AudioParams.MaxDistance + 2f;
+            foreach (var session in players)
+            {
+                if (!_clientTrackCachesReceived.Contains(session.UserId) ||
+                    session.Status is SessionStatus.Disconnected or SessionStatus.Zombie ||
+                    session.AttachedEntity is not { } user ||
+                    !_transform.InRange(user, speaker, deliveryRange))
+                {
+                    continue;
+                }
+
+                var clientTracks = GetClientTracks(session.UserId);
+                foreach (var trackId in dynamicCassette.Tracks)
+                {
+                    if (clientTracks.Contains(trackId) || !_tracks.TryGetValue(trackId, out var trackData))
+                        continue;
+
+                    _net.ServerSendMessage(new CMUCassetteTrackDataMsg { TrackId = trackId, Data = trackData },
+                        session.Channel);
+                    clientTracks.Add(trackId);
+                }
+            }
+        }
+    }
+
+    private HashSet<Guid> GetClientTracks(NetUserId userId)
+    {
+        if (_clientTracks.TryGetValue(userId, out var tracks))
+            return tracks;
+
+        tracks = new HashSet<Guid>();
+        _clientTracks[userId] = tracks;
+        return tracks;
     }
 
     private readonly record struct UploadPermit(NetUserId UserId, EntityUid Cassette, TimeSpan ExpiresAt);
