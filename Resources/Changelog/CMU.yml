@@ -19298,5 +19298,24 @@ Entries:
   labels:
   - 'Changes: Translations'
   - M
+- author: RomiGur
+  time: '2026-11-16T14:54:36Z'
+  changes:
+  - type: Tweak
+    message: Подарки городу имеют таймер, кнопка показывает таймер.
+  - type: Tweak
+    message: 'Лимит инвестиций в колонии: 4 рынка, 2 порта, 3 шахты'
+  - type: Tweak
+    message: 'Лимит инвестиций в город: один фонд на один город'
+  - type: Tweak
+    message: Дефолт по кредиту забирает весь долг, казна может уйти в минус. Кредит
+      при минусе недоступен
+  - type: Fix
+    message: Закрыты баги экономики карты мира, консоли посла и администратора
+  id: 1141
+  url: https://github.com/flex5hybrid/RussianCM/pull/628
+  labels:
+  - 'Changes: Translations'
+  - M
 Name: CMU
 Order: -1
