@@ -16,6 +16,12 @@ public sealed class CMUDynamicCassetteValidationTest
     }
 
     [Test]
+    public void RejectsStereoForPositionalPlayback()
+    {
+        Assert.That(CMUDynamicCassetteLimits.IsValidOggVorbis(MakeStream(60, channels: 2)), Is.False);
+    }
+
+    [Test]
     public void RejectsMalformedOrIncompleteStreams()
     {
         var valid = MakeStream(60);
@@ -67,7 +73,7 @@ public sealed class CMUDynamicCassetteValidationTest
         });
     }
 
-    private static byte[] MakeStream(int seconds)
+    private static byte[] MakeStream(int seconds, byte channels = 1)
     {
         const uint sampleRate = 48000;
         int[] packetLengths = [30, 7, 7, 1];
@@ -84,7 +90,7 @@ public sealed class CMUDynamicCassetteValidationTest
         var payload = 27 + packetLengths.Length;
         data[payload] = 1;
         "vorbis"u8.CopyTo(data.AsSpan(payload + 1));
-        data[payload + 11] = 2;
+        data[payload + 11] = channels;
         BinaryPrimitives.WriteUInt32LittleEndian(data.AsSpan(payload + 12), sampleRate);
 
         payload += 30;

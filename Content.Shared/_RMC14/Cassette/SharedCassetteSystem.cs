@@ -33,11 +33,13 @@ public abstract partial class SharedCassetteSystem : EntitySystem
     [Dependency] private SharedAudioSystem _audio = default!;
     [Dependency] private SharedContainerSystem _container = default!;
     [Dependency] private SharedHandsSystem _hands = default!;
+    [Dependency] private SharedInteractionSystem _interaction = default!;
     [Dependency] private SharedItemSystem _item = default!;
     [Dependency] private InventorySystem _inventory = default!;
     [Dependency] private INetManager _net = default!;
     [Dependency] private INetConfigurationManager _netConfig = default!;
     [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private SharedTransformSystem _transform = default!;
     [Dependency] private IGameTiming _timing = default!; // CMU14
 
     public override void Initialize()
@@ -153,6 +155,13 @@ public abstract partial class SharedCassetteSystem : EntitySystem
         ent.Comp.MusicSprite = state.MusicSprite;
 
         _item.VisualsChanged(ent);
+
+        // Позволяет клиентским визуальным системам реагировать на уже применённое состояние,
+        // не создавая вторую подписку на уникальное ComponentHandleState. /
+        // Lets client visual systems react after state application without adding a second
+        // subscription to the unique ComponentHandleState event.
+        var stateChanged = new CassettePlayerStateChangedEvent(state.State);
+        RaiseLocalEvent(ent, ref stateChanged);
     }
 
     private void OnPlayerDetached(PlayerDetachedEvent ev)
@@ -186,6 +195,11 @@ public abstract partial class SharedCassetteSystem : EntitySystem
 
     private void OnPlayerPlayPause(Entity<CassettePlayerComponent> ent, ref CassettePlayPauseActionEvent args)
     {
+        TogglePlayback(ent, args.Performer);
+    }
+
+    private void TogglePlayback(Entity<CassettePlayerComponent> ent, EntityUid performer)
+    {
         var total = GetTotalSongs(ent);
         var tape = GetTape(ent);
 
@@ -193,12 +207,12 @@ public abstract partial class SharedCassetteSystem : EntitySystem
         {
             case AudioState.Stopped:
             {
-                PlaySong(ent, args.Performer);
+                PlaySong(ent, performer);
                 var msg = Loc.GetString("rmc-cassette-playing",
                     ("player", ent),
                     ("current", GetCurrentSongCount(ent)),
                     ("total", total));
-                _popup.PopupEntity(msg, ent, args.Performer);
+                _popup.PopupEntity(msg, ent, performer);
                 break;
             }
             case AudioState.Playing:
@@ -210,7 +224,7 @@ public abstract partial class SharedCassetteSystem : EntitySystem
                 else if (_timing.IsFirstTimePredicted && tape is { Comp.Custom: true })
                     _audio.SetState(ent.Comp.CustomAudioStream, AudioState.Paused);
 
-                _popup.PopupEntity(Loc.GetString("rmc-cassette-pause", ("player", ent)), ent, args.Performer);
+                _popup.PopupEntity(Loc.GetString("rmc-cassette-pause", ("player", ent)), ent, performer);
                 ent.Comp.State = AudioState.Paused;
                 break;
             }
@@ -227,32 +241,42 @@ public abstract partial class SharedCassetteSystem : EntitySystem
                     ("player", ent),
                     ("current", GetCurrentSongCount(ent)),
                     ("total", total));
-                _popup.PopupEntity(msg, ent, args.Performer);
+                _popup.PopupEntity(msg, ent, performer);
                 ent.Comp.State = AudioState.Playing;
                 break;
             }
         }
 
-        _audio.PlayLocal(ent.Comp.PlayPauseSound, ent, args.Performer);
+        _audio.PlayLocal(ent.Comp.PlayPauseSound, ent, performer);
         Dirty(ent);
     }
 
     private void OnPlayerNext(Entity<CassettePlayerComponent> ent, ref CassetteNextActionEvent args)
     {
-        PlaySong(ent, args.Performer, ent.Comp.Tape + 1);
+        PlayNext(ent, args.Performer);
+    }
+
+    private void PlayNext(Entity<CassettePlayerComponent> ent, EntityUid performer)
+    {
+        PlaySong(ent, performer, ent.Comp.Tape + 1);
         var msg = Loc.GetString("rmc-cassette-change",
             ("current", GetCurrentSongCount(ent)),
             ("total", GetTotalSongs(ent)));
-        _popup.PopupEntity(msg, ent, args.Performer);
+        _popup.PopupEntity(msg, ent, performer);
     }
 
     private void OnPlayerRestart(Entity<CassettePlayerComponent> ent, ref CassetteRestartActionEvent args)
     {
-        PlaySong(ent, args.Performer);
+        Restart(ent, args.Performer);
+    }
+
+    private void Restart(Entity<CassettePlayerComponent> ent, EntityUid performer)
+    {
+        PlaySong(ent, performer);
         var msg = Loc.GetString("rmc-cassette-restart",
             ("current", GetCurrentSongCount(ent)),
             ("total", GetTotalSongs(ent)));
-        _popup.PopupEntity(msg, ent, args.Performer);
+        _popup.PopupEntity(msg, ent, performer);
     }
 
     private void PlaySong(Entity<CassettePlayerComponent> player, EntityUid actor, int? tape = null)
@@ -284,7 +308,8 @@ public abstract partial class SharedCassetteSystem : EntitySystem
         {
             var song = tapeComp.Songs[tape.Value];
             var audioParams = player.Comp.AudioParams;
-            if (TryComp(actor, out ActorComponent? actorComp))
+            var publicPlayback = HasComp<CMUPublicCassettePlayerComponent>(player);
+            if (!publicPlayback && TryComp(actor, out ActorComponent? actorComp))
             {
                 var gain = _netConfig.GetClientCVar(actorComp.PlayerSession.Channel, RMCCVars.VolumeGainCassettes);
                 audioParams = audioParams.WithVolume(SharedAudioSystem.GainToVolume(gain));
@@ -292,7 +317,7 @@ public abstract partial class SharedCassetteSystem : EntitySystem
 
             // CMU14: помеченные плееры работают как колонки, а не приватные наушники; звук передаётся через PVS. /
             // CMU14: marked players act as speakers rather than private headphones; audio is replicated through PVS.
-            player.Comp.AudioStream = HasComp<CMUPublicCassettePlayerComponent>(player)
+            player.Comp.AudioStream = publicPlayback
                 ? _audio.PlayPvs(song, player, audioParams)?.Entity
                 : _audio.PlayGlobal(song, actor, audioParams)?.Entity;
         }
@@ -390,11 +415,64 @@ public abstract partial class SharedCassetteSystem : EntitySystem
         if (HasComp<XenoComponent>(user))
             return;
 
+        if (HasComp<CMUPublicCassettePlayerComponent>(ent))
+        {
+            if (!TryGetTape(ent, out _))
+                return;
+
+            args.Verbs.Add(new AlternativeVerb
+            {
+                Text = Loc.GetString(ent.Comp.State == AudioState.Playing
+                    ? "cmu-cassette-speaker-pause"
+                    : "cmu-cassette-speaker-play"),
+                Act = () =>
+                {
+                    if (CanControlPublicPlayer(ent, user))
+                        TogglePlayback(ent, user);
+                },
+            });
+            args.Verbs.Add(new AlternativeVerb
+            {
+                Text = Loc.GetString("cmu-cassette-speaker-next"),
+                Act = () =>
+                {
+                    if (CanControlPublicPlayer(ent, user))
+                        PlayNext(ent, user);
+                },
+            });
+            args.Verbs.Add(new AlternativeVerb
+            {
+                Text = Loc.GetString("cmu-cassette-speaker-restart"),
+                Act = () =>
+                {
+                    if (CanControlPublicPlayer(ent, user))
+                        Restart(ent, user);
+                },
+            });
+            args.Verbs.Add(new AlternativeVerb
+            {
+                Text = Loc.GetString("cmu-cassette-speaker-eject"),
+                Act = () =>
+                {
+                    if (CanControlPublicPlayer(ent, user))
+                        EjectTape(ent, user);
+                },
+            });
+            return;
+        }
+
         args.Verbs.Add(new AlternativeVerb
         {
             Text = Loc.GetString("rmc-cassette-player-eject"),
             Act = () => EjectTape(ent, user),
         });
+    }
+
+    private bool CanControlPublicPlayer(Entity<CassettePlayerComponent> player, EntityUid user)
+    {
+        return HasComp<CMUPublicCassettePlayerComponent>(player) &&
+               _interaction.InRangeUnobstructed(_transform.GetMapCoordinates(user),
+                   _transform.GetMapCoordinates(player));
     }
 
     private void OnTapeExamined(Entity<CassetteTapeComponent> ent, ref ExaminedEvent args)

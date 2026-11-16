@@ -194,7 +194,9 @@ public static class CMUDynamicCassetteLimits
 
                         var channels = segment[11];
                         sampleRate = BinaryPrimitives.ReadUInt32LittleEndian(segment[12..]);
-                        if (channels is < 1 or > 2 || sampleRate is < 8000 or > 192000)
+                        // Позиционные источники OpenAL должны быть моно; стерео вызывает assert клиента. /
+                        // OpenAL positional sources must be mono; stereo triggers a client assertion.
+                        if (channels != 1 || sampleRate is < 8000 or > 192000)
                             return false;
                     }
                 }

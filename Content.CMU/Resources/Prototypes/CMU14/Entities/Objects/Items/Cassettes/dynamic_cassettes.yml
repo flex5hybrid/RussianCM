@@ -1,14 +1,31 @@
-# Использует существующие спрайты плеера до отдельного художественного прохода. /
-# Reuses the existing player sprites until a dedicated art pass.
 - type: entity
-  parent: AU14CassettePlayerNeon
-  id: CMUCassetteSpeakerPortable
-  name: переносная кассетная колонка / portable cassette speaker
-  description: Проигрывает кассету для всех поблизости. / Plays a cassette for everyone nearby.
+  parent: RMCCassetteTapeCustom
+  id: RMCCassetteTapeCustomRitoka
+  name: кастомная кассета Ritoka / Ritoka custom cassette
+  description: Вмещает до трёх пользовательских OGG-треков текущего раунда. / Holds up to three user-provided OGG tracks for the current round.
   components:
+  - type: CMUDynamicCassette
+
+- type: entity
+  parent: BaseItem
+  id: CMUCassetteSpeakerPortable
+  name: кассетный бумбокс / cassette boombox
+  description: Проигрывает вставленную кассету для всех поблизости. / Plays the inserted cassette for everyone nearby.
+  components:
+  - type: Sprite
+    sprite: CMU14/Objects/Devices/boombox.rsi
+    layers:
+    - state: boombox
+    - state: boombox_working_overlay
+      map: ["cassette_music"]
+      visible: false
+  - type: Item
+    size: Large
+    sprite: CMU14/Objects/Devices/boombox.rsi
+    heldPrefix: boombox
   - type: CMUPublicCassettePlayer
   - type: CassettePlayer
     audioParams:
       volume: -6
-      maxDistance: 8
+      maxDistance: 10
       rolloffFactor: 1.5

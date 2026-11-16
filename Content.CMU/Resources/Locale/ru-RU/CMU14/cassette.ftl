@@ -1,6 +1,6 @@
 cmu-cassette-upload-started = Загрузка трека началась. / Track upload started.
 cmu-cassette-upload-success = Трек записан на кассету. / Track was written to the cassette.
-cmu-cassette-upload-invalid-file = Нужен исправный OGG Vorbis до 3 МБ и 15 минут. / A valid OGG Vorbis file up to 3 MB and 15 minutes is required.
+cmu-cassette-upload-invalid-file = Нужен исправный моно OGG Vorbis до 3 МБ и 15 минут. / A valid mono OGG Vorbis file up to 3 MB and 15 minutes is required.
 cmu-cassette-upload-cassette-full = На кассете уже записано три трека. / The cassette already contains three tracks.
 cmu-cassette-upload-round-full = Хранилище музыки этого раунда заполнено. / This round's music storage is full.
 cmu-cassette-upload-user-full = Вы исчерпали лимит музыки на этот раунд. / You have reached your music limit for this round.
@@ -12,3 +12,8 @@ cmu-cassette-upload-failed = Не удалось записать трек на 
 cmu-cassette-tape-dynamic-examine = Записано треков: {$current} из {$maximum}. / Recorded tracks: {$current} of {$maximum}.
 cmu-cassette-tape-dynamic-track = • {$title}
 cmu-cassette-tape-dynamic-choose = Выбрать OGG-трек / Choose OGG track
+cmu-cassette-speaker-play = Воспроизвести / Play
+cmu-cassette-speaker-pause = Пауза / Pause
+cmu-cassette-speaker-next = Следующий трек / Next track
+cmu-cassette-speaker-restart = Перезапустить / Restart
+cmu-cassette-speaker-eject = Извлечь кассету / Eject

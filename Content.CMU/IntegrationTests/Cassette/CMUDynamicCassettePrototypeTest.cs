@@ -17,7 +17,11 @@ public sealed class CMUDynamicCassettePrototypeTest
             await server.WaitAssertion(() =>
             {
                 var entities = server.EntMan;
-                var tape = entities.SpawnEntity("RMCCassetteTapeCustom", MapCoordinates.Nullspace);
+                var originalCustomTape = entities.SpawnEntity("RMCCassetteTapeCustom", MapCoordinates.Nullspace);
+                Assert.That(entities.HasComponent<CMUDynamicCassetteComponent>(originalCustomTape), Is.False,
+                    "The original custom cassette must keep its client-local behavior.");
+
+                var tape = entities.SpawnEntity("RMCCassetteTapeCustomRitoka", MapCoordinates.Nullspace);
                 var dynamicCassette = entities.GetComponent<CMUDynamicCassetteComponent>(tape);
                 var cassetteTape = entities.GetComponent<CassetteTapeComponent>(tape);
                 Assert.Multiple(() =>
@@ -33,6 +37,8 @@ public sealed class CMUDynamicCassettePrototypeTest
                 {
                     Assert.That(entities.HasComponent<CassettePlayerComponent>(speaker), Is.True);
                     Assert.That(entities.HasComponent<CMUPublicCassettePlayerComponent>(speaker), Is.True);
+                    Assert.That(entities.HasComponent<Content.Shared.Clothing.Components.ClothingComponent>(speaker), Is.False,
+                        "The boombox must be usable in the world instead of being worn in an equipment slot.");
                 });
             });
         }

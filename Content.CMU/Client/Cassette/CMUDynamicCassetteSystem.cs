@@ -26,11 +26,6 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
         base.Initialize();
 
         _resources.AddRoot(CMUDynamicCassetteLimits.ContentPrefix, _content);
-        _net.RegisterNetMessage<CMUCassetteUploadPermitRequestMsg>();
-        _net.RegisterNetMessage<CMUCassetteUploadMsg>();
-        _net.RegisterNetMessage<CMUCassetteUploadPermitMsg>(OnUploadPermit);
-        _net.RegisterNetMessage<CMUCassetteTrackDataMsg>(OnTrackData);
-        _net.RegisterNetMessage<CMUCassetteUploadResultMsg>(OnUploadResult);
 
         SubscribeNetworkEvent<RoundRestartCleanupEvent>(_ => ClearRoundData());
     }
@@ -66,7 +61,7 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
         return true;
     }
 
-    private void OnUploadPermit(CMUCassetteUploadPermitMsg message)
+    internal void OnUploadPermit(CMUCassetteUploadPermitMsg message)
     {
         if (_pendingUpload is not { } pending || pending.Cassette != message.Cassette)
             return;
@@ -80,7 +75,7 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
         });
     }
 
-    private void OnTrackData(CMUCassetteTrackDataMsg message)
+    internal void OnTrackData(CMUCassetteTrackDataMsg message)
     {
         if (!CMUDynamicCassetteLimits.IsValidOggVorbis(message.Data))
             return;
@@ -88,7 +83,7 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
         _content.AddOrUpdateFile(CMUDynamicCassetteLimits.RelativePath(message.TrackId), message.Data);
     }
 
-    private void OnUploadResult(CMUCassetteUploadResultMsg message)
+    internal void OnUploadResult(CMUCassetteUploadResultMsg message)
     {
         _pendingUpload = null;
         UploadFinished?.Invoke(message.Status, message.TrackId);

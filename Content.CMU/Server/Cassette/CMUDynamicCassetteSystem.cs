@@ -7,6 +7,7 @@ using Content.Server._RMC14.Cassette;
 using Robust.Server.Player;
 using Robust.Shared.Audio;
 using Robust.Shared.ContentPack;
+using Robust.Shared.Enums;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
@@ -42,24 +43,19 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
         base.Initialize();
 
         _resources.AddRoot(CMUDynamicCassetteLimits.ContentPrefix, _content);
-        _net.RegisterNetMessage<CMUCassetteUploadPermitRequestMsg>(OnPermitRequest);
-        _net.RegisterNetMessage<CMUCassetteUploadMsg>(OnUpload);
-        _net.RegisterNetMessage<CMUCassetteUploadPermitMsg>();
-        _net.RegisterNetMessage<CMUCassetteTrackDataMsg>();
-        _net.RegisterNetMessage<CMUCassetteUploadResultMsg>();
-        _net.Connected += OnConnected;
+        _players.PlayerStatusChanged += OnPlayerStatusChanged;
 
         SubscribeLocalEvent<RoundRestartCleanupEvent>(OnRoundRestart);
     }
 
     public override void Shutdown()
     {
-        _net.Connected -= OnConnected;
+        _players.PlayerStatusChanged -= OnPlayerStatusChanged;
         ClearTracks();
         base.Shutdown();
     }
 
-    private void OnUpload(CMUCassetteUploadMsg message)
+    internal void OnUpload(CMUCassetteUploadMsg message)
     {
         if (!_players.TryGetSessionByChannel(message.MsgChannel, out var session) ||
             session.AttachedEntity is not { } user)
@@ -141,13 +137,19 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
         Reply(message, CMUCassetteUploadStatus.Success, trackId);
     }
 
-    private void OnConnected(object? sender, NetChannelArgs args)
+    private void OnPlayerStatusChanged(object? sender, SessionStatusEventArgs args)
     {
+        if (args.NewStatus != SessionStatus.Connected)
+            return;
+
         foreach (var (trackId, trackData) in _tracks)
-            args.Channel.SendMessage(new CMUCassetteTrackDataMsg { TrackId = trackId, Data = trackData });
+        {
+            _net.ServerSendMessage(new CMUCassetteTrackDataMsg { TrackId = trackId, Data = trackData },
+                args.Session.Channel);
+        }
     }
 
-    private void OnPermitRequest(CMUCassetteUploadPermitRequestMsg message)
+    internal void OnPermitRequest(CMUCassetteUploadPermitRequestMsg message)
     {
         if (!_players.TryGetSessionByChannel(message.MsgChannel, out var session) ||
             !TryGetEntity(message.Cassette, out var cassette) ||

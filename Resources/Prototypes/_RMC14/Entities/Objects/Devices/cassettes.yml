@@ -47,8 +47,6 @@
   - type: CassetteTape
     songs: []
     custom: true
-  # CMU14: серверная кассета на три пользовательских трека. / Server-backed cassette for three user tracks.
-  - type: CMUDynamicCassette
 
 - type: entity
   parent: RMCCassetteTapeBase
