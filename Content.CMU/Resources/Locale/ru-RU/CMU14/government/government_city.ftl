@@ -34,8 +34,10 @@ rumc-government-investment-failure = { $name }: провалилось
 rumc-government-loan-blocked-rating = Нужен рейтинг от { $rating }.
 rumc-government-loan-blocked-default = После дефолта не даёт ещё { $minutes } мин.
 rumc-government-loan-blocked-many = Уже { $max } кредита.
+rumc-government-loan-blocked-debt = Казна в долгу: кредит не дадут.
 rumc-government-loan-blocked-limit = Лимит этого кредитора исчерпан.
 rumc-government-investment-blocked-many = Уже { $max } вложения в работе.
+rumc-government-investment-blocked-built = Больше не построить: уже { $max }.
 
 # The cities of the map
 rumc-government-cities-title = Другие города карты
