@@ -32,8 +32,6 @@ public sealed class CMUCassetteMusicNotesSystem : EntitySystem
             return;
         }
 
-        // Анимированные шкалы WhiteDream видимы только во время воспроизведения. /
-        // The animated WhiteDream bars are visible only while audio is playing.
         _sprite.LayerSetVisible((ent.Owner, sprite), layer, args.State == AudioState.Playing);
     }
 

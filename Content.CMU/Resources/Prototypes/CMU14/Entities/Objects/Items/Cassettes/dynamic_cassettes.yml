@@ -1,16 +1,12 @@
 - type: entity
   parent: RMCCassetteTapeCustom
   id: RMCCassetteTapeCustomRitoka
-  name: кастомная кассета Ritoka / Ritoka custom cassette
-  description: Вмещает до трёх пользовательских OGG-треков текущего раунда. / Holds up to three user-provided OGG tracks for the current round.
   components:
   - type: CMUDynamicCassette
 
 - type: entity
   parent: BaseItem
   id: CMUCassetteSpeakerPortable
-  name: кассетный бумбокс / cassette boombox
-  description: Проигрывает вставленную кассету для всех поблизости. / Plays the inserted cassette for everyone nearby.
   components:
   - type: Sprite
     sprite: CMU14/Objects/Devices/boombox.rsi

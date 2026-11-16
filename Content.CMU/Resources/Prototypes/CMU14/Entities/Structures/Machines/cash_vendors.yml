@@ -492,7 +492,6 @@
       price: 25
     - id: CMUCassetteSpeakerPortable
       section: Cassettes
-      name: Переносная кассетная колонка / Portable Cassette Speaker
       price: 40
     - id: RMCPouchCassette
       section: Cassettes
@@ -580,7 +579,6 @@
       price: 4
     - id: RMCCassetteTapeCustomRitoka
       section: Cassettes
-      name: Кассета Ritoka / Ritoka Cassette
       price: 6
     - id: RMCPlayingCardDeck
       section: Cards

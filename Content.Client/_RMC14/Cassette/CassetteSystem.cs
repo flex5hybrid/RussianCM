@@ -213,8 +213,6 @@ public sealed partial class CassetteSystem : SharedCassetteSystem
             return;
         }
 
-        // Декодируем один раз локально, чтобы не отправлять файл, который игровой декодер не сможет открыть. /
-        // Decode once locally so a file unsupported by the game decoder is never uploaded.
         using (var validationStream = new MemoryStream(trackData, writable: false))
         using (var decodedTrack = _audioManager.LoadAudioOggVorbis(validationStream, fileName))
         {

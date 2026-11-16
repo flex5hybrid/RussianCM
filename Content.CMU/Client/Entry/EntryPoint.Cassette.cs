@@ -2,17 +2,12 @@ using Content.Client.CMU14.Cassette;
 using Content.Shared.CMU14.Cassette;
 using Robust.Shared.Network;
 
-// ReSharper disable once CheckNamespace
 namespace Content.Client.Entry;
 
 public sealed partial class EntryPoint
 {
     [Dependency] private readonly INetManager _cmuCassetteNet = default!;
 
-    /// <summary>
-    /// Регистрирует сообщения кассет один раз за жизнь процесса, до подключения к серверу. /
-    /// Registers cassette messages once per process, before connecting to the server.
-    /// </summary>
     private void InitializeCMUDynamicCassetteNetwork()
     {
         _cmuCassetteNet.RegisterNetMessage<CMUCassetteUploadPermitRequestMsg>();

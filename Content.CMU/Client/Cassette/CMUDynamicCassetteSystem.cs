@@ -6,10 +6,6 @@ using Robust.Shared.Timing;
 
 namespace Content.Client.CMU14.Cassette;
 
-/// <summary>
-/// Получает кассетное аудио текущего раунда и предоставляет API будущему интерфейсу записи. /
-/// Receives round-scoped cassette audio and exposes an upload API for the future recorder UI.
-/// </summary>
 public sealed class CMUDynamicCassetteSystem : EntitySystem
 {
     [Dependency] private readonly INetManager _net = default!;

@@ -66,8 +66,6 @@ public abstract partial class SharedCassetteSystem : EntitySystem
         SubscribeLocalEvent<CassetteTapeComponent, GetVerbsEvent<AlternativeVerb>>(OnTapeGetVerbsAlternative);
     }
 
-    // CMU14: изменение CassetteTapeComponent остаётся внутри объявленного владельца доступа. /
-    // CMU14: keeps CassetteTapeComponent mutation behind its declared access owner.
     public void AppendSong(Entity<CassetteTapeComponent> tape, SoundSpecifier song)
     {
         tape.Comp.Songs.Add(song);
@@ -156,10 +154,6 @@ public abstract partial class SharedCassetteSystem : EntitySystem
 
         _item.VisualsChanged(ent);
 
-        // Позволяет клиентским визуальным системам реагировать на уже применённое состояние,
-        // не создавая вторую подписку на уникальное ComponentHandleState. /
-        // Lets client visual systems react after state application without adding a second
-        // subscription to the unique ComponentHandleState event.
         var stateChanged = new CassettePlayerStateChangedEvent(state.State);
         RaiseLocalEvent(ent, ref stateChanged);
     }
@@ -315,8 +309,6 @@ public abstract partial class SharedCassetteSystem : EntitySystem
                 audioParams = audioParams.WithVolume(SharedAudioSystem.GainToVolume(gain));
             }
 
-            // CMU14: помеченные плееры работают как колонки, а не приватные наушники; звук передаётся через PVS. /
-            // CMU14: marked players act as speakers rather than private headphones; audio is replicated through PVS.
             player.Comp.AudioStream = publicPlayback
                 ? _audio.PlayPvs(song, player, audioParams)?.Entity
                 : _audio.PlayGlobal(song, actor, audioParams)?.Entity;

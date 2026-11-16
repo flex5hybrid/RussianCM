@@ -85,9 +85,5 @@ public sealed class CassettePlayerComponentState : ComponentState
     public SpriteSpecifier.Rsi MusicSprite { get; init; } = default!;
 }
 
-/// <summary>
-///     Вызывается после применения сетевого состояния кассетного плеера. /
-///     Raised after a cassette player's network state has been applied.
-/// </summary>
 [ByRefEvent]
 public record struct CassettePlayerStateChangedEvent(AudioState State);

@@ -110,12 +110,6 @@ public static class CMUDynamicCassetteLimits
 
     private static bool IsUtf8Continuation(byte value) => value is >= 0x80 and <= 0xBF;
 
-    /// <summary>
-    /// Выполняет структурную проверку без выделения памяти до передачи недоверенных данных аудиодекодеру. /
-    /// Performs an allocation-free structural check before untrusted data reaches the audio decoder.
-    /// Принимается только Vorbis в OGG, а длительность ограничена для защиты от декомпрессионных бомб. /
-    /// Only Vorbis-in-Ogg is accepted, with bounded duration to mitigate decompression bombs.
-    /// </summary>
     public static bool IsValidOggVorbis(ReadOnlySpan<byte> data)
     {
         if (data.Length < 58 || data.Length > MaxTrackBytes)
@@ -194,8 +188,6 @@ public static class CMUDynamicCassetteLimits
 
                         var channels = segment[11];
                         sampleRate = BinaryPrimitives.ReadUInt32LittleEndian(segment[12..]);
-                        // Позиционные источники OpenAL должны быть моно; стерео вызывает assert клиента. /
-                        // OpenAL positional sources must be mono; stereo triggers a client assertion.
                         if (channels != 1 || sampleRate is < 8000 or > 192000)
                             return false;
                     }
@@ -264,10 +256,6 @@ public enum CMUCassetteUploadStatus : byte
     RateLimited,
 }
 
-/// <summary>
-/// Запрос одноразового разрешения на загрузку для кассеты в руках игрока. /
-/// Requests a one-use upload permit for a cassette held by the player.
-/// </summary>
 public sealed class CMUCassetteUploadPermitRequestMsg : NetMessage
 {
     public override MsgGroups MsgGroup => MsgGroups.Command;
@@ -285,10 +273,6 @@ public sealed class CMUCassetteUploadPermitRequestMsg : NetMessage
     }
 }
 
-/// <summary>
-/// Короткоживущее одноразовое разрешение от серверной системы записывающей машинки. /
-/// Short-lived one-use authorization issued by the server-side recorder system.
-/// </summary>
 public sealed class CMUCassetteUploadPermitMsg : NetMessage
 {
     public override MsgGroups MsgGroup => MsgGroups.Command;
@@ -309,10 +293,6 @@ public sealed class CMUCassetteUploadPermitMsg : NetMessage
     }
 }
 
-/// <summary>
-/// Запрос клиента на добавление одного OGG-трека в записываемую кассету. /
-/// Client request to append one OGG track to a recordable cassette.
-/// </summary>
 public sealed class CMUCassetteUploadMsg : NetMessage
 {
     public override MsgGroups MsgGroup => MsgGroups.Command;
@@ -374,10 +354,6 @@ public sealed class CMUCassetteUploadMsg : NetMessage
     }
 }
 
-/// <summary>
-/// Передача клиенту проверенного трека, существующего только в текущем раунде. /
-/// Delivery of a validated, round-scoped track to a client.
-/// </summary>
 public sealed class CMUCassetteTrackDataMsg : NetMessage
 {
     public override MsgGroups MsgGroup => MsgGroups.Command;
@@ -399,10 +375,6 @@ public sealed class CMUCassetteTrackDataMsg : NetMessage
     }
 }
 
-/// <summary>
-/// Ответ сервера существующему интерфейсу записи кассеты. /
-/// Server acknowledgement for the existing cassette recording UI.
-/// </summary>
 public sealed class CMUCassetteUploadResultMsg : NetMessage
 {
     public override MsgGroups MsgGroup => MsgGroups.Command;

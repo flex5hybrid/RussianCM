@@ -14,12 +14,6 @@ using Robust.Shared.Timing;
 
 namespace Content.Server.CMU14.Cassette;
 
-/// <summary>
-/// Хранит загруженное кассетное аудио в течение раунда и раздаёт проверенные треки клиентам. /
-/// Owns uploaded cassette audio for one round and distributes validated tracks to clients.
-/// Системы предметов и интерфейса используют API загрузки, но не управляют хранилищем аудио. /
-/// Item and UI systems use the upload API but do not own audio storage.
-/// </summary>
 public sealed class CMUDynamicCassetteSystem : EntitySystem
 {
     [Dependency] private readonly SharedInteractionSystem _interaction = default!;
@@ -64,8 +58,6 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
             return;
         }
 
-        // Разрешение создаётся только доверенным серверным взаимодействием и используется один раз. /
-        // A permit is created only by a trusted server-side interaction and is consumed once.
         if (!_permits.TryGetValue(message.Permit, out var uploadPermit) ||
             uploadPermit.UserId != session.UserId ||
             uploadPermit.ExpiresAt < _timing.CurTime)
@@ -164,10 +156,6 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
             Reply(message.MsgChannel, status);
     }
 
-    /// <summary>
-    /// Выдаёт разрешение только для поддерживаемой кассеты, находящейся в руках игрока. /
-    /// Issues a permit only for a supported cassette currently held by the player.
-    /// </summary>
     private CMUCassetteUploadStatus IssueUploadPermit(ICommonSession session, EntityUid cassette)
     {
         if (session.AttachedEntity is not { } user ||
