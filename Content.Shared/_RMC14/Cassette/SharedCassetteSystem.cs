@@ -5,6 +5,7 @@ using Content.Shared.Actions;
 using Content.Shared.Actions.Components;
 using Content.Shared.Clothing;
 using Content.Shared.Clothing.EntitySystems;
+using Content.Shared.CMU14.Cassette; // CMU14
 using Content.Shared.Examine;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Interaction;
@@ -14,6 +15,7 @@ using Content.Shared.Inventory.Events;
 using Content.Shared.Item;
 using Content.Shared.Popups;
 using Content.Shared.Verbs;
+using Robust.Shared.Audio;
 using Robust.Shared.Audio.Components;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Configuration;
@@ -60,6 +62,14 @@ public abstract partial class SharedCassetteSystem : EntitySystem
         SubscribeLocalEvent<CassetteTapeComponent, ExaminedEvent>(OnTapeExamined);
         SubscribeLocalEvent<CassetteTapeComponent, UseInHandEvent>(OnPlayerUseInHand);
         SubscribeLocalEvent<CassetteTapeComponent, GetVerbsEvent<AlternativeVerb>>(OnTapeGetVerbsAlternative);
+    }
+
+    // CMU14: изменение CassetteTapeComponent остаётся внутри объявленного владельца доступа. /
+    // CMU14: keeps CassetteTapeComponent mutation behind its declared access owner.
+    public void AppendSong(Entity<CassetteTapeComponent> tape, SoundSpecifier song)
+    {
+        tape.Comp.Songs.Add(song);
+        Dirty(tape);
     }
 
     // CMU14: wearer deletion kills the action entities, leaving dangling refs that error on every PVS state send
@@ -277,7 +287,11 @@ public abstract partial class SharedCassetteSystem : EntitySystem
                 audioParams = audioParams.WithVolume(SharedAudioSystem.GainToVolume(gain));
             }
 
-            player.Comp.AudioStream = _audio.PlayGlobal(song, actor, audioParams)?.Entity;
+            // CMU14: помеченные плееры работают как колонки, а не приватные наушники; звук передаётся через PVS. /
+            // CMU14: marked players act as speakers rather than private headphones; audio is replicated through PVS.
+            player.Comp.AudioStream = HasComp<CMUPublicCassettePlayerComponent>(player)
+                ? _audio.PlayPvs(song, player, audioParams)?.Entity
+                : _audio.PlayGlobal(song, actor, audioParams)?.Entity;
         }
 
         player.Comp.Tape = tape.Value;

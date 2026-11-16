@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using Content.Shared.Administration;
 using Content.Shared.Chat;
+using Content.Shared.CMU14.Cassette;
 using Content.Shared.Eui;
 using Content.Shared.Mapping;
 using Content.Shared.Players;
@@ -49,6 +50,14 @@ public sealed class CMUNetworkMessageBoundsTest
         yield return Case(new MentorMessagesReceivedMsg(), fixedLength: true);
         yield return Case(new RMCExcludedTimersMsg());
         yield return Case(new MappingMapDataMessage(), prefix: b => b.WriteVariableInt32(1));
+        yield return Case(new CMUCassetteUploadMsg(), prefix: b => b.Write(Guid.Empty.ToByteArray()), suffix: "Title");
+        yield return Case(new CMUCassetteUploadMsg(), prefix: b =>
+        {
+            b.Write(Guid.Empty.ToByteArray());
+            b.WriteVariableInt32(1);
+            b.Write((byte) 'x');
+        }, suffix: "Audio");
+        yield return Case(new CMUCassetteTrackDataMsg(), prefix: b => b.Write(Guid.Empty.ToByteArray()));
     }
 
     [TestCaseSource(nameof(TruncatedMessages))]
