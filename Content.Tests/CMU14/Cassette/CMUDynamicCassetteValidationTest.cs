@@ -46,8 +46,24 @@ public sealed class CMUDynamicCassetteValidationTest
         Assert.Multiple(() =>
         {
             Assert.That(CMUDynamicCassetteLimits.IsTitleValid("track"), Is.True);
+            Assert.That(CMUDynamicCassetteLimits.IsTitleValid(new string('a', 128)), Is.True);
+            Assert.That(CMUDynamicCassetteLimits.IsTitleValid(new string('я', 64)), Is.True);
             Assert.That(CMUDynamicCassetteLimits.IsTitleValid(string.Empty), Is.False);
             Assert.That(CMUDynamicCassetteLimits.IsTitleValid(new string('я', 65)), Is.False);
+            Assert.That(CMUDynamicCassetteLimits.IsTitleValid("track\uD800"), Is.False);
+        });
+    }
+
+    [Test]
+    public void StrictUtf8ValidationRejectsInvalidSequences()
+    {
+        Assert.Multiple(() =>
+        {
+            Assert.That(CMUDynamicCassetteLimits.IsValidUtf8("кассета"u8), Is.True);
+            Assert.That(CMUDynamicCassetteLimits.IsValidUtf8([0xC0, 0xAF]), Is.False);
+            Assert.That(CMUDynamicCassetteLimits.IsValidUtf8([0xED, 0xA0, 0x80]), Is.False);
+            Assert.That(CMUDynamicCassetteLimits.IsValidUtf8([0xF4, 0x90, 0x80, 0x80]), Is.False);
+            Assert.That(CMUDynamicCassetteLimits.IsValidUtf8([0xE2, 0x82]), Is.False);
         });
     }
 

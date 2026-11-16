@@ -225,7 +225,7 @@ public sealed partial class CassetteSystem : SharedCassetteSystem
             }
         }
 
-        var title = Path.GetFileNameWithoutExtension(fileName)?.Trim() ?? string.Empty;
+        var title = GetTrackTitle(fileName);
         if (!CMUDynamicCassetteLimits.IsTitleValid(title))
             title = $"Трек / Track {dynamicCassette.Tracks.Count + 1}";
 
@@ -236,6 +236,20 @@ public sealed partial class CassetteSystem : SharedCassetteSystem
         }
 
         ShowUploadPopup("cmu-cassette-upload-started");
+    }
+
+    private static string GetTrackTitle(string? fileName)
+    {
+        if (string.IsNullOrWhiteSpace(fileName))
+            return string.Empty;
+
+        var separatorIndex = Math.Max(fileName.LastIndexOf('/'), fileName.LastIndexOf('\\'));
+        var titleStart = separatorIndex + 1;
+        var extensionIndex = fileName.LastIndexOf('.');
+        var titleLength = extensionIndex > titleStart
+            ? extensionIndex - titleStart
+            : fileName.Length - titleStart;
+        return fileName.Substring(titleStart, titleLength).Trim();
     }
 
     private static async Task<byte[]?> ReadBoundedTrack(Stream file)

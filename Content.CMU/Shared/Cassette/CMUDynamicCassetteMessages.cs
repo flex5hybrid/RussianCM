@@ -10,7 +10,6 @@ namespace Content.Shared.CMU14.Cassette;
 
 public static class CMUDynamicCassetteLimits
 {
-    internal static readonly Encoding StrictUtf8 = new UTF8Encoding(false, true);
     public const int MaxTracksPerCassette = 3;
     public const int MaxTrackBytes = 3 * 1024 * 1024;
     public const int MaxTitleBytes = 128;
@@ -30,22 +29,86 @@ public static class CMUDynamicCassetteLimits
         if (string.IsNullOrWhiteSpace(title))
             return false;
 
+        var utf8Length = 0;
         foreach (var character in title)
         {
             if (char.GetUnicodeCategory(character) is
                 UnicodeCategory.Control or UnicodeCategory.Format or UnicodeCategory.Surrogate)
                 return false;
+
+            utf8Length += character switch
+            {
+                <= '\u007F' => 1,
+                <= '\u07FF' => 2,
+                _ => 3,
+            };
+
+            if (utf8Length > MaxTitleBytes)
+                return false;
         }
 
-        try
+        return true;
+    }
+
+    internal static bool IsValidUtf8(ReadOnlySpan<byte> data)
+    {
+        var index = 0;
+        while (index < data.Length)
         {
-            return StrictUtf8.GetByteCount(title) <= MaxTitleBytes;
-        }
-        catch (EncoderFallbackException)
-        {
+            var first = data[index++];
+            if (first <= 0x7F)
+                continue;
+
+            if (first is >= 0xC2 and <= 0xDF)
+            {
+                if (index >= data.Length || !IsUtf8Continuation(data[index++]))
+                    return false;
+                continue;
+            }
+
+            if (first is >= 0xE0 and <= 0xEF)
+            {
+                if (index + 1 >= data.Length)
+                    return false;
+
+                var second = data[index++];
+                var third = data[index++];
+                if (!IsUtf8Continuation(third) ||
+                    first == 0xE0 && second is not (>= 0xA0 and <= 0xBF) ||
+                    first == 0xED && second is not (>= 0x80 and <= 0x9F) ||
+                    first is not (0xE0 or 0xED) && !IsUtf8Continuation(second))
+                {
+                    return false;
+                }
+                continue;
+            }
+
+            if (first is >= 0xF0 and <= 0xF4)
+            {
+                if (index + 2 >= data.Length)
+                    return false;
+
+                var second = data[index++];
+                var third = data[index++];
+                var fourth = data[index++];
+                if (!IsUtf8Continuation(third) ||
+                    !IsUtf8Continuation(fourth) ||
+                    first == 0xF0 && second is not (>= 0x90 and <= 0xBF) ||
+                    first == 0xF4 && second is not (>= 0x80 and <= 0x8F) ||
+                    first is not (0xF0 or 0xF4) && !IsUtf8Continuation(second))
+                {
+                    return false;
+                }
+                continue;
+            }
+
             return false;
         }
+
+        return true;
     }
+
+    private static bool IsUtf8Continuation(byte value) => value is >= 0x80 and <= 0xBF;
 
     /// <summary>
     /// Выполняет структурную проверку без выделения памяти до передачи недоверенных данных аудиодекодеру. /
@@ -112,7 +175,7 @@ public static class CMUDynamicCassetteLimits
                     {
                         var expectedType = (byte) (packetIndex * 2 + 1);
                         if (segment.Length < 7 || segment[0] != expectedType ||
-                            !segment.Slice(1, 6).SequenceEqual("vorbis"u8))
+                            !HasVorbisSignature(segment))
                         {
                             return false;
                         }
@@ -159,6 +222,14 @@ public static class CMUDynamicCassetteLimits
     public static ResPath RelativePath(Guid id) => new($"{id:N}.ogg");
 
     public static ResPath FullPath(Guid id) => ContentPrefix / RelativePath(id);
+
+    private static bool HasVorbisSignature(ReadOnlySpan<byte> packet) =>
+        packet[1] == (byte) 'v' &&
+        packet[2] == (byte) 'o' &&
+        packet[3] == (byte) 'r' &&
+        packet[4] == (byte) 'b' &&
+        packet[5] == (byte) 'i' &&
+        packet[6] == (byte) 's';
 
     private static bool HasValidOggChecksum(ReadOnlySpan<byte> page)
     {
@@ -285,12 +356,18 @@ public sealed class CMUCassetteUploadMsg : NetMessage
     private static string ReadBoundedString(NetIncomingMessage buffer, int maximumBytes)
     {
         var bytes = ReadBoundedBytes(buffer, maximumBytes);
-        return CMUDynamicCassetteLimits.StrictUtf8.GetString(bytes);
+        if (!CMUDynamicCassetteLimits.IsValidUtf8(bytes))
+            throw new InvalidOperationException("Cassette title contains invalid UTF-8.");
+
+        return Encoding.UTF8.GetString(bytes);
     }
 
     private static void WriteBoundedString(NetOutgoingMessage buffer, string value, int maximumBytes)
     {
-        var bytes = CMUDynamicCassetteLimits.StrictUtf8.GetBytes(value);
+        if (!CMUDynamicCassetteLimits.IsTitleValid(value))
+            throw new InvalidOperationException("Cassette title is invalid.");
+
+        var bytes = Encoding.UTF8.GetBytes(value);
         WriteBoundedBytes(buffer, bytes, maximumBytes);
     }
 }
