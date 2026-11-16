@@ -44,6 +44,7 @@
   payoutMultiplier: 1.5
   salvageMultiplier: 0.4
   incomePerMinute: 25
+  maxBuilt: 4 # RuMC edit
 
 - type: colonyInvestment
   id: RUMCInvestmentPort
@@ -55,6 +56,7 @@
   payoutMultiplier: 1.7
   salvageMultiplier: 0.3
   incomePerMinute: 80
+  maxBuilt: 2 # RuMC edit
 
 - type: colonyInvestment
   id: RUMCInvestmentMine
@@ -66,4 +68,5 @@
   payoutMultiplier: 2.4
   salvageMultiplier: 0.15
   incomePerMinute: 60
+  maxBuilt: 3 # RuMC edit
   ratingOnFailure: -6
