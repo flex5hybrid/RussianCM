@@ -577,9 +577,6 @@
       section: Cassettes
       name: Cassette (Blank)
       price: 4
-    - id: RMCCassetteTapeCustomRitoka
-      section: Cassettes
-      price: 6
     - id: RMCPlayingCardDeck
       section: Cards
       name: Playing Card Deck

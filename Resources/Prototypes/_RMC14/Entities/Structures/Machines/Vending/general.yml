@@ -79,8 +79,6 @@
       # cmu edit end
       - id: RMCCassetteTapeCustom
         amount: 30
-      - id: RMCCassetteTapeCustomRitoka
-        amount: 10
     - name: Cards
       entries:
       - id: RMCPlayingCardDeck

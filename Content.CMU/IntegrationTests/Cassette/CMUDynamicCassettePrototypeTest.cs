@@ -21,7 +21,7 @@ public sealed class CMUDynamicCassettePrototypeTest
                 Assert.That(entities.HasComponent<CMUDynamicCassetteComponent>(originalCustomTape), Is.False,
                     "The original custom cassette must keep its client-local behavior.");
 
-                var tape = entities.SpawnEntity("RMCCassetteTapeCustomRitoka", MapCoordinates.Nullspace);
+                var tape = entities.SpawnEntity("CMUCassetteTapeCustomRitoka", MapCoordinates.Nullspace);
                 var dynamicCassette = entities.GetComponent<CMUDynamicCassetteComponent>(tape);
                 var cassetteTape = entities.GetComponent<CassetteTapeComponent>(tape);
                 Assert.Multiple(() =>

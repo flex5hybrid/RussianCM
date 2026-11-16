@@ -1,6 +1,6 @@
 - type: entity
   parent: RMCCassetteTapeCustom
-  id: RMCCassetteTapeCustomRitoka
+  id: CMUCassetteTapeCustomRitoka
   components:
   - type: CMUDynamicCassette
 

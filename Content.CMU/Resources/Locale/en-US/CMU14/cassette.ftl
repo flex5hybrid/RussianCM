@@ -1,4 +1,4 @@
-ent-RMCCassetteTapeCustomRitoka = Ritoka cassette
+ent-CMUCassetteTapeCustomRitoka = Ritoka cassette
     .desc = Holds up to three user-provided OGG tracks for the current round.
 ent-CMUCassetteSpeakerPortable = cassette boombox
     .desc = Plays the inserted cassette for everyone nearby.

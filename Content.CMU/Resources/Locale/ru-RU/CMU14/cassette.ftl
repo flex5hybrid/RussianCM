@@ -1,4 +1,4 @@
-ent-RMCCassetteTapeCustomRitoka = кассета Ritoka
+ent-CMUCassetteTapeCustomRitoka = кассета Ritoka
     .desc = Вмещает до трёх пользовательских OGG-треков текущего раунда.
 ent-CMUCassetteSpeakerPortable = кассетный бумбокс
     .desc = Проигрывает вставленную кассету для всех поблизости.
