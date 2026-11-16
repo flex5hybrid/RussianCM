@@ -1,12 +1,14 @@
+// CMU14 Begin: dynamic cassette uploads
 using System.IO;
 using System.Threading.Tasks;
 using Content.Client.CMU14.Cassette;
 using Content.Shared.CMU14.Cassette;
+// CMU14 End
 using Content.Shared._RMC14.Cassette;
 using Content.Shared._RMC14.CCVar;
 using Content.Shared.GameTicking;
 using Content.Shared.Inventory;
-using Content.Shared.Popups;
+using Content.Shared.Popups; // CMU14
 using Robust.Client.Audio;
 using Robust.Client.Player;
 using Robust.Client.ResourceManagement;
@@ -33,12 +35,12 @@ public sealed partial class CassetteSystem : SharedCassetteSystem
     // [Dependency] private IPrototypeManager _prototype = default!; // CMU14
     [Dependency] private IResourceCache _resourceCache = default!;
     [Dependency] private IGameTiming _timing = default!;
-    [Dependency] private CMUDynamicCassetteSystem _dynamicCassettes = default!;
-    [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private CMUDynamicCassetteSystem _dynamicCassettes = default!; // CMU14
+    [Dependency] private SharedPopupSystem _popup = default!; // CMU14
 
     private float _gain;
     private readonly Dictionary<AudioStream, string> _names = new();
-    private bool _trackDialogOpen;
+    private bool _trackDialogOpen; // CMU14
 
     public override void Initialize()
     {
@@ -48,7 +50,7 @@ public sealed partial class CassetteSystem : SharedCassetteSystem
         SubscribeLocalEvent<CassettePlayerComponent, ComponentRemove>(OnPlayerRemoved); // CMU14
 
         Subs.CVar(_config, RMCCVars.VolumeGainCassettes, SetGain, true);
-        _dynamicCassettes.UploadFinished += OnDynamicUploadFinished;
+        _dynamicCassettes.UploadFinished += OnDynamicUploadFinished; // CMU14
 
         // CMU14 Begin: AudioSystem loads songs when played. Preloading every tape retains
         // the entire decoded music library in native audio buffers for the client's lifetime.
@@ -75,6 +77,7 @@ public sealed partial class CassetteSystem : SharedCassetteSystem
         // CMU14 End
     }
 
+    // CMU14 method
     public override void Shutdown()
     {
         _dynamicCassettes.UploadFinished -= OnDynamicUploadFinished;
@@ -157,6 +160,7 @@ public sealed partial class CassetteSystem : SharedCassetteSystem
 
     protected override async void ChooseCustomTrack(Entity<CassetteTapeComponent> tape)
     {
+        // CMU14 Begin: server-backed custom cassette uploads
         try
         {
             if (!_timing.IsFirstTimePredicted || _trackDialogOpen)
@@ -187,7 +191,7 @@ public sealed partial class CassetteSystem : SharedCassetteSystem
         catch (Exception e)
         {
             ShowUploadPopup("cmu-cassette-upload-invalid-file");
-            Log.Error($"Ошибка выбора пользовательского трека / Error choosing custom cassette track:\n{e}");
+            Log.Error($"Error choosing custom cassette track:\n{e}");
         }
         finally
         {
@@ -225,7 +229,7 @@ public sealed partial class CassetteSystem : SharedCassetteSystem
 
         var title = GetTrackTitle(fileName);
         if (!CMUDynamicCassetteLimits.IsTitleValid(title))
-            title = $"Трек / Track {dynamicCassette.Tracks.Count + 1}";
+            title = Loc.GetString("cmu-cassette-default-track-title", ("number", dynamicCassette.Tracks.Count + 1));
 
         if (!_dynamicCassettes.TryQueueUpload(tape, title, trackData))
         {
@@ -292,6 +296,7 @@ public sealed partial class CassetteSystem : SharedCassetteSystem
         if (_player.LocalEntity is { } player)
             _popup.PopupEntity(Loc.GetString(localization), player, player);
     }
+    // CMU14 End
 
     private void SetAudioGain(EntityUid? audio)
     {

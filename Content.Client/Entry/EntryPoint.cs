@@ -98,7 +98,7 @@ namespace Content.Client.Entry
         {
             Dependencies.BuildGraph();
             Dependencies.InjectDependencies(this);
-            InitializeCMUDynamicCassetteNetwork();
+            InitializeCMUDynamicCassetteNetwork(); // CMU14
 
             _contentLoc.Initialize();
             _componentFactory.DoAutoRegistrations();

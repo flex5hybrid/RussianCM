@@ -103,7 +103,7 @@ namespace Content.Server.Entry
             base.Init();
             Dependencies.BuildGraph();
             Dependencies.InjectDependencies(this);
-            InitializeCMUDynamicCassetteNetwork();
+            InitializeCMUDynamicCassetteNetwork(); // CMU14
 
             LoadConfigPresets(_cfg, _res, _log.GetSawmill("configpreset"));
 

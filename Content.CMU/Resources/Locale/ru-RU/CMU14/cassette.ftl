@@ -16,6 +16,7 @@ cmu-cassette-upload-failed = Не удалось записать трек на 
 
 cmu-cassette-tape-dynamic-examine = Записано треков: {$current} из {$maximum}.
 cmu-cassette-tape-dynamic-track = • {$title}
+cmu-cassette-default-track-title = Трек {$number}
 cmu-cassette-tape-dynamic-choose = Выбрать OGG-трек
 cmu-cassette-speaker-play = Воспроизвести
 cmu-cassette-speaker-pause = Пауза

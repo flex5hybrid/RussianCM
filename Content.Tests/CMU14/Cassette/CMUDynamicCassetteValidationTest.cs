@@ -79,7 +79,7 @@ public sealed class CMUDynamicCassetteValidationTest
         int[] packetLengths = [30, 7, 7, 1];
         var data = new byte[27 + packetLengths.Length + packetLengths.Sum()];
         "OggS"u8.CopyTo(data);
-        data[5] = 0x06; // Начало и конец потока. / Beginning and end of stream.
+        data[5] = 0x06;
         BinaryPrimitives.WriteUInt64LittleEndian(data.AsSpan(6), (ulong) sampleRate * (uint) seconds);
         BinaryPrimitives.WriteUInt32LittleEndian(data.AsSpan(14), 0xC455E77E);
         data[26] = (byte) packetLengths.Length;

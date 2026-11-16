@@ -15,7 +15,7 @@ using Content.Shared.Inventory.Events;
 using Content.Shared.Item;
 using Content.Shared.Popups;
 using Content.Shared.Verbs;
-using Robust.Shared.Audio;
+using Robust.Shared.Audio; // CMU14
 using Robust.Shared.Audio.Components;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Configuration;
@@ -33,13 +33,13 @@ public abstract partial class SharedCassetteSystem : EntitySystem
     [Dependency] private SharedAudioSystem _audio = default!;
     [Dependency] private SharedContainerSystem _container = default!;
     [Dependency] private SharedHandsSystem _hands = default!;
-    [Dependency] private SharedInteractionSystem _interaction = default!;
+    [Dependency] private SharedInteractionSystem _interaction = default!; // CMU14
     [Dependency] private SharedItemSystem _item = default!;
     [Dependency] private InventorySystem _inventory = default!;
     [Dependency] private INetManager _net = default!;
     [Dependency] private INetConfigurationManager _netConfig = default!;
     [Dependency] private SharedPopupSystem _popup = default!;
-    [Dependency] private SharedTransformSystem _transform = default!;
+    [Dependency] private SharedTransformSystem _transform = default!; // CMU14
     [Dependency] private IGameTiming _timing = default!; // CMU14
 
     public override void Initialize()
@@ -66,6 +66,7 @@ public abstract partial class SharedCassetteSystem : EntitySystem
         SubscribeLocalEvent<CassetteTapeComponent, GetVerbsEvent<AlternativeVerb>>(OnTapeGetVerbsAlternative);
     }
 
+    // CMU14 method
     public void AppendSong(Entity<CassetteTapeComponent> tape, SoundSpecifier song)
     {
         tape.Comp.Songs.Add(song);
@@ -154,7 +155,7 @@ public abstract partial class SharedCassetteSystem : EntitySystem
 
         _item.VisualsChanged(ent);
 
-        var stateChanged = new CassettePlayerStateChangedEvent(state.State);
+        var stateChanged = new CassettePlayerStateChangedEvent(state.State); // CMU14
         RaiseLocalEvent(ent, ref stateChanged);
     }
 
@@ -189,9 +190,10 @@ public abstract partial class SharedCassetteSystem : EntitySystem
 
     private void OnPlayerPlayPause(Entity<CassettePlayerComponent> ent, ref CassettePlayPauseActionEvent args)
     {
-        TogglePlayback(ent, args.Performer);
+        TogglePlayback(ent, args.Performer); // CMU14
     }
 
+    // CMU14 method
     private void TogglePlayback(Entity<CassettePlayerComponent> ent, EntityUid performer)
     {
         var total = GetTotalSongs(ent);
@@ -247,9 +249,10 @@ public abstract partial class SharedCassetteSystem : EntitySystem
 
     private void OnPlayerNext(Entity<CassettePlayerComponent> ent, ref CassetteNextActionEvent args)
     {
-        PlayNext(ent, args.Performer);
+        PlayNext(ent, args.Performer); // CMU14
     }
 
+    // CMU14 method
     private void PlayNext(Entity<CassettePlayerComponent> ent, EntityUid performer)
     {
         PlaySong(ent, performer, ent.Comp.Tape + 1);
@@ -261,9 +264,10 @@ public abstract partial class SharedCassetteSystem : EntitySystem
 
     private void OnPlayerRestart(Entity<CassettePlayerComponent> ent, ref CassetteRestartActionEvent args)
     {
-        Restart(ent, args.Performer);
+        Restart(ent, args.Performer); // CMU14
     }
 
+    // CMU14 method
     private void Restart(Entity<CassettePlayerComponent> ent, EntityUid performer)
     {
         PlaySong(ent, performer);
@@ -284,14 +288,14 @@ public abstract partial class SharedCassetteSystem : EntitySystem
 
         StopAllAudio(player);
 
-        if (tapeComp.Songs.Count == 0 && tapeComp.CustomTrack == null)
+        if (tapeComp.Songs.Count == 0 && tapeComp.CustomTrack == null) // CMU14
             return;
 
         tape ??= player.Comp.Tape;
         if (tape < 0 || tape >= tapeComp.Songs.Count)
             tape = 0;
 
-        if (tapeComp.Custom && tapeComp.CustomTrack != null)
+        if (tapeComp.Custom && tapeComp.CustomTrack != null) // CMU14
         {
             if (PlayCustomTrack(player, (tapeId.Value, tapeComp)) is { } custom)
                 player.Comp.CustomAudioStream = custom;
@@ -302,14 +306,14 @@ public abstract partial class SharedCassetteSystem : EntitySystem
         {
             var song = tapeComp.Songs[tape.Value];
             var audioParams = player.Comp.AudioParams;
-            var publicPlayback = HasComp<CMUPublicCassettePlayerComponent>(player);
+            var publicPlayback = HasComp<CMUPublicCassettePlayerComponent>(player); // CMU14
             if (!publicPlayback && TryComp(actor, out ActorComponent? actorComp))
             {
                 var gain = _netConfig.GetClientCVar(actorComp.PlayerSession.Channel, RMCCVars.VolumeGainCassettes);
                 audioParams = audioParams.WithVolume(SharedAudioSystem.GainToVolume(gain));
             }
 
-            player.Comp.AudioStream = publicPlayback
+            player.Comp.AudioStream = publicPlayback // CMU14
                 ? _audio.PlayPvs(song, player, audioParams)?.Entity
                 : _audio.PlayGlobal(song, actor, audioParams)?.Entity;
         }
@@ -407,6 +411,7 @@ public abstract partial class SharedCassetteSystem : EntitySystem
         if (HasComp<XenoComponent>(user))
             return;
 
+        // CMU14 Begin: public cassette player controls
         if (HasComp<CMUPublicCassettePlayerComponent>(ent))
         {
             if (!TryGetTape(ent, out _))
@@ -452,6 +457,7 @@ public abstract partial class SharedCassetteSystem : EntitySystem
             });
             return;
         }
+        // CMU14 End
 
         args.Verbs.Add(new AlternativeVerb
         {
@@ -460,6 +466,7 @@ public abstract partial class SharedCassetteSystem : EntitySystem
         });
     }
 
+    // CMU14 method
     private bool CanControlPublicPlayer(Entity<CassettePlayerComponent> player, EntityUid user)
     {
         return HasComp<CMUPublicCassettePlayerComponent>(player) &&
@@ -471,6 +478,7 @@ public abstract partial class SharedCassetteSystem : EntitySystem
     {
         using (args.PushGroup(nameof(CassetteTapeComponent)))
         {
+            // CMU14 Begin: dynamic cassette examine text
             if (TryComp(ent, out CMUDynamicCassetteComponent? dynamicCassette))
             {
                 args.PushMarkup(Loc.GetString("cmu-cassette-tape-dynamic-examine",
@@ -480,7 +488,7 @@ public abstract partial class SharedCassetteSystem : EntitySystem
                     args.PushMarkup(Loc.GetString("cmu-cassette-tape-dynamic-track", ("title", title)));
             }
             else if (ent.Comp.Custom)
-                args.PushMarkup(Loc.GetString("rmc-cassette-tape-custom"));
+                args.PushMarkup(Loc.GetString("rmc-cassette-tape-custom")); // CMU14 End
             else
                 args.PushMarkup(Loc.GetString("rmc-cassette-tape-examine", ("total", ent.Comp.Songs.Count)));
         }
@@ -502,7 +510,7 @@ public abstract partial class SharedCassetteSystem : EntitySystem
 
         args.Verbs.Add(new AlternativeVerb
         {
-            Text = Loc.GetString(HasComp<CMUDynamicCassetteComponent>(tape)
+            Text = Loc.GetString(HasComp<CMUDynamicCassetteComponent>(tape) // CMU14
                 ? "cmu-cassette-tape-dynamic-choose"
                 : "rmc-cassette-tape-custom-choose"),
             Act = () =>
@@ -533,7 +541,7 @@ public abstract partial class SharedCassetteSystem : EntitySystem
 
     private int GetCurrentSongCount(Entity<CassettePlayerComponent> player)
     {
-        return GetTotalSongs(player) == 0 ? 0 : player.Comp.Tape + 1;
+        return GetTotalSongs(player) == 0 ? 0 : player.Comp.Tape + 1; // CMU14
     }
 
     private int GetTotalSongs(Entity<CassettePlayerComponent> player)
