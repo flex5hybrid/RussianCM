@@ -31,6 +31,7 @@ rumc-map-influence = Influence of your faction: { $value } of 100
 rumc-map-gift = Gift · { $cost }
 rumc-map-gift-full = The influence is already the greatest
 rumc-map-gift-poor = Gift · { $cost } (the budget is not enough)
+rumc-map-gift-wait = The next gift in { $time }
 
 rumc-map-kind-road = road
 rumc-map-kind-trail = trail
