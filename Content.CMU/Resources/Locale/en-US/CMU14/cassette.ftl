@@ -16,6 +16,7 @@ cmu-cassette-upload-failed = Failed to write the track to the cassette.
 
 cmu-cassette-tape-dynamic-examine = Recorded tracks: {$current} of {$maximum}.
 cmu-cassette-tape-dynamic-track = • {$title}
+cmu-cassette-tape-owner-name = {$owner}'s cassette
 cmu-cassette-default-track-title = Track {$number}
 cmu-cassette-tape-dynamic-choose = Choose OGG track
 cmu-cassette-speaker-play = Play

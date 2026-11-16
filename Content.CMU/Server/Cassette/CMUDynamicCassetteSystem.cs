@@ -1,5 +1,6 @@
 using Content.Shared.CMU14.Cassette;
 using Content.Shared.GameTicking;
+using Content.Shared.Hands;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Interaction;
 using Content.Shared._RMC14.Cassette;
@@ -18,6 +19,7 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
 {
     [Dependency] private readonly SharedInteractionSystem _interaction = default!;
     [Dependency] private readonly SharedHandsSystem _hands = default!;
+    [Dependency] private readonly MetaDataSystem _metaData = default!;
     [Dependency] private readonly IServerNetManager _net = default!;
     [Dependency] private readonly IPlayerManager _players = default!;
     [Dependency] private readonly IResourceManager _resources = default!;
@@ -39,6 +41,7 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
         _resources.AddRoot(CMUDynamicCassetteLimits.ContentPrefix, _content);
         _players.PlayerStatusChanged += OnPlayerStatusChanged;
 
+        SubscribeLocalEvent<CMUDynamicCassetteComponent, GotEquippedHandEvent>(OnCassettePickedUp);
         SubscribeLocalEvent<RoundRestartCleanupEvent>(OnRoundRestart);
     }
 
@@ -47,6 +50,17 @@ public sealed class CMUDynamicCassetteSystem : EntitySystem
         _players.PlayerStatusChanged -= OnPlayerStatusChanged;
         ClearTracks();
         base.Shutdown();
+    }
+
+    private void OnCassettePickedUp(Entity<CMUDynamicCassetteComponent> cassette, ref GotEquippedHandEvent args)
+    {
+        if (cassette.Comp.OwnerName != null)
+            return;
+
+        cassette.Comp.OwnerName = Name(args.User);
+        Dirty(cassette);
+        _metaData.SetEntityName(cassette,
+            Loc.GetString("cmu-cassette-tape-owner-name", ("owner", cassette.Comp.OwnerName)));
     }
 
     internal void OnUpload(CMUCassetteUploadMsg message)

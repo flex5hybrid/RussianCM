@@ -1,4 +1,5 @@
 using Content.Shared.CMU14.Cassette;
+using Content.Shared.Hands;
 using Content.Shared._RMC14.Cassette;
 using Robust.Shared.Map;
 
@@ -30,6 +31,26 @@ public sealed class CMUDynamicCassettePrototypeTest
                     Assert.That(dynamicCassette.Tracks, Is.Empty);
                     Assert.That(dynamicCassette.Titles, Is.Empty);
                     Assert.That(cassetteTape.Songs, Is.Empty);
+                });
+
+                var firstOwner = entities.SpawnEntity("CMMobHuman", MapCoordinates.Nullspace);
+                var secondOwner = entities.SpawnEntity("CMMobHuman", MapCoordinates.Nullspace);
+                entities.System<MetaDataSystem>().SetEntityName(firstOwner, "Жиган Пруселов");
+                entities.System<MetaDataSystem>().SetEntityName(secondOwner, "Другой Владелец");
+
+                var firstPickup = new GotEquippedHandEvent(firstOwner, tape, default!);
+                entities.EventBus.RaiseLocalEvent(tape, firstPickup);
+                var nameAfterFirstPickup = entities.GetComponent<MetaDataComponent>(tape).EntityName;
+
+                var secondPickup = new GotEquippedHandEvent(secondOwner, tape, default!);
+                entities.EventBus.RaiseLocalEvent(tape, secondPickup);
+
+                Assert.Multiple(() =>
+                {
+                    Assert.That(dynamicCassette.OwnerName, Is.EqualTo("Жиган Пруселов"));
+                    Assert.That(nameAfterFirstPickup, Does.Contain("Жиган Пруселов"));
+                    Assert.That(entities.GetComponent<MetaDataComponent>(tape).EntityName,
+                        Is.EqualTo(nameAfterFirstPickup));
                 });
 
                 var speaker = entities.SpawnEntity("CMUCassetteSpeakerPortable", MapCoordinates.Nullspace);

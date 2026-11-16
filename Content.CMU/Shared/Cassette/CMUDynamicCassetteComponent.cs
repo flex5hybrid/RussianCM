@@ -6,6 +6,9 @@ namespace Content.Shared.CMU14.Cassette;
 public sealed partial class CMUDynamicCassetteComponent : Component
 {
     [DataField, AutoNetworkedField]
+    public string? OwnerName;
+
+    [DataField, AutoNetworkedField]
     public List<Guid> Tracks = new();
 
     [DataField, AutoNetworkedField]
