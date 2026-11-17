@@ -1,9 +1,4 @@
 - type: guideEntry
-  id: RuMCMainRules
-  name: guide-entry-ru-mc-main-rules
-  text: "/ServerInfo/Guidebook/_RuCM/Rules/RuMCMainRules.xml"
-
-- type: guideEntry
   id: RuMCRule0
   name: guide-entry-ru-mc-rule0
   text: "/ServerInfo/Guidebook/_RuCM/Rules/RuMCRule0.xml"
