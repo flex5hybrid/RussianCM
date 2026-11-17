@@ -19317,5 +19317,17 @@ Entries:
   labels:
   - 'Changes: Translations'
   - M
+- author: PERed5
+  time: '2026-11-17T16:29:07Z'
+  changes:
+  - type: Tweak
+    message: Изменен вид правил. Теперь он по пунктам, а не по руководствам
+  - type: Fix
+    message: Ошибка парсера в "Порядок радиообмена"
+  id: 1142
+  url: https://github.com/flex5hybrid/RussianCM/pull/630
+  labels:
+  - 'Changes: No C#'
+  - L
 Name: CMU
 Order: -1
