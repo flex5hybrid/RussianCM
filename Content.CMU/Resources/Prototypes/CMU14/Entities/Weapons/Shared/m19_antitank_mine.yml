@@ -37,6 +37,7 @@
   - type: RMCLandmine
     placementDelay: 4
   - type: CMUBuryableMine
+    humanTriggerChance: 0 # RuMC edit 0.25 -> 0
   - type: Explosive
     explosionType: CMUAntiVehicleHE
     maxIntensity: 30
