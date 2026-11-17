@@ -1,3 +1,4 @@
+using System.Collections.Generic; // RuMC edit
 using Content.Shared._RMC14.Explosion;
 using Content.Shared._RMC14.Stun;
 using Content.Shared._RMC14.Xenonids;
@@ -16,6 +17,7 @@ using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.GameStates;
 using Robust.Shared.Network;
+using Robust.Shared.Physics.Events; // RuMC edit
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Serialization;
@@ -59,6 +61,8 @@ public sealed partial class CMUBuryableMineComponent : Component
 
     [DataField]
     public SoundSpecifier ClickSound = new SoundPathSpecifier("/Audio/Weapons/Guns/Empty/empty.ogg");
+
+    public HashSet<EntityUid> ClickedTrippers = new(); // RuMC edit
 }
 
 [Serializable, NetSerializable]
@@ -83,8 +87,28 @@ public sealed class CMUBuryableMineSystem : EntitySystem
         SubscribeLocalEvent<CMUBuryableMineComponent, InteractUsingEvent>(OnInteractUsing, before: [typeof(SharedRMCLandmineSystem)]);
         SubscribeLocalEvent<CMUBuryableMineComponent, CMUBuryMineDoAfterEvent>(OnBury);
         SubscribeLocalEvent<CMUBuryableMineComponent, StepTriggerAttemptEvent>(OnStepTriggerAttempt);
+        SubscribeLocalEvent<CMUBuryableMineComponent, PreventCollideEvent>(OnPreventCollide, after: [typeof(SharedRMCLandmineSystem)]); // RuMC edit
+        SubscribeLocalEvent<CMUBuryableMineComponent, EndCollideEvent>(OnEndCollide); // RuMC edit
         SubscribeLocalEvent<CMUBuryableMineComponent, ExaminedEvent>(OnExamined);
     }
+
+    // RuMC edit start: forget the tripper once they leave, so the dud click can play again next visit
+    private void OnEndCollide(Entity<CMUBuryableMineComponent> ent, ref EndCollideEvent args)
+    {
+        ent.Comp.ClickedTrippers.Remove(args.OtherEntity);
+    }
+    // RuMC edit end
+
+    // RuMC edit start: let vehicles collide so they can set off the mine
+    private void OnPreventCollide(Entity<CMUBuryableMineComponent> ent, ref PreventCollideEvent args)
+    {
+        if (!ent.Comp.HeavyTrigger || !args.Cancelled)
+            return;
+
+        if (HasComp<GridVehicleMoverComponent>(args.OtherEntity) || HasComp<VehicleComponent>(args.OtherEntity))
+            args.Cancelled = false;
+    }
+    // RuMC edit end
 
     private void OnDeployed(Entity<CMUBuryableMineComponent> ent, ref ClaymoreDeployDoafterEvent args)
     {
@@ -177,7 +201,7 @@ public sealed class CMUBuryableMineSystem : EntitySystem
 
         // Not heavy enough to set it off.
         args.Cancelled = true;
-        if (_net.IsServer)
+        if (_net.IsServer && ent.Comp.ClickedTrippers.Add(tripper)) // RuMC edit
         {
             _audio.PlayPvs(ent.Comp.ClickSound, ent);
             _popup.PopupEntity(Loc.GetString("cmu-buryable-mine-click", ("mine", ent)), ent, tripper, PopupType.MediumCaution);
