@@ -37,7 +37,6 @@
     bounty: 1675
     reason: Weyland-Yutani black operations - asset recovery
     recordName: WY Field Operative (Unknown)
-    includePrints: true
     capturedFaxPaper: CMUPaperColonyAntagCaptured
   - type: SynthGunAccess
   mindRoles:
@@ -115,7 +114,6 @@
     bounty: 1625
     reason: Corporate espionage - theft of Weyland-Yutani research
     recordName: Laselle Operative (Unknown)
-    includePrints: true
     includeLanguages: true
     capturedFaxPaper: CMUPaperColonyAntagCaptured
   - type: SynthGunAccess

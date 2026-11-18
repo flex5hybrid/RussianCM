@@ -4,6 +4,7 @@
   threatratio: 0.27
   roundPlayerBudgetUp: true
   minimumPlayerBudget: 3
+  xenofauna: true # non-humanoid threat life; EW Joe xenofauna directives
   allowConsecutiveVotes: true
   burrowedLarvaEnabled: true
   lorePrimer: AU14PrimerThreatXeno
@@ -35,6 +36,7 @@
   threatratio: 0.27
   roundPlayerBudgetUp: true
   minimumPlayerBudget: 3
+  xenofauna: true # non-humanoid threat life; EW Joe xenofauna directives
   allowConsecutiveVotes: true
   burrowedLarvaEnabled: true
   lorePrimer: AU14PrimerThreatXeno
