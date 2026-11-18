@@ -35,3 +35,4 @@ cmu-discord-docs-minimum-temperature = Minimum temperature: { $temperature } K.
 cmu-discord-docs-maximum-temperature = Maximum temperature: { $temperature } K.
 cmu-discord-docs-mixing = Mixing: { $categories }
 cmu-discord-docs-crafting-recipes = Open this page in the in-game guide to use the interactive recipe catalogue, inspect ingredients and equipment, and plan production batches.
+cmu-discord-docs-price-sheet = Open this page in the in-game guide to see the searchable sell-price sheet.
