@@ -3,7 +3,7 @@
   id: CMUJobParamarineSynthetic
   isSynthetic: true
   whitelisted: true
-  whitelistParent: CMUJobSyntheticWhitelist
+  whitelistParent: RuCMWhitelistMedium # RuMC edit
   roundSide: ThirdParty
   roundForce: CMUParamarines
   roundRole: ParamarineSynthetic
