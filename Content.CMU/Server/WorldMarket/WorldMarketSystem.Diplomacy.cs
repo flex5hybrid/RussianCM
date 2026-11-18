@@ -338,7 +338,7 @@ public sealed partial class WorldMarketSystem
 
         // RuMC edit start
         if (LimitBlocked(market, faction, cityId, action) is { } limit)
-            return limit;
+            return limit.Localize(Loc);
         // RuMC edit end
 
         if (budget < action.Cost)
