@@ -7,6 +7,8 @@
     snap:
     - Wall
   components:
+  - type: CMUCinematicMaterial # CMU14
+    material: CMUGlass
   - type: Transform
     anchored: true
   - type: Sprite

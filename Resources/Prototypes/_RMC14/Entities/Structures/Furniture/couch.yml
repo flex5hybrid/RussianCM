@@ -8,6 +8,10 @@
   placement:
     mode: SnapgridCenter
   components:
+  - type: CMUCinematicContact # CMU14: a small base contact, not a sprite outline.
+    size: 0.94, 0.18
+    offset: 0, -0.44
+    strength: 0.12
   - type: CMUReconFurniture
     material: CouchMiddle
   - type: VehicleSmashable

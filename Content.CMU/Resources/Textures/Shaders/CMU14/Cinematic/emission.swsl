@@ -1,0 +1,62 @@
+light_mode unshaded;
+blend_mode add;
+
+#include "/Textures/Shaders/CMU14/Cinematic/source.swsl"
+
+uniform bool sprite_emission;
+uniform highp vec2 emission_size;
+uniform highp vec4 emission_region;
+uniform highp float emission_threshold;
+uniform highp float emission_chroma;
+uniform highp float core_strength;
+uniform highp float texture_weight;
+uniform highp float bloom_strength;
+uniform bool authored_mask;
+uniform highp vec4 seed_region;
+
+void fragment()
+{
+    highp vec2 seed_uv = (frameUv(FRAGCOORD.xy) - seed_region.xy) / seed_region.zw;
+    // A source outside this viewport must never spill into the adjacent atlas field.
+    if (seed_uv.x < 0.0 || seed_uv.y < 0.0 || seed_uv.x > 1.0 || seed_uv.y > 1.0)
+        discard;
+    highp vec2 world = frameWorld(seed_uv);
+    if (visibleAt(source_position) < 0.5 || visibleAt(world) < 0.5)
+        discard;
+    highp vec3 hue = source_color;
+    highp float mask;
+    if (sprite_emission)
+    {
+        highp vec4 pixel = texture2D(TEXTURE, UV);
+        // Profile-colored tubes use luminous intensity, so bright orange end caps do not
+        // become a second core. Color-preserving displays retain saturated red/blue LEDs.
+        highp float brightness = texture_weight > 0.5
+            ? max(max(pixel.r, pixel.g), pixel.b)
+            : dot(pixel.rgb, vec3(0.2126, 0.7152, 0.0722));
+        // The cropped quad already limits the exact Content-authored luminous region.
+        // Its UVs still sample the real current RSI frame; alpha and animation remain authoritative.
+        mask = pixel.a
+            * smoothstep(max(0.0, emission_threshold - 0.08), emission_threshold + 0.08, brightness);
+        if (emission_chroma > 0.0 && (!authored_mask || texture_weight > 0.5))
+        {
+            // Color selection is perceptual; linear-light chroma makes beige monitor housings
+            // look saturated and incorrectly turns their keyboards into emissive surfaces.
+            highp vec3 perceptual = sqrt(max(pixel.rgb, vec3(0.0)));
+            highp float peak = max(max(perceptual.r, perceptual.g), perceptual.b);
+            highp float chroma = peak - min(min(perceptual.r, perceptual.g), perceptual.b);
+            mask *= smoothstep(emission_chroma * 0.75, emission_chroma * 1.25,
+                chroma / max(peak, 0.001));
+        }
+        hue = mix(source_color, pixel.rgb / max(brightness, 0.001), texture_weight);
+    }
+    else
+    {
+        if (visibleAt(emission_position) < 0.5)
+            discard;
+        highp vec2 delta = (world - emission_position) / max(emission_size, vec2(0.02));
+        mask = exp(-dot(delta, delta) * 3.5);
+    }
+    if (mask < 0.001)
+        discard;
+    COLOR = vec4(hue * core_strength * bloom_strength * source_energy * mask, 1.0);
+}

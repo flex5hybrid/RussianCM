@@ -1,0 +1,9 @@
+{
+  "v3": "../2026-10-29-v3/reference/high-blockers.png",
+  "v4": "reference/high-blockers.png",
+  "channel": "R",
+  "pixels": 1290240,
+  "changed_pixels": 0,
+  "max_delta_8bit": 0,
+  "note": "Original blocker R only; G wall-receiver and B contact intentionally carry independent data."
+}

@@ -9,6 +9,8 @@
   placement:
     mode: SnapgridCenter
   components:
+  - type: CMUCinematicEmitter
+    profile: CMUFloodlight
   - type: VehicleSmashable
     selfDamageMultiplier: 0.25
   - type: Transform

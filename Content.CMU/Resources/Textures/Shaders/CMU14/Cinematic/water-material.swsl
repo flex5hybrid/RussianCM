@@ -1,0 +1,13 @@
+light_mode unshaded;
+blend_mode mix;
+
+uniform highp vec3 water_material_data;
+uniform highp float receiver_opacity;
+
+void fragment()
+{
+    highp float coverage = texture2D(TEXTURE, UV).a * receiver_opacity;
+    if (coverage < 0.001)
+        discard;
+    COLOR = vec4(water_material_data, coverage);
+}

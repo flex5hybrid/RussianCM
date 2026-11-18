@@ -1,0 +1,33 @@
+light_mode unshaded;
+blend_mode add;
+
+#include "/Textures/Shaders/CMU14/Cinematic/frame.swsl"
+
+uniform highp vec2 face_origin;
+uniform highp vec2 face_luminous;
+uniform highp vec2 face_axis;
+uniform highp float face_span;
+uniform sampler2D emission_texture;
+
+void fragment()
+{
+    highp vec2 world = frameWorld(frameUv(FRAGCOORD.xy));
+    if (visibleAt(face_origin) < 0.5 || visibleAt(face_luminous) < 0.5 || visibleAt(world) < 0.5)
+        discard;
+    highp vec3 live = texture2D(emission_texture, worldUv(face_luminous)).rgb;
+    if (max(max(live.r, live.g), live.b) < 0.001)
+        discard;
+    highp vec2 normal = vec2(-face_axis.y, face_axis.x);
+    highp vec2 route = face_origin - face_luminous;
+    highp float depth = dot(route, normal);
+    highp float world_depth = dot(world - face_luminous, normal);
+    highp float t = abs(depth) > 0.001 ? clamp(world_depth / depth, 0.0, 1.0) : 0.0;
+    highp vec2 center = face_luminous + route * t;
+    highp vec2 delta = world - center;
+    highp float across = max(0.0, abs(dot(delta, face_axis)) - face_span);
+    highp float into = dot(delta, normal);
+    highp float receiver = 1.0 - smoothstep(0.025, 0.16, length(vec2(across, into)));
+    // Add uses SrcAlpha/DstAlpha in Clyde. Alpha one writes G; RGBA8 clamps mask alpha at one.
+    // R is unchanged because the source writes zero R and occupied blockers already have alpha one.
+    COLOR = vec4(0.0, receiver, 0.0, 1.0);
+}

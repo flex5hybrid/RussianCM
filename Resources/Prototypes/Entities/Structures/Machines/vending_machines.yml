@@ -7,6 +7,8 @@
   name: vending machine
   description: Just add capitalism!
   components:
+  - type: CMUCinematicEmitter # CMU14: luminous display panels, without new gameplay lights.
+    profile: CMUVendor
   - type: ActionGrant
     actions:
     - ActionVendingThrow

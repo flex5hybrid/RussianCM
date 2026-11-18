@@ -1,0 +1,8 @@
+{
+  "thresholds_unchanged": true,
+  "reference": {
+    "low": "Horizontal 53 px at y=303/304 x=582..635 and x=1094..1147: localized luminous tubes, wall-mounted source geometry, not continuous floor.",
+    "high_ultra": "Horizontal 56 px y=236 x=324..380: existing vent slat above cyan vendor. Present in Off texture and strengthened locally by the screen. Outside floor receiver."
+  },
+  "status": "Candidates retained, manually reviewed against native Off/High and targets. This is not automatic artistic acceptance."
+}

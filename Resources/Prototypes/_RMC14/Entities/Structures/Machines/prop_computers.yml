@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   abstract: true
   parent: CMBaseStructure
   id: RMCPropComputerBase
@@ -6,6 +6,9 @@
   description: This can be used for various functions.
   suffix: Prop
   components:
+  - type: CMUCinematicEmitter # CMU14
+    profile: CMUTerminal
+    emissionOffset: 0, 0.2
   - type: Transform
     anchored: false
   - type: Physics

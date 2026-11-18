@@ -28,6 +28,7 @@ public sealed partial class AmbientOcclusionOverlay : Overlay
     [Dependency] private IConfigurationManager _cfgManager = default!;
     [Dependency] private IEntityManager _entManager = default!;
     [Dependency] private IPrototypeManager _proto = default!;
+    [Dependency] private ILightManager _lightManager = default!; // CMU14: cinematic AO eligibility
 
     private readonly List<Vector2> _aoVertices = new(4096);
     private readonly List<ushort> _aoIndices = new(6144);
@@ -71,6 +72,12 @@ public sealed partial class AmbientOcclusionOverlay : Overlay
         var worldBounds = args.WorldBounds;
         var worldHandle = args.WorldHandle;
         var distance = _cfgManager.GetCVar(CCVars.AmbientOcclusionDistance);
+        // CMU14 Begin: reuse native AO for the cinematic main viewport.
+        var cinematic = _cfgManager.GetCVar(CCVars.CMUCinematicLighting) >= 2
+            && _entManager.System<Content.Client.CMU14.Lighting.CinematicLightingSystem>().IsEligible(viewport, _lightManager);
+        if (cinematic)
+            distance *= Math.Clamp(_cfgManager.GetCVar(CCVars.CMUCinematicAORadius), 0.5f, 2f);
+        // CMU14 End
         var resolutionScale = Math.Clamp(_cfgManager.GetCVar(CCVars.AmbientOcclusionResolutionScale), 0.1f, 1f);
         var target = viewport.RenderTarget;
         var aoSize = new Vector2i(
@@ -113,7 +120,9 @@ public sealed partial class AmbientOcclusionOverlay : Overlay
                 FlushAmbientOcclusionPolygons(worldHandle);
             }, Color.Transparent);
 
-        _clyde.BlurRenderTarget(viewport, res.AOTarget, res.AOBlurBuffer, viewport.Eye!, BlurMultiplier);
+        // CMU14: retain the native blur pass with tighter cinematic contact shadows.
+        _clyde.BlurRenderTarget(viewport, res.AOTarget, res.AOBlurBuffer, viewport.Eye!,
+            cinematic ? BlurMultiplier * 0.8f : BlurMultiplier);
 
         // Draw the stencil texture to depth buffer.
         var stencil = _gridStencil.GetNonSpaceStencil(args);
@@ -124,6 +133,9 @@ public sealed partial class AmbientOcclusionOverlay : Overlay
         var color = _entManager.TryGetComponent(args.MapUid, out MapAmbientColorComponent? mapAmbient)
             ? mapAmbient.Color
             : _color;
+        // CMU14: configurable cinematic contact opacity.
+        if (cinematic)
+            color = color.WithAlpha(Math.Clamp(color.A * _cfgManager.GetCVar(CCVars.CMUCinematicAOIntensity), 0f, 0.95f));
 
         worldHandle.UseShader(_proto.Index(StencilEqualDrawShader).Instance());
         worldHandle.DrawTextureRect(res.AOTarget!.Texture, worldBounds, color);
