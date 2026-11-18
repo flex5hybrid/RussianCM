@@ -27,6 +27,8 @@ public sealed partial class CMUDiscordDocumentationSystem
                 return _localization.GetString(Required("Key"));
             case "CMUGuideCraftingRecipes":
                 return Text("crafting-recipes");
+            case "CMUGuidePriceSheet": // RuMC edit
+                return Text("price-sheet");
             case "GuideEntityEmbed":
             {
                 var entity = _prototypes.Index<EntityPrototype>(Required("Entity"));
