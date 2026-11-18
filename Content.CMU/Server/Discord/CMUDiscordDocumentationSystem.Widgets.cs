@@ -29,6 +29,8 @@ public sealed partial class CMUDiscordDocumentationSystem
                 return Text("crafting-recipes");
             case "CMUGuidePriceSheet": // RuMC edit
                 return Text("price-sheet");
+            case "CMUGuideRecipeCards": // RuMC edit
+                return Text("recipe-cards");
             case "GuideEntityEmbed":
             {
                 var entity = _prototypes.Index<EntityPrototype>(Required("Entity"));
