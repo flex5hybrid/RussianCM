@@ -92,7 +92,7 @@ public sealed partial class ThirdPartySystem : EntitySystem
     private readonly Dictionary<int, uint> _scheduledForces = new();
     private readonly Dictionary<string, uint> _automaticForces = new();
     private readonly Dictionary<uint, ThirdPartyPrototype> _queuedParties = new();
-    private readonly HashSet<NetUserId> _claimedSurvivors = new();
+    private readonly HashSet<NetUserId> _claimedSurvivors = new(); // RuMC edit
 
     public override void Initialize()
     {
@@ -109,7 +109,7 @@ public sealed partial class ThirdPartySystem : EntitySystem
         _scheduledForces.Clear();
         _queuedParties.Clear();
         _automaticForces.Clear();
-        _claimedSurvivors.Clear();
+        _claimedSurvivors.Clear(); // RuMC edit
     }
 
     public override void Update(float frameTime)
@@ -502,9 +502,9 @@ public sealed partial class ThirdPartySystem : EntitySystem
             candidateMapIds.Add(markerTransform.MapID);
         }
 
-        MapId? mapId = roundStart && party.AnnounceAsSurvivors && _auRoundSystem.IsDistressSignalSelected
+        MapId? mapId = roundStart && party.AnnounceAsSurvivors && _auRoundSystem.IsDistressSignalSelected // RuMC edit Start
             ? _entityManager.System<GameTicker>().DefaultMap
-            : candidateMapIds.Count > 0 ? candidateMapIds[0] : null;
+            : candidateMapIds.Count > 0 ? candidateMapIds[0] : null; // RuMC edit End
         if (_sawmill.Level <= LogLevel.Debug)
         {
             _sawmill.Debug(
@@ -520,6 +520,7 @@ public sealed partial class ThirdPartySystem : EntitySystem
         IReadOnlyDictionary<string, int> entityBodies = ThirdPartySystem.GetSpawnBodies(
             ThreatMarkerType.Entity,
             spawnProto.EntitiesToSpawn);
+        // RuMC edit Start
         if (roundStart && party.AnnounceAsSurvivors && _auRoundSystem.IsDistressSignalSelected)
         {
             // Survivors are only the players who rolled for them; unclaimed survivor bodies do not spawn.
@@ -543,6 +544,7 @@ public sealed partial class ThirdPartySystem : EntitySystem
                 .ToHashSet();
             assignedJobs = assignedJobs?.Where(pair => claimed.Contains(pair.Key)).ToDictionary();
         }
+        // RuMC edit End
 
         int leaderReq = leaderBodies.Values.Sum();
         int gruntReq = gruntBodies.Values.Sum();
@@ -958,9 +960,11 @@ public sealed partial class ThirdPartySystem : EntitySystem
             }
 
             _sawmill.Debug("[ThirdPartySystem] Assigning minds to third party entities (roundstart)");
+            // RuMC edit Start
             var distressSurvivors = party.AnnounceAsSurvivors && _auRoundSystem.IsDistressSignalSelected;
             AssignMinds(leaderPlayers, spawnedLeaders, ThirdPartyLeaderJobId.Id, "leader", distressSurvivors);
             AssignMinds(memberPlayers, spawnedGrunts, ThirdPartyMemberJobId.Id, "member", distressSurvivors);
+            // RuMC edit End
         }
 
         if (!string.IsNullOrWhiteSpace(party.AnnounceArrival) && party.AnnounceArrivalTitle is { } arrivalTitle)
@@ -986,7 +990,7 @@ public sealed partial class ThirdPartySystem : EntitySystem
     // announcements are raw English on most parties, a loc id is used when one exists
     private string LocalizeAnnouncement(string announcement)
         => Loc.TryGetString(announcement, out var localized) ? localized : announcement;
-
+    // RuMC edit Start
     private static IReadOnlyDictionary<string, int> GetSpawnBodies(
         ThreatMarkerType markerType,
         IReadOnlyDictionary<string, int> legacyBodies)
@@ -1011,6 +1015,7 @@ public sealed partial class ThirdPartySystem : EntitySystem
             result[id] = take;
             remaining -= take;
         }
+    // RuMC edit End
 
         return result;
     }
@@ -1100,6 +1105,7 @@ public sealed partial class ThirdPartySystem : EntitySystem
     }
 
     /// <summary>Deploy the locked survivor groups before the post-roundstart threat vote.</summary>
+    // RuMC edit Start
     public void SpawnDistressSurvivors(Dictionary<NetUserId, (ProtoId<JobPrototype>?, EntityUid)> assignedJobs)
     {
         if (!_auRoundSystem.IsDistressSignalSelected)
@@ -1130,6 +1136,7 @@ public sealed partial class ThirdPartySystem : EntitySystem
         foreach (var player in _claimedSurvivors)
             assignedJobs.Remove(player);
     }
+    // RuMC edit End
 
     private void StartThirdPartySpawning(ThreatPrototype? threat,
         int intervalSeconds,
@@ -1393,8 +1400,8 @@ public sealed partial class ThirdPartySystem : EntitySystem
         return marker;
     }
 
-    private void AssignMinds(List<NetUserId> playerIds, List<EntityUid> spawnedList, string jobProto, string roleLabel,
-        bool distressSurvivors)
+    private void AssignMinds(List<NetUserId> playerIds, List<EntityUid> spawnedList, string jobProto, string roleLabel, // RuMC edit
+        bool distressSurvivors) // RuMC edit
     {
         var mindSystem = _entityManager.System<SharedMindSystem>();
         var roleSystem = _entityManager.System<SharedRoleSystem>();
@@ -1405,7 +1412,7 @@ public sealed partial class ThirdPartySystem : EntitySystem
         {
             NetUserId playerNetId = playerIds[i];
             EntityUid entity = spawnedList[i];
-            var transferred = false;
+            var transferred = false; // RuMC edit
             try
             {
                 if (!_playerManager.TryGetSessionById(playerNetId, out ICommonSession? session))
@@ -1422,20 +1429,22 @@ public sealed partial class ThirdPartySystem : EntitySystem
                 mindSystem.SetUserId(mind.Value, playerNetId);
                 mindSystem.TransferTo(mind.Value, entity);
                 roleSystem.MindAddJobRole(mind.Value, silent: true, jobPrototype: jobProto);
-                if (distressSurvivors)
-                    _claimedSurvivors.Add(playerNetId);
-                transferred = true;
+                if (distressSurvivors) // RuMC edit
+                    _claimedSurvivors.Add(playerNetId); // RuMC edit
+                transferred = true; // RuMC edit
                 assigned++;
             }
             catch (Exception ex)
             {
                 _sawmill.Error($"[ThirdPartySystem] Failed to assign {roleLabel} mind (player {playerNetId}, entity {entity}): {ex}");
             }
+            // RuMC edit Start
             finally
             {
                 if (distressSurvivors && !transferred)
                     QueueDel(entity);
             }
+            // RuMC edit End
         }
 
         _sawmill.Info(

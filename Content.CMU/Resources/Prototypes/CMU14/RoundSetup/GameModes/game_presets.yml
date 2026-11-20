@@ -75,7 +75,7 @@
   - RemoveAllJobs
   - AddGovfor
   - AddGovforAuxiliaryStaffDistress
-  - AddColonist
+  - AddColonist # RuMC edit
   - DistressAntags
 
 - type: gamePreset

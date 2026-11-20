@@ -159,6 +159,7 @@ public sealed partial class StationJobsSystem
             }
             // Third-party utility jobs are role labels only; GameTicker skips the normal spawn for them and
             // ThirdPartySystem transfers the player into a survivor body instead.
+            // if (assignedStation == null && (jobId == "AU14JobThirdPartyLeader" || jobId == "AU14JobThirdPartyMember")) RuMC Edit
 
             // If not found, just assign to first station (fallback)
             if (assignedStation == null && stations.Count > 0)

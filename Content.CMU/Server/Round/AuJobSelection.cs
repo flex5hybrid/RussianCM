@@ -65,6 +65,7 @@ public sealed partial class AuJobSelectionSystem : EntitySystem
     /// <summary>
     /// Distress Signal survivors are filled only from players who queued for the third party jobs.
     /// </summary>
+    // RuMC edit Start
     public void AssignSurvivorJobs(Dictionary<NetUserId, HumanoidCharacterProfile> profiles)
     {
         if (!_auRoundSystem.IsDistressSignalSelected)
@@ -114,7 +115,7 @@ public sealed partial class AuJobSelectionSystem : EntitySystem
             ForcedJobAssignments[player] = memberJob.Id;
         }
     }
-
+    // RuMC edit End
     public void AssignThreatAndThirdPartyJobs(Dictionary<NetUserId, HumanoidCharacterProfile> profiles)
     {
         ForcedJobAssignments.Clear();

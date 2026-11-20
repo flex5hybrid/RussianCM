@@ -1,15 +1,15 @@
 using System.Collections.Generic;
-using System.Linq;
-using Content.Server.CMU14.Roles;
+using System.Linq; // RuMC edit
+using Content.Server.CMU14.Roles; // RuMC edit
 using Content.Server.GameTicking;
 using Content.Server.GameTicking.Rules;
-using Content.Server.Spawners.EntitySystems;
+using Content.Server.Spawners.EntitySystems; // RuMC edit
 using Content.Server.Station.Components;
 using Content.Server.Station.Systems;
-using Content.Server._RMC14.Rules;
-using Content.Shared.CMU14.Round.Roles;
+using Content.Server._RMC14.Rules; // RuMC edit
+using Content.Shared.CMU14.Round.Roles; // RuMC edit
 using Content.Shared.CMU14.Round;
-using Content.Shared.CMU14.Threats;
+using Content.Shared.CMU14.Threats; // RuMC edit
 using Content.Shared.GameTicking;
 using Content.Shared.GameTicking.Components;
 using Content.Shared.Inventory;
@@ -18,7 +18,7 @@ using Content.Shared.Roles;
 using JetBrains.Annotations;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Log;
-using Robust.Shared.Network;
+using Robust.Shared.Network; // RuMC edit
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 
@@ -32,10 +32,10 @@ public sealed partial class AddColonistRuleSystem : GameRuleSystem<AddColonistRu
     [Dependency] private GameTicker _gameTicker = default!;
     [Dependency] private InventorySystem _inventory = default!;
     [Dependency] private IRobustRandom _random = default!;
-    [Dependency] private AuRoundSystem _round = default!;
-    [Dependency] private StationSpawningSystem _spawning = default!;
-    [Dependency] private RoundJobProfileSystem _roundJobs = default!;
-    [Dependency] private IPrototypeManager _prototypes = default!;
+    [Dependency] private AuRoundSystem _round = default!; // RuMC edit
+    [Dependency] private StationSpawningSystem _spawning = default!; // RuMC edit
+    [Dependency] private RoundJobProfileSystem _roundJobs = default!; // RuMC edit 
+    [Dependency] private IPrototypeManager _prototypes = default!; // RuMC edit
 
     private ISawmill _logs = default!;
 
@@ -44,8 +44,8 @@ public sealed partial class AddColonistRuleSystem : GameRuleSystem<AddColonistRu
         base.Initialize();
         _logs = Logger.GetSawmill("addcolonist");
         SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerSpawn);
-        SubscribeLocalEvent<PlayerSpawningEvent>(OnPlayerSpawning,
-            before: [typeof(CMDistressSignalRuleSystem), typeof(SpawnPointSystem)]);
+        SubscribeLocalEvent<PlayerSpawningEvent>(OnPlayerSpawning, // RuMC edit
+            before: [typeof(CMDistressSignalRuleSystem), typeof(SpawnPointSystem)]); // RuMC edit
     }
 
     protected override void Started(EntityUid uid, AddColonistRuleComponent component, GameRuleComponent gameRule, GameRuleStartedEvent args)
@@ -72,6 +72,7 @@ public sealed partial class AddColonistRuleSystem : GameRuleSystem<AddColonistRu
     }
 
     /// <summary>Limit Distress Signal colony jobs to one per four assigned GOVFOR players.</summary>
+    // RuMC edit Start
     public void LimitDistressColonists(Dictionary<NetUserId, (ProtoId<JobPrototype>?, EntityUid)> assignments)
     {
         if (!_round.IsDistressSignalSelected)
@@ -175,7 +176,7 @@ public sealed partial class AddColonistRuleSystem : GameRuleSystem<AddColonistRu
         ev.SpawnResult = _spawning.SpawnPlayerMob(Transform(marker).Coordinates, job,
             ev.HumanoidCharacterProfile, ev.Station);
     }
-
+    // RuMC edit End
     private void OnPlayerSpawn(PlayerSpawnCompleteEvent ev)
     {
         var rule = GetColonistRule(ev.JobId);
