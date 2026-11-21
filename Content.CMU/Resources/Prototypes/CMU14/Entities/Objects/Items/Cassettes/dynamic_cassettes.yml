@@ -1,0 +1,27 @@
+- type: entity
+  parent: RMCCassetteTapeCustom
+  id: CMUCassetteTapeCustomRitoka
+  components:
+  - type: CMUDynamicCassette
+
+- type: entity
+  parent: BaseItem
+  id: CMUCassetteSpeakerPortable
+  components:
+  - type: Sprite
+    sprite: CMU14/Objects/Devices/boombox.rsi
+    layers:
+    - state: boombox
+    - state: boombox_working_overlay
+      map: ["cassette_music"]
+      visible: false
+  - type: Item
+    size: Large
+    sprite: CMU14/Objects/Devices/boombox.rsi
+    heldPrefix: boombox
+  - type: CMUPublicCassettePlayer
+  - type: CassettePlayer
+    audioParams:
+      volume: -6
+      maxDistance: 10
+      rolloffFactor: 1.5

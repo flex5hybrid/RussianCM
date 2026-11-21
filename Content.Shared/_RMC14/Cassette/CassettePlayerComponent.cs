@@ -84,3 +84,7 @@ public sealed class CassettePlayerComponentState : ComponentState
     public SpriteSpecifier.Rsi WornSprite { get; init; } = default!;
     public SpriteSpecifier.Rsi MusicSprite { get; init; } = default!;
 }
+
+// CMU14 event
+[ByRefEvent]
+public record struct CassettePlayerStateChangedEvent(AudioState State);

@@ -490,6 +490,9 @@
       section: Cassettes
       name: Cassette Player (Neon)
       price: 25
+    - id: CMUCassetteSpeakerPortable
+      section: Cassettes
+      price: 40
     - id: RMCPouchCassette
       section: Cassettes
       name: Cassette Pouch
