@@ -50,7 +50,7 @@
     maxPlasma: 500
     plasmaRegenOnWeeds: 3.5
   - type: CMArmor
-    explosionArmor: 20
+    explosionArmor: 25 # RuMC edit
   - type: XenoDevour
   - type: MeleeWeapon
     damage:

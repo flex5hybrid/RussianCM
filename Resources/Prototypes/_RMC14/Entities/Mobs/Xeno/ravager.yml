@@ -75,7 +75,7 @@
     plasmaRegenOnWeeds: 5
   - type: CMArmor
     xenoArmor: 25
-    explosionArmor: 80
+    explosionArmor: 85 # RuMC edit
   - type: XenoClaws
     clawType: VerySharp
   - type: DrawableSolution

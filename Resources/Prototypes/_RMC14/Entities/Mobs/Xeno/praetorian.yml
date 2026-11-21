@@ -84,7 +84,7 @@
     plasmaRegenOnWeeds: 3
   - type: CMArmor
     xenoArmor: 25
-    explosionArmor: 40
+    explosionArmor: 45 # RuMC edit
   - type: MeleeWeapon
     damage:
       types:
@@ -419,7 +419,7 @@
     clawType: Sharp
   - type: CMArmor
     xenoArmor: 25
-    explosionArmor: 60
+    explosionArmor: 65 # RuMC edit
   - type: StunOnExplosionReceived
     weak: false
   - type: XenoHook

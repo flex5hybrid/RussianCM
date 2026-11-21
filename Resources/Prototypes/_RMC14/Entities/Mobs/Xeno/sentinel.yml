@@ -48,7 +48,7 @@
     maxPlasma: 400
     plasmaRegenOnWeeds: 3
   - type: CMArmor
-    explosionArmor: 10
+    explosionArmor: 15 # RuMC edit
   - type: XenoEvolution
     canEvolveWithoutGranter: true
     max: 200

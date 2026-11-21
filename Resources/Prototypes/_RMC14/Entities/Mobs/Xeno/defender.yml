@@ -60,7 +60,7 @@
     plasmaRegenOnWeeds: 5
   - type: CMArmor
     xenoArmor: 35
-    explosionArmor: 70
+    explosionArmor: 75 # RuMC edit
   - type: XenoCrest
   - type: XenoDevour
   - type: XenoHeadbutt

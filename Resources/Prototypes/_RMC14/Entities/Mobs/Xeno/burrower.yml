@@ -89,7 +89,7 @@
   - type: XenoAcid
   - type: CMArmor
     xenoArmor: 25
-    explosionArmor: 40
+    explosionArmor: 45 # RuMC edit
   - type: XenoDevour
   - type: XenoPheromones
     pheromonesMultiplier: 2

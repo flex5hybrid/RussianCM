@@ -45,7 +45,7 @@
     pheromonesMultiplier: 2.5
     pheroSuffix: hivelord
   - type: CMArmor
-    explosionArmor: 10
+    explosionArmor: 15 # RuMC edit
   - type: XenoResinWalker
   - type: MeleeWeapon
     damage:

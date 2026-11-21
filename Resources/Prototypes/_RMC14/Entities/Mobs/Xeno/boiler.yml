@@ -102,7 +102,7 @@
   - type: XenoAcid
   - type: CMArmor
     xenoArmor: 20
-    explosionArmor: 20
+    explosionArmor: 25 # RuMC edit
   - type: XenoDevour
   - type: XenoZoom
     zoom: 1, 1
