@@ -1,0 +1,42 @@
+- type: entity
+  parent: [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]
+  id: RuMCFatiguesVDV
+  name: VDV airborne fatigues
+  description: Standard fatigues for UPP Airborne Troops. Light Kevlar lining offers basic shrapnel protection without limiting mobility during deployment.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/VDV/uniform/infantry.rsi
+  - type: UniformAccessoryHolder
+    startingAccessories:
+    - AU14PatchUPP
+    - RMCPatchSPPVDV
+  - type: Tag
+    tags:
+    - RMCUniformSPP
+
+- type: entity
+  parent: RuMCFatiguesVDV
+  id: RuMCFatiguesVDV_eng
+  name: VDV airborne engineer fatigues
+  description: Airborne fatigues modified for field engineers. Light Kevlar lining, reinforced seams, and extra pockets for tools.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/VDV/uniform/eng.rsi
+
+- type: entity
+  parent: RuMCFatiguesVDV
+  id: RuMCFatiguesVDV_medic
+  name: VDV airborne medic fatigues
+  description: Airborne fatigues modified for field medics. Light Kevlar lining and additional pouches for medical supplies.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/VDV/uniform/medic.rsi
+
+- type: entity
+  parent: RuMCFatiguesVDV
+  id: RuMCFatiguesVDV_officer
+  name: VDV airborne officer fatigues
+  description: Airborne fatigues for UPP officers. Light Kevlar lining, reinforced collar, and rank insignia. Worn by those who lead from the front.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/VDV/uniform/officer.rsi

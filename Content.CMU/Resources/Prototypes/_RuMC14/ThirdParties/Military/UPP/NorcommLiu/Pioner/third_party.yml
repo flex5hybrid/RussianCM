@@ -2,10 +2,12 @@
 - type: partySpawn
   id: HephaestusSpawn
   leadersToSpawn:
-    RuMCJobUPPLiquidatorComander: 1
+    RuMCJobUPPNorcommChief: 1
   gruntsToSpawn:
-    RuMCJobUPPLiquidatorBurner: 3
-    RuMCJobUPPLiquidatorMedic: 1
+    RuMCJobUPPNorcommSpec: 1
+    RuMCJobUPPNorcommTech: 3
+    RuMCJobUPPNorcommMedic: 2
+    RuMCJobUPPNorcommParamedic: 1
   scalewithpop: false
   spawnTogether: true
 
@@ -19,20 +21,20 @@
     - colonyfall
   entrymethod: shuttle
   dropshippath: /Maps/CMU14/Dropships/rmc_ert_spp_shuttle.yml
-  weight: 20
+  weight: 0
   minplayers: 0
   maxplayers: 400
-  ghostsNeeded: 0
+  ghostsNeeded: 8
   roundstart: false
 
 #Norcomm Medical Team "Hippocrates"
 - type: partySpawn
   id: HippocratesSpawn
   leadersToSpawn:
-    RuMCJobUPPLiquidatorComander: 1
+    RuMCJobUPPNorcommDoctor: 1
   gruntsToSpawn:
-    RuMCJobUPPLiquidatorBurner: 3
-    RuMCJobUPPLiquidatorMedic: 1
+    RuMCJobUPPNorcommMedic: 3
+    RuMCJobUPPNorcommParamedic: 1
   scalewithpop: false
   spawnTogether: true
 
@@ -46,20 +48,20 @@
     - colonyfall
   entrymethod: shuttle
   dropshippath: /Maps/CMU14/Dropships/rmc_ert_spp_shuttle.yml
-  weight: 20
+  weight: 0
   minplayers: 0
   maxplayers: 400
-  ghostsNeeded: 0
+  ghostsNeeded: 5
   roundstart: false
 
 #Norcomm Security Brigade "Hoplite"
 - type: partySpawn
   id: HopliteSpawn
   leadersToSpawn:
-    RuMCJobUPPLiquidatorComander: 1
+    RuMCJobUPPNorcommChief: 1
   gruntsToSpawn:
-    RuMCJobUPPLiquidatorBurner: 3
-    RuMCJobUPPLiquidatorMedic: 1
+    RuMCJobUPPNorcommSpec: 1
+    RuMCJobUPPNorcommTech: 3
   scalewithpop: false
   spawnTogether: true
 
@@ -73,8 +75,8 @@
     - colonyfall
   entrymethod: shuttle
   dropshippath: /Maps/CMU14/Dropships/rmc_ert_spp_shuttle.yml
-  weight: 20
+  weight: 0
   minplayers: 0
   maxplayers: 400
-  ghostsNeeded: 0
+  ghostsNeeded: 5
   roundstart: false

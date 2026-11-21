@@ -2,7 +2,7 @@
   parent: CMJobBase
   id: RuMCUPPSOFMachinegunner
   roundSide: ThirdParty
-  roundForce: UPP
+  roundForce: UPP_spetsnaz
   roundRole: RuMCUPPSOFMachinegunner
   roundComponents:
   - type: TacticalMapIcon

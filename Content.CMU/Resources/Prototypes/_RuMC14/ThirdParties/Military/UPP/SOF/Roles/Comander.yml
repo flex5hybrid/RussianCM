@@ -2,7 +2,7 @@
   parent: CMJobBase
   id: RuMCUPPSOFCommander
   roundSide: ThirdParty
-  roundForce: UPP
+  roundForce: UPP_spetsnaz
   roundRole: RuMCUPPSOFCommander
   roundComponents:
   - type: TacticalMapIcon

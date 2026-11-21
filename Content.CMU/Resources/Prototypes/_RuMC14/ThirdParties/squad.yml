@@ -42,7 +42,7 @@
     leaderIcon:
       sprite: _RMC14/Interface/cm_job_icons.rsi
       state: upp_lt
-    canSupplyDrop: false
+    canSupplyDrop: true
     group: VDV
   - type: Tag
     tags:
