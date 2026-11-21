@@ -20053,5 +20053,25 @@ Entries:
   url: https://github.com/flex5hybrid/RussianCM/pull/637
   labels:
   - S
+- author: Ritoka
+  time: '2026-11-21T12:07:10Z'
+  changes:
+  - type: Add
+    message: Добавлен переносной кассетный бумбокс с позиционным звуком.
+  - type: Admin
+    message: Добавлена административная кассета Ritoka для загрузки до трёх пользовательских
+      OGG-треков.
+  - type: Tweak
+    message: Загруженная музыка синхронизируется со всеми игроками, включая подключившихся
+      позднее.
+  - type: Fix
+    message: Добавлены серверные проверки файлов, дистанции взаимодействия и управления
+      бумбоксом.
+  id: 1167
+  url: https://github.com/flex5hybrid/RussianCM/pull/629
+  labels:
+  - 'Changes: Sprites'
+  - 'Changes: Translations'
+  - L
 Name: CMU
 Order: -1
