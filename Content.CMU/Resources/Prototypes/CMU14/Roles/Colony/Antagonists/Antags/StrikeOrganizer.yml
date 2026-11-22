@@ -2,7 +2,6 @@
   id: StrikeOrganizer
   prefRoles: [ StrikeOrganizerRole ]
   jobBlacklistGroup:
-  - RuMCColonyLeadershipJobs # RuMC edit
   - RuMCNoColonialAntagsJobs # RuMC edit
   - AllGovforJobs
   - AllOpforJobs
@@ -65,11 +64,18 @@
   id: AU14GearStrikeOrganizer
   equipment:
     back: AU14StrikeOrganizerBackpack
-    pocket1: CMUStrikePetition
+  # RuMC edit start
   storage:
     back:
+    - CMUStrikePetition
+    - RMCMegaphone
+    - RMCSpaceCash1000
+    - RMCSpaceCash1000
+    - RMCSpaceCash1000
+    - RMCSpaceCash1000
     - AUPaperStrikeOrganizer
     - RMCLighter
+  # RuMC edit end
 
 - type: entity
   parent: Paper
@@ -85,9 +91,3 @@
   id: AU14StrikeOrganizerBackpack
   name: organizer's radio pack
   description: A radio telephone pack carried by a labor organizer.
-  components:
-  - type: StorageFill
-    contents:
-    - id: RMCMegaphone
-    - id: RMCSpaceCash1000
-      amount: 4
