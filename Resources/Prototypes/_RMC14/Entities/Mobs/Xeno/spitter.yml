@@ -91,13 +91,13 @@
         Piercing: 12
   - type: CMArmor
     xenoArmor: 15
-    explosionArmor: 20
+    explosionArmor: 25 # RuMC edit
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 8.33
-        Slash: 8.33
-        Piercing: 8.34
+        Blunt: 10.8 # RuMC edit
+        Slash: 10.8 # RuMC edit
+        Piercing: 10.8 # RuMC edit
   - type: Tackle
     min: 2
     max: 6

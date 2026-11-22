@@ -127,9 +127,9 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 13.33
-        Slash: 13.33
-        Piercing: 13.34
+        Blunt: 17 # RuMC edit
+        Slash: 17 # RuMC edit
+        Piercing: 17 # RuMC edit
   - type: XenoTailStab
     tailDamage:
       types:

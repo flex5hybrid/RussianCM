@@ -48,7 +48,7 @@
     maxPlasma: 400
     plasmaRegenOnWeeds: 3
   - type: CMArmor
-    explosionArmor: 10
+    explosionArmor: 15 # RuMC edit
   - type: XenoEvolution
     canEvolveWithoutGranter: true
     max: 200
@@ -59,9 +59,9 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 7.5
-        Slash: 7.5
-        Piercing: 7.5
+        Blunt: 10 # RuMC edit
+        Slash: 10 # RuMC edit
+        Piercing: 10 # RuMC edit
   - type: DrawableSolution
     solution: blood
   - type: Solution
@@ -83,9 +83,9 @@
   - type: XenoTailStab
     tailDamage:
       types:
-        Blunt: 10
-        Slash: 10
-        Piercing: 10
+        Blunt: 12 # RuMC edit
+        Slash: 12 # RuMC edit
+        Piercing: 12 # RuMC edit
   - type: Tackle
     min: 4
     max: 4

@@ -45,20 +45,20 @@
     pheromonesMultiplier: 2.5
     pheroSuffix: hivelord
   - type: CMArmor
-    explosionArmor: 10
+    explosionArmor: 15 # RuMC edit
   - type: XenoResinWalker
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 7.5
-        Slash: 7.5
-        Piercing: 7.5
+        Blunt: 10 # RuMC edit
+        Slash: 10 # RuMC edit
+        Piercing: 10 # RuMC edit
   - type: XenoTailStab
     tailDamage:
       types:
-        Blunt: 10
-        Slash: 10
-        Piercing: 10
+        Blunt: 12 # RuMC edit
+        Slash: 12 # RuMC edit
+        Piercing: 12 # RuMC edit
   - type: Tackle
     max: 4
     chance: 0.45
