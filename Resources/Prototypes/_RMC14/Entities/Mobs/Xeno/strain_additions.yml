@@ -70,9 +70,9 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 7.5
-        Slash: 7.5
-        Piercing: 7.5
+        Blunt: 10 # RuMC edit
+        Slash: 10 # RuMC edit
+        Piercing: 10 # RuMC edit
   - type: XenoTailStab
     inject: {}
     tailDamage:
@@ -119,9 +119,9 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 7.5
-        Slash: 7.5
-        Piercing: 7.5
+        Blunt: 10 # RuMC edit
+        Slash: 10 # RuMC edit
+        Piercing: 10 # RuMC edit
   - type: XenoHidden
   - type: RMCActionOrder
     id: CMXenoSpitterAlchemist
@@ -225,9 +225,9 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 11.66
-        Slash: 11.67
-        Piercing: 11.67
+        Blunt: 15.66 # RuMC edit
+        Slash: 15.67 # RuMC edit
+        Piercing: 15.67 # RuMC edit
   - type: XenoTailStab
     tailDamage:
       types:

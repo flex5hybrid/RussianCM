@@ -88,15 +88,15 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 13.33
-        Slash: 13.33
-        Piercing: 13.34
+        Blunt: 17 # RuMC edit
+        Slash: 17 # RuMC edit
+        Piercing: 17 # RuMC edit
   - type: XenoTailStab
     tailDamage:
       types:
-        Blunt: 16
-        Slash: 16
-        Piercing: 16
+        Blunt: 18 # RuMC edit
+        Slash: 18 # RuMC edit
+        Piercing: 18 # RuMC edit
   - type: Tackle
     chance: 0.45
   - type: Fixtures
@@ -390,9 +390,9 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 10
-        Slash: 10
-        Piercing: 10
+        Blunt: 13 # RuMC edit
+        Slash: 13 # RuMC edit
+        Piercing: 13 # RuMC edit
   - type: XenoStrain
     name: rmc-xeno-oppressor-name
     baseCaste: CMXenoPraetorian # CMU14: allow returning to the unstrained caste.

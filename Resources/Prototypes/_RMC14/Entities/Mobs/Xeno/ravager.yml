@@ -100,9 +100,9 @@
     attackRate: 1.05
     damage:
       types:
-        Blunt: 15
-        Slash: 15
-        Piercing: 15
+        Blunt: 19.5 # RuMC edit
+        Slash: 19.5 # RuMC edit
+        Piercing: 19.5 # RuMC edit
   - type: XenoTailStab
     tailDamage:
       types:
@@ -370,15 +370,15 @@
     attackRate: 0.9
     damage:
       types:
-        Blunt: 11.66
-        Slash: 11.67
-        Piercing: 11.67
+        Blunt: 15.66 # RuMC edit
+        Slash: 15.67 # RuMC edit
+        Piercing: 15.67 # RuMC edit
   - type: XenoTailStab
     tailDamage:
       types:
-        Blunt: 16
-        Slash: 16
-        Piercing: 16
+        Blunt: 17 # RuMC edit
+        Slash: 17 # RuMC edit
+        Piercing: 17 # RuMC edit
   - type: XenoClaws
     clawType: VerySharp
   - type: XenoSpikeShield
