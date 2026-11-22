@@ -2,7 +2,6 @@
   id: CLFSaboteur
   prefRoles: [ CLFSaboteurRole ]
   jobBlacklistGroup:
-  - RuMCColonyLeadershipJobs # RuMC edit
   - RuMCNoColonialAntagsJobs # RuMC edit
   - AllGovforJobs
   - AllOpforJobs
@@ -95,12 +94,13 @@
 - type: entity
   parent: CMSatchel
   id: CMUSatchelCLF
-  suffix: CLF Saboteur
+  suffix: Huge # RuMC edit
   components:
   - type: IgnoreContentsSize
     items:
       sizes:
       - Large
+      - Huge # RuMC edit
   - type: Storage
     grid:
     - 0,0,19,3

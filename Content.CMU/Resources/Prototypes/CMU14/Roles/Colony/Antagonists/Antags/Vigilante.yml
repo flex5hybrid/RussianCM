@@ -2,8 +2,8 @@
   id: Vigilante
   prefRoles: [ VigilanteRole ]
   jobBlacklistGroup:
-  - RuMCColonyLeadershipJobs # RuMC edit
   - RuMCNoColonialAntagsJobs # RuMC edit
+  - RuMCLawJobs # RuMC edit
   - AllGovforJobs
   - AllOpforJobs
   - AllCLFJobs
@@ -63,11 +63,33 @@
 
 - type: startingGear
   id: CMUGearVigilante
-  equipment:
-    head: AU14HeadBeanieclava
-    suitstorage: CMUBaseballBatVigilante
-    pocket1: RMCZipties
-    pocket2: RMCZipties
+  # RuMC edit start
+  storage:
+    back:
+    - RuMCCaseVigilanteKit
+  # RuMC edit end
+
+# RuMC edit start
+- type: entity
+  parent: RMCGunCaseBase
+  id: RuMCCaseVigilanteKit
+  suffix: Vigilante
+  name: worn keepsake case
+  description: A scuffed personal case that has clearly traveled a long way. The lock is worn from daily use.
+  components:
+  - type: Item
+    size: Normal
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,7,1
+  - type: StorageFill
+    contents:
+    - id: RMCMaskBalaclavaSkullBlack
+    - id: CMUBaseballBatVigilante
+    - id: RMCZipties
+      amount: 2
+# RuMC edit end
 
 - type: entity
   parent: RMCBaseballBatMetal

@@ -18,7 +18,6 @@
   id: WeylandYutaniAgent
   prefRoles: [ WeylandYutaniAgentRole ]
   jobBlacklistGroup:
-  - RuMCColonyLeadershipJobs # RuMC edit
   - RuMCNoColonialAntagsJobs # RuMC edit
   - AllGovforJobs
   - AllOpforJobs
@@ -79,20 +78,55 @@
 
 - type: startingGear
   id: CMUGearWeylandYutaniAgent
-  equipment:
-    pocket1: CMUIDCardWYAgent
-    pocket2: CMUCorporateDataLink
+  # RuMC edit start
   storage:
     back:
+    - RuMCCaseWYAgentKit
     - CMUPaperWantedWYOperative
     - RMCLighter
+  # RuMC edit end
+
+# RuMC edit start
+- type: entity
+  parent: RMCGunCaseBase
+  id: RuMCCaseWYAgentKit
+  suffix: Weyland-Yutani Agent
+  name: worn keepsake case
+  description: A scuffed personal case that has clearly traveled a long way. The lock is worn from daily use.
+  components:
+  - type: Item
+    size: Normal
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,7,3
+  - type: StorageFill
+    contents:
+    - id: CMUIDCardWYAgent
+    - id: CMUCorporateDataLink
+    - id: RuMCWeaponPistolM77WY
+    - id: CMMagazinePistolM77AP
+      amount: 4
+    - id: ClothingHandsGlovesNitrile
+
+- type: entity
+  parent: RMCWeaponPistolM77
+  id: RuMCWeaponPistolM77WY
+  suffix: WY Agent
+  components:
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-barrel:
+        startingAttachable: RMCAttachmentSuppressor
+      rmc-aslot-underbarrel:
+        startingAttachable: RMCAttachmentLaserSight
+  # RuMC edit end
 
 # ├──[ Corporate Spy ]───────────────────────────────────────────────┤
 - type: antagSpecifier
   id: CorporateSpy
   prefRoles: [ CorporateSpyRole ]
   jobBlacklistGroup:
-  - RuMCColonyLeadershipJobs # RuMC edit
   - RuMCNoColonialAntagsJobs # RuMC edit
   - AllGovforJobs
   - AllOpforJobs
@@ -157,12 +191,50 @@
 
 - type: startingGear
   id: AU14GearCorporateSpy
-  equipment:
-    pocket1: AU14IDCardCorporateSpy
-    pocket2: CMUCorporateDataLink
+  # RuMC edit start
   storage:
     back:
+    - RuMCCaseSpyKit
     - CMUPaperWantedCorporateSpy
+  # RuMC edit end
+
+# RuMC edit start
+- type: entity
+  parent: RMCGunCaseBase
+  id: RuMCCaseSpyKit
+  suffix: Corporate Spy
+  name: worn keepsake case
+  description: A scuffed personal case that has clearly traveled a long way. The lock is worn from daily use.
+  components:
+  - type: Item
+    size: Normal
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,9,3
+  - type: StorageFill
+    contents:
+    - id: AU14IDCardCorporateSpy
+    - id: CMUCorporateDataLink
+    - id: RuMCWeaponPistolM4A4Spy
+    - id: RMCMagazinePistolM1984HP
+    - id: RMCMagazinePistolM1984AP
+    - id: CMMagazinePistolM1984
+      amount: 4
+    - id: ClothingHandsGlovesNitrile
+
+- type: entity
+  parent: AU14WeaponPistolM4A4
+  id: RuMCWeaponPistolM4A4Spy
+  suffix: Corporate Spy
+  components:
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-barrel:
+        startingAttachable: RMCAttachmentSuppressor
+      rmc-aslot-underbarrel:
+        startingAttachable: RMCAttachmentLaserSight
+  # RuMC edit end
 
 - type: entity
   parent: BaseItem
