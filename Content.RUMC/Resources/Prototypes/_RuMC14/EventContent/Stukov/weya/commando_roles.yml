@@ -1,66 +1,4 @@
-﻿- type: playTimeTracker
-  id: RuMCWeYaCommando
-
-- type: jobIcon
-  parent: CMJobIconBase
-  id: RuMCJobIconPMCWeYaCommando
-  icon:
-    sprite: _RuMC14/EventContent/Stukov/weya/icons.rsi 
-    state: strelok
-
-- type: startingGear
-  id: RuMCJobPMCWeYaCommando
-  equipment:
-    id: RMCIDCardPMC
-    jumpsuit: RuMCJumpsuitVeteranPMCCommandoWeYu
-    outerClothing: RuMCArmorM4PMCCommandoWeYa
-    gloves: AU14HandsSilverRMC
-    head: RuMCArmorHelmetPMCCommandoWeYa
-    shoes: RMCBootsPMCCommandoFilled
-    mask: RMCMaskCoifPMC
-    ears: AU14ColonyWeylandHeadset
-    back: RuMCSatchelCommadoWeYa
-    belt: RMCBeltPMC
-    pocket1: RMCPouchToolsSocMarineRaiderFill
-    pocket2: RMCPouchMedicalSocDutchUnmarked
-    suitstorage: RMCWeaponRifleM54C2Whiteout
-    eyes: RuMCGlassesM4WeYa
-  storage:
-    back:
-    - CMStunbaton
-    - RMCMotionDetector
-    - RMCBoxZiptie
-    - RMCRadioHandheldColonyOff
-    - CMRollerBedSpawnFolded
-    - RMCSynthResetKeySMART
-    - AU14CMDefibrillator
-    - RuMCCommandoWeYaAidKitFilled
-    outerClothing:
-    - RMCMagazineRifleM54CHEAP
-    - RMCMagazineRifleM54CHEAP
-    - RMCMagazineRifleM54CHEAP
-    - RMCMagazineRifleM54CHEAP
-    belt:
-    - RMCMagazineRifleM54CHEAP
-    - RMCMagazineRifleM54CHEAP
-    - RMCMagazineRifleM54CIncendiary
-    - RMCMagazineRifleM54CIncendiary
-    - RMCMagazineRifleM54CIncendiary
-    pocket2:
-    - CMHealthAnalyzer
-    - CMUpgradedTraumaKit10
-    - CMUpgradedTraumaKit10
-    - CMUpgradedBurnKit10
-    - CMUpgradedBurnKit10
-    - AU14PillCanisterOsteoCalc
-    - RMCPillCanisterMeralyneBicaridine
-    - AU14PillCanisterMeralyne
-    - CMPillCanisterKelotaneDermaline
-    - AU14PillCanisterDermaline
-    - CMTricordrazineAutoInjector
-    - AU14PillCanisterOxycodone
-    - CMDexalinPlusAutoInjector
-
+﻿
 - type: job
   parent: CMJobBase
   id: RuMCWeYaCommando
@@ -134,38 +72,44 @@
     raffle:
       settings: short
 
-- type: Tag
-  id: RuMCJobPMCWeYaCommando
-
 - type: startingGear
-  id: RuMCJobPMCWeYaCommandoSmart
+  id: RuMCJobPMCWeYaCommando
   equipment:
     id: RMCIDCardPMC
-    jumpsuit: RuMCJumpsuitVeteranPMCCommandoWeYuSG
-    outerClothing: RuMCArmorM4PMCCommandoWeYaSmart
+    jumpsuit: RuMCJumpsuitVeteranPMCCommandoWeYu
+    outerClothing: RuMCArmorM4PMCCommandoWeYa
     gloves: AU14HandsSilverRMC
-    head: RuMCArmorHelmetPMCCommandoWeYaSmart
+    head: RuMCArmorHelmetPMCCommandoWeYa
     shoes: RMCBootsPMCCommandoFilled
     mask: RMCMaskCoifPMC
     ears: AU14ColonyWeylandHeadset
-    back: RMCScabbardMacheteSGFilled
-    belt: RMCBeltSmartGunOperatorPistolPMC
-    pocket1: RMCPouchDrumPMCFill
+    back: RuMCSatchelCommadoWeYa
+    belt: RMCBeltPMC
+    pocket1: RMCPouchToolsSocMarineRaiderFill
     pocket2: RMCPouchMedicalSocDutchUnmarked
-    suitstorage: RuMCSmartGunWeYaCommando
-    eyes: RMCGlassesSmartGunSight
+    suitstorage: RMCWeaponRifleM54C2Whiteout
+    eyes: RuMCGlassesM4WeYa
   storage:
+    back:
+    - CMStunbaton
+    - RMCMotionDetector
+    - RMCBoxZiptie
+    - RMCRadioHandheldColonyOff
+    - CMRollerBedSpawnFolded
+    - RMCSynthResetKeySMART
+    - AU14CMDefibrillator
+    - RuMCCommandoWeYaAidKitFilled
     outerClothing:
-    - RMCPowerCellSmartgun
-    - RMCPowerCellSmartgun
-    - CMMagazinePistolMK80
-    - CMMagazinePistolMK80
+    - RMCMagazineRifleM54CHEAP
+    - RMCMagazineRifleM54CHEAP
+    - RMCMagazineRifleM54CHEAP
+    - RMCMagazineRifleM54CHEAP
     belt:
-    - RMCMagazineSmartGunirradiated
-    - RMCMagazineSmartGunirradiated
-    - RMCMagazineSmartGunirradiated
-    - RMCMagazineSmartGunirradiated
-    - RuMCMK80Commando
+    - RMCMagazineRifleM54CHEAP
+    - RMCMagazineRifleM54CHEAP
+    - RMCMagazineRifleM54CIncendiary
+    - RMCMagazineRifleM54CIncendiary
+    - RMCMagazineRifleM54CIncendiary
     pocket2:
     - CMHealthAnalyzer
     - CMUpgradedTraumaKit10
@@ -180,6 +124,16 @@
     - CMTricordrazineAutoInjector
     - AU14PillCanisterOxycodone
     - CMDexalinPlusAutoInjector
+
+- type: playTimeTracker
+  id: RuMCWeYaCommando
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RuMCJobIconPMCWeYaCommando
+  icon:
+    sprite: _RuMC14/EventContent/Stukov/weya/icons.rsi 
+    state: strelok
 
 - type: job
   parent: CMJobBase
@@ -251,57 +205,40 @@
     allowMovement: true
     name: WY Commando Smartgunner
     description: au14-pmcparty-description
+    reregister: false
     job: RuMCWeYaCommandoSmart
     raffle:
       settings: short
 
-- type: playTimeTracker
-  id: RuMCWeYaCommandoSmart
-
-- type: jobIcon
-  parent: CMJobIconBase
-  id: RuMCJobIconPMCWeYaCommandoSmart
-  icon:
-    sprite: _RuMC14/EventContent/Stukov/weya/icons.rsi
-    state: smart
-
 - type: startingGear
-  id: RuMCJobPMCWeYaCommandoDogCatcher
+  id: RuMCJobPMCWeYaCommandoSmart
   equipment:
     id: RMCIDCardPMC
-    jumpsuit: RuMCJumpsuitVeteranPMCCommandoWeYa
-    outerClothing: RuMCArmorM4PMCCommandoWeYaDogCatcher
+    jumpsuit: RuMCJumpsuitVeteranPMCCommandoWeYuSG
+    outerClothing: RuMCArmorM4PMCCommandoWeYaSmart
     gloves: AU14HandsSilverRMC
-    head: RuMCArmorHelmetPMCCommandoWeYaDogCatcher
+    head: RuMCArmorHelmetPMCCommandoWeYaSmart
     shoes: RMCBootsPMCCommandoFilled
     mask: RMCMaskCoifPMC
     ears: AU14ColonyWeylandHeadset
-    back: RuMCSatchelCommadoWeYaDogCatcher
-    belt: RMCBeltPMC
-    pocket1: RMCPouchToolsSocMarineRaiderFill
+    back: RMCScabbardMacheteSGFilled
+    belt: RMCBeltSmartGunOperatorPistolPMC
+    pocket1: RMCPouchDrumPMCFill
     pocket2: RMCPouchMedicalSocDutchUnmarked
-    suitstorage: RMCWeaponRifleM54C2
-    eyes: RuMCGlassesM4WeYa
+    suitstorage: RuMCSmartGunWeYaCommando
+    eyes: RMCGlassesSmartGunSight
   storage:
-    back:
-    - CMStunbaton
-    - RMCMotionDetector
-    - RMCBoxZiptie
-    - RMCRadioHandheldColonyOff
-    - CMRollerBedSpawnFolded
-    - RMCSynthResetKeySMART
-    - AU14CMDefibrillator
-    - RuMCCommandoWeYaAidKitFilled
     outerClothing:
-    - CMMagazineRifleM54CAP
-    - CMMagazineRifleM54CAP
-    - CMMagazineRifleM54CAP
+    - RMCPowerCellSmartgun
+    - RMCPowerCellSmartgun
+    - CMMagazinePistolMK80
+    - CMMagazinePistolMK80
     belt:
-    - CMMagazineRifleM54CExt
-    - CMMagazineRifleM54CExt
-    - CMMagazineRifleM54CExt
-    - RMCMagazineRifleM54CIncendiary
-    - RMCMagazineRifleM54CIncendiary
+    - RMCMagazineSmartGunirradiated
+    - RMCMagazineSmartGunirradiated
+    - RMCMagazineSmartGunirradiated
+    - RMCMagazineSmartGunirradiated
+    - RuMCMK80Commando
     pocket2:
     - CMHealthAnalyzer
     - CMUpgradedTraumaKit10
@@ -316,6 +253,16 @@
     - CMTricordrazineAutoInjector
     - AU14PillCanisterOxycodone
     - CMDexalinPlusAutoInjector
+
+- type: playTimeTracker
+  id: RuMCWeYaCommandoSmart
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RuMCJobIconPMCWeYaCommandoSmart
+  icon:
+    sprite: _RuMC14/EventContent/Stukov/weya/icons.rsi
+    state: smart
 
 - type: job
   parent: CMJobBase
@@ -386,59 +333,48 @@
     allowMovement: true
     name: WY Commando Dog Catcher
     description: au14-pmcparty-description
+    reregister: false
     job: RuMCWeYaCommandoDogCatcher
     raffle:
       settings: short
 
-- type: playTimeTracker
-  id: RuMCWeYaCommandoDogCatcher
-
-- type: jobIcon
-  parent: CMJobIconBase
-  id: RuMCJobIconPMCWeYaCommandoDogCatcher
-  icon:
-    sprite: _RuMC14/EventContent/Stukov/weya/icons.rsi
-    state: dogcatcher
-
 - type: startingGear
-  id: RuMCJobPMCWeYaCommandoLeader
+  id: RuMCJobPMCWeYaCommandoDogCatcher
   equipment:
     id: RMCIDCardPMC
-    jumpsuit: RuMCJumpsuitVeteranPMCCommandoWeYuSL
-    outerClothing: RuMCArmorM4PMCCommandoWeYaLeader
-    gloves: RMCHandsVeteran
-    head: RuMCArmorHelmetPMCCommandoWeYaLeader
+    jumpsuit: RuMCJumpsuitVeteranPMCCommandoWeYa
+    outerClothing: RuMCArmorM4PMCCommandoWeYaDogCatcher
+    gloves: AU14HandsSilverRMC
+    head: RuMCArmorHelmetPMCCommandoWeYaDogCatcher
     shoes: RMCBootsPMCCommandoFilled
     mask: RMCMaskCoifPMC
     ears: AU14ColonyWeylandHeadset
-    back: RuMCSatchelCommadoWeYaLeader
-    belt: RMCMatebaBeltLuxurious
+    back: RuMCSatchelCommadoWeYaDogCatcher
+    belt: RMCBeltPMC
     pocket1: RMCPouchToolsSocMarineRaiderFill
     pocket2: RMCPouchMedicalSocDutchUnmarked
-    suitstorage: RMCWeaponRifleM54C2Whiteout
+    suitstorage: RMCWeaponRifleM54C2
     eyes: RuMCGlassesM4WeYa
   storage:
     back:
-    - AU14TeleBaton
+    - CMStunbaton
     - RMCMotionDetector
-    - RMCMagazineRifleM54CHEAP
-    - RMCMagazineRifleM54CHEAP
+    - RMCBoxZiptie
+    - RMCRadioHandheldColonyOff
+    - CMRollerBedSpawnFolded
     - RMCSynthResetKeySMART
     - AU14CMDefibrillator
     - RuMCCommandoWeYaAidKitFilled
     outerClothing:
-    - RMCMagazineRifleM54CHEAP
-    - RMCMagazineRifleM54CHEAP
-    - RMCMagazineRifleM54CHEAP
-    - RMCMagazineRifleM54CHEAP
+    - CMMagazineRifleM54CAP
+    - CMMagazineRifleM54CAP
+    - CMMagazineRifleM54CAP
     belt:
-    - RMCSpeedLoaderMatebaHighImpact
-    - RMCSpeedLoaderMatebaHighImpact
-    - RMCSpeedLoaderMatebaHighImpact
-    - RMCSpeedLoaderMatebaHIAP
-    - RMCSpeedLoaderMatebaHIAP
-    - RMCSpeedLoaderMatebaHIAP
-    - RuMCWeaponRevolverMatebaCommando
+    - CMMagazineRifleM54CExt
+    - CMMagazineRifleM54CExt
+    - CMMagazineRifleM54CExt
+    - RMCMagazineRifleM54CIncendiary
+    - RMCMagazineRifleM54CIncendiary
     pocket2:
     - CMHealthAnalyzer
     - CMUpgradedTraumaKit10
@@ -453,6 +389,16 @@
     - CMTricordrazineAutoInjector
     - AU14PillCanisterOxycodone
     - CMDexalinPlusAutoInjector
+
+- type: playTimeTracker
+  id: RuMCWeYaCommandoDogCatcher
+
+- type: jobIcon
+  parent: CMJobIconBase
+  id: RuMCJobIconPMCWeYaCommandoDogCatcher
+  icon:
+    sprite: _RuMC14/EventContent/Stukov/weya/icons.rsi
+    state: dogcatcher
 
 - type: job
   parent: CMJobBase
@@ -533,9 +479,64 @@
     allowMovement: true
     name: WY Commando leader
     description: au14-pmcparty-description
+    reregister: false
     job: RuMCWeYaCommandoLeader
     raffle:
       settings: short
+
+- type: startingGear
+  id: RuMCJobPMCWeYaCommandoLeader
+  equipment:
+    id: RMCIDCardPMC
+    jumpsuit: RuMCJumpsuitVeteranPMCCommandoWeYuSL
+    outerClothing: RuMCArmorM4PMCCommandoWeYaLeader
+    gloves: RMCHandsVeteran
+    head: RuMCArmorHelmetPMCCommandoWeYaLeader
+    shoes: RMCBootsPMCCommandoFilled
+    mask: RMCMaskCoifPMC
+    ears: AU14ColonyWeylandHeadset
+    back: RuMCSatchelCommadoWeYaLeader
+    belt: RMCMatebaBeltLuxurious
+    pocket1: RMCPouchToolsSocMarineRaiderFill
+    pocket2: RMCPouchMedicalSocDutchUnmarked
+    suitstorage: RMCWeaponRifleM54C2Whiteout
+    eyes: RuMCGlassesM4WeYa
+  storage:
+    back:
+    - AU14TeleBaton
+    - RMCMotionDetector
+    - RMCMagazineRifleM54CHEAP
+    - RMCMagazineRifleM54CHEAP
+    - RMCSynthResetKeySMART
+    - AU14CMDefibrillator
+    - RuMCCommandoWeYaAidKitFilled
+    outerClothing:
+    - RMCMagazineRifleM54CHEAP
+    - RMCMagazineRifleM54CHEAP
+    - RMCMagazineRifleM54CHEAP
+    - RMCMagazineRifleM54CHEAP
+    belt:
+    - RMCSpeedLoaderMatebaHighImpact
+    - RMCSpeedLoaderMatebaHighImpact
+    - RMCSpeedLoaderMatebaHighImpact
+    - RMCSpeedLoaderMatebaHIAP
+    - RMCSpeedLoaderMatebaHIAP
+    - RMCSpeedLoaderMatebaHIAP
+    - RuMCWeaponRevolverMatebaCommando
+    pocket2:
+    - CMHealthAnalyzer
+    - CMUpgradedTraumaKit10
+    - CMUpgradedTraumaKit10
+    - CMUpgradedBurnKit10
+    - CMUpgradedBurnKit10
+    - AU14PillCanisterOsteoCalc
+    - RMCPillCanisterMeralyneBicaridine
+    - AU14PillCanisterMeralyne
+    - CMPillCanisterKelotaneDermaline
+    - AU14PillCanisterDermaline
+    - CMTricordrazineAutoInjector
+    - AU14PillCanisterOxycodone
+    - CMDexalinPlusAutoInjector
 
 - type: playTimeTracker
   id: RuMCWeYaCommandoLeader
@@ -546,43 +547,6 @@
   icon:
     sprite: _RuMC14/EventContent/Stukov/weya/icons.rsi
     state: leader
-
-- type: startingGear
-  id: RuMCGearWYBWScientist
-  equipment:
-    id: AU14IDCardCivilianScientist
-    jumpsuit: RuMCWYBWJumpsuit
-    head: RuMCBioHelmetBW
-    belt: RMCBeltHolsterPistolWeYa
-    shoes: RMCShoesWhite
-    ears: AU14ColonyWeylandHeadset
-    outerClothing: RuMCBWLabcoat
-    eyes: RuMCGlassesBW
-    gloves: CMHandsLatex
-    back: CMSatchelSecureStandard
-    pocket1: AU14PouchAutoinjectorFilledMilitaryDoctor
-    pocket2: RMCPouchMedkitPMCFullAdvanced
-  storage:
-    back:
-    - CMHealthAnalyzer
-    - CMPenClicky
-    - RMCGlassesReagentHUDGlasses
-    - RMCGlassesMedicalHUDGlasses
-    - AU14CMDefibrillator
-    - RuMCCommandoWeYaAidKitFilled
-    - RMCSpaceCash1000
-    - RMCSpaceCash1000
-    outerClothing:
-    - CMFolderWhite
-    - CMMaskSterile
-    belt:
-    - RMCWeaponPistolPK7
-    - RMCMagazinePistolPK7
-    - RMCMagazinePistolPK7
-    - RMCMagazinePistolPK7
-    - RMCMagazinePistolPK7
-    - RMCMagazinePistolPK7
-    - RMCMagazinePistolPK7
 
 - type: job
   parent: CMJobBase
@@ -645,19 +609,16 @@
       settings: short
     rules: Obey the orders of the directive.
 
-- type: playTimeTracker
-  id: RuMCJobWYBWScientist
-
 - type: startingGear
-  id: RuMCGearWYBWDirector
+  id: RuMCGearWYBWScientist
   equipment:
     id: AU14IDCardCivilianScientist
     jumpsuit: RuMCWYBWJumpsuit
     head: RuMCBioHelmetBW
-    belt: RMCBeltHolsterPistolWeYaMK80Fill
+    belt: RMCBeltHolsterPistolWeYa
     shoes: RMCShoesWhite
     ears: AU14ColonyWeylandHeadset
-    outerClothing: RuMCBWLabcoatDir
+    outerClothing: RuMCBWLabcoat
     eyes: RuMCGlassesBW
     gloves: CMHandsLatex
     back: CMSatchelSecureStandard
@@ -676,8 +637,17 @@
     outerClothing:
     - CMFolderWhite
     - CMMaskSterile
-  inhand:
-  - RuMCBriefcaseBW
+    belt:
+    - RMCWeaponPistolPK7
+    - RMCMagazinePistolPK7
+    - RMCMagazinePistolPK7
+    - RMCMagazinePistolPK7
+    - RMCMagazinePistolPK7
+    - RMCMagazinePistolPK7
+    - RMCMagazinePistolPK7
+
+- type: playTimeTracker
+  id: RuMCJobWYBWScientist
 
 - type: job
   parent: CMJobBase
@@ -710,7 +680,7 @@
   description: You are the director of the scientific group in the Bio‑Weapon Department; report to the senior corporate employee and study the xenomorph.
   playTimeTracker: RuMCJobWYBWDirector
   ranks:
-    AU14RankPrDRegionDirector: []
+    RMCRankWeYaDirector: []
   spawnMenuRoleName: WY BW Director (3rd party)
   startingGear: RuMCGearWYBWDirector
   greeting: au14-wyht-greeting
@@ -742,30 +712,39 @@
       settings: short
     rules: Obey the orders of the directive.
 
-- type: playTimeTracker
-  id: RuMCJobWYBWDirector
-
 - type: startingGear
-  id: RuMCGearWYOperator
+  id: RuMCGearWYBWDirector
   equipment:
-    id: RMCIDCardPMC
-    jumpsuit: RuMCJumpsuitVeteranPMCCommandoWeYa
-    head: AU14WYPMCBallCap
+    id: AU14IDCardCivilianScientist
+    jumpsuit: RuMCWYBWJumpsuit
+    head: RuMCBioHelmetBW
     belt: RMCBeltHolsterPistolWeYaMK80Fill
-    shoes: RMCBootsPMCCommandoFilled
+    shoes: RMCShoesWhite
     ears: AU14ColonyWeylandHeadset
-    outerClothing: AU14CivilianJacketSnowSuit
-    gloves: RMCHandsVeteranSPP
-    back: RMCSatchelLightpackWeYa
-    pocket1: AU14PouchIFAKFill
+    outerClothing: RuMCBWLabcoatDir
+    eyes: RuMCGlassesBW
+    gloves: CMHandsLatex
+    back: CMSatchelSecureStandard
+    pocket1: AU14PouchAutoinjectorFilledMilitaryDoctor
+    pocket2: RMCPouchMedkitPMCFullAdvanced
   storage:
     back:
-    - CMFolderWhite
+    - CMHealthAnalyzer
     - CMPenClicky
+    - RMCGlassesReagentHUDGlasses
+    - RMCGlassesMedicalHUDGlasses
+    - AU14CMDefibrillator
+    - RuMCCommandoWeYaAidKitFilled
+    - RMCSpaceCash1000
+    - RMCSpaceCash1000
+    outerClothing:
+    - CMFolderWhite
     - CMMaskSterile
-    - RMCFoodSnackCheeseburgerPackaged
   inhand:
-  - RMCCameraBroadcasting
+  - RuMCBriefcaseBW
+
+- type: playTimeTracker
+  id: RuMCJobWYBWDirector
 
 - type: job
   parent: CMJobBase
@@ -789,7 +768,7 @@
       tags:
       - SquadPMC
 
-  name: Bi-oweapons Department Operator
+  name: Bio-Weapons Department Operator
   description: You are an operator of the scientific team in the Bio‑Weapon Department; report to the senior corporate employee and study the xenomorph.
   playTimeTracker: RuMCJobWYOperator
   ranks:
@@ -824,6 +803,28 @@
     raffle:
       settings: short
     rules: Obey the orders of the directive.
+
+- type: startingGear
+  id: RuMCGearWYOperator
+  equipment:
+    id: RMCIDCardPMC
+    jumpsuit: RuMCJumpsuitVeteranPMCCommandoWeYa
+    head: AU14WYPMCBallCap
+    belt: RMCBeltHolsterPistolWeYaMK80Fill
+    shoes: RMCBootsPMCCommandoFilled
+    ears: AU14ColonyWeylandHeadset
+    outerClothing: AU14CivilianJacketSnowSuit
+    gloves: RMCHandsVeteranSPP
+    back: RMCSatchelLightpackWeYa
+    pocket1: AU14PouchIFAKFill
+  storage:
+    back:
+    - CMFolderWhite
+    - CMPenClicky
+    - CMMaskSterile
+    - RMCFoodSnackCheeseburgerPackaged
+  inhand:
+  - RMCCameraBroadcasting
 
 - type: playTimeTracker
   id: RuMCJobWYOperator

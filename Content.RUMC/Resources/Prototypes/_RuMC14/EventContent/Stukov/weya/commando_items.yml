@@ -24,6 +24,9 @@
     leaderIcon:
       sprite: _RuMC14/EventContent/Stukov/weya/icons.rsi 
       state: leader
+  - type: Tag
+    tags:
+    - SquadWeYaCommando
 
 - type: Tag
   id: SquadWeYaCommando
@@ -368,7 +371,7 @@
 - type: entity
   parent: CMFirstAidKit
   id: RuMCCommandoWeYaAidKitFilled
-  name: weyland‑Yutani first‑aid kit
+  name: Weyland‑Yutani first‑aid kit
   description: Belongs to some special unit. If you have medical training, you will be able to fit it in your backpack.
   components:
   - type: Sprite
