@@ -20073,5 +20073,22 @@ Entries:
   - 'Changes: Sprites'
   - 'Changes: Translations'
   - L
+- author: RomiGur
+  time: '2026-11-22T13:39:00Z'
+  changes:
+  - type: Tweak
+    message: Руководство колонии/послы/синтетики не могут стать колониальными антагонистами.
+  - type: Tweak
+    message: Заместитель маршала БКМ/констебль ПДСН не могут стать серийным убийцей/каннибалом/охотником
+      за головами/карателем
+  - type: Add
+    message: Охотник за головами/пироман/каратель/агент Вейланд-Ютани/корпоративный
+      шпион получают снаряжение в кейсе
+  id: 1168
+  url: https://github.com/flex5hybrid/RussianCM/pull/639
+  labels:
+  - 'Changes: No C#'
+  - 'Changes: Translations'
+  - M
 Name: CMU
 Order: -1
