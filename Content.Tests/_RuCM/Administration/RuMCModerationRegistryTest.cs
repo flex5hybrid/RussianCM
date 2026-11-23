@@ -47,6 +47,16 @@ public sealed class RuMCModerationRegistryTest : ContentUnitTest
         var time = DateTime.UtcNow;
         await db.UpdatePlayerRecord(target, "Player", IPAddress.Loopback, null);
         await db.UpdatePlayerRecord(admin, "Moderator", IPAddress.Loopback, null);
+        const ulong discordId = 123456789012345678;
+        context.RMCDiscordAccounts.Add(new RMCDiscordAccount { Id = discordId });
+        context.RMCLinkedAccounts.Add(new RMCLinkedAccount { PlayerId = target.UserId, DiscordId = discordId });
+        await context.SaveChangesAsync();
+
+        var missing = Guid.NewGuid();
+        var accounts = await db.GetModerationAccounts([target.UserId, admin.UserId, missing]);
+        Assert.That(accounts[target.UserId], Is.EqualTo(new RuMCModerationAccount("Player", discordId)));
+        Assert.That(accounts[admin.UserId], Is.EqualTo(new RuMCModerationAccount("Moderator", null)));
+        Assert.That(accounts.ContainsKey(missing), Is.False);
         var warning = new AdminMessage
         {
             PlayerUserId = target.UserId,
@@ -119,9 +129,10 @@ public sealed class RuMCModerationRegistryTest : ContentUnitTest
         Assert.That(stranded.Single(entry => entry.FailedAt != null).Id, Is.EqualTo(failed.Id));
     }
 
-    [TestCase("en-US", "Chat ban", "Channels", "Dead, OOC")]
-    [TestCase("ru-RU", "Блокировка чата", "Каналы", "Мёртвые, ООС")]
-    public void FormatsLocalizedChatBansWithSafeReasons(string language, string title, string channelsLabel, string channels)
+    [TestCase("en-US", "Chat ban", "Channels", "Dead, OOC", "Discord profile", "Discord account not linked")]
+    [TestCase("ru-RU", "Блокировка чата", "Каналы", "Мёртвые, ООС", "Профиль Discord", "Discord не привязан")]
+    public void FormatsLocalizedChatBansWithSafeReasons(
+        string language, string title, string channelsLabel, string channels, string profileLabel, string unlinkedLabel)
     {
         var folder = new DirectoryInfo(TestContext.CurrentContext.TestDirectory);
         while (folder != null && !Directory.Exists(Path.Combine(folder.FullName, "Content.RUMC", "Resources", "Locale")))
@@ -141,14 +152,32 @@ public sealed class RuMCModerationRegistryTest : ContentUnitTest
         loc.SetCulture(culture);
 
         var reason = "@everyone **reason** " + new string('x', 4096);
+        var first = Guid.NewGuid();
+        var second = Guid.NewGuid();
+        var unlinked = Guid.NewGuid();
+        var admin = Guid.NewGuid();
+        var accounts = new Dictionary<Guid, RuMCModerationAccount>
+        {
+            [first] = new("Pilot", 123456789012345678),
+            [second] = new("Scout", 234567890123456789),
+            [unlinked] = new("Marine", null),
+            [admin] = new("Moderator", 345678901234567890),
+        };
         var payload = RuMCModerationEmbed.Build(new RuMCModerationRecord(
-            RuMCModerationKind.ChatBan, [], null, reason, DateTime.UtcNow, null, [],
-            ChatChannels: ChatType.Dead | ChatType.Ooc), Guid.Empty, new Dictionary<Guid, string>(), "RuCM", loc);
+            RuMCModerationKind.ChatBan, [first, second, unlinked], admin, reason, DateTime.UtcNow, null, [],
+            ChatChannels: ChatType.Dead | ChatType.Ooc), Guid.Empty, accounts, "RuCM", loc);
         var embed = payload.Embeds!.Single();
 
         Assert.That(payload.AllowedMentions.Parse, Is.Empty);
         Assert.That(embed.Title, Is.EqualTo(title));
         Assert.That(embed.Fields.Single(field => field.Name == channelsLabel).Value, Is.EqualTo(channels));
+        Assert.That(embed.Fields[0].Value.Split('\n'), Is.EqualTo(new[]
+        {
+            $"Pilot ({first}) · [{profileLabel}](https://discord.com/users/123456789012345678)",
+            $"Scout ({second}) · [{profileLabel}](https://discord.com/users/234567890123456789)",
+            $"Marine ({unlinked}) · {unlinkedLabel}",
+        }));
+        Assert.That(embed.Fields[1].Value, Is.EqualTo($"Moderator ({admin})"));
         Assert.That(embed.Description, Does.Contain(@"\*\*reason\*\*").And.EndsWith("…"));
         Assert.That(embed.Description.Length, Is.LessThanOrEqualTo(4096));
     }

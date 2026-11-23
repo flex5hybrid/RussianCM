@@ -20,3 +20,5 @@ rumc-moderation-registry-severity-medium = Средняя
 rumc-moderation-registry-severity-high = Высокая
 rumc-moderation-registry-unspecified = Не указано
 rumc-moderation-registry-rounds = Раунды
+rumc-moderation-registry-discord-profile = Профиль Discord
+rumc-moderation-registry-discord-unlinked = Discord не привязан

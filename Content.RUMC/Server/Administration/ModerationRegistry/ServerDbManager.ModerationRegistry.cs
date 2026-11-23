@@ -16,6 +16,6 @@ public sealed partial class ServerDbManager : IRuMCModerationOutbox
     Task IRuMCModerationOutbox.RejectModerationRecord(RuMCModerationOutbox entry) =>
         RunDbCommand(() => _db.RejectModerationRecord(entry));
 
-    Task<Dictionary<Guid, string>> IRuMCModerationOutbox.GetModerationNames(Guid[] ids) =>
-        RunDbCommand(() => _db.GetModerationNames(ids));
+    Task<Dictionary<Guid, RuMCModerationAccount>> IRuMCModerationOutbox.GetModerationAccounts(Guid[] ids) =>
+        RunDbCommand(() => _db.GetModerationAccounts(ids));
 }

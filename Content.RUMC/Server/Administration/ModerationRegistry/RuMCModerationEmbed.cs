@@ -1,4 +1,4 @@
-using System.Linq;
+using System.Globalization;
 using System.Text;
 using Content.Server.Discord;
 using Content.Shared.Database;
@@ -8,8 +8,10 @@ namespace Content.Server._RuCM.Administration.ModerationRegistry;
 
 internal static class RuMCModerationEmbed
 {
+    private const int FieldValueLimit = 1024;
+
     public static WebhookPayload Build(
-        RuMCModerationRecord record, Guid id, IReadOnlyDictionary<Guid, string> names, string server, ILocalizationManager loc)
+        RuMCModerationRecord record, Guid id, IReadOnlyDictionary<Guid, RuMCModerationAccount> accounts, string server, ILocalizationManager loc)
     {
         string Text(string key) => loc.GetString($"rumc-moderation-registry-{key}");
 
@@ -21,13 +23,9 @@ internal static class RuMCModerationEmbed
             _ => (Text("warning"), 0xFEE75C),
         };
 
-        string Account(Guid account) => names.TryGetValue(account, out var name)
-            ? $"{PlainText(name, 160)} ({account})"
-            : account.ToString();
-
         var players = record.Players.Length == 0
             ? Text("no-account")
-            : string.Join("\n", record.Players.Select(Account));
+            : FormatPlayers(record.Players, accounts, Text("discord-profile"), Text("discord-unlinked"));
 
         var reason = PlainText(record.Reason, 3500);
         var embed = new WebhookEmbed
@@ -37,8 +35,8 @@ internal static class RuMCModerationEmbed
             Description = $"**{Text("reason")}**\n{(reason.Length > 0 ? reason : Text("unspecified"))}",
             Fields =
             [
-                new() { Name = record.Players.Length == 1 ? Text("player") : Text("players"), Value = Truncate(players, 1024), Inline = false },
-                new() { Name = Text("admin"), Value = record.Admin is { } admin ? Account(admin) : Text("system") },
+                new() { Name = record.Players.Length == 1 ? Text("player") : Text("players"), Value = players, Inline = false },
+                new() { Name = Text("admin"), Value = record.Admin is { } admin ? FormatAccount(admin, accounts) : Text("system") },
                 new() { Name = Text("issued"), Value = Timestamp(record.IssuedAt) },
                 new()
                 {
@@ -89,6 +87,36 @@ internal static class RuMCModerationEmbed
             AllowedMentions = new WebhookMentions(),
         };
     }
+
+    private static string FormatPlayers(
+        Guid[] players, IReadOnlyDictionary<Guid, RuMCModerationAccount> accounts, string profileLabel, string unlinked)
+    {
+        var text = new StringBuilder();
+        foreach (var player in players)
+        {
+            var discord = unlinked;
+            if (accounts.TryGetValue(player, out var account) && account.DiscordId is > 0)
+            {
+                var discordId = account.DiscordId.Value.ToString(CultureInfo.InvariantCulture);
+                discord = $"[{profileLabel}](https://discord.com/users/{discordId})";
+            }
+
+            var row = $"{FormatAccount(player, accounts)} · {discord}";
+            // Leave room for an ellipsis without cutting a Markdown link.
+            if (text.Length + row.Length + 1 >= FieldValueLimit)
+                return text.Append("\n…").ToString();
+
+            if (text.Length > 0)
+                text.Append('\n');
+
+            text.Append(row);
+        }
+
+        return text.ToString();
+    }
+
+    private static string FormatAccount(Guid id, IReadOnlyDictionary<Guid, RuMCModerationAccount> accounts) =>
+        accounts.TryGetValue(id, out var account) ? $"{PlainText(account.Name, 160)} ({id})" : id.ToString();
 
     private static string Timestamp(DateTime time) =>
         $"<t:{new DateTimeOffset(time, TimeSpan.Zero).ToUnixTimeSeconds()}:f>";

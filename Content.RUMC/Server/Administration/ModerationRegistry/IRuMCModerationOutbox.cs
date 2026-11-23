@@ -9,5 +9,7 @@ public interface IRuMCModerationOutbox
     Task<RuMCModerationOutbox?> ClaimModerationRecord(string webhookId);
     Task CompleteModerationRecord(RuMCModerationOutbox entry, TimeSpan? retryAfter);
     Task RejectModerationRecord(RuMCModerationOutbox entry);
-    Task<Dictionary<Guid, string>> GetModerationNames(Guid[] ids);
+    Task<Dictionary<Guid, RuMCModerationAccount>> GetModerationAccounts(Guid[] ids);
 }
+
+public readonly record struct RuMCModerationAccount(string Name, ulong? DiscordId);

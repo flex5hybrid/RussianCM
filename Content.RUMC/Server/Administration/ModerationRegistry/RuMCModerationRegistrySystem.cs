@@ -95,7 +95,7 @@ public sealed partial class RuMCModerationRegistrySystem : EntitySystem
             }
 
             var ids = record.Admin is { } admin ? record.Players.Append(admin).Distinct().ToArray() : record.Players;
-            var names = await _database.GetModerationNames(ids);
+            var accounts = await _database.GetModerationAccounts(ids);
 
             // A configuration change can invalidate the destination while the database work is pending.
             if (_webhook != webhook)
@@ -104,7 +104,7 @@ public sealed partial class RuMCModerationRegistrySystem : EntitySystem
                 return;
             }
 
-            var payload = RuMCModerationEmbed.Build(record, entry.Id, names, _configuration.GetCVar(CVars.GameHostName), _localization);
+            var payload = RuMCModerationEmbed.Build(record, entry.Id, accounts, _configuration.GetCVar(CVars.GameHostName), _localization);
             HttpResponseMessage response;
             try
             {

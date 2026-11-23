@@ -20,3 +20,5 @@ rumc-moderation-registry-severity-medium = Medium
 rumc-moderation-registry-severity-high = High
 rumc-moderation-registry-unspecified = Unspecified
 rumc-moderation-registry-rounds = Rounds
+rumc-moderation-registry-discord-profile = Discord profile
+rumc-moderation-registry-discord-unlinked = Discord account not linked

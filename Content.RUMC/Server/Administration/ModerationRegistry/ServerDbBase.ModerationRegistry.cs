@@ -101,10 +101,16 @@ public abstract partial class ServerDbBase
     private static IQueryable<RuMCModerationOutbox> GetModerationLease(ServerDbContext db, RuMCModerationOutbox entry) =>
         db.Set<RuMCModerationOutbox>().Where(row => row.Id == entry.Id && row.LeaseId == entry.LeaseId);
 
-    internal async Task<Dictionary<Guid, string>> GetModerationNames(Guid[] ids)
+    internal async Task<Dictionary<Guid, RuMCModerationAccount>> GetModerationAccounts(Guid[] ids)
     {
         await using var db = await GetDb();
         return await db.DbContext.Set<Player>().Where(player => ids.Contains(player.UserId))
-            .ToDictionaryAsync(player => player.UserId, player => player.LastSeenUserName);
+            .Select(player => new
+            {
+                player.UserId,
+                player.LastSeenUserName,
+                DiscordId = player.LinkedAccount == null ? (ulong?) null : player.LinkedAccount.DiscordId,
+            })
+            .ToDictionaryAsync(player => player.UserId, player => new RuMCModerationAccount(player.LastSeenUserName, player.DiscordId));
     }
 }
