@@ -49,7 +49,7 @@ public sealed partial class CMUManpadLowAltitudeComponent : Component
     [DataField]
     public CMUManpadLowAltitudeHitProfile GunshipHit = new()
     {
-        Damage = 800f,
+        Damage = 1000f, // RUMC change 800 to 1000
         Effect = "CMUManpadGunshipHitEffect",
         EffectCount = 3,
         EffectSpread = 2.5f,
