@@ -18,7 +18,7 @@ public sealed partial class RuMCModerationRegistrySystem : EntitySystem
 {
     [Dependency] private IConfigurationManager _configuration = default!;
     [Dependency] private IGameTiming _timing = default!;
-    [Dependency] private IRuMCModerationOutbox _database = default!;
+    [Dependency] private IServerDbManager _database = default!;
     [Dependency] private DiscordWebhook _discord = default!;
 
     [Dependency] private ILocalizationManager _localization = default!;

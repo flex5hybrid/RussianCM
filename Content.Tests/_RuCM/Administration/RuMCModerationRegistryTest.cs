@@ -182,6 +182,45 @@ public sealed class RuMCModerationRegistryTest : ContentUnitTest
         Assert.That(embed.Description.Length, Is.LessThanOrEqualTo(4096));
     }
 
+    [TestCase(1023, true)]
+    [TestCase(1024, false)]
+    public void PlayerFieldStaysWithinDiscordLimitWithoutCuttingProfileLinks(int fullLength, bool overflow)
+    {
+        const int playerCount = 4;
+        const ulong discordId = 123456789012345678;
+        const string label = "Discord profile";
+        var localization = new Mock<ILocalizationManager>();
+        localization.Setup(loc => loc.GetString(It.IsAny<string>())).Returns((string key) => key);
+        localization.Setup(loc => loc.GetString("rumc-moderation-registry-discord-profile")).Returns(label);
+
+        var players = Enumerable.Range(0, playerCount).Select(_ => Guid.NewGuid()).ToArray();
+        var link = $"[{label}](https://discord.com/users/{discordId})";
+        var rowWithoutName = $" ({Guid.Empty}) · {link}".Length;
+        var nameLength = fullLength - (playerCount - 1) - playerCount * rowWithoutName;
+        var accounts = players.Select((player, index) => new
+        {
+            Player = player,
+            Name = new string('x', nameLength / playerCount + (index < nameLength % playerCount ? 1 : 0)),
+        }).ToDictionary(entry => entry.Player, entry => new RuMCModerationAccount(entry.Name, discordId));
+
+        var targets = overflow ? [..players, Guid.NewGuid()] : players;
+        var record = new RuMCModerationRecord(
+            RuMCModerationKind.ServerBan, targets, null, "reason", DateTime.UtcNow, null, []);
+        var field = RuMCModerationEmbed.Build(record, Guid.Empty, accounts, "RuCM", localization.Object)
+            .Embeds!.Single().Fields[0].Value;
+
+        var rows = field.Split('\n');
+        Assert.That(field.Length, Is.LessThanOrEqualTo(1024));
+        Assert.That(rows, Has.Length.EqualTo(playerCount));
+        foreach (var row in rows.Take(overflow ? playerCount - 1 : playerCount))
+            Assert.That(row, Does.EndWith(link));
+
+        if (overflow)
+            Assert.That(rows[^1], Is.EqualTo("…"));
+        else
+            Assert.That(field.Length, Is.EqualTo(fullLength));
+    }
+
     [TestCase("https://discord.com/api/webhooks/1234567890/test_token", true)]
     [TestCase("https://discordapp.com/api/v10/webhooks/1234567890/test_token", true)]
     [TestCase("https://discordapp.com.example.org/api/webhooks/1234567890/test_token", false)]

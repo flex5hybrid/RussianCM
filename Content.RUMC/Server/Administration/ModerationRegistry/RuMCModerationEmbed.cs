@@ -9,6 +9,7 @@ namespace Content.Server._RuCM.Administration.ModerationRegistry;
 internal static class RuMCModerationEmbed
 {
     private const int FieldValueLimit = 1024;
+    private const string OverflowMarker = "\n…";
 
     public static WebhookPayload Build(
         RuMCModerationRecord record, Guid id, IReadOnlyDictionary<Guid, RuMCModerationAccount> accounts, string server, ILocalizationManager loc)
@@ -92,8 +93,9 @@ internal static class RuMCModerationEmbed
         Guid[] players, IReadOnlyDictionary<Guid, RuMCModerationAccount> accounts, string profileLabel, string unlinked)
     {
         var text = new StringBuilder();
-        foreach (var player in players)
+        for (var index = 0; index < players.Length; index++)
         {
+            var player = players[index];
             var discord = unlinked;
             if (accounts.TryGetValue(player, out var account) && account.DiscordId is > 0)
             {
@@ -102,9 +104,11 @@ internal static class RuMCModerationEmbed
             }
 
             var row = $"{FormatAccount(player, accounts)} · {discord}";
-            // Leave room for an ellipsis without cutting a Markdown link.
-            if (text.Length + row.Length + 1 >= FieldValueLimit)
-                return text.Append("\n…").ToString();
+            // Account for the row separator and reserve the complete overflow marker when more rows follow.
+            var separatorLength = text.Length == 0 ? 0 : 1;
+            var overflowLength = index < players.Length - 1 ? OverflowMarker.Length : 0;
+            if (text.Length + separatorLength + row.Length + overflowLength > FieldValueLimit)
+                return text.Append(OverflowMarker).ToString();
 
             if (text.Length > 0)
                 text.Append('\n');

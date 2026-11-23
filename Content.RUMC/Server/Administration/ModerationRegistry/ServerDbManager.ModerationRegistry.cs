@@ -3,7 +3,11 @@ using Content.Server._RuCM.Administration.ModerationRegistry;
 
 namespace Content.Server.Database;
 
-public sealed partial class ServerDbManager : IRuMCModerationOutbox
+public partial interface IServerDbManager : IRuMCModerationOutbox
+{
+}
+
+public sealed partial class ServerDbManager
 {
     long IRuMCModerationOutbox.QueueVersion => _db.ModerationQueueVersion;
 

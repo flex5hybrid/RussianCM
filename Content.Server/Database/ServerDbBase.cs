@@ -11,7 +11,7 @@ using Content.Server._RMC14.LinkAccount;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
 using Content.Server.IP;
-using Content.Server._RuCM.Administration.ModerationRegistry; // CMU14
+using Content.Server._RuCM.Administration.ModerationRegistry; // RuMC edit
 using Content.Shared.CMU14.BalanceRating;
 using Content.Shared.CMU14.Yautja;
 using Content.Shared._RMC14.DonorCapes;
@@ -28,7 +28,7 @@ using Content.Shared.Preferences;
 using Content.Shared.Roles;
 using Microsoft.EntityFrameworkCore;
 using NpgsqlTypes;
-using Robust.Shared.Configuration; // CMU14: moderation registry
+using Robust.Shared.Configuration; // RuMC edit
 using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.Manager;
@@ -41,7 +41,7 @@ namespace Content.Server.Database
         private readonly ISawmill _opsLog;
         public event Action<DatabaseNotification>? OnNotificationReceived;
         private readonly ISerializationManager _serialization;
-        private readonly IConfigurationManager _configuration; // CMU14: moderation registry
+        private readonly IConfigurationManager _configuration; // RuMC edit
         // Bound the lock count while serializing overlapping edits/selection/deletion for each player.
         private readonly SemaphoreSlim[] _preferenceWriteLocks = Enumerable.Range(0, 64)
             .Select(_ => new SemaphoreSlim(1, 1)).ToArray();
@@ -59,9 +59,9 @@ namespace Content.Server.Database
         }
 
         /// <param name="opsLog">Sawmill to trace log database operations to.</param>
-        public ServerDbBase(ISawmill opsLog, ISerializationManager serialization, IConfigurationManager configuration) // CMU14
+        public ServerDbBase(ISawmill opsLog, ISerializationManager serialization, IConfigurationManager configuration) // RuMC edit
         {
-            _configuration = configuration; // CMU14: moderation registry
+            _configuration = configuration; // RuMC edit
             _serialization = serialization;
             _opsLog = opsLog;
         }
@@ -1934,7 +1934,7 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
         {
             await using var db = await GetDb();
             db.DbContext.AdminNotes.Add(note);
-            if (!note.Secret) // CMU14: player-visible moderation warnings.
+            if (!note.Secret) // RuMC edit
                 QueueModerationWarning(db.DbContext, note, note.CreatedById, note.Severity);
             await db.DbContext.SaveChangesAsync();
             return note.Id;
@@ -1952,7 +1952,7 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
         {
             await using var db = await GetDb();
             db.DbContext.AdminMessages.Add(message);
-            QueueModerationWarning(db.DbContext, message, message.CreatedById); // CMU14
+            QueueModerationWarning(db.DbContext, message, message.CreatedById); // RuMC edit
             await db.DbContext.SaveChangesAsync();
             return message.Id;
         }
@@ -3054,12 +3054,12 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
                 ExpiresAt = duration == null ? null : time.Add(duration.Value),
             });
 
-            // CMU14 Begin: register the chat restriction in the same transaction.
+            // RuMC edit start: register the chat restriction in the same transaction.
             QueueModerationRecord(db.DbContext, new(
                 RuMCModerationKind.ChatBan, [target.UserId], admin.UserId, reason, time,
                 duration == null ? null : time.Add(duration.Value), round is > 0 ? [round.Value] : [],
                 ChatChannels: type));
-            // CMU14 End
+            // RuMC edit end
 
             await db.DbContext.SaveChangesAsync();
         }

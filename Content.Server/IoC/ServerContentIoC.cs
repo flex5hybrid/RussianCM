@@ -17,7 +17,6 @@ using Content.Server.Administration.Notes;
 using Content.Server.Afk;
 using Content.Server.Chat.Managers;
 using Content.Server.Connection;
-using Content.Server._RuCM.Administration.ModerationRegistry; // CMU14
 using Content.Server.Database;
 using Content.Server.Discord;
 using Content.Server.Discord.DiscordLink;
@@ -61,7 +60,6 @@ internal static class ServerContentIoC
         deps.Register<IChatSanitizationManager, ChatSanitizationManager>();
         deps.Register<IServerPreferencesManager, ServerPreferencesManager>();
         deps.Register<IServerDbManager, ServerDbManager>();
-        deps.Register<IRuMCModerationOutbox, ServerDbManager>(); // CMU14
         deps.Register<INodeGroupFactory, NodeGroupFactory>();
         deps.Register<IConnectionManager, ConnectionManager>();
         deps.Register<ServerUpdateManager>();

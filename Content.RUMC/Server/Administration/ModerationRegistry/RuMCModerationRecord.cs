@@ -2,12 +2,13 @@ using Content.Shared.Database;
 
 namespace Content.Server._RuCM.Administration.ModerationRegistry;
 
+// These numeric values are persisted in the moderation outbox.
 internal enum RuMCModerationKind
 {
-    ServerBan,
-    RoleBan,
-    ChatBan,
-    Warning,
+    ServerBan = 0,
+    RoleBan = 1,
+    ChatBan = 2,
+    Warning = 3,
 }
 
 internal sealed record RuMCModerationRecord(
