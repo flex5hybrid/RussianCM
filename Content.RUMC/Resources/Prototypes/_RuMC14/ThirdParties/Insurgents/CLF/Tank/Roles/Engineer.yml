@@ -1,0 +1,74 @@
+- type: job
+  parent: CMUJobCLFEngineer
+  id: RuMCJobCLFTankCrew
+  name: rumc-clf-tank-crew-name
+  startingGear: RuMCGearCLFTankCrew
+
+- type: job
+  parent: CMUJobCLFEngineer
+  id: RuMCJobCLFTankCommander
+  name: rumc-clf-tank-commander-name
+  startingGear: RuMCGearCLFTankCommander
+
+- type: startingGear
+  id: RuMCGearCLFTankCrew
+  equipment:
+    head: ArmorHelmetM10
+    eyes: RMCWeldingGoggles
+    jumpsuit: CMU14FatiguesCLFCommando
+    outerClothing: AU14UPPArmor
+    shoes: RMCBootsSPPBlackFilled
+    gloves: CMHandsInsulated
+    id: CMUIDCardCLFEngineer
+    belt: CMBeltUtilityFilled
+    back: RMCSatchelLightpackWelder
+    pocket1: RMCPouchMagazineLarge
+    pocket2: RuMCUPPPouchIFAKFill
+  inhand:
+  - RMCWeaponSMGType19
+  storage:
+    back:
+    - AU14MREUPP
+    pocket1:
+    - RMCMagazineSMGType19Drum
+    - RMCMagazineSMGType19Drum
+    - RMCMagazineSMGType19
+    - RMCMagazineSMGType19
+
+- type: startingGear
+  parent: RuMCGearCLFTankCrew
+  id: RuMCGearCLFTankCommander
+  inhand:
+  - RuMCCaseCLFTankAmmo
+
+- type: entity
+  parent: CMUIntelThirdPartyCLFEngineerReinforcements
+  id: RuMCIntelThirdPartyCLFTankCrew
+  name: CLF tank crew
+  components:
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: rumc-clf-tank-crew-name
+    description: rumc-clf-tank-crew-description
+    rules: cmu-clf-rules
+    job: RuMCJobCLFTankCrew
+    raffle:
+      settings: short
+
+- type: entity
+  parent: RuMCIntelThirdPartyCLFTankCrew
+  id: RuMCIntelThirdPartyCLFTankCommander
+  name: CLF tank commander
+  components:
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: rumc-clf-tank-commander-name
+    description: rumc-clf-tank-commander-description
+    rules: cmu-clf-rules
+    job: RuMCJobCLFTankCommander
+    raffle:
+      settings: short

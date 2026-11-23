@@ -1,0 +1,21 @@
+- type: entity
+  parent: RMCGunCaseBase
+  id: RuMCCaseCLFTankAmmo
+  name: tank ammunition case
+  description: Cannon shells and cupola ammunition for a tank.
+  components:
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,7,7
+    whitelist:
+      tags:
+      - RMCAmmoBox
+  - type: StorageFill
+    contents:
+    - id: CMUAmmoBoxLTBCannonAPFSDS
+      amount: 5
+    - id: CMUAmmoBoxLTBCannonHE
+      amount: 7
+    - id: VehicleAmmoBoxCupola
+      amount: 4
