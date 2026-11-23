@@ -65,6 +65,18 @@
           icon:
             sprite: _RMC14/Interface/tech_tree.rsi
             state: humvee
+        # RuMC edit start
+        - name: rumc-tech-clf-tank
+          description: rumc-tech-clf-tank-desc
+          cost: 950
+          repurchasable: false
+          events:
+          - !type:TechPartySpawnEvent
+            thirdPartyId: RuMCCLFTankReinforcements
+          icon:
+            sprite: _RMC14/Interface/tech_tree.rsi
+            state: ltb
+        # RuMC edit end
         - name: cmu-tech-clf-vaiso
           description: cmu-tech-clf-vaiso-desc
           cost: 40

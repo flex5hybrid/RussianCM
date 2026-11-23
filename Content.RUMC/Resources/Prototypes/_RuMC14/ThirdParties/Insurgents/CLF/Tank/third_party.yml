@@ -1,0 +1,17 @@
+- type: partySpawn
+  id: RuMCCLFTankSpawn
+  leadersToSpawn:
+    RuMCIntelThirdPartyCLFTankCommander: 1
+  gruntsToSpawn:
+    RuMCIntelThirdPartyCLFTankCrew: 1
+  entsToSpawn:
+    RuMCVehicleCLFTank: 1
+  scalewithpop: false
+  spawnTogether: true
+
+- type: thirdParty
+  parent: CLFCellReinforcementsIntel
+  id: RuMCCLFTankReinforcements
+  displayName: rumc-clf-tank-party-name
+  partyspawn: RuMCCLFTankSpawn
+  dropshippath: /Maps/CMU14/Dropships/black_ert.yml
