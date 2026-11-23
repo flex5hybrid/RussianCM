@@ -20141,5 +20141,15 @@ Entries:
   labels:
   - 'Changes: No C#'
   - M
+- author: flex5hybrid
+  time: '2026-11-23T18:22:08Z'
+  changes:
+  - type: Admin
+    message: Добавлен автоматический закрытый реестр блокировок и предупреждений в
+      Discord.
+  id: 1173
+  url: https://github.com/flex5hybrid/RussianCM/pull/642
+  labels:
+  - L
 Name: CMU
 Order: -1
