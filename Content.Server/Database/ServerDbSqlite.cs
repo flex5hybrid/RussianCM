@@ -40,7 +40,7 @@ namespace Content.Server.Database
             ISawmill opsLog,
             ISerializationManager serialization,
             bool snapshot)
-            : base(opsLog, serialization)
+            : base(opsLog, serialization, cfg) // CMU14
         {
             _options = options;
 
@@ -210,6 +210,7 @@ namespace Content.Server.Database
                         .ToList(),
             };
             db.SqliteDbContext.Ban.Add(banEntity);
+            QueueModerationBan(db.SqliteDbContext, ban); // CMU14
 
             await db.SqliteDbContext.SaveChangesAsync();
             return ConvertBan(banEntity);

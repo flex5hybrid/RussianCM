@@ -984,6 +984,39 @@ namespace Content.Server.Database.Migrations.Postgres
                         });
                 });
 
+            modelBuilder.Entity("Content.Server.Database.CMUModerationOutbox", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uuid")
+                        .HasColumnName("id");
+
+                    b.Property<DateTime>("AvailableAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("available_at");
+
+                    b.Property<Guid?>("LeaseId")
+                        .HasColumnType("uuid")
+                        .HasColumnName("lease_id");
+
+                    b.Property<string>("Payload")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("payload");
+
+                    b.Property<string>("WebhookId")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("webhook_id");
+
+                    b.HasKey("Id")
+                        .HasName("PK_cmu_moderation_outbox");
+
+                    b.HasIndex("WebhookId", "AvailableAt")
+                        .HasDatabaseName("IX_cmu_moderation_outbox_webhook_id_available_at");
+
+                    b.ToTable("cmu_moderation_outbox");
+                });
+
             modelBuilder.Entity("Content.Server.Database.CMURoundOutcome", b =>
                 {
                     b.Property<int>("RoundId")

@@ -11,6 +11,7 @@ using Content.Server._RMC14.LinkAccount;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
 using Content.Server.IP;
+using Content.Server.CMU14.Administration.ModerationRegistry; // CMU14
 using Content.Shared.CMU14.BalanceRating;
 using Content.Shared.CMU14.Yautja;
 using Content.Shared._RMC14.DonorCapes;
@@ -27,6 +28,7 @@ using Content.Shared.Preferences;
 using Content.Shared.Roles;
 using Microsoft.EntityFrameworkCore;
 using NpgsqlTypes;
+using Robust.Shared.Configuration; // CMU14: moderation registry
 using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.Manager;
@@ -56,8 +58,9 @@ namespace Content.Server.Database
         }
 
         /// <param name="opsLog">Sawmill to trace log database operations to.</param>
-        public ServerDbBase(ISawmill opsLog, ISerializationManager serialization)
+        public ServerDbBase(ISawmill opsLog, ISerializationManager serialization, IConfigurationManager configuration) // CMU14
         {
+            _configuration = configuration; // CMU14: moderation registry
             _serialization = serialization;
             _opsLog = opsLog;
         }
@@ -1930,6 +1933,8 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
         {
             await using var db = await GetDb();
             db.DbContext.AdminNotes.Add(note);
+            if (!note.Secret) // CMU14: player-visible moderation warnings.
+                QueueModerationWarning(db.DbContext, note, note.CreatedById, note.Severity);
             await db.DbContext.SaveChangesAsync();
             return note.Id;
         }
@@ -1946,6 +1951,7 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
         {
             await using var db = await GetDb();
             db.DbContext.AdminMessages.Add(message);
+            QueueModerationWarning(db.DbContext, message, message.CreatedById); // CMU14
             await db.DbContext.SaveChangesAsync();
             return message.Id;
         }
@@ -3046,6 +3052,13 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
                 BannedAt = time,
                 ExpiresAt = duration == null ? null : time.Add(duration.Value),
             });
+
+            // CMU14 Begin: register the chat restriction in the same transaction.
+            QueueModerationRecord(db.DbContext, new(
+                CMUModerationKind.ChatBan, [target.UserId], admin.UserId, reason, time,
+                duration == null ? null : time.Add(duration.Value), round is > 0 ? [round.Value] : [],
+                Scope: type.ToString()));
+            // CMU14 End
 
             await db.DbContext.SaveChangesAsync();
         }

@@ -116,6 +116,12 @@ namespace Content.Server.Database
             BanType type = BanType.Server);
 
         Task<BanDef> AddBanAsync(BanDef ban);
+
+        // CMU14 Begin: Discord moderation outbox.
+        internal Task<CMUModerationOutbox?> ClaimModerationRecord(string webhookId);
+        internal Task CompleteModerationRecord(CMUModerationOutbox entry, TimeSpan? retryAfter);
+        internal Task<Dictionary<Guid, string>> GetModerationNames(Guid[] ids);
+        // CMU14 End
         Task AddUnbanAsync(UnbanDef ban);
 
         public Task EditBan(
