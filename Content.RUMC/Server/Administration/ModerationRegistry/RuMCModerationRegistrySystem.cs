@@ -4,53 +4,65 @@ using System.Net;
 using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
+using Content.Server._RuCM.Discord;
 using Content.Server.Database;
 using Content.Server.Discord;
 using Robust.Shared;
 using Robust.Shared.Configuration;
+using Robust.Shared.Localization;
 using Robust.Shared.Timing;
 
-namespace Content.Server.CMU14.Administration.ModerationRegistry;
+namespace Content.Server._RuCM.Administration.ModerationRegistry;
 
-public sealed partial class CMUModerationRegistrySystem : EntitySystem
+public sealed partial class RuMCModerationRegistrySystem : EntitySystem
 {
     [Dependency] private IConfigurationManager _configuration = default!;
     [Dependency] private IGameTiming _timing = default!;
-    [Dependency] private IServerDbManager _database = default!;
+    [Dependency] private IRuMCModerationOutbox _database = default!;
     [Dependency] private DiscordWebhook _discord = default!;
 
-    private static readonly TimeSpan PollInterval = TimeSpan.FromSeconds(2);
+    [Dependency] private ILocalizationManager _localization = default!;
+
+    private static readonly TimeSpan IdlePollInterval = TimeSpan.FromSeconds(30);
+    private static readonly TimeSpan MinimumRateLimitDelay = TimeSpan.FromSeconds(2);
     private static readonly TimeSpan TransientRetry = TimeSpan.FromSeconds(30);
     private static readonly TimeSpan RejectedRetry = TimeSpan.FromMinutes(5);
 
     private WebhookIdentifier? _webhook;
     private Task? _delivery;
-    private TimeSpan _nextPoll;
+    private TimeSpan _idleUntil;
+    private TimeSpan _retryUntil;
+    private long _observedQueueVersion;
 
     public override void Initialize()
     {
         base.Initialize();
 
-        Subs.CVar(_configuration, CMUModerationRegistryCVars.DiscordWebhook, url =>
+        Subs.CVar(_configuration, RuMCModerationRegistryCVars.Webhook, url =>
         {
             _webhook = null;
-            _nextPoll = TimeSpan.Zero;
+            _idleUntil = _retryUntil = TimeSpan.Zero;
             if (string.IsNullOrWhiteSpace(url))
                 return;
 
-            if (CMUModerationRecord.TryGetWebhook(url, out var webhook))
+            if (RuMCModerationWebhook.TryParse(url, out var webhook))
                 _webhook = webhook;
             else
-                Log.Error("Invalid URL for discord.cmu_moderation_webhook.");
+                Log.Error("Invalid URL for discord.rumc_moderation_webhook.");
         }, true);
     }
 
     public override void Update(float frameTime)
     {
-        if (_webhook is not { } webhook || _timing.RealTime < _nextPoll || _delivery is { IsCompleted: false })
+        var now = _timing.RealTime;
+        if (_webhook is not { } webhook || now < _retryUntil || _delivery is { IsCompleted: false })
             return;
 
-        _nextPoll = _timing.RealTime + PollInterval;
+        var version = _database.QueueVersion;
+        if (now < _idleUntil && _observedQueueVersion == version)
+            return;
+
+        _observedQueueVersion = version;
         _delivery = DeliverNext(webhook);
     }
 
@@ -60,71 +72,110 @@ public sealed partial class CMUModerationRegistrySystem : EntitySystem
         {
             var entry = await _database.ClaimModerationRecord(webhook.Id);
             if (entry == null)
+            {
+                if (_webhook == webhook)
+                    _idleUntil = _timing.RealTime + IdlePollInterval;
                 return;
+            }
 
-            TimeSpan? retry = TransientRetry;
+            _idleUntil = TimeSpan.Zero;
+            RuMCModerationRecord record;
             try
             {
-                var record = JsonSerializer.Deserialize<CMUModerationRecord>(entry.Payload)!;
-                var ids = record.Admin is { } admin ? record.Players.Append(admin).Distinct().ToArray() : record.Players;
-                var names = await _database.GetModerationNames(ids);
-
-                // A configuration change can invalidate the destination while the database work is pending.
-                if (_webhook != webhook)
-                {
-                    await _database.CompleteModerationRecord(entry, TimeSpan.Zero);
-                    return;
-                }
-
-                var payload = CMUModerationEmbed.Build(record, entry.Id, names, _configuration.GetCVar(CVars.GameHostName));
-                using var response = await _discord.CreateMessage(webhook, payload);
-                retry = response.StatusCode switch
-                {
-                    HttpStatusCode.TooManyRequests => RateLimitDelay(response),
-                    HttpStatusCode.Unauthorized or HttpStatusCode.Forbidden or HttpStatusCode.NotFound => RejectedRetry,
-                    _ when response.IsSuccessStatusCode => null,
-                    _ when (int) response.StatusCode >= 500 => TransientRetry,
-                    _ => RejectedRetry,
-                };
-
-                if (_webhook == webhook)
-                {
-                    if (retry == null)
-                        _nextPoll = TimeSpan.Zero;
-                    else if (response.StatusCode != HttpStatusCode.BadRequest)
-                        _nextPoll = _timing.RealTime + retry.Value;
-                }
-
-                if (retry != null)
-                    Log.Warning($"Discord rejected moderation record {entry.Id:N} (HTTP {(int) response.StatusCode}).");
+                record = JsonSerializer.Deserialize<RuMCModerationRecord>(entry.Payload)
+                    ?? throw new JsonException("Missing moderation record.");
+                if (record.Players == null || record.Rounds == null || record.Reason == null || !Enum.IsDefined(record.Kind))
+                    throw new JsonException("Incomplete moderation record.");
             }
-            catch (Exception error)
+            catch (JsonException)
             {
-                // An HTTP exception can contain the webhook URL, including its token.
-                Log.Warning($"Discord delivery failed for moderation record {entry.Id:N} ({error.GetType().Name}).");
-                if (_webhook == webhook)
-                    _nextPoll = _timing.RealTime + TransientRetry;
+                await _database.RejectModerationRecord(entry);
+                Log.Error($"Archived unreadable Discord moderation record {entry.Id:N}.");
+                return;
             }
 
-            await _database.CompleteModerationRecord(entry, retry);
+            var ids = record.Admin is { } admin ? record.Players.Append(admin).Distinct().ToArray() : record.Players;
+            var names = await _database.GetModerationNames(ids);
+
+            // A configuration change can invalidate the destination while the database work is pending.
+            if (_webhook != webhook)
+            {
+                await _database.CompleteModerationRecord(entry, TimeSpan.Zero);
+                return;
+            }
+
+            var payload = RuMCModerationEmbed.Build(record, entry.Id, names, _configuration.GetCVar(CVars.GameHostName), _localization);
+            HttpResponseMessage response;
+            try
+            {
+                response = await _discord.CreateMessage(webhook, payload);
+            }
+            catch (Exception error) when (error is HttpRequestException or OperationCanceledException)
+            {
+                // HTTP exception text can include the webhook token.
+                Log.Warning($"Could not reach Discord for moderation record {entry.Id:N} ({error.GetType().Name}).");
+                await Retry(webhook, entry, TransientRetry);
+                return;
+            }
+
+            using (response)
+                await HandleResponse(webhook, entry, response);
         }
         catch (Exception error)
         {
             Log.Error($"Could not process the Discord moderation queue ({error.GetType().Name}).");
             if (_webhook == webhook)
-                _nextPoll = _timing.RealTime + TransientRetry;
+                _retryUntil = _timing.RealTime + TransientRetry;
         }
+    }
+
+    private async Task HandleResponse(WebhookIdentifier webhook, RuMCModerationOutbox entry, HttpResponseMessage response)
+    {
+        var status = (int) response.StatusCode;
+        switch (response.StatusCode)
+        {
+            case HttpStatusCode.TooManyRequests:
+                var delay = RateLimitDelay(response);
+                Log.Warning($"Discord rate limited the moderation webhook. Retrying after {delay.TotalSeconds:F1} seconds.");
+                await Retry(webhook, entry, delay);
+                break;
+            case HttpStatusCode.Unauthorized or HttpStatusCode.Forbidden or HttpStatusCode.NotFound:
+                Log.Error($"Discord refused the moderation webhook (HTTP {status}). Check {RuMCModerationRegistryCVars.Webhook.Name}.");
+                await Retry(webhook, entry, RejectedRetry);
+                break;
+            case HttpStatusCode.RequestTimeout or >= HttpStatusCode.InternalServerError:
+                Log.Warning($"Discord service error for moderation record {entry.Id:N} (HTTP {status}).");
+                await Retry(webhook, entry, TransientRetry);
+                break;
+            default:
+                if (response.IsSuccessStatusCode)
+                {
+                    await _database.CompleteModerationRecord(entry, null);
+                    break;
+                }
+
+                await _database.RejectModerationRecord(entry);
+                Log.Error($"Archived Discord moderation record {entry.Id:N} after Discord rejected the message (HTTP {status}).");
+                break;
+        }
+    }
+
+    private async Task Retry(WebhookIdentifier webhook, RuMCModerationOutbox entry, TimeSpan delay)
+    {
+        await _database.CompleteModerationRecord(entry, delay);
+        if (_webhook == webhook)
+            _retryUntil = _timing.RealTime + delay;
     }
 
     private static TimeSpan RateLimitDelay(HttpResponseMessage response)
     {
         if (response.Headers.RetryAfter?.Delta is { } delta)
-            return delta > PollInterval ? delta : PollInterval;
+            return delta > MinimumRateLimitDelay ? delta : MinimumRateLimitDelay;
 
         if (response.Headers.RetryAfter?.Date is { } date)
         {
             var remaining = date - DateTimeOffset.UtcNow;
-            return remaining > PollInterval ? remaining : PollInterval;
+            return remaining > MinimumRateLimitDelay ? remaining : MinimumRateLimitDelay;
         }
 
         // Discord may send fractional seconds, which RetryAfter only parses as integers.
@@ -132,7 +183,7 @@ public sealed partial class CMUModerationRegistrySystem : EntitySystem
             && double.TryParse(values.FirstOrDefault(), NumberStyles.Float, CultureInfo.InvariantCulture, out var seconds)
             && seconds is >= 0 and <= 86_400)
         {
-            return TimeSpan.FromSeconds(Math.Max(seconds, PollInterval.TotalSeconds));
+            return TimeSpan.FromSeconds(Math.Max(seconds, MinimumRateLimitDelay.TotalSeconds));
         }
 
         return TransientRetry;

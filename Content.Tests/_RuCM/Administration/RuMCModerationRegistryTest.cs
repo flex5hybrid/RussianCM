@@ -1,24 +1,32 @@
 using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text.Json;
 using System.Threading.Tasks;
-using Content.Server.CMU14.Administration.ModerationRegistry;
+using Content.Server._RuCM.Administration.ModerationRegistry;
 using Content.Server.Database;
+using Content.Server._RuCM.Discord;
 using Content.Shared.Database;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Moq;
 using NUnit.Framework;
 using Robust.Shared.Configuration;
+using Robust.Shared.ContentPack;
+using Robust.Shared.IoC;
+using Robust.Shared.Localization;
 using Robust.Shared.Log;
 using Robust.Shared.Network;
 using Robust.Shared.Serialization.Manager;
+using Robust.Shared.Utility;
 
-namespace Content.Tests.CMU14.Administration;
+namespace Content.Tests._RuCM.Administration;
 
 [TestFixture]
-public sealed class CMUModerationRegistryTest
+public sealed class RuMCModerationRegistryTest : ContentUnitTest
 {
     private const string WebhookUrl = "https://discord.com/api/webhooks/1234567890/test_token";
 
@@ -30,7 +38,7 @@ public sealed class CMUModerationRegistryTest
         await using var context = new SqliteServerDbContext(options);
         await connection.OpenAsync();
         var config = new Mock<IConfigurationManager>();
-        config.Setup(c => c.GetCVar(CMUModerationRegistryCVars.DiscordWebhook)).Returns(WebhookUrl);
+        config.Setup(c => c.GetCVar(RuMCModerationRegistryCVars.Webhook)).Returns(WebhookUrl);
         var db = new ServerDbSqlite(() => options, true, config.Object, true, Mock.Of<ISawmill>(),
             Mock.Of<ISerializationManager>(), false);
 
@@ -49,12 +57,13 @@ public sealed class CMUModerationRegistryTest
         };
 
         await context.Database.ExecuteSqlRawAsync("""
-            CREATE TRIGGER reject_moderation_record BEFORE INSERT ON cmu_moderation_outbox
+            CREATE TRIGGER reject_moderation_record BEFORE INSERT ON rumc_moderation_outbox
             BEGIN SELECT RAISE(ABORT, 'test rollback'); END
             """);
         Assert.That(async () => await db.AddAdminMessage(warning), Throws.TypeOf<DbUpdateException>());
         Assert.That(await context.AdminMessages.CountAsync(), Is.Zero);
-        Assert.That(await context.Set<CMUModerationOutbox>().CountAsync(), Is.Zero);
+        Assert.That(await context.Set<RuMCModerationOutbox>().CountAsync(), Is.Zero);
+        Assert.That(db.ModerationQueueVersion, Is.Zero);
         await context.Database.ExecuteSqlRawAsync("DROP TRIGGER reject_moderation_record");
 
         await db.AddAdminMessage(warning);
@@ -81,20 +90,23 @@ public sealed class CMUModerationRegistryTest
         await db.AddChatBan(null, target, (IPAddress.Loopback, 32), null, TimeSpan.FromHours(1),
             ChatType.Ooc, admin, "chat ban");
 
-        var queued = await context.Set<CMUModerationOutbox>().AsNoTracking().ToListAsync();
-        var records = queued.Select(entry => JsonSerializer.Deserialize<CMUModerationRecord>(entry.Payload)!).ToList();
+        Assert.That(db.ModerationQueueVersion, Is.EqualTo(5));
+        var queued = await context.Set<RuMCModerationOutbox>().AsNoTracking().ToListAsync();
+        var records = queued.Select(entry => JsonSerializer.Deserialize<RuMCModerationRecord>(entry.Payload)!).ToList();
         Assert.That(records.Select(record => record.Kind), Is.EquivalentTo(new[]
         {
-            CMUModerationKind.Warning, CMUModerationKind.Warning, CMUModerationKind.ServerBan,
-            CMUModerationKind.RoleBan, CMUModerationKind.ChatBan,
+            RuMCModerationKind.Warning, RuMCModerationKind.Warning, RuMCModerationKind.ServerBan,
+            RuMCModerationKind.RoleBan, RuMCModerationKind.ChatBan,
         }));
-        Assert.That(records.Single(record => record.Kind == CMUModerationKind.RoleBan).Scope, Is.EqualTo("TestJob"));
+        Assert.That(records.Single(record => record.Kind == RuMCModerationKind.RoleBan).Scope, Is.EqualTo("TestJob"));
         Assert.That(queued.Select(entry => entry.Payload), Has.None.Contains("127.0.0.1"));
         Assert.That(await db.ClaimModerationRecord("98765"), Is.Null);
 
         var delivery = (await db.ClaimModerationRecord("1234567890"))!;
         await db.CompleteModerationRecord(delivery, TimeSpan.FromMinutes(1));
-        for (var i = 0; i < 4; i++)
+        var failed = (await db.ClaimModerationRecord("1234567890"))!;
+        await db.RejectModerationRecord(failed);
+        for (var i = 0; i < 3; i++)
         {
             var next = (await db.ClaimModerationRecord("1234567890"))!;
             Assert.That(next.Id, Is.Not.EqualTo(delivery.Id));
@@ -102,19 +114,53 @@ public sealed class CMUModerationRegistryTest
         }
 
         Assert.That(await db.ClaimModerationRecord("1234567890"), Is.Null);
-        Assert.That(await context.Set<CMUModerationOutbox>().Select(entry => entry.Id).SingleAsync(), Is.EqualTo(delivery.Id));
+        var stranded = await context.Set<RuMCModerationOutbox>().AsNoTracking().ToListAsync();
+        Assert.That(stranded.Single(entry => entry.FailedAt == null).Id, Is.EqualTo(delivery.Id));
+        Assert.That(stranded.Single(entry => entry.FailedAt != null).Id, Is.EqualTo(failed.Id));
     }
 
-    [Test]
-    public void FormatsLongReasonsAndDisablesMentions()
+    [TestCase("en-US", "Chat ban", "Channels", "Dead, OOC")]
+    [TestCase("ru-RU", "Блокировка чата", "Каналы", "Мёртвые, ООС")]
+    public void FormatsLocalizedChatBansWithSafeReasons(string language, string title, string channelsLabel, string channels)
     {
-        var reason = "@everyone **жирный** " + new string('я', 4096);
-        var payload = CMUModerationEmbed.Build(new CMUModerationRecord(
-            CMUModerationKind.Warning, [], null, reason, DateTime.UtcNow, null, []), Guid.Empty, new System.Collections.Generic.Dictionary<Guid, string>(), "RuCM");
+        var folder = new DirectoryInfo(TestContext.CurrentContext.TestDirectory);
+        while (folder != null && !Directory.Exists(Path.Combine(folder.FullName, "Content.RUMC", "Resources", "Locale")))
+            folder = folder.Parent;
+
+        Assert.That(folder, Is.Not.Null);
+        var root = new MemoryContentRoot();
+        var registry = $"Locale/{language}/_RuMC14/moderation/registry.ftl";
+        var chatBans = $"Locale/{language}/_RMC14/chat-bans.ftl";
+        root.AddOrUpdateFile(new ResPath(registry), File.ReadAllBytes(Path.Combine(folder!.FullName, "Content.RUMC", "Resources", registry)));
+        root.AddOrUpdateFile(new ResPath(chatBans), File.ReadAllBytes(Path.Combine(folder.FullName, "Resources", chatBans)));
+        IoCManager.Resolve<IResourceManager>().AddRoot(new ResPath("/"), root);
+        var loc = IoCManager.Resolve<ILocalizationManager>();
+        var culture = new CultureInfo(language, false);
+        loc.Initialize();
+        loc.LoadCulture(culture);
+        loc.SetCulture(culture);
+
+        var reason = "@everyone **reason** " + new string('x', 4096);
+        var payload = RuMCModerationEmbed.Build(new RuMCModerationRecord(
+            RuMCModerationKind.ChatBan, [], null, reason, DateTime.UtcNow, null, [],
+            ChatChannels: ChatType.Dead | ChatType.Ooc), Guid.Empty, new Dictionary<Guid, string>(), "RuCM", loc);
         var embed = payload.Embeds!.Single();
+
         Assert.That(payload.AllowedMentions.Parse, Is.Empty);
-        Assert.That(embed.Title, Is.EqualTo("Предупреждение"));
-        Assert.That(embed.Description, Does.Contain(@"\*\*жирный\*\*").And.EndsWith("…"));
+        Assert.That(embed.Title, Is.EqualTo(title));
+        Assert.That(embed.Fields.Single(field => field.Name == channelsLabel).Value, Is.EqualTo(channels));
+        Assert.That(embed.Description, Does.Contain(@"\*\*reason\*\*").And.EndsWith("…"));
         Assert.That(embed.Description.Length, Is.LessThanOrEqualTo(4096));
+    }
+
+    [TestCase("https://discord.com/api/webhooks/1234567890/test_token", true)]
+    [TestCase("https://discordapp.com/api/v10/webhooks/1234567890/test_token", true)]
+    [TestCase("https://discordapp.com.example.org/api/webhooks/1234567890/test_token", false)]
+    [TestCase("https://discord.com/api/webhooks/1234567890/test_token?thread_id=123", false)]
+    public void AcceptsOnlyDiscordWebhookDestinations(string url, bool valid)
+    {
+        Assert.That(RuMCModerationWebhook.TryParse(url, out var webhook), Is.EqualTo(valid));
+        if (valid)
+            Assert.That(webhook.Id, Is.EqualTo("1234567890"));
     }
 }

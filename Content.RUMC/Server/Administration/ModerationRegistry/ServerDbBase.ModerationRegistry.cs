@@ -1,7 +1,9 @@
 using System.Linq;
 using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
-using Content.Server.CMU14.Administration.ModerationRegistry;
+using Content.Server._RuCM.Administration.ModerationRegistry;
+using Content.Server._RuCM.Discord;
 using Content.Shared.Database;
 using Microsoft.EntityFrameworkCore;
 using Robust.Shared.Configuration;
@@ -10,11 +12,14 @@ namespace Content.Server.Database;
 
 public abstract partial class ServerDbBase
 {
-    private readonly IConfigurationManager _configuration;
+    private static readonly TimeSpan ModerationLeaseDuration = TimeSpan.FromMinutes(5);
+    private long _moderationQueueVersion;
+
+    internal long ModerationQueueVersion => Interlocked.Read(ref _moderationQueueVersion);
 
     protected void QueueModerationBan(ServerDbContext db, BanDef ban)
     {
-        var kind = ban.Type == BanType.Role ? CMUModerationKind.RoleBan : CMUModerationKind.ServerBan;
+        var kind = ban.Type == BanType.Role ? RuMCModerationKind.RoleBan : RuMCModerationKind.ServerBan;
         var scope = ban.Roles is { } roles ? string.Join(", ", roles.Select(role => role.RoleId)) : null;
         QueueModerationRecord(db, new(
             kind, ban.UserIds.Select(user => user.UserId).ToArray(), ban.BanningAdmin?.UserId, ban.Reason,
@@ -24,31 +29,34 @@ public abstract partial class ServerDbBase
     private void QueueModerationWarning(ServerDbContext db, IAdminRemarksCommon warning, Guid? admin, NoteSeverity? severity = null)
     {
         QueueModerationRecord(db, new(
-            CMUModerationKind.Warning, warning.PlayerUserId is { } player ? [player] : [], admin,
+            RuMCModerationKind.Warning, warning.PlayerUserId is { } player ? [player] : [], admin,
             warning.Message, warning.CreatedAt, warning.ExpirationTime,
             warning.RoundId is { } round ? [round] : [], severity));
     }
 
-    private void QueueModerationRecord(ServerDbContext db, CMUModerationRecord record)
+    private void QueueModerationRecord(ServerDbContext db, RuMCModerationRecord record)
     {
-        if (!CMUModerationRecord.TryGetWebhook(_configuration.GetCVar(CMUModerationRegistryCVars.DiscordWebhook), out var webhook))
+        if (!RuMCModerationWebhook.TryParse(_configuration.GetCVar(RuMCModerationRegistryCVars.Webhook), out var webhook))
             return;
 
-        db.Set<CMUModerationOutbox>().Add(new CMUModerationOutbox
+        db.Set<RuMCModerationOutbox>().Add(new RuMCModerationOutbox
         {
             Id = Guid.NewGuid(),
             WebhookId = webhook.Id,
             Payload = JsonSerializer.Serialize(record),
             AvailableAt = DateTime.UtcNow,
         });
+
+        // Only wake the local dispatcher after the sanction and outbox row have committed.
+        db.SavedChanges += (_, _) => Interlocked.Increment(ref _moderationQueueVersion);
     }
 
-    internal async Task<CMUModerationOutbox?> ClaimModerationRecord(string webhookId)
+    internal async Task<RuMCModerationOutbox?> ClaimModerationRecord(string webhookId)
     {
         await using var db = await GetDb();
         var now = DateTime.UtcNow;
-        var available = db.DbContext.Set<CMUModerationOutbox>()
-            .Where(entry => entry.WebhookId == webhookId && entry.AvailableAt <= now);
+        var available = db.DbContext.Set<RuMCModerationOutbox>()
+            .Where(entry => entry.WebhookId == webhookId && entry.FailedAt == null && entry.AvailableAt <= now);
         var next = await available.OrderBy(entry => entry.AvailableAt).ThenBy(entry => entry.Id).FirstOrDefaultAsync();
         if (next == null)
             return null;
@@ -57,18 +65,17 @@ public abstract partial class ServerDbBase
         var lease = Guid.NewGuid();
         var changed = await available.Where(entry => entry.Id == next.Id)
             .ExecuteUpdateAsync(setters => setters
-                .SetProperty(entry => entry.AvailableAt, now.AddMinutes(5))
+                .SetProperty(entry => entry.AvailableAt, now + ModerationLeaseDuration)
                 .SetProperty(entry => entry.LeaseId, lease));
 
         next.LeaseId = lease;
         return changed == 1 ? next : null;
     }
 
-    internal async Task CompleteModerationRecord(CMUModerationOutbox entry, TimeSpan? retryAfter)
+    internal async Task CompleteModerationRecord(RuMCModerationOutbox entry, TimeSpan? retryAfter)
     {
         await using var db = await GetDb();
-        var claimed = db.DbContext.Set<CMUModerationOutbox>()
-            .Where(row => row.Id == entry.Id && row.LeaseId == entry.LeaseId);
+        var claimed = GetModerationLease(db.DbContext, entry);
 
         if (retryAfter is { } delay)
         {
@@ -81,6 +88,18 @@ public abstract partial class ServerDbBase
 
         await claimed.ExecuteDeleteAsync();
     }
+
+    internal async Task RejectModerationRecord(RuMCModerationOutbox entry)
+    {
+        await using var db = await GetDb();
+        var failedAt = DateTime.UtcNow;
+        await GetModerationLease(db.DbContext, entry).ExecuteUpdateAsync(setters => setters
+            .SetProperty(row => row.FailedAt, failedAt)
+            .SetProperty(row => row.LeaseId, (Guid?) null));
+    }
+
+    private static IQueryable<RuMCModerationOutbox> GetModerationLease(ServerDbContext db, RuMCModerationOutbox entry) =>
+        db.Set<RuMCModerationOutbox>().Where(row => row.Id == entry.Id && row.LeaseId == entry.LeaseId);
 
     internal async Task<Dictionary<Guid, string>> GetModerationNames(Guid[] ids)
     {

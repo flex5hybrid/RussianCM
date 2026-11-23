@@ -1,15 +1,21 @@
 using System.Threading.Tasks;
+using Content.Server._RuCM.Administration.ModerationRegistry;
 
 namespace Content.Server.Database;
 
-public sealed partial class ServerDbManager
+public sealed partial class ServerDbManager : IRuMCModerationOutbox
 {
-    Task<CMUModerationOutbox?> IServerDbManager.ClaimModerationRecord(string webhookId) =>
+    long IRuMCModerationOutbox.QueueVersion => _db.ModerationQueueVersion;
+
+    Task<RuMCModerationOutbox?> IRuMCModerationOutbox.ClaimModerationRecord(string webhookId) =>
         RunDbCommand(() => _db.ClaimModerationRecord(webhookId));
 
-    Task IServerDbManager.CompleteModerationRecord(CMUModerationOutbox entry, TimeSpan? retryAfter) =>
+    Task IRuMCModerationOutbox.CompleteModerationRecord(RuMCModerationOutbox entry, TimeSpan? retryAfter) =>
         RunDbCommand(() => _db.CompleteModerationRecord(entry, retryAfter));
 
-    Task<Dictionary<Guid, string>> IServerDbManager.GetModerationNames(Guid[] ids) =>
+    Task IRuMCModerationOutbox.RejectModerationRecord(RuMCModerationOutbox entry) =>
+        RunDbCommand(() => _db.RejectModerationRecord(entry));
+
+    Task<Dictionary<Guid, string>> IRuMCModerationOutbox.GetModerationNames(Guid[] ids) =>
         RunDbCommand(() => _db.GetModerationNames(ids));
 }

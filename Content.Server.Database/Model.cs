@@ -616,7 +616,7 @@ namespace Content.Server.Database
                 .Property(h => h.Type)
                 .HasDefaultValue(HwidType.Legacy);
             ModelBan.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<CMUModerationOutbox>(); // CMU14
+            modelBuilder.Entity<RuMCModerationOutbox>(); // CMU14
             ModelCustomVoteLog.OnModelCreating(modelBuilder);
         }
 

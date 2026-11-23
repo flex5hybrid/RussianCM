@@ -11,7 +11,7 @@ using Content.Server._RMC14.LinkAccount;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
 using Content.Server.IP;
-using Content.Server.CMU14.Administration.ModerationRegistry; // CMU14
+using Content.Server._RuCM.Administration.ModerationRegistry; // CMU14
 using Content.Shared.CMU14.BalanceRating;
 using Content.Shared.CMU14.Yautja;
 using Content.Shared._RMC14.DonorCapes;
@@ -41,6 +41,7 @@ namespace Content.Server.Database
         private readonly ISawmill _opsLog;
         public event Action<DatabaseNotification>? OnNotificationReceived;
         private readonly ISerializationManager _serialization;
+        private readonly IConfigurationManager _configuration; // CMU14: moderation registry
         // Bound the lock count while serializing overlapping edits/selection/deletion for each player.
         private readonly SemaphoreSlim[] _preferenceWriteLocks = Enumerable.Range(0, 64)
             .Select(_ => new SemaphoreSlim(1, 1)).ToArray();
@@ -3055,9 +3056,9 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
 
             // CMU14 Begin: register the chat restriction in the same transaction.
             QueueModerationRecord(db.DbContext, new(
-                CMUModerationKind.ChatBan, [target.UserId], admin.UserId, reason, time,
+                RuMCModerationKind.ChatBan, [target.UserId], admin.UserId, reason, time,
                 duration == null ? null : time.Add(duration.Value), round is > 0 ? [round.Value] : [],
-                Scope: type.ToString()));
+                ChatChannels: type));
             // CMU14 End
 
             await db.DbContext.SaveChangesAsync();

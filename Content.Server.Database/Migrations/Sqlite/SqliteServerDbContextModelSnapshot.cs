@@ -932,7 +932,7 @@ namespace Content.Server.Database.Migrations.Sqlite
                         });
                 });
 
-            modelBuilder.Entity("Content.Server.Database.CMUModerationOutbox", b =>
+            modelBuilder.Entity("Content.Server.Database.RuMCModerationOutbox", b =>
                 {
                     b.Property<Guid>("Id")
                         .HasColumnType("TEXT")
@@ -941,6 +941,10 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.Property<DateTime>("AvailableAt")
                         .HasColumnType("TEXT")
                         .HasColumnName("available_at");
+
+                    b.Property<DateTime?>("FailedAt")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("failed_at");
 
                     b.Property<Guid?>("LeaseId")
                         .HasColumnType("TEXT")
@@ -957,12 +961,12 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnName("webhook_id");
 
                     b.HasKey("Id")
-                        .HasName("PK_cmu_moderation_outbox");
+                        .HasName("PK_rumc_moderation_outbox");
 
                     b.HasIndex("WebhookId", "AvailableAt")
-                        .HasDatabaseName("IX_cmu_moderation_outbox_webhook_id_available_at");
+                        .HasDatabaseName("IX_rumc_moderation_outbox_webhook_id_available_at");
 
-                    b.ToTable("cmu_moderation_outbox");
+                    b.ToTable("rumc_moderation_outbox");
                 });
 
             modelBuilder.Entity("Content.Server.Database.CMURoundOutcome", b =>
