@@ -20109,5 +20109,16 @@ Entries:
   url: https://github.com/flex5hybrid/RussianCM/pull/640
   labels:
   - M
+- author: Undervunders
+  time: '2026-11-23T13:39:01Z'
+  changes:
+  - type: Tweak
+    message: Поменял цифру урона у ПЗРК с 800 --> 1000
+  - type: Tweak
+    message: Поменял цифру урона у бойлера по ганшипу с 800 --> 500
+  id: 1170
+  url: https://github.com/flex5hybrid/RussianCM/pull/643
+  labels:
+  - XS
 Name: CMU
 Order: -1
