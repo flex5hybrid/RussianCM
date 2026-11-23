@@ -616,6 +616,7 @@ namespace Content.Server.Database
                 .Property(h => h.Type)
                 .HasDefaultValue(HwidType.Legacy);
             ModelBan.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<RuMCModerationOutbox>(); // RuMC edit
             ModelCustomVoteLog.OnModelCreating(modelBuilder);
         }
 

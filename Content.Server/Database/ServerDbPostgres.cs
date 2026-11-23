@@ -33,7 +33,7 @@ namespace Content.Server.Database
             ISawmill opsLog,
             ISawmill notifyLog,
             ISerializationManager serialization)
-            : base(opsLog, serialization)
+            : base(opsLog, serialization, cfg) // RuMC edit
         {
             var concurrency = cfg.GetCVar(CCVars.DatabasePgConcurrency);
 
@@ -293,6 +293,7 @@ namespace Content.Server.Database
                         .ToList(),
             };
             db.PgDbContext.Ban.Add(banEntity);
+            QueueModerationBan(db.PgDbContext, ban); // RuMC edit
 
             await db.PgDbContext.SaveChangesAsync();
             return ConvertBan(banEntity);
