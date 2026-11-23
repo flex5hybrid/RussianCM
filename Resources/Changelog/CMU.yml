@@ -20120,5 +20120,16 @@ Entries:
   url: https://github.com/flex5hybrid/RussianCM/pull/643
   labels:
   - XS
+- author: ArturUr1
+  time: '2026-11-23T14:06:54Z'
+  changes:
+  - type: Tweak
+    message: Внутриигровое СОП командующего офицера приравнено к правилам его роли.
+      Теперь по СОП КО не имеет право на развертывание и выход в полевое командование
+  id: 1171
+  url: https://github.com/flex5hybrid/RussianCM/pull/641
+  labels:
+  - 'Changes: No C#'
+  - XS
 Name: CMU
 Order: -1
