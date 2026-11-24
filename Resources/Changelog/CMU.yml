@@ -20151,5 +20151,19 @@ Entries:
   url: https://github.com/flex5hybrid/RussianCM/pull/642
   labels:
   - L
+- author: RomiGur
+  time: '2026-11-24T19:49:05Z'
+  changes:
+  - type: Tweak
+    message: Яутжа больше не видят в темноте без снаряжения
+  - type: Tweak
+    message: Визор маски яутжа теперь даёт зрение как у ксено
+  - type: Tweak
+    message: Одновременно работает только одно ПНВ
+  id: 1174
+  url: https://github.com/flex5hybrid/RussianCM/pull/645
+  labels:
+  - 'Changes: Translations'
+  - M
 Name: CMU
 Order: -1
