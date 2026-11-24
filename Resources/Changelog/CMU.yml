@@ -20165,5 +20165,15 @@ Entries:
   labels:
   - 'Changes: Translations'
   - M
+- author: RomiGur
+  time: '2026-11-24T22:23:10Z'
+  changes:
+  - type: Tweak
+    message: Возвращено врожденное ночное зрение яутжам(пролоббировано обществом анонимных
+      хищников)
+  id: 1175
+  url: https://github.com/flex5hybrid/RussianCM/pull/647
+  labels:
+  - XS
 Name: CMU
 Order: -1
