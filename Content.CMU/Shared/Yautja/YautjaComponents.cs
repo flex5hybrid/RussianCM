@@ -998,18 +998,6 @@ public sealed partial class YautjaMaskComponent : Component, IClothingSlots
     [DataField, AutoNetworkedField]
     public bool VisorEnabled;
 
-    /// <summary>
-    /// CMU14: server-side record of the field of view cone being held off while the bio overlay is up, with the
-    /// wearer's own setting saved so it can be handed back. The client cannot do this - the eye component is
-    /// networked, so the next server state puts the cone straight back.
-    /// </summary>
-    public bool VisorFovSuppressed;
-
-    /// <summary>
-    /// The wearer's field of view setting captured when the overlay suppressed it.
-    /// </summary>
-    public bool VisorDrawFovBefore = true;
-
     [DataField, AutoNetworkedField]
     public bool Zoomed;
 
@@ -1028,15 +1016,6 @@ public sealed partial class YautjaMaskComponent : Component, IClothingSlots
 
     [DataField]
     public EntityUid? User;
-
-    [DataField]
-    public EntProtoId VisorGlassesPrototype = "CMUYautjaNightVisionGlasses";
-
-    [DataField]
-    public EntityUid? VisorGlasses;
-
-    [DataField]
-    public bool PreserveVisorOnUnequip;
 
     [DataField]
     public FixedPoint2 Drain = 0;
@@ -1151,29 +1130,6 @@ public sealed partial class YautjaCannonPackProjectileRefundComponent : Componen
 
 [RegisterComponent, NetworkedComponent]
 public sealed partial class YautjaHudViewerComponent : Component;
-
-[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
-[Access(typeof(YautjaMaskSystem))]
-public sealed partial class YautjaMaskVisorGlassesComponent : Component
-{
-    /// <summary>
-    /// Mask that created this visor. A loose pair of glasses must not grant thermal wall vision.
-    /// </summary>
-    [DataField, AutoNetworkedField]
-    public EntityUid? Mask;
-
-    /// <summary>
-    /// Wearer currently receiving this visor's thermal sight.
-    /// </summary>
-    [DataField, AutoNetworkedField]
-    public EntityUid? User;
-
-    /// <summary>
-    /// Server-authoritative thermal source state for the wall-vision overlay.
-    /// </summary>
-    [DataField, AutoNetworkedField]
-    public bool ThermalVisionEnabled;
-}
 
 [RegisterComponent]
 public sealed partial class YautjaCommunicatorComponent : Component
