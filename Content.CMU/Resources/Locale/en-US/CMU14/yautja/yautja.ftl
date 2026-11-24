@@ -678,7 +678,6 @@ cmu-yautja-youngblood-gear-denied = You have not earned the right to use that br
 cmu-yautja-visor-denied = You have no idea how to work this thing!
 cmu-yautja-visor-wear-mask = You must wear the {$mask}!
 cmu-yautja-visor-no-bracer = You must be wearing your bracers, as they have the power source.
-cmu-yautja-visor-eyes-blocked = You need to remove your glasses first. Why are you even wearing these?
 cmu-yautja-visor-low-power = Your bracers lack sufficient power to operate the visor.
 cmu-yautja-bracer-lock-yautja = The bracer clamps securely around your forearm and beeps in a comfortable, familiar way.
 cmu-yautja-bracer-lock-nonyautja = The bracer clamps painfully around your forearm and beeps angrily. It won't come off!

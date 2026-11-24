@@ -442,7 +442,6 @@ cmu-yautja-unmark-dishonored-broadcast = {$hunter} снял с {$target} кле�
 cmu-yautja-unmark-gear-carrier-broadcast = {$hunter} снял с {$target} клеймо носителя снаряжения!
 cmu-yautja-unmark-honored-broadcast = {$hunter} снял с {$target} клеймо почётного!
 cmu-yautja-visor-denied = Вы понятия не имеете, как этим пользоваться!
-cmu-yautja-visor-eyes-blocked = Сначала снимите очки. Зачем вы вообще их носите?
 cmu-yautja-visor-low-power = В ваших наручах недостаточно энергии для работы визора.
 cmu-yautja-visor-no-bracer = Нужно носить наручи: именно они служат источником питания.
 cmu-yautja-visor-wear-mask = Наденьте {$mask}!

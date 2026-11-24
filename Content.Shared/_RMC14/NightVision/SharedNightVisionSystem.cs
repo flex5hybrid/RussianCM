@@ -2,6 +2,7 @@ using Content.Shared._RMC14.Marines.Skills;
 using Content.Shared._RMC14.Scoping;
 using Content.Shared._RMC14.Visor;
 using Content.Shared._RuMC14.BatteryDrain; // RuMC edit
+using Content.Shared._RuMC14.NightVision; // RuMC edit
 using Content.Shared.Actions;
 using Content.Shared.Alert;
 using Content.Shared.IgnitionSource;
@@ -281,6 +282,11 @@ public abstract partial class SharedNightVisionSystem : EntitySystem
             _popup.PopupEntity(Loc.GetString("rmc-skills-hud-toggle"), user, user, PopupType.MediumCaution);
             return;
         }
+
+        // RuMC edit start
+        var enabling = new RuMCNightVisionItemEnablingEvent(item, user);
+        RaiseLocalEvent(ref enabling);
+        // RuMC edit end
 
         item.Comp.User = user;
 

@@ -1,5 +1,7 @@
 using System.Numerics;
 using Content.Shared._RMC14.Actions;
+using Content.Shared._RMC14.NightVision; // RuMC edit
+using Content.Shared._RuMC14.NightVision; // RuMC edit
 using Content.Shared.Actions;
 using Content.Shared.Camera;
 using Content.Shared.FixedPoint;
@@ -20,8 +22,8 @@ public sealed partial class YautjaMaskSystem : EntitySystem
     [Dependency] private SharedAudioSystem _audio = default!;
     [Dependency] private InventorySystem _inventory = default!;
     [Dependency] private SharedContentEyeSystem _contentEye = default!;
-    [Dependency] private SharedEyeSystem _eye = default!;
     [Dependency] private INetManager _net = default!;
+    [Dependency] private SharedNightVisionSystem _nightVision = default!; // RuMC edit
     [Dependency] private SharedPopupSystem _popup = default!;
     [Dependency] private SharedRMCActionsSystem _rmcActions = default!;
     [Dependency] private IGameTiming _timing = default!;
@@ -35,6 +37,7 @@ public sealed partial class YautjaMaskSystem : EntitySystem
         SubscribeLocalEvent<YautjaMaskComponent, GotEquippedEvent>(OnEquipped);
         SubscribeLocalEvent<YautjaMaskComponent, GotUnequippedEvent>(OnUnequipped);
         SubscribeLocalEvent<YautjaMaskComponent, ComponentRemove>(OnRemove);
+        SubscribeLocalEvent<RuMCNightVisionItemEnablingEvent>(OnNightVisionItemEnabling); // RuMC edit
 
         SubscribeLocalEvent<YautjaMaskZoomComponent, GetEyeOffsetEvent>(OnZoomGetEyeOffset);
         SubscribeLocalEvent<YautjaMaskZoomComponent, ComponentRemove>(OnZoomRemove);
@@ -105,10 +108,6 @@ public sealed partial class YautjaMaskSystem : EntitySystem
 
         ent.Comp.User = args.EquipTarget;
         EnsureComp<YautjaHudViewerComponent>(args.EquipTarget);
-
-        if (HasComp<YautjaComponent>(args.EquipTarget) ||
-            ent.Comp.PreserveVisorOnUnequip && ent.Comp.VisorEnabled)
-            EnableVisor(ent, args.EquipTarget, false);
     }
 
     private void OnUnequipped(Entity<YautjaMaskComponent> ent, ref GotUnequippedEvent args)
@@ -119,10 +118,7 @@ public sealed partial class YautjaMaskSystem : EntitySystem
         if (_net.IsClient)
             return;
 
-        if (ent.Comp.PreserveVisorOnUnequip)
-            DeleteVisorGlasses(ent, args.EquipTarget);
-        else
-            DisableVisor(ent, args.EquipTarget, false);
+        DisableVisor(ent, args.EquipTarget, false); // RuMC edit
 
         SetZoom(ent, args.EquipTarget, false, false);
         RemoveMaskHudViewer(args.EquipTarget, ent.Owner);
@@ -142,6 +138,46 @@ public sealed partial class YautjaMaskSystem : EntitySystem
         }
     }
 
+    // RuMC edit start: one night vision source at a time
+    private void OnNightVisionItemEnabling(ref RuMCNightVisionItemEnablingEvent args)
+    {
+        if (_net.IsClient)
+            return;
+
+        var slots = _inventory.GetSlotEnumerator(args.User, SlotFlags.MASK | SlotFlags.HEAD);
+        while (slots.MoveNext(out var slot))
+        {
+            if (slot.ContainedEntity is { } contained &&
+                contained != args.Item &&
+                TryComp(contained, out YautjaMaskComponent? mask) &&
+                (mask.VisorEnabled || mask.VisorWaitingForPower))
+            {
+                DisableVisor((contained, mask), args.User, mask.VisorEnabled);
+            }
+        }
+    }
+
+    private void DisableOtherNightVision(EntityUid mask, EntityUid user)
+    {
+        var active = new List<Entity<NightVisionItemComponent>>();
+        var query = EntityQueryEnumerator<NightVisionItemComponent>();
+        while (query.MoveNext(out var uid, out var item))
+        {
+            if (uid != mask && item.User == user)
+                active.Add((uid, item));
+        }
+
+        foreach (var item in active)
+        {
+            var displaced = new RuMCNightVisionItemDisplacedEvent(user);
+            RaiseLocalEvent(item, ref displaced);
+
+            if (item.Comp.User == user)
+                _nightVision.DisableNightVisionItem(item, user);
+        }
+    }
+    // RuMC edit end
+
     public override void Update(float frameTime)
     {
         if (_net.IsClient)
@@ -151,7 +187,7 @@ public sealed partial class YautjaMaskSystem : EntitySystem
         var query = EntityQueryEnumerator<YautjaMaskComponent>();
         while (query.MoveNext(out var uid, out var mask))
         {
-            // the drain below killed the visor and deleted the nv glasses, nothing ever turned it back on
+            // the drain below killed the visor and its night vision, nothing ever turned it back on
             // so taking the bracer off cost you night vision until you took the mask off and on again
             if (mask.VisorWaitingForPower &&
                 !mask.VisorEnabled &&
@@ -183,14 +219,18 @@ public sealed partial class YautjaMaskSystem : EntitySystem
         if (_net.IsClient)
             return;
 
-        if (!CreateVisorGlasses(mask, user))
+        // RuMC edit start
+        if (!TryComp(mask, out NightVisionItemComponent? nightVision))
             return;
+
+        DisableOtherNightVision(mask, user);
+        _nightVision.EnableNightVisionItem((mask, nightVision), user);
+        // RuMC edit end
 
         mask.Comp.VisorEnabled = true;
         mask.Comp.VisorWaitingForPower = false;
         mask.Comp.User = user;
         mask.Comp.NextDrain = _timing.CurTime + mask.Comp.DrainEvery;
-        SetVisorFov(mask, user, true);
         Dirty(mask);
 
         _actions.SetToggled(mask.Comp.ToggleVisorAction, true);
@@ -209,13 +249,13 @@ public sealed partial class YautjaMaskSystem : EntitySystem
 
         mask.Comp.VisorEnabled = false;
         mask.Comp.VisorWaitingForPower = false;
-        if (user is { } wearer)
-            SetVisorFov(mask, wearer, false);
-
         Dirty(mask);
         _actions.SetToggled(mask.Comp.ToggleVisorAction, false);
 
-        DeleteVisorGlasses(mask, user);
+        // RuMC edit start
+        if (TryComp(mask, out NightVisionItemComponent? nightVision) && nightVision.User != null)
+            _nightVision.DisableNightVisionItem((mask, nightVision), nightVision.User);
+        // RuMC edit end
 
         if (user == null)
             return;
@@ -225,29 +265,6 @@ public sealed partial class YautjaMaskSystem : EntitySystem
 
         _audio.PlayPvs(mask.Comp.ToggleVisorSound, mask.Owner);
         _popup.PopupEntity(Loc.GetString("cmu-yautja-visor-disabled"), user.Value, user.Value);
-    }
-
-    private void SetVisorFov(Entity<YautjaMaskComponent> mask, EntityUid user, bool suppress)
-    {
-        if (!TryComp<EyeComponent>(user, out var eye))
-            return;
-
-        if (suppress)
-        {
-            if (mask.Comp.VisorFovSuppressed)
-                return;
-
-            mask.Comp.VisorDrawFovBefore = eye.DrawFov;
-            mask.Comp.VisorFovSuppressed = true;
-            _eye.SetDrawFov(user, false, eye);
-            return;
-        }
-
-        if (!mask.Comp.VisorFovSuppressed)
-            return;
-
-        mask.Comp.VisorFovSuppressed = false;
-        _eye.SetDrawFov(user, mask.Comp.VisorDrawFovBefore, eye);
     }
 
     private void SetZoom(Entity<YautjaMaskComponent> mask, EntityUid user, bool zoomed, bool feedback = true)
@@ -348,12 +365,6 @@ public sealed partial class YautjaMaskSystem : EntitySystem
             return true;
         }
 
-        if (HasBlockingEyeWear(user))
-        {
-            message = Loc.GetString("cmu-yautja-visor-eyes-blocked");
-            return true;
-        }
-
         message = string.Empty;
         return false;
     }
@@ -409,77 +420,6 @@ public sealed partial class YautjaMaskSystem : EntitySystem
                 Dirty(contained, thrallBracer);
 
             return true;
-        }
-
-        return false;
-    }
-
-    private bool CreateVisorGlasses(Entity<YautjaMaskComponent> mask, EntityUid user)
-    {
-        DeleteVisorGlasses(mask, user);
-
-        if (_inventory.TryGetSlotEntity(user, "eyes", out _))
-            return false;
-
-        var glasses = Spawn(mask.Comp.VisorGlassesPrototype, Transform(user).Coordinates);
-        if (!_inventory.TryEquip(user, glasses, "eyes", silent: true, force: true))
-        {
-            QueueDel(glasses);
-            return false;
-        }
-
-        var visor = EnsureComp<YautjaMaskVisorGlassesComponent>(glasses);
-        visor.Mask = mask.Owner;
-        visor.User = user;
-        visor.ThermalVisionEnabled = true;
-        Dirty(glasses, visor);
-
-        mask.Comp.VisorGlasses = glasses;
-        Dirty(mask);
-        return true;
-    }
-
-    private void DeleteVisorGlasses(Entity<YautjaMaskComponent> mask, EntityUid? user)
-    {
-        var dirty = false;
-
-        if (user != null &&
-            _inventory.TryGetSlotEntity(user.Value, "eyes", out var equipped) &&
-            TryComp(equipped.Value, out YautjaMaskVisorGlassesComponent? visor))
-        {
-            visor.ThermalVisionEnabled = false;
-            Dirty(equipped.Value, visor);
-            _inventory.TryUnequip(user.Value, "eyes", out _, silent: true, force: true);
-            QueueDel(equipped.Value);
-            if (mask.Comp.VisorGlasses == equipped.Value)
-                mask.Comp.VisorGlasses = null;
-
-            dirty = true;
-        }
-
-        if (mask.Comp.VisorGlasses is { } stored)
-        {
-            if (!Deleted(stored))
-                QueueDel(stored);
-
-            mask.Comp.VisorGlasses = null;
-            dirty = true;
-        }
-
-        if (dirty)
-            Dirty(mask);
-    }
-
-    private bool HasBlockingEyeWear(EntityUid user)
-    {
-        var slots = _inventory.GetSlotEnumerator(user, SlotFlags.EYES);
-        while (slots.MoveNext(out var slot))
-        {
-            if (slot.ContainedEntity is { } contained &&
-                !HasComp<YautjaMaskVisorGlassesComponent>(contained))
-            {
-                return true;
-            }
         }
 
         return false;
