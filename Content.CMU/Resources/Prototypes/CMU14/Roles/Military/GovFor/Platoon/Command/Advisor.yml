@@ -130,7 +130,7 @@
   roundSide: Opfor
   roundForce: OPFOR
   icon: "AU14JobIconOPFORAdvisor"
-  spawnMenuRoleName: Advisor (OPFOR)
+  spawnMenuRoleName: au14-spawn-role-name-govfor-platoon-advisor #RUMC edit
   startingGear: AU14GearOPFORadvisor
   dummyStartingGear: AU14GearOPFORadvisorDummy
   supervisors: au14-job-supervisors-opfor

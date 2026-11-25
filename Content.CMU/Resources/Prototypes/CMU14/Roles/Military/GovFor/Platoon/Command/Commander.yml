@@ -120,7 +120,7 @@
   roundSide: Opfor
   roundForce: OPFOR
   icon: "AU14JobIconOPFORPlatCo"
-  spawnMenuRoleName: Commanding Officer (OPFOR)
+  spawnMenuRoleName: au14-spawn-role-name-govfor-platoon-commander
   supervisors: au14-job-supervisors-opforplatco
   startingGear: AU14GearOPFORPlatCo
   dummyStartingGear: AU14GearOPFORPlatCoDummy

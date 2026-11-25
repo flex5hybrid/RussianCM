@@ -199,7 +199,7 @@
   roundSide: Opfor
   roundForce: OPFOR
   icon: "AU14JobIconOPFORSynth"
-  spawnMenuRoleName: Support Synth (OPFOR)
+  spawnMenuRoleName: cmu-spawn-role-support-synth-govfor #RUMC edit
   supervisors: au14-job-supervisors-opforplatco
   startingGear: AU14GearOPFORAuxSupportSynth
   dummyStartingGear: AU14GearOPFORAuxSupportSynthDummy

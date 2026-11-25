@@ -116,7 +116,7 @@
   roundSide: Opfor
   roundForce: OPFOR
   icon: "AU14JobIconOPFORAdjutant"
-  spawnMenuRoleName: Executive Officer (OPFOR)
+  spawnMenuRoleName: au14-spawn-role-name-govfor-executive-officer #RUMC edit
   supervisors: au14-job-supervisors-opforplatco
   startingGear: AU14GearOPFORAdjutant
   dummyStartingGear: AU14GearOPFORAdjutantDummy

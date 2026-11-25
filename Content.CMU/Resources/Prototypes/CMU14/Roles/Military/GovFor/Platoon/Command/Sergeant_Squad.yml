@@ -168,7 +168,7 @@
   roundSide: Opfor
   roundForce: OPFOR
   icon: "AU14JobIconOPFORSquadSgt"
-  spawnMenuRoleName: Squad Leader (OPFOR)
+  spawnMenuRoleName: cmu-spawn-role-squad-leader-govfor #RUMC edit
   supervisors: au14-job-supervisors-opfor
   startingGear: AU14GearOpforSquadSergeant
   dummyStartingGear: AU14GearOpforSquadSergeantDummy
