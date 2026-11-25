@@ -43,6 +43,7 @@ public sealed class RecipeMachineSystem : EntitySystem
         base.Initialize();
 
         SubscribeLocalEvent<RecipeMachineComponent, RecipeMachineCircuitMessage>(OnCircuit);
+        SubscribeLocalEvent<RecipeMachineComponent, RecipeMachineSelectMessage>(OnSelect);
         SubscribeLocalEvent<RecipeMachineComponent, ExaminedEvent>(OnExamined);
         SubscribeLocalEvent<RecipeMachineComponent, CMUFluidTankRoomEvent>(OnGetFluidTankRoom);
         SubscribeLocalEvent<RecipeMachineComponent, EntInsertedIntoContainerMessage>(OnSlotChanged);
@@ -102,6 +103,31 @@ public sealed class RecipeMachineSystem : EntitySystem
     {
         machine.Comp.NeedsRecipeCheck = true;
         machine.Comp.Circuit = Math.Clamp(args.Circuit, 0, machine.Comp.MaxCircuit);
+        // A circuit set by hand clears a recipe chosen from the list.
+        machine.Comp.SelectedRecipe = null;
+        Dirty(machine);
+    }
+
+    // A recipe chosen from the list of a machine tool: it makes only that one, and its circuit is set for it.
+    private void OnSelect(Entity<RecipeMachineComponent> machine, ref RecipeMachineSelectMessage args)
+    {
+        if (!machine.Comp.RecipeSelection)
+            return;
+
+        if (args.Recipe == null)
+        {
+            machine.Comp.SelectedRecipe = null;
+        }
+        else
+        {
+            if (!_proto.TryIndex<MachineRecipePrototype>(args.Recipe, out var recipe) || recipe.Machine != machine.Comp.Kind)
+                return;
+
+            machine.Comp.SelectedRecipe = recipe.ID;
+            machine.Comp.Circuit = Math.Clamp(recipe.Circuit ?? 0, 0, machine.Comp.MaxCircuit);
+        }
+
+        machine.Comp.NeedsRecipeCheck = true;
         Dirty(machine);
     }
 
@@ -220,6 +246,9 @@ public sealed class RecipeMachineSystem : EntitySystem
 
         foreach (var recipe in RecipesOf(comp.Kind))
         {
+            if (comp.SelectedRecipe != null && recipe.ID != comp.SelectedRecipe)
+                continue;
+
             if (recipe.Circuit is { } circuit && circuit != comp.Circuit)
                 continue;
 

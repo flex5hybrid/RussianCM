@@ -44,7 +44,14 @@ public sealed class RecipeMachineWindow : DefaultWindow
     private readonly BoxContainer _liquids;
     private MachineWindowKit.FluidGauge? _steam;
     private readonly BoxContainer _recipeList;
+    private readonly Label _recipesTitle;
     private bool _listed;
+
+    // On a machine tool each recipe of the list is a button that chooses it; the chosen one is pressed, and pressing it again
+    // clears the choice.
+    private readonly List<(Button Button, string Recipe)> _recipeButtons = new();
+
+    public event Action<string?>? OnRecipeChosen;
 
     public event Action<string>? OnSlotPressed;
     public event Action<int>? OnCircuitChosen;
@@ -136,7 +143,8 @@ public sealed class RecipeMachineWindow : DefaultWindow
         _progressBar = MachineWindowKit.Bar(400);
         root.AddChild(_progressBar);
 
-        root.AddChild(new Label { Text = Loc.GetString("au14-machine-recipes"), FontColorOverride = MachineWindowKit.SectionTitle });
+        _recipesTitle = new Label { Text = Loc.GetString("au14-machine-recipes"), FontColorOverride = MachineWindowKit.SectionTitle };
+        root.AddChild(_recipesTitle);
 
         _recipeList = MachineWindowKit.Column(2);
         var scroll = new ScrollContainer { VerticalExpand = true, MinSize = new Vector2(480, 200), HScrollEnabled = false };
@@ -209,6 +217,8 @@ public sealed class RecipeMachineWindow : DefaultWindow
             .ToList();
 
         _circuitRow.Visible = recipes.Any(recipe => recipe.Circuit != null);
+        if (comp.RecipeSelection)
+            _recipesTitle.Text = Loc.GetString("au14-machine-recipes-choose");
 
         FillFilters(recipes);
 
@@ -216,7 +226,24 @@ public sealed class RecipeMachineWindow : DefaultWindow
         {
             var text = new RichTextLabel { HorizontalExpand = true };
             text.SetMessage(FormattedMessage.FromUnformatted(Describe(recipe)));
-            _recipeList.AddChild(text);
+
+            if (!comp.RecipeSelection)
+            {
+                _recipeList.AddChild(text);
+                continue;
+            }
+
+            var id = recipe.ID;
+            var button = new Button { ToggleMode = true, HorizontalExpand = true };
+            button.Label.Visible = false;
+            button.AddChild(text);
+            button.OnPressed += _ =>
+            {
+                var chosen = _entMan.GetComponentOrNull<RecipeMachineComponent>(_owner)?.SelectedRecipe;
+                OnRecipeChosen?.Invoke(chosen == id ? null : id);
+            };
+            _recipeButtons.Add((button, id));
+            _recipeList.AddChild(button);
         }
     }
 
@@ -306,6 +333,8 @@ public sealed class RecipeMachineWindow : DefaultWindow
             MachineWindowKit.Refresh(_entMan, _itemSlots, _stacks, _owner, slot);
 
         _circuitLabel.Text = comp.Circuit.ToString();
+        foreach (var (button, recipe) in _recipeButtons)
+            button.Pressed = recipe == comp.SelectedRecipe;
 
         // The switches show what the machine has; a click on one of them is not echoed back.
         var auto = _entMan.GetComponentOrNull<AutoPortsComponent>(_owner);
