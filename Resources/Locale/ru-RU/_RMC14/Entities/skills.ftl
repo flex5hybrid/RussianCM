@@ -46,3 +46,4 @@ ent-RMCSkillConstruction = Строительство
 
 ent-RMCSkillAntagonist = Антагонист
 
+ent-CMUSkillAircrew = Лётная подготовка
