@@ -36,9 +36,11 @@
       path: /Audio/_RMC14/Weapons/Guns/Cock/m5_ammo.ogg
   - type: FighterManpad
   - type: CMUManpadLowAltitude
-    lockTime: 3
-    lockRange: 15
-    missileFlightTime: 3
+    gunshipHit:
+      damage: 1000  # RUMC edit 800 -> 1000
+      effect: CMUManpadGunshipHitEffect
+      effectCount: 3
+      effectSpread: 2.5
   - type: Gun
     showExamineText: false
 

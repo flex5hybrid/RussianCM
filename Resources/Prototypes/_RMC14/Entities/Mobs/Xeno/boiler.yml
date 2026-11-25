@@ -11,6 +11,12 @@
   name: Boiler
   description: A huge, grotesque xenonid covered in glowing, oozing acid slime.
   components:
+  - type: FighterBoilerAirDefense  # RUMC edit 800 -> 500
+    actionId: CMUActionBoilerWatchAirspace
+    plasmaCost: 200
+    acquisitionTime: 2
+    cooldown: 15
+    gunshipDamage: 500
   - type: TTS
     voice: UNDERLORD_DOTA_2
     faction: Xeno
@@ -283,3 +289,4 @@
   - type: XenoAdrenalineSurge
   - type: RMCActionOrder
     id: RMCXenoBoilerSapper
+
