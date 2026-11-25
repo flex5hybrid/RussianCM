@@ -273,7 +273,7 @@ public sealed partial class HardpointSystem : EntitySystem
         if (hasSpeedMods)
         {
             var speed = EnsureComp<VehicleSpeedModifierComponent>(vehicle);
-            speed.SpeedMultiplier = speedMult;
+            speed.SpeedMultiplier = CMUCompensateSlowdown(vehicle, hardpoints, itemSlots, speedMult); // CMU14: heavy-fuel engine
             Dirty(vehicle, speed);
         }
         else

@@ -4,6 +4,74 @@
   name: Civilian car
   description: An old passenger car. Not much to look at, but it still runs.
   components:
+  # CMU14 Tuning Begin: slots for civilian vehicle modules (wheel slot repeated from the base)
+  - type: ContainerContainer
+    containers:
+      wheel-1: !type:ContainerSlot
+        showEnts: false
+        occludes: true
+        ent: null
+      cmu-armor: !type:ContainerSlot
+        showEnts: false
+        occludes: true
+        ent: null
+      cmu-front: !type:ContainerSlot
+        showEnts: false
+        occludes: true
+        ent: null
+      cmu-engine: !type:ContainerSlot
+        showEnts: false
+        occludes: true
+        ent: null
+      cmu-turret: !type:ContainerSlot
+        showEnts: false
+        occludes: true
+        ent: null
+  - type: HardpointSlots
+    vehicleFamily: Van
+    slots:
+    - id: wheel-1
+      visualLayer: cmu-wheels
+      disableEject: true
+      hardpointType: Wheel
+      slotType: Wheel
+      insertDelay: 1.5
+      whitelist:
+        components:
+        - VehicleWheelItem
+    - id: cmu-armor
+      visualLayer: cmu-armor
+      disableEject: true
+      hardpointType: Armor
+      slotType: Armor
+      required: false
+      insertDelay: 3.0
+    - id: cmu-front
+      visualLayer: cmu-front
+      disableEject: true
+      hardpointType: FrontAttachment
+      slotType: FrontAttachment
+      required: false
+      insertDelay: 3.0
+    - id: cmu-engine
+      disableEject: true
+      hardpointType: SupportAttachment
+      slotType: SupportAttachment
+      required: false
+      insertDelay: 3.0
+    - id: cmu-turret
+      disableEject: true
+      hardpointType: Turret
+      slotType: Turret
+      required: false
+      insertDelay: 3.0
+  - type: VehicleHardpointVisuals
+  - type: CMUVehicleTurretMount
+    north: -1,8
+    east: -9,16
+    south: -1,12
+    west: 7,16
+  # CMU14 Tuning End
   - type: Damageable
     damageModifierSet: VehicleFrameHumvee
   - type: Injurable
@@ -26,6 +94,20 @@
       visible: false
     - map: [ rmc-wheels ]
       state: wheels_1
+    # CMU14 Tuning Begin: the fitted civilian vehicle modules, shown by VehicleHardpointVisuals
+    - map: [ cmu-wheels ]
+      sprite: CMU14/Structures/vehicles/tuning_car.rsi
+      state: wheels_armoured
+      visible: false
+    - map: [ cmu-armor ]
+      sprite: CMU14/Structures/vehicles/tuning_car.rsi
+      state: armour
+      visible: false
+    - map: [ cmu-front ]
+      sprite: CMU14/Structures/vehicles/tuning_car.rsi
+      state: bullbar_spiked
+      visible: false
+    # CMU14 Tuning End
   - type: Fixtures
     fixtures:
       world:
@@ -78,6 +160,74 @@
   name: Hippie van
   description: A cheerful old minibus that has seen more road trips than anyone can count.
   components:
+  # CMU14 Tuning Begin: slots for civilian vehicle modules (wheel slot repeated from the base)
+  - type: ContainerContainer
+    containers:
+      wheel-1: !type:ContainerSlot
+        showEnts: false
+        occludes: true
+        ent: null
+      cmu-armor: !type:ContainerSlot
+        showEnts: false
+        occludes: true
+        ent: null
+      cmu-front: !type:ContainerSlot
+        showEnts: false
+        occludes: true
+        ent: null
+      cmu-engine: !type:ContainerSlot
+        showEnts: false
+        occludes: true
+        ent: null
+      cmu-turret: !type:ContainerSlot
+        showEnts: false
+        occludes: true
+        ent: null
+  - type: HardpointSlots
+    vehicleFamily: Van
+    slots:
+    - id: wheel-1
+      visualLayer: cmu-wheels
+      disableEject: true
+      hardpointType: Wheel
+      slotType: Wheel
+      insertDelay: 1.5
+      whitelist:
+        components:
+        - VehicleWheelItem
+    - id: cmu-armor
+      visualLayer: cmu-armor
+      disableEject: true
+      hardpointType: Armor
+      slotType: Armor
+      required: false
+      insertDelay: 3.0
+    - id: cmu-front
+      visualLayer: cmu-front
+      disableEject: true
+      hardpointType: FrontAttachment
+      slotType: FrontAttachment
+      required: false
+      insertDelay: 3.0
+    - id: cmu-engine
+      disableEject: true
+      hardpointType: SupportAttachment
+      slotType: SupportAttachment
+      required: false
+      insertDelay: 3.0
+    - id: cmu-turret
+      disableEject: true
+      hardpointType: Turret
+      slotType: Turret
+      required: false
+      insertDelay: 3.0
+  - type: VehicleHardpointVisuals
+  - type: CMUVehicleTurretMount
+    north: -1,17
+    east: -8,21
+    south: -1,17
+    west: 4,21
+  # CMU14 Tuning End
   - type: Damageable
     damageModifierSet: VehicleFrameHumvee
   - type: Injurable
@@ -100,6 +250,20 @@
       visible: false
     - map: [ rmc-wheels ]
       state: wheels_1
+    # CMU14 Tuning Begin: the fitted civilian vehicle modules, shown by VehicleHardpointVisuals
+    - map: [ cmu-wheels ]
+      sprite: CMU14/Structures/vehicles/tuning_hippie_van.rsi
+      state: wheels_armoured
+      visible: false
+    - map: [ cmu-armor ]
+      sprite: CMU14/Structures/vehicles/tuning_hippie_van.rsi
+      state: armour
+      visible: false
+    - map: [ cmu-front ]
+      sprite: CMU14/Structures/vehicles/tuning_hippie_van.rsi
+      state: bullbar_spiked
+      visible: false
+    # CMU14 Tuning End
   - type: Fixtures
     fixtures:
       world:

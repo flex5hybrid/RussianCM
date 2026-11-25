@@ -43,6 +43,74 @@
   name: Civilian truck
   description: An old military truck. This one seems to be working for civilians
   components:
+  # CMU14 Tuning Begin: slots for civilian vehicle modules (wheel slot repeated from the base)
+  - type: ContainerContainer
+    containers:
+      wheel-1: !type:ContainerSlot
+        showEnts: false
+        occludes: true
+        ent: null
+      cmu-armor: !type:ContainerSlot
+        showEnts: false
+        occludes: true
+        ent: null
+      cmu-front: !type:ContainerSlot
+        showEnts: false
+        occludes: true
+        ent: null
+      cmu-engine: !type:ContainerSlot
+        showEnts: false
+        occludes: true
+        ent: null
+      cmu-turret: !type:ContainerSlot
+        showEnts: false
+        occludes: true
+        ent: null
+  - type: HardpointSlots
+    vehicleFamily: Van
+    slots:
+    - id: wheel-1
+      visualLayer: cmu-wheels
+      disableEject: true
+      hardpointType: Wheel
+      slotType: Wheel
+      insertDelay: 1.5
+      whitelist:
+        components:
+        - VehicleWheelItem
+    - id: cmu-armor
+      visualLayer: cmu-armor
+      disableEject: true
+      hardpointType: Armor
+      slotType: Armor
+      required: false
+      insertDelay: 3.0
+    - id: cmu-front
+      visualLayer: cmu-front
+      disableEject: true
+      hardpointType: FrontAttachment
+      slotType: FrontAttachment
+      required: false
+      insertDelay: 3.0
+    - id: cmu-engine
+      disableEject: true
+      hardpointType: SupportAttachment
+      slotType: SupportAttachment
+      required: false
+      insertDelay: 3.0
+    - id: cmu-turret
+      disableEject: true
+      hardpointType: Turret
+      slotType: Turret
+      required: false
+      insertDelay: 3.0
+  - type: VehicleHardpointVisuals
+  - type: CMUVehicleTurretMount
+    north: 0,34
+    east: 20,21
+    south: 0,-16
+    west: -20,21
+  # CMU14 Tuning End
   - type: Damageable
     damageModifierSet: VehicleFrameCLFVan
   - type: Injurable
@@ -57,6 +125,20 @@
       visible: false
     - map: [ rmc-wheels ]
       state: wheels_1
+    # CMU14 Tuning Begin: the fitted civilian vehicle modules, shown by VehicleHardpointVisuals
+    - map: [ cmu-wheels ]
+      sprite: CMU14/Structures/vehicles/tuning_civ_truck.rsi
+      state: wheels_armoured
+      visible: false
+    - map: [ cmu-armor ]
+      sprite: CMU14/Structures/vehicles/tuning_civ_truck.rsi
+      state: armour
+      visible: false
+    - map: [ cmu-front ]
+      sprite: CMU14/Structures/vehicles/tuning_civ_truck.rsi
+      state: bullbar_spiked
+      visible: false
+    # CMU14 Tuning End
   - type: VehicleSound
     collisionSoundCooldown: 1.5
   - type: VehicleEnter

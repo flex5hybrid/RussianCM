@@ -1,0 +1,304 @@
+# Modules for civilian vehicles (the Van family), made in the vehicle tuning workshop. Examining the vehicle lists what
+# is fitted. On a vehicle with layers for them HardpointVisual names the state drawn there.
+#
+# Armour modules fit the armour slot, one at a time. Each adds the Humvee's armour coefficients as a protection buff on
+# top of the vehicle's own frame set (so the two multiply) and its own integrity to the vehicle's.
+
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: CMUVehicleArmorModuleCivilianBase
+  components:
+  - type: Sprite
+    sprite: CMU14/Objects/Vehicles/tuning_modules.rsi
+    state: armour
+  - type: Item
+    size: Large
+  - type: HardpointItem
+    hardpointType: Armor
+    vehicleFamily: Van
+    slotType: Armor
+    damageMultiplier: 0.5
+    repairRate: 0.007
+  - type: VehicleArmorHardpoint
+    modifierSets:
+    - VehicleFrameHumvee
+
+# Light: titanium and plasteel. Less integrity, no slowdown.
+- type: entity
+  parent: CMUVehicleArmorModuleCivilianBase
+  id: CMUVehicleArmorModuleCivilianLight
+  name: light civilian vehicle armour module
+  description: Thin titanium and plasteel panels cut to bolt onto the body of a civilian vehicle. They barely weigh it down.
+  components:
+  - type: Sprite
+    sprite: CMU14/Objects/Vehicles/tuning_modules.rsi
+    state: armour_light
+  - type: HardpointIntegrity
+    maxIntegrity: 300
+    integrity: 300
+  - type: CMUVehicleModuleExamine
+    examine: cmu-vehicle-module-examine-armor-light
+  - type: HardpointVisual
+    vehicleState: armour_light
+
+# Standard: half of the Humvee's 1000 integrity, a fifth slower.
+- type: entity
+  parent: CMUVehicleArmorModuleCivilianBase
+  id: CMUVehicleArmorModuleCivilian
+  name: civilian vehicle armour module
+  description: A set of armour plates and brackets cut to bolt onto the body of a civilian vehicle. Its weight slows the vehicle by a fifth.
+  components:
+  - type: HardpointIntegrity
+    maxIntegrity: 500
+    integrity: 500
+  - type: VehicleSpeedModifierAttachment
+    speedMultiplier: 0.8
+  - type: CMUVehicleModuleExamine
+    examine: cmu-vehicle-module-examine-armor
+  - type: HardpointVisual
+    vehicleState: armour
+
+# Heavy: plates, lead and plasteel welded into one shell. Twice the integrity, half the speed.
+- type: entity
+  parent: CMUVehicleArmorModuleCivilianBase
+  id: CMUVehicleArmorModuleCivilianHeavy
+  name: heavy civilian vehicle armour module
+  description: A welded shell of armour plates, lead and plasteel for the body of a civilian vehicle. It halves the vehicle's speed.
+  components:
+  - type: Sprite
+    sprite: CMU14/Objects/Vehicles/tuning_modules.rsi
+    state: armour_heavy
+  - type: Item
+    size: Huge
+  - type: HardpointIntegrity
+    maxIntegrity: 1000
+    integrity: 1000
+  - type: VehicleSpeedModifierAttachment
+    speedMultiplier: 0.5
+  - type: CMUVehicleModuleExamine
+    examine: cmu-vehicle-module-examine-armor-heavy
+  - type: HardpointVisual
+    vehicleState: armour_heavy
+
+# Armoured wheels: a van wheel with armour welded around it. 100 more integrity than the van wheel, 7% slower.
+- type: entity
+  parent: RMCVanWheel
+  id: CMUVehicleWheelArmored
+  name: armoured van wheel
+  description: A van wheel with armour plating welded around it. Sturdier, but heavier.
+  components:
+  - type: Sprite
+    sprite: CMU14/Objects/Vehicles/tuning_modules.rsi
+    state: wheel_armoured
+  - type: HardpointIntegrity
+    maxIntegrity: 350
+    integrity: 350
+  - type: VehicleSpeedModifierAttachment
+    speedMultiplier: 0.93
+  - type: CMUVehicleModuleExamine
+    examine: cmu-vehicle-module-examine-wheels-armored
+  - type: HardpointVisual
+    vehicleState: wheels_armoured
+
+# Spiked bullbar: the front slot. A creature the vehicle runs into takes 50 brute damage instead of the usual 8.
+- type: entity
+  parent: BaseItem
+  id: CMUVehicleBullbarSpiked
+  name: spiked bullbar
+  description: A heavy steel bullbar studded with welded spikes, for the front of a civilian vehicle.
+  components:
+  - type: Sprite
+    sprite: CMU14/Objects/Vehicles/tuning_modules.rsi
+    state: bullbar_spiked
+  - type: Item
+    size: Large
+  - type: HardpointItem
+    hardpointType: FrontAttachment
+    vehicleFamily: Van
+    slotType: FrontAttachment
+    damageRegion: Front
+    damageMultiplier: 0.5
+    repairRate: 0.0125
+  - type: HardpointIntegrity
+    maxIntegrity: 200
+    integrity: 200
+  - type: CMUVehicleRamDamage
+    damage:
+      types:
+        Blunt: 25
+        Piercing: 25
+  - type: CMUVehicleModuleExamine
+    examine: cmu-vehicle-module-examine-bullbar
+  - type: HardpointVisual
+    vehicleState: bullbar_spiked
+
+# Heavy-fuel engine: the support slot. It cancels half of the slowdown from the vehicle's other modules.
+- type: entity
+  parent: BaseItem
+  id: CMUVehicleEngineHeavyFuel
+  name: forced heavy-fuel engine
+  description: A bored-out engine tuned to burn heavy fuel. It does not make the vehicle faster, but it pulls the weight of heavy modules far better.
+  components:
+  - type: Sprite
+    sprite: CMU14/Objects/Vehicles/tuning_modules.rsi
+    state: engine_heavy_fuel
+  - type: Item
+    size: Large
+  - type: HardpointItem
+    hardpointType: SupportAttachment
+    vehicleFamily: Van
+    slotType: SupportAttachment
+    damageRegion: Internal
+    damageMultiplier: 0.5
+    repairRate: 0.01
+  - type: HardpointIntegrity
+    maxIntegrity: 150
+    integrity: 150
+  - type: CMUVehicleSlowdownCompensation
+    fraction: 0.5
+  - type: CMUVehicleModuleExamine
+    examine: cmu-vehicle-module-examine-engine
+
+
+# The homemade turret and the mounted PKP for it, both made in the vehicle tuning workshop.
+
+# Homemade turret: the turret slot, like the Humvee's turret, and drawn like it: a rotating overlay that turns to where
+# the gunner aims. Where on the roof it sits is set by the vehicle (CMUVehicleTurretMount). While fitted, the vehicle's
+# passenger seat becomes the gunner seat, which aims the turret and loads the gun.
+- type: entity
+  parent: BaseItem
+  id: CMUVehicleTurretHomemade
+  name: homemade vehicle turret
+  description: A rotating ring and gun cradle welded together out of armour plates and plasteel, for the roof of a civilian vehicle. Fitting it turns the passenger seat into a gunner's seat.
+  components:
+  - type: Sprite
+    sprite: CMU14/Objects/Vehicles/tuning_modules.rsi
+    state: turret_homemade
+  - type: Item
+    size: Large
+  - type: HardpointItem
+    hardpointType: Turret
+    vehicleFamily: Van
+    slotType: Turret
+    damageMultiplier: 0.15
+    repairRate: 0.008
+  - type: HardpointIntegrity
+    maxIntegrity: 100
+    integrity: 100
+  - type: VehicleTurret
+    rotateToCursor: true
+    stabilizedRotation: false
+    rotationSpeed: 180
+    showOverlay: true
+    useDirectionalOffsets: true
+    overlayRsi: CMU14/Objects/Vehicles/tuning_turret_overlay.rsi
+    overlayState: turret_homemade_0
+  - type: ItemSlots
+    slots:
+      turret-cannon:
+        disableEject: true
+        whitelist:
+          components:
+          - HardpointItem
+  - type: ContainerContainer
+    containers:
+      turret-cannon: !type:ContainerSlot
+  - type: HardpointState
+  - type: HardpointSlots
+    vehicleFamily: Van
+    slots:
+    - id: turret-cannon
+      hardpointType: Cannon
+      slotType: Cannon
+      required: false
+      insertDelay: 2.0
+  - type: CMUVehicleTurretCrew
+    gunnerSeat: CMUSeatVehicleGunner
+  - type: CMUVehicleModuleExamine
+    examine: cmu-vehicle-module-examine-turret
+
+# Mounted PKP: the homemade turret's gun, a PKP-MS "Sibir" on a pivot mount. It takes the PKP-MS boxes (plain and tracer),
+# loaded at the gunner seat, with the PKP-MS's accuracy and a slower rate of fire than in the hands; the damage is the
+# cartridges'.
+- type: entity
+  parent: BaseItem
+  id: CMUVehicleGunPKP
+  name: mounted PKP machine gun
+  description: A PKP-MS "Sibir" bolted onto a vehicle turret cradle on a pivot mount. Fed with PKP-MS boxes from the gunner's seat; it fires slower than in the hands, but steadier.
+  components:
+  - type: Sprite
+    sprite: CMU14/Objects/Vehicles/tuning_modules.rsi
+    state: gun_pkp
+  - type: Item
+    size: Large
+  - type: HardpointItem
+    hardpointType: Cannon
+    vehicleFamily: Van
+    slotType: Cannon
+    damageMultiplier: 0.1
+    repairRate: 0.01
+  - type: HardpointIntegrity
+    maxIntegrity: 50
+    integrity: 50
+  - type: VehicleTurretAttachment
+  - type: VehicleTurret
+    showOverlay: true
+    overlayRsi: CMU14/Objects/Vehicles/tuning_turret_overlay.rsi
+    overlayState: gun_pkp_0
+    fireWhileRotatingGraceDegrees: 20
+    useBarrelDirectionForShots: true
+    maxShotCurvatureDegrees: 10
+  - type: GunUseGunOrigin
+  - type: GunIgnoreContainerOwnerCollision
+  - type: Gun
+    fireRate: 4 # the PKP-MS fires 5.1 a second in the hands
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      path: /Audio/_RMC14/Weapons/Guns/Gunshots/gun_m60.ogg
+      params:
+        volume: -4
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+    cameraRecoilScalar: 0
+  - type: RMCWeaponAccuracy
+    accuracyMultiplier: 1
+    accuracyMultiplierUnwielded: 1
+  - type: GunFireArc
+    arc: 180
+  - type: MagazineAmmoProvider
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        insertSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_reload.ogg
+        ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - RuMCMagazinePKP_MS
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+
+# The gunner seat a fitted homemade turret puts in place of the passenger seat. Sitting in it aims and fires the vehicle's
+# guns; using a PKP-MS box on it loads the mounted gun.
+- type: entity
+  parent: RMCSeatHumveeBase
+  id: CMUSeatVehicleGunner
+  name: gunner seat
+  description: A passenger seat with the turret's controls rigged in front of it. Use a PKP-MS box on it to load the mounted gun.
+  components:
+  - type: VehicleWeaponsSeat
+    skills:
+      all: {}
+    isPrimaryOperatorSeat: true
+    allowUiSelection: true
+    allowHotbarSelection: true
+  - type: UserInterface
+    interfaces:
+      enum.VehicleWeaponsUiKey.Key:
+        type: VehicleWeaponsBoundUserInterface
+  - type: CMUVehicleMagazineLoader

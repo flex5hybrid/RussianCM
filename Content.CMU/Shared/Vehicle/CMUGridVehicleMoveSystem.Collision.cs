@@ -82,6 +82,24 @@ public sealed partial class GridVehicleMoverSystem
     /// <summary>
     /// Running someone down counts as an impact only at the speed a crash would.
     /// </summary>
+    [Dependency] private VehicleTopologySystem _cmuTopology = default!;
+
+    // A fitted, working ram module (the spiked bullbar) sets the damage a creature that is run into takes.
+    private DamageSpecifier? CMUGetMobCollisionDamage(EntityUid vehicle)
+    {
+        foreach (var mounted in _cmuTopology.GetMountedSlots(vehicle))
+        {
+            if (mounted.Item is { } item &&
+                TryComp(item, out CMUVehicleRamDamageComponent? ram) &&
+                _hardpoints.IsHardpointFunctional(item))
+            {
+                return ram.Damage;
+            }
+        }
+
+        return null;
+    }
+
     private void CMUOnMobHit(EntityUid vehicle, GridVehicleMoverComponent mover, EntityUid target)
     {
         if (_net.IsClient ||

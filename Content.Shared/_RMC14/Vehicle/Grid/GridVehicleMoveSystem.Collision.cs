@@ -1904,7 +1904,7 @@ public sealed partial class GridVehicleMoverSystem : EntitySystem
                 ApplyMobCrashImmobility(vehicle, vehicleMover, mobImmobility);
         }
 
-        _damageable.TryChangeDamage(target, _mobCollisionDamage);
+        _damageable.TryChangeDamage(target, CMUGetMobCollisionDamage(vehicle) ?? _mobCollisionDamage); // CMU14: ram modules
 
         if (HasComp<XenoComponent>(target))
             return;

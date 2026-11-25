@@ -1,7 +1,24 @@
+using System.Numerics;
+
 namespace Content.Shared._RMC14.Vehicle;
 
 public sealed partial class VehicleTurretSystem
 {
+    /// <summary>
+    /// CMU14: places a turret's overlay on the vehicle it was fitted to, one pixel offset for each way the vehicle faces.
+    /// A homemade turret fits several civilian vehicles, so the offsets come from the vehicle, not the turret prototype.
+    /// </summary>
+    public void CMUSetMountOffsets(EntityUid uid, VehicleTurretComponent turret, Vector2 north, Vector2 east, Vector2 south, Vector2 west)
+    {
+        turret.UseDirectionalOffsets = true;
+        turret.PixelOffset = Vector2.Zero;
+        turret.PixelOffsetNorth = north;
+        turret.PixelOffsetEast = east;
+        turret.PixelOffsetSouth = south;
+        turret.PixelOffsetWest = west;
+        Dirty(uid, turret);
+    }
+
     /// <summary>
     /// CMU14: keeps a turret's vehicle-relative aim inside its arc around the vehicle's front.
     /// </summary>

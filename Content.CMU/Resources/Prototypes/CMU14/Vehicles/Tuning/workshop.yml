@@ -1,0 +1,180 @@
+# The vehicle tuning workshop: a powered recipe machine that turns industry materials into vehicle modules.
+# The recipe chosen in its window (or the circuit set there) picks what it makes. Its input slots take whole items as well as stacks
+# (a module and a wheel for armoured wheels), and its tank takes welding fuel and heavy fuel, poured in from a container
+# in the hand or piped in. Its sprite is the complex assembly bench's with a wheel plate on it.
+- type: entity
+  parent: [ RUMCRecipeMachineBase, RUMCFluidMachineBase, BaseMachinePowered, BaseMachineDestructible ]
+  id: CMUMachineVehicleWorkshop
+  name: vehicle tuning workshop
+  description: Builds modules for civilian vehicles - armour, wheels, a bullbar, an engine, a turret and a mounted machine gun. Pick the recipe in its window. Welding fuel and heavy fuel go into its tank.
+  components:
+  - type: Sprite
+    sprite: CMU14/Production/Electric/vehicle_workshop.rsi
+    noRot: true
+    layers:
+    - state: off
+      map: [ "off" ]
+    - state: on
+      map: [ "on" ]
+      visible: false
+  - type: ApcPowerReceiver
+    powerLoad: 60
+  - type: PowerState
+    idlePowerDraw: 60
+    workingPowerDraw: 1500
+  - type: ActivatableUIRequiresPower
+  - type: RecipeMachine
+    kind: cmuvehicleworkshop
+    recipeSelection: true
+    maxCircuit: 9
+  - type: ItemSlots
+    slots:
+      input1: { whitelist: { components: [ Item ] }, insertOnInteract: false }
+      input2: { whitelist: { components: [ Item ] }, insertOnInteract: false }
+      input3: { whitelist: { components: [ Item ] }, insertOnInteract: false }
+      input4: { whitelist: { components: [ Item ] }, insertOnInteract: false }
+      output1: { insertOnInteract: false }
+      output2: { insertOnInteract: false }
+      output3: { insertOnInteract: false }
+      output4: { insertOnInteract: false }
+  - type: FluidTank
+    capacity: 300
+
+- type: craftRecipe
+  id: CMUCraftBuildVehicleWorkshop
+  name: cmu-craft-recipe-build-vehicle-workshop
+  output: CMUMachineVehicleWorkshop
+  outputCount: 1
+  time: 20
+  minigames: [Center, Hold, Trace]
+  tools:
+  - Hammering
+  consumables:
+  - stack: RUMCMachineHull
+    amount: 1
+  - stack: RUMCKitDrive
+    amount: 3
+  - stack: RUMCKitHydraulics
+    amount: 5
+  - stack: RUMCKitSimpleCircuits
+    amount: 1
+  - stack: RUMCKitWiring
+    amount: 5
+
+- type: cmuMachineRecipe
+  id: CMUMRVehicleWorkshopArmorModule
+  machine: cmuvehicleworkshop
+  inputs:
+    RUMCArmourPlates: 5
+  itemOutputs:
+    CMUVehicleArmorModuleCivilian: 1
+  circuit: 1
+  duration: 20
+
+- type: cmuMachineRecipe
+  id: CMUMRVehicleWorkshopVanWheel
+  machine: cmuvehicleworkshop
+  inputs:
+    RUMCIronRod: 5
+    CMSteel: 10
+    RUMCRubberSheet: 8
+  itemOutputs:
+    RMCVanWheel: 1
+  circuit: 2
+  duration: 15
+
+- type: cmuMachineRecipe
+  id: CMUMRVehicleWorkshopHeavyArmorModule
+  machine: cmuvehicleworkshop
+  inputs:
+    RUMCArmourPlates: 10
+    RUMCLeadSheet: 5
+    CMPlasteel: 20
+  fluidInputs:
+    WeldingFuel: 20
+  itemOutputs:
+    CMUVehicleArmorModuleCivilianHeavy: 1
+  circuit: 3
+  duration: 30
+
+- type: cmuMachineRecipe
+  id: CMUMRVehicleWorkshopLightArmorModule
+  machine: cmuvehicleworkshop
+  inputs:
+    RUMCTitaniumSheet: 5
+    CMPlasteel: 5
+    CMSteel: 10
+  itemOutputs:
+    CMUVehicleArmorModuleCivilianLight: 1
+  circuit: 4
+  duration: 15
+
+- type: cmuMachineRecipe
+  id: CMUMRVehicleWorkshopArmoredWheel
+  machine: cmuvehicleworkshop
+  itemInputs:
+    CMUVehicleArmorModuleCivilian: 1
+    RMCVanWheel: 1
+  fluidInputs:
+    WeldingFuel: 20
+  itemOutputs:
+    CMUVehicleWheelArmored: 1
+  circuit: 5
+  duration: 20
+
+- type: cmuMachineRecipe
+  id: CMUMRVehicleWorkshopSpikedBullbar
+  machine: cmuvehicleworkshop
+  inputs:
+    RUMCIronRod: 20
+    CMPlasteel: 5
+    CMSteel: 20
+  fluidInputs:
+    WeldingFuel: 20
+  itemOutputs:
+    CMUVehicleBullbarSpiked: 1
+  circuit: 6
+  duration: 20
+
+- type: cmuMachineRecipe
+  id: CMUMRVehicleWorkshopHeavyFuelEngine
+  machine: cmuvehicleworkshop
+  inputs:
+    CMSteel: 50
+    RUMCRubberSheet: 5
+    RUMCIronIngot: 20
+    RUMCIronRod: 20
+  fluidInputs:
+    RUMCHeavyFuel: 100
+  itemOutputs:
+    CMUVehicleEngineHeavyFuel: 1
+  circuit: 7
+  duration: 30
+
+# The homemade turret: armour plates and plasteel for the ring, fasteners and steel rods for the cradle.
+- type: cmuMachineRecipe
+  id: CMUMRVehicleWorkshopTurretHomemade
+  machine: cmuvehicleworkshop
+  inputs:
+    RUMCArmourPlates: 5
+    CMPlasteel: 10
+    RUMCKitFasteners: 10
+    RUMCIronRod: 10
+  itemOutputs:
+    CMUVehicleTurretHomemade: 1
+  circuit: 8
+  duration: 30
+
+# The mounted PKP: a PKP-MS on a pivot mount of steel rods and fasteners.
+- type: cmuMachineRecipe
+  id: CMUMRVehicleWorkshopGunPKP
+  machine: cmuvehicleworkshop
+  itemInputs:
+    RuMCMachineGunPKP_MS: 1
+  inputs:
+    RUMCIronRod: 10
+    RUMCKitFasteners: 5
+  itemOutputs:
+    CMUVehicleGunPKP: 1
+  circuit: 9
+  duration: 20

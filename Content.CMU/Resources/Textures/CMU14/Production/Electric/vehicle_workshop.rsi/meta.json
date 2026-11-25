@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Complex assembly bench sprite from the sheet provided by the project author (placeholder), with a wheel plate added by Content.CMU/Design/Vehicles/TuningSprites/generate.py",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "off"
+    },
+    {
+      "name": "on",
+      "delays": [
+        [
+          0.25,
+          0.25
+        ]
+      ]
+    }
+  ]
+}

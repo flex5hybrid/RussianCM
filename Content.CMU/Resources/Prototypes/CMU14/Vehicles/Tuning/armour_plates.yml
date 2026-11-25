@@ -1,0 +1,72 @@
+# Armour plates: restored as a stack after the forged parts were removed. They are pressed out of weapon-grade steel
+# in a mold of their shape, and the vehicle tuning workshop turns them into armour modules.
+- type: stack
+  id: RUMCArmourPlates
+  name: armour plates
+  icon: { sprite: CMU14/Objects/Materials/armour_plates.rsi, state: armour_plates }
+  spawn: RUMCArmourPlatesItem
+  maxCount: 10
+
+- type: entity
+  parent: BaseItem
+  id: RUMCArmourPlatesItem
+  name: armour plates
+  description: Thick plates of pressed weapon-grade steel, ready to be bolted onto a vehicle.
+  components:
+  - type: Stack
+    stackType: RUMCArmourPlates
+    count: 1
+  - type: Sprite
+    sprite: CMU14/Objects/Materials/armour_plates.rsi
+    state: armour_plates
+    scale: 0.66,0.66
+  - type: Item
+    size: Small
+  - type: Tag
+    tags:
+    - Metal
+
+# The mold of an armour plate.
+- type: entity
+  parent: BaseItem
+  id: CMUMoldArmourPlate
+  name: armour plate mold
+  description: A plate with the deep hollow of an armour plate cut into it. Seated in a press with five ingots of weapon-grade steel, it presses them into an armour plate.
+  components:
+  - type: GuideHelp
+    guides:
+    - CMUGuideIndustrySteam
+    - CMUGuideIndustry
+  - type: Sprite
+    noRot: true
+    sprite: CMU14/Objects/Smelting/armour_plate_shape.rsi
+    state: armour_plate_shape
+  - type: Item
+    size: Small
+  - type: PhysicalComposition
+    materialComposition:
+      RUMCIron: 100
+  - type: PressMold
+    shape: armourplate
+
+- type: craftRecipe
+  id: CMUCraftArmourPlateMold
+  name: cmu-craft-recipe-armour-plate-mold
+  output: CMUMoldArmourPlate
+  time: 8
+  minigames: [Trace]
+  tools:
+  - Chiseling
+  - Hammering
+  consumables:
+  - item: RUMCMoldEmpty
+
+# Five ingots of weapon-grade steel in the armour plate mold make one plate, in the steam or the solid-fuel press.
+- type: cmuPressRecipe
+  id: CMUPressArmourPlates
+  shape: armourplate
+  inputs:
+    RUMCWeaponSteelIngot: 5
+  result: RUMCArmourPlates
+  resultAmount: 1
+  duration: 12
