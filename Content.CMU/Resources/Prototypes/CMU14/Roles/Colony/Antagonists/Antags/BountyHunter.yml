@@ -2,8 +2,8 @@
   id: BountyHunter
   prefRoles: [ BountyHunterRole ]
   jobBlacklistGroup:
-  - RuMCColonyLeadershipJobs # RuMC edit
   - RuMCNoColonialAntagsJobs # RuMC edit
+  - RuMCLawJobs # RuMC edit
   - AllGovforJobs
   - AllOpforJobs
   - AllCLFJobs
@@ -69,3 +69,47 @@
     belt: AU14BeltBrowneFilled
     pocket1: RMCSpaceCash1000
     pocket2: RMCSpaceCash1000
+  # RuMC edit start
+  storage:
+    back:
+    - RuMCCaseBountyHunterKit
+  # RuMC edit end
+
+# RuMC edit start
+- type: entity
+  parent: RMCGunCaseBase
+  id: RuMCCaseBountyHunterKit
+  suffix: Bounty Hunter
+  name: worn keepsake case
+  description: A scuffed personal case that has clearly traveled a long way. The lock is worn from daily use.
+  components:
+  - type: Item
+    size: Normal
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,11,3
+  - type: StorageFill
+    contents:
+    - id: RuMCWeaponPistolGlock75BH
+    - id: CMU14MagazinePistolGlock75HP
+      amount: 2
+    - id: CMU14MagazinePistolGlock75
+      amount: 5
+    - id: ClothingHandsGlovesNitrile
+    - id: RMCSawtoothDaggerA
+    - id: RMCMaskBalaclava
+    - id: RMCGlassesTriMaxBlack
+
+- type: entity
+  parent: CMU14WeaponPistolGlock75Empty
+  id: RuMCWeaponPistolGlock75BH
+  suffix: Bounty Hunter
+  components:
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-barrel:
+        startingAttachable: RMCAttachmentSuppressor
+      rmc-aslot-rail:
+        startingAttachable: RMCAttachmentS5MicroRedDotSight
+# RuMC edit end

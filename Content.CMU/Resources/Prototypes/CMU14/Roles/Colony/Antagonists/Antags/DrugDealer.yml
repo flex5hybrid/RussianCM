@@ -2,7 +2,6 @@
   id: DrugDealer
   prefRoles: [ DrugDealerRole ]
   jobBlacklistGroup:
-  - RuMCColonyLeadershipJobs # RuMC edit
   - RuMCNoColonialAntagsJobs # RuMC edit
   - AllGovforJobs
   - AllOpforJobs
@@ -23,7 +22,6 @@
     bounty: 1225
     reason: Distribution of controlled substances - wanted alive for prosecution
     recordName: Narcotics Dealer (Unknown)
-    includePrints: true
     includeLanguages: true
     deadCounts: false
     capturedFaxPaper: CMUPaperColonyAntagCaptured

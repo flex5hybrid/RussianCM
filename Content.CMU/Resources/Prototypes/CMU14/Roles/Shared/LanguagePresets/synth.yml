@@ -48,6 +48,7 @@
     - Swedish
     - Slovak
     - Romanian
+    - Hebrew # RuMC edit 
 
     understoodLanguages:
     - English
@@ -90,6 +91,7 @@
     - Swedish
     - Slovak
     - Romanian
+    - Hebrew # RuMC edit 
     currentLanguage: Binary
     defaultLanguage: Binary
 
@@ -115,6 +117,9 @@
     comprehensionThreshold: 0.8
     learningRange: 8.0
     baseWordLearningRate: 0.05
+    coreVocabularyScoring: true
+    vocabularyScale: 0.83
+    learningSpeedMultiplier: 1.5
 
 - type: entity
   id: AU14LanguageLearningPresetWorkingJoe

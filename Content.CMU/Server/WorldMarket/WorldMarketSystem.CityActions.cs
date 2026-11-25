@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 using System.Linq;
 using Content.Shared.CMU14.WorldMarket;
+using Robust.Shared.Localization;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 
@@ -123,8 +124,30 @@ public sealed partial class WorldMarketSystem
                 return true;
         }
 
+        // RuMC edit start
+        foreach (var caravan in market.Comp.Caravans)
+        {
+            if (!caravan.Gift && caravan.Faction == faction && caravan.Action == actionId && caravan.Path.Count > 0 && caravan.Path[^1] == cityId)
+                return true;
+        }
+        // RuMC edit end
+
         return false;
     }
+
+    // RuMC edit start
+    // Limits shared with joint works - no repeats in a city
+    private CityActionBlock? LimitBlocked(Entity<WorldMarketComponent> market, string faction, string cityId, WorldCityActionPrototype action)
+    {
+        if (!action.Stackable && HasProject(market, faction, cityId, action.ID, _timing.CurTime))
+            return new CityActionBlock("rumc-map-already");
+
+        if (action.PointEverySeconds > 0 && PointBuildings(market, faction) >= MaxPointBuildings)
+            return new CityActionBlock("rumc-map-point-limit", MaxPointBuildings);
+
+        return null;
+    }
+    // RuMC edit end
 
     // A deposit (a mine, a well, a plantation) makes what is built on it bring in twice as much.
     private float DepositFactor(string cityId)
@@ -149,38 +172,49 @@ public sealed partial class WorldMarketSystem
     // Why the action cannot be done now (in words), or nothing if it can.
     public string? ActionBlocked(Entity<WorldMarketComponent> market, string faction, string cityId, WorldCityActionPrototype action, float budget)
     {
+        return GetActionBlock(market, faction, cityId, action, budget)?.Localize(Loc);
+    }
+
+    private readonly record struct CityActionText(WorldCityActionPrototype Prototype, string Name, string Description);
+
+    private readonly record struct CityActionBlock(string Key, int? Value = null)
+    {
+        public string Localize(ILocalizationManager loc) => Value is { } value ? loc.GetString(Key, ("value", value)) : loc.GetString(Key);
+    }
+
+    private CityActionBlock? GetActionBlock(Entity<WorldMarketComponent> market, string faction, string cityId,
+        WorldCityActionPrototype action, float budget, bool? hasRoute = null)
+    {
         var now = _timing.CurTime;
 
         if (!FitsPlace(cityId, action))
-            return Loc.GetString(action.Placement == WorldPlacement.City ? "rumc-map-only-cities" : "rumc-map-only-sites");
+            return new CityActionBlock(action.Placement == WorldPlacement.City ? "rumc-map-only-cities" : "rumc-map-only-sites");
 
         // A faction has one of the buildings that are only one in the world.
         if (action.Unique && HasUnique(market, faction, action.ID, now))
-            return Loc.GetString("rumc-map-unique");
+            return new CityActionBlock("rumc-map-unique");
 
         var influence = InfluenceOf(market, faction, cityId);
         if (influence < action.MinInfluence)
-            return Loc.GetString("rumc-map-need-influence", ("value", action.MinInfluence));
+            return new CityActionBlock("rumc-map-need-influence", action.MinInfluence);
 
         if (action.OnlyInCrisis && !(market.Comp.CityCrises.TryGetValue(cityId, out var crisis) && Has(action.Resolves, crisis.Id)))
-            return Loc.GetString("rumc-map-no-crisis");
+            return new CityActionBlock("rumc-map-no-crisis");
 
-        if (!action.Stackable && HasProject(market, faction, cityId, action.ID, now))
-            return Loc.GetString("rumc-map-already");
-
-        // A faction may have only a few of the great buildings that bring points.
-        if (action.PointEverySeconds > 0 && PointBuildings(market, faction) >= MaxPointBuildings)
-            return Loc.GetString("rumc-map-point-limit", ("value", MaxPointBuildings));
+        // RuMC edit start
+        if (LimitBlocked(market, faction, cityId, action) is { } limit)
+            return limit;
+        // RuMC edit end
 
         if (action.PointCost > 0 && PointsOf(faction) < action.PointCost)
-            return Loc.GetString("rumc-mother-need-points", ("value", action.PointCost));
+            return new CityActionBlock("rumc-mother-need-points", action.PointCost);
 
         if (budget < CityPrice(market, faction, cityId, action.Cost, out _, out _))
-            return Loc.GetString("rumc-map-need-budget");
+            return new CityActionBlock("rumc-map-need-budget");
 
         // What goes by the roads needs an open way from the city that it goes from.
-        if (!action.OnlyInCrisis && action.PointCost == 0 && !RouteOk(market, faction, cityId))
-            return Loc.GetString("rumc-map-no-route");
+        if (!action.OnlyInCrisis && action.PointCost == 0 && !(hasRoute ?? RouteOk(market, faction, cityId)))
+            return new CityActionBlock("rumc-map-no-route");
 
         return null;
     }
@@ -193,6 +227,7 @@ public sealed partial class WorldMarketSystem
             || !_proto.TryIndex<WorldCityActionPrototype>(actionId, out var action)
             || action.Joint
             || !_proto.HasIndex<WorldCityPrototype>(cityId)
+            || !IsActiveCity(market, cityId) // RuMC edit
             || ActionBlocked(market, faction, cityId, action, budget) != null)
         {
             return null;
@@ -442,7 +477,8 @@ public sealed partial class WorldMarketSystem
 
     // What the console of a faction is told about a city: its trouble, what the faction has going there, what it can order.
     private (string Name, string Description, int Seconds, bool Repaired, List<ProjectEntry> Projects, List<ActionEntry> Actions) CityStatus(
-        Entity<WorldMarketComponent> market, string faction, string cityId, float budget)
+        Entity<WorldMarketComponent> market, string faction, string cityId, float budget,
+        CityActionText[] catalog, Dictionary<CityActionBlock, string> blockedReasons, bool hasRoute)
     {
         var now = _timing.CurTime;
 
@@ -475,10 +511,21 @@ public sealed partial class WorldMarketSystem
         }
 
         var actions = new List<ActionEntry>();
-        foreach (var action in _proto.EnumeratePrototypes<WorldCityActionPrototype>().Where(a => !a.Joint && FitsPlace(cityId, a)).OrderBy(a => a.MinInfluence).ThenBy(a => a.Order).ThenBy(a => a.Cost))
+        foreach (var (action, actionName, actionDescription) in catalog)
         {
-            actions.Add(new ActionEntry(action.ID, Loc.GetString(action.Name), Loc.GetString(action.Description), CityPrice(market, faction, cityId, action.Cost, out _, out _), action.Influence,
-                ActionBlocked(market, faction, cityId, action, budget) ?? string.Empty, action.PointCost));
+            if (!FitsPlace(cityId, action))
+                continue;
+
+            var reason = string.Empty;
+            if (GetActionBlock(market, faction, cityId, action, budget, hasRoute) is { } block &&
+                !blockedReasons.TryGetValue(block, out reason))
+            {
+                reason = block.Localize(Loc);
+                blockedReasons.Add(block, reason);
+            }
+
+            actions.Add(new ActionEntry(action.ID, actionName, actionDescription,
+                CityPrice(market, faction, cityId, action.Cost, out _, out _), action.Influence, reason, action.PointCost));
         }
 
         return (name, description, seconds, repaired, projects, actions);

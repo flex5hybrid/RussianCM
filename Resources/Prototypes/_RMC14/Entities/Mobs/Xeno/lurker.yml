@@ -76,7 +76,7 @@
     maxPlasma: 400
     plasmaRegenOnWeeds: 4.5
   - type: CMArmor
-    explosionArmor: 20
+    explosionArmor: 25 # RuMC edit
   - type: XenoEvolution
     max: 500
     evolvesTo:
@@ -93,9 +93,9 @@
     attackRate: 0.75
     damage:
       types:
-        Blunt: 11.66
-        Slash: 11.67
-        Piercing: 11.67
+        Blunt: 15.66 # RuMC edit
+        Slash: 15.67 # RuMC edit
+        Piercing: 15.67 # RuMC edit
   - type: Tackle
   - type: MovementSpeedModifier
     baseWalkSpeed: 2.7
@@ -163,9 +163,9 @@
   - type: XenoTailStab
     tailDamage:
       types:
-        Blunt: 14
-        Slash: 14
-        Piercing: 14
+        Blunt: 17 # RuMC edit
+        Slash: 17 # RuMC edit
+        Piercing: 17 # RuMC edit
   - type: XenoEvolution
     strains:
     - RMCXenoLurkerVampire
@@ -240,9 +240,9 @@
     attackRate: 0.93
     damage:
       types:
-        Blunt: 10
-        Slash: 10
-        Piercing: 10
+        Blunt: 13 # RuMC edit
+        Slash: 13 # RuMC edit
+        Piercing: 13 # RuMC edit
   - type: MovementSpeedModifier
     baseWalkSpeed: 3
     baseSprintSpeed: 6

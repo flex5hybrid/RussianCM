@@ -102,7 +102,7 @@
   - type: XenoAcid
   - type: CMArmor
     xenoArmor: 20
-    explosionArmor: 20
+    explosionArmor: 25 # RuMC edit
   - type: XenoDevour
   - type: XenoZoom
     zoom: 1, 1
@@ -118,9 +118,9 @@
       RMCMolecularAcid: 6
     tailDamage:
       types:
-        Blunt: 10
-        Slash: 10
-        Piercing: 10
+        Blunt: 13 # RuMC edit
+        Slash: 13 # RuMC edit
+        Piercing: 13 # RuMC edit
   - type: XenoSprayAcid
     acid: XenoAcidSprayStrong
     barricadeDamage:
@@ -129,9 +129,9 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 7.5
-        Slash: 7.5
-        Piercing: 7.5
+        Blunt: 10 # RuMC edit
+        Slash: 10 # RuMC edit
+        Piercing: 10 # RuMC edit
   - type: Tackle
     chance: 0.25
     stunMin: 3

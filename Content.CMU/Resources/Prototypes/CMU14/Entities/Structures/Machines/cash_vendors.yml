@@ -490,6 +490,9 @@
       section: Cassettes
       name: Cassette Player (Neon)
       price: 25
+    - id: CMUCassetteSpeakerPortable
+      section: Cassettes
+      price: 40
     - id: RMCPouchCassette
       section: Cassettes
       name: Cassette Pouch
@@ -957,6 +960,9 @@
       section: Machineboards
       name: Recharger Circuit Board
       price: 75
+    - id: CMUCircuitboardChemicalRecipeMachine
+      section: Machineboards
+      price: 50
     - id: AirAlarmElectronics
       section: Circuitboards
       name: Air Alarm Electronics

@@ -2,7 +2,6 @@
   id: Arsonist
   prefRoles: [ ArsonistRole ]
   jobBlacklistGroup:
-  - RuMCColonyLeadershipJobs # RuMC edit
   - RuMCNoColonialAntagsJobs # RuMC edit
   - AllGovforJobs
   - AllOpforJobs
@@ -65,3 +64,35 @@
   id: CMUGearArsonist
   inhand:
   - RMCLighter
+  # RuMC edit start
+  equipment:
+    back: CMUSatchelCLF
+  storage:
+    back:
+    - RuMCCaseArsonistKit
+  # RuMC edit end
+
+# RuMC edit start
+- type: entity
+  parent: RMCGunCaseBase
+  id: RuMCCaseArsonistKit
+  suffix: Arsonist
+  name: worn keepsake case
+  description: A scuffed personal case that has clearly traveled a long way. The lock is worn from daily use.
+  components:
+  - type: Item
+    size: Huge
+  - type: Storage
+    maxItemSize: Large
+    grid:
+    - 0,0,7,3
+  - type: StorageFill
+    contents:
+    - id: CMUWeaponArsonistFlamer
+    - id: CMUTankFlamerPhoron
+    - id: RMCGrenadeMolotov
+      amount: 4
+    - id: AU14MaskGasHAZOPSM17Flamer
+    - id: CMUGasMaskFilterHAZOPS
+
+# RuMC edit end

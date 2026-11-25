@@ -40,7 +40,7 @@ namespace Content.Server.Database
             ISawmill opsLog,
             ISerializationManager serialization,
             bool snapshot)
-            : base(opsLog, serialization)
+            : base(opsLog, serialization, cfg) // RuMC edit
         {
             _options = options;
 
@@ -210,6 +210,7 @@ namespace Content.Server.Database
                         .ToList(),
             };
             db.SqliteDbContext.Ban.Add(banEntity);
+            QueueModerationBan(db.SqliteDbContext, ban); // RuMC edit
 
             await db.SqliteDbContext.SaveChangesAsync();
             return ConvertBan(banEntity);

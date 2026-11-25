@@ -2,7 +2,6 @@
   id: Rider
   prefRoles: [ RiderRole ]
   jobBlacklistGroup:
-  - RuMCColonyLeadershipJobs # RuMC edit
   - RuMCNoColonialAntagsJobs # RuMC edit
   - AllGovforCommandStaff
   - AllOpforCommandStaff
@@ -363,8 +362,6 @@
 
 - type: entity
   id: ActionRiderSustain
-  name: Sustain
-  description: Pour strength into the flesh around you. Damage and the wounds beneath it close together. Your rope, to match your stick. Costs 20 grip.
   components:
   - type: Action
     itemIconStyle: NoItem
