@@ -20188,5 +20188,16 @@ Entries:
   - 'Changes: No C#'
   - 'Changes: Sprites'
   - XS
+- author: RomiGur
+  time: '2026-11-25T21:21:04Z'
+  changes:
+  - type: Tweak
+    message: Набор антиматериального снайпера больше нельзя выбрать для режимов стенка
+      на стенку и восстание
+  id: 1177
+  url: https://github.com/flex5hybrid/RussianCM/pull/650
+  labels:
+  - 'Changes: No C#'
+  - XS
 Name: CMU
 Order: -1
