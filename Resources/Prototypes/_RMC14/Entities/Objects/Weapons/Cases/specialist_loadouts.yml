@@ -54,6 +54,12 @@
     items:
       tags:
       - AU14KitSpotter
+  # RuMC edit start: remove in HvH gamepresets
+  - type: DestroyOnPreset
+    presets:
+    - ForceOnForce
+    - Insurgency
+  # RuMC edit end
 
 - type: entity
   parent: RMCBaseEquipmentCase
