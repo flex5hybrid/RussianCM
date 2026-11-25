@@ -236,6 +236,7 @@ au14-machine-examine-circuit = Circuit { $circuit } is set.
 au14-machine-circuit = Circuit:
 au14-machine-liquids = Liquids
 au14-machine-recipes = What it can make
+au14-machine-recipes-choose = What it can make (click a recipe to make only it, click again for any)
 au14-machine-recipe-circuit = [circuit { $circuit }]
 au14-machine-seconds = s
 au14-machine-auto-output = Output to a box next to it

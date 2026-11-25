@@ -236,6 +236,7 @@ au14-machine-examine-circuit = Выбрана схема { $circuit }.
 au14-machine-circuit = Схема:
 au14-machine-liquids = Жидкости
 au14-machine-recipes = Что умеет делать
+au14-machine-recipes-choose = Что умеет делать (нажмите на рецепт, чтобы делать только его, ещё раз — чтобы снять выбор)
 au14-machine-recipe-circuit = [схема { $circuit }]
 au14-machine-seconds = с
 au14-machine-auto-output = Автовыход в ящик рядом
