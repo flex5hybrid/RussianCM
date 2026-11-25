@@ -19,6 +19,7 @@
     - VAIPO
     platoonsOpfor:
     - UPP
+    - BEAR
     defaultgovfor: HAZOPS
     defaultopfor: UPP
     govforinship: true

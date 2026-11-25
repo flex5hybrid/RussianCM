@@ -772,7 +772,7 @@
     CMSatchelMarine: RuMCUPPNavalInfantrySatchel
   lorePrimer: AU14PrimerPlatoonUPP
   Allegiance: UPP
-  defaultLanguage: Mandarin
+  defaultLanguage: Russian
   languages:
     - Russian
     - German
