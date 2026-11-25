@@ -13,6 +13,6 @@ ent-RMCExtendedEmergencyOxygenTankFilled = аварийный кислородн
 ent-RMCDoubleEmergencyOxygenTankFilled = двойной аварийный кислородный баллон
   .desc = Высококачественный двухбаковый контейнер аварийного жизнеобеспечения. 
 
-ent-RMCGasTankPhoronFilled = плазменный баллон
+ent-RMCGasTankPhoronFilled = баллон плазмы
   .desc = Резервуар с жидкой плазмой. 
 
