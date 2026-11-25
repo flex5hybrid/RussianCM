@@ -218,6 +218,12 @@
     - ActionXenoZoom
     - ActionXenoAcidShroud
     - ActionXenoDevolve
+  - type: FighterBoilerAirDefense  # RUMC edit 800 -> 500
+    actionId: CMUActionBoilerWatchAirspace
+    plasmaCost: 200
+    acquisitionTime: 2
+    cooldown: 15
+    gunshipDamage: 500
   - type: XenoDeathcloud
   - type: NeurotoxinInjector
   - type: XenoEvolution
@@ -283,3 +289,4 @@
   - type: XenoAdrenalineSurge
   - type: RMCActionOrder
     id: RMCXenoBoilerSapper
+

@@ -39,6 +39,8 @@
     lockTime: 3
     lockRange: 15
     missileFlightTime: 3
+    gunshipHit:
+      damage: 1000  # RUMC edit 800 -> 1000
   - type: Gun
     showExamineText: false
 
