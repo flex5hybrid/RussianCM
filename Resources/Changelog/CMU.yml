@@ -20175,5 +20175,18 @@ Entries:
   url: https://github.com/flex5hybrid/RussianCM/pull/647
   labels:
   - XS
+- author: veseliiyar
+  time: '2026-11-25T14:13:48Z'
+  changes:
+  - type: Add
+    message: Добавлено веселье
+  - type: Fix
+    message: Исправлен спрайт яутжа
+  id: 1176
+  url: https://github.com/flex5hybrid/RussianCM/pull/646
+  labels:
+  - 'Changes: No C#'
+  - 'Changes: Sprites'
+  - XS
 Name: CMU
 Order: -1
