@@ -50,7 +50,6 @@
       - RMCFlareCAS
       - RuMCFlare # CMU14: UPP signal rounds
       - RMCFlareL96
-      - RuMCFlareRedCAS
     capacity: 1
     proto: CMFlare
     soundInsert:

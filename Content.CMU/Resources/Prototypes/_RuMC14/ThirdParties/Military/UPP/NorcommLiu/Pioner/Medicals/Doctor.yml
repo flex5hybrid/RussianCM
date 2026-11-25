@@ -16,8 +16,7 @@
   - type: Skills
     skills:
       RMCSkillCqc: 1
-      RMCSkillEngineer: 2
-      RMCSkillConstruction: 2
+      RMCSkillEngineer: 1
       RMCSkillFirearms: 1
       RMCSkillMedical: 4
       RMCSkillSurgery: 4
@@ -122,7 +121,6 @@
     belt: RuMCUPPNavalInfantryBeltMedicFill
     eyes: RMCGlassesMedicalHUDGlasses
     pocket1: AU14PouchIFAKFill
-    pocket2: RuMCUPPPouchConstructionFill
     back: RuMCUPPNavalInfantrySatchel
     ears: RuMCHeadsetNorcommLiu
     suitstorage: AU14BeltHolsterPistolUPPFull
