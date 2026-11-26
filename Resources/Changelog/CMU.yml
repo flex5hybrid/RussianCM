@@ -20212,5 +20212,16 @@ Entries:
   - 'Changes: No C#'
   - 'Changes: Translations'
   - M
+- author: RomiGur
+  time: '2026-11-26T19:51:23Z'
+  changes:
+  - type: Tweak
+    message: Для роли молодой крови теперь не нужны 5 часов на ксеносах. Только 5
+      часов на военных ролях.
+  id: 1179
+  url: https://github.com/flex5hybrid/RussianCM/pull/655
+  labels:
+  - 'Changes: Translations'
+  - M
 Name: CMU
 Order: -1
