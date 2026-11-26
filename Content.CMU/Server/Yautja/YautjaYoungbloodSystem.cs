@@ -1,8 +1,6 @@
-using Content.Server.Administration.Managers;
 using Content.Server.Chat.Managers;
 using Content.Server.Ghost.Roles.Events;
 using Content.Server.Players.JobWhitelist;
-using Content.Server.Players.PlayTimeTracking;
 using Content.Server._RMC14.Vendors;
 using Content.Shared.CMU14.Yautja;
 using Content.Shared._RMC14.Dialog;
@@ -24,91 +22,18 @@ using Robust.Shared.Timing;
 
 namespace Content.Server.CMU14.Yautja;
 
-public enum YautjaYoungbloodRejection
-{
-    WhitelistOrBan,
-    MaximumYoungbloodTime,
-    MinimumYoungbloodTime,
-    SquadAndXenoTime,
-}
-
-public readonly record struct YautjaYoungbloodEligibility(bool Allowed, YautjaYoungbloodRejection? Reason);
-
 public sealed partial class YautjaYoungbloodSystem : EntitySystem
 {
     private static readonly ProtoId<JobPrototype> AdultJob = "CMUYautjaHunter";
     private static readonly ProtoId<JobPrototype> YoungbloodJob = "CMUYautjaYoungblood";
 
-    private static readonly string[] SquadTrackers =
-    {
-        // OPFOR and faction variants are canonicalized to these GOVFOR trackers.
-        "AU14JobGOVFORSquadRifleman",
-        "AU14JobGOVFORPlatoonCorpsman",
-        "AU14JobGOVFORSquadCombatTech",
-        "AU14JobGOVFORSectionSergeant",
-        "AU14JobGOVFORWeaponsSpecialist",
-        "AU14JobGOVFORSquadAutomaticRifleman",
-        "AU14JobGOVFORSquadSergeant",
-        "AU14JobGOVFORRadioTelephoneOperator",
-        "CMUJobGOVFORDroneOperator",
-        "CMJobRifleman",
-        "CMJobHospitalCorpsman",
-        "CMJobCombatTech",
-        "CMJobFireteamLeader",
-        "CMJobWeaponsSpecialist",
-        "CMJobSmartGunOperator",
-        "CMJobSquadLeader",
-    };
-
-    private static readonly string[] XenoTrackers =
-    {
-        "CMJobSelectableXeno",
-        "CMJobXenoBoiler",
-        "CMJobXenoBurrower",
-        "CMJobXenoCarrier",
-        "CMJobXenoCrusher",
-        "CMJobXenoDefender",
-        "CMJobXenoDrone",
-        "CMJobXenoHivelord",
-        "RMCJobXenoKing",
-        "CMJobXenoLarva",
-        "CMJobXenoLesserDrone",
-        "CMJobXenoLurker",
-        "CMJobXenoParasite",
-        "CMJobXenoPraetorian",
-        "CMJobXenoQueen",
-        "CMJobXenoRavager",
-        "CMJobXenoRunner",
-        "CMJobXenoSentinel",
-        "CMJobXenoSpitter",
-        "CMJobXenoWarrior",
-
-        // Pathogen castes keep their own trackers and count as xeno time.
-        "CMU14JobPathogenAberration",
-        "CMU14JobPathogenBlight",
-        "CMUJobPathogenBloodburster",
-        "CMU14JobPathogenBrute",
-        "CMU14JobPathogenConditor",
-        "CMU14JobPathogenHarbinger",
-        "CMU14JobPathogenHaze",
-        "CMU14JobPathogenMatriarch",
-        "CMU14JobPathogenNeomorph",
-        "CMU14JobPathogenOvermind",
-        "CMU14JobPathogenPopper",
-        "CMU14JobPathogenRoot",
-        "CMU14JobPathogenSprinter",
-        "CMU14JobPathogenVenator",
-    };
-
     [Dependency] private ISharedAdminLogManager _adminLog = default!;
-    [Dependency] private IBanManager _banManager = default!;
     [Dependency] private IChatManager _chat = default!;
     [Dependency] private JobWhitelistManager _jobWhitelist = default!;
     [Dependency] private DialogSystem _dialog = default!;
     [Dependency] private InventorySystem _inventory = default!;
     [Dependency] private MobStateSystem _mobState = default!;
     [Dependency] private IPlayerManager _players = default!;
-    [Dependency] private PlayTimeTrackingManager _playtime = default!;
     [Dependency] private SharedPopupSystem _popup = default!;
     [Dependency] private IPrototypeManager _prototype = default!;
     [Dependency] private CMAutomatedVendorSystem _vendors = default!;
@@ -129,32 +54,7 @@ public sealed partial class YautjaYoungbloodSystem : EntitySystem
         SubscribeLocalEvent<RoundRestartCleanupEvent>(OnRoundRestartCleanup);
     }
 
-    public static YautjaYoungbloodEligibility CheckEligibility(
-        YautjaHuntCallOption option,
-        bool adultWhitelisted,
-        bool jobBanned,
-        TimeSpan youngbloodTime,
-        TimeSpan squadTime,
-        TimeSpan xenoTime)
-    {
-        if (adultWhitelisted || jobBanned)
-            return new(false, YautjaYoungbloodRejection.WhitelistOrBan);
-
-        if (youngbloodTime >= option.MaximumYoungbloodTime)
-            return new(false, YautjaYoungbloodRejection.MaximumYoungbloodTime);
-
-        if (squadTime >= option.RequiredSquadAndXenoTime &&
-            xenoTime >= option.RequiredSquadAndXenoTime)
-        {
-            return new(true, null);
-        }
-
-        if (youngbloodTime < option.RejectionYoungbloodTime)
-            return new(false, YautjaYoungbloodRejection.MinimumYoungbloodTime);
-
-        return new(false, YautjaYoungbloodRejection.SquadAndXenoTime);
-    }
-
+    // RuMC edit start: playtime is checked by job requirements
     private void OnGhostRoleRequestAttempt(
         Entity<YautjaYoungbloodGhostRoleComponent> ent,
         ref GhostRoleRequestAttemptEvent args)
@@ -162,40 +62,14 @@ public sealed partial class YautjaYoungbloodSystem : EntitySystem
         if (ent.Comp.BypassEligibility)
             return;
 
-        if (!TryGetCallOption(ent.Comp.CallId, out var option) ||
-            !_playtime.TryGetTrackerTimes(args.Player, out var playtimes))
-        {
-            args.Cancelled = true;
-            if (args.ExplicitRequest)
-                SendServerMessage(args.Player, Loc.GetString("cmu-yautja-youngblood-raffle-unavailable"));
+        if (!_jobWhitelist.IsWhitelisted(args.Player.UserId, AdultJob))
             return;
-        }
 
-        var bans = _banManager.GetJobBans(args.Player.UserId);
-        var eligibility = CheckEligibility(
-            option,
-            _jobWhitelist.IsWhitelisted(args.Player.UserId, AdultJob),
-            bans == null || bans.Contains(YoungbloodJob),
-            GetTrackerTime(playtimes, YoungbloodJob),
-            SumTrackerTimes(playtimes, SquadTrackers),
-            SumTrackerTimes(playtimes, XenoTrackers));
-
-        args.Cancelled = !eligibility.Allowed;
-        if (args.Cancelled && args.ExplicitRequest)
-        {
-            var message = eligibility.Reason switch
-            {
-                YautjaYoungbloodRejection.WhitelistOrBan => Loc.GetString("cmu-yautja-youngblood-raffle-restricted"),
-                YautjaYoungbloodRejection.MaximumYoungbloodTime => Loc.GetString("cmu-yautja-youngblood-raffle-maximum",
-                    ("hours", option.MaximumYoungbloodTime.TotalHours)),
-                YautjaYoungbloodRejection.MinimumYoungbloodTime => Loc.GetString("cmu-yautja-youngblood-raffle-minimum",
-                    ("hours", option.RejectionYoungbloodTime.TotalHours)),
-                _ => Loc.GetString("cmu-yautja-youngblood-raffle-experience",
-                    ("hours", option.RequiredSquadAndXenoTime.TotalHours)),
-            };
-            SendServerMessage(args.Player, message);
-        }
+        args.Cancelled = true;
+        if (args.ExplicitRequest)
+            SendServerMessage(args.Player, Loc.GetString("cmu-yautja-youngblood-raffle-restricted"));
     }
+    // RuMC edit end
 
     private void OnMindAdded(Entity<YautjaYoungbloodGhostRoleComponent> ent, ref MindAddedMessage args)
     {
@@ -585,40 +459,5 @@ public sealed partial class YautjaYoungbloodSystem : EntitySystem
     {
         var wrapped = Loc.GetString("chat-manager-server-wrap-message", ("message", message));
         _chat.ChatMessageToOne(ChatChannel.Server, message, wrapped, default, false, session.Channel);
-    }
-
-    private bool TryGetCallOption(string callId, out YautjaHuntCallOption option)
-    {
-        var query = EntityQueryEnumerator<YautjaHuntConsoleComponent>();
-        while (query.MoveNext(out _, out var console))
-        {
-            foreach (var candidate in console.BloodingCallOptions)
-            {
-                if (!string.Equals(candidate.Id, callId, StringComparison.OrdinalIgnoreCase))
-                    continue;
-
-                option = candidate;
-                return true;
-            }
-        }
-
-        option = default!;
-        return false;
-    }
-
-    private static TimeSpan SumTrackerTimes(IReadOnlyDictionary<string, TimeSpan> playtimes, IEnumerable<string> trackers)
-    {
-        var result = TimeSpan.Zero;
-        foreach (var tracker in trackers)
-        {
-            result += GetTrackerTime(playtimes, tracker);
-        }
-
-        return result;
-    }
-
-    private static TimeSpan GetTrackerTime(IReadOnlyDictionary<string, TimeSpan> playtimes, string tracker)
-    {
-        return playtimes.GetValueOrDefault(tracker);
     }
 }

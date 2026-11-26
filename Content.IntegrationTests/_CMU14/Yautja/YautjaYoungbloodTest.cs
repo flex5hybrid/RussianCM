@@ -94,13 +94,14 @@ public sealed class YautjaYoungbloodTest
             entMan.SpawnEntity("CMUYautjaYoungbloodDestinationJungleMoon", MapCoordinates.Nullspace);
             entMan.SpawnEntity("CMUHunterShipMarkerPredatorSpawn", MapCoordinates.Nullspace);
 
-            var option = console.BloodingCallOptions.Single(option => option.Id == "youngblood_three_inexperienced");
+            var option = console.BloodingCallOptions.Single(option => option.Id == "youngblood_three"); // RuMC edit
             Assert.That(system.TryCreateYoungbloodCall((consoleUid, console), consoleUid, option, bypassEligibility: true), Is.True);
 
             var query = entMan.EntityQueryEnumerator<YautjaYoungbloodGhostRoleComponent, GhostRoleComponent>();
             Assert.That(query.MoveNext(out _, out var metadata, out var role), Is.True);
             Assert.That(metadata.BypassEligibility, Is.True);
             Assert.That(role.JobProto, Is.EqualTo("CMUYautjaYoungblood"));
+            Assert.That(role.Requirements, Is.Empty); // RuMC edit
         });
 
         await pair.CleanReturnAsync();
