@@ -133,7 +133,7 @@
   roundSide: Opfor
   roundForce: OPFOR
   icon: "AU14JobIconOPFORCT"
-  spawnMenuRoleName: Engineering Technician (OPFOR)
+  spawnMenuRoleName: cmu-spawn-role-engineering-technician-govfor #RUMC edit
   supervisors: au14-job-supervisors-opfor
   startingGear: AU14GearOPFOREngineeringTech
   dummyStartingGear: AU14GearOPFOREngineeringTechDummy

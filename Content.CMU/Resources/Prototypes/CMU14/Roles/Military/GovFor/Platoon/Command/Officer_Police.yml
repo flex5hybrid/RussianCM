@@ -109,7 +109,7 @@
   roundSide: Opfor
   roundForce: OPFOR
   icon: "AU14JobIconOPFORCMP"
-  spawnMenuRoleName: Chief Military Police (OPFOR)
+  spawnMenuRoleName: au14-spawn-role-name-govfor-chief-military-police #RUMC edit
   supervisors: au14-job-supervisors-opforplatco
   startingGear: AU14GearOPFOROfficerMP
   dummyStartingGear: AU14GearOPFOROfficerMPDummy

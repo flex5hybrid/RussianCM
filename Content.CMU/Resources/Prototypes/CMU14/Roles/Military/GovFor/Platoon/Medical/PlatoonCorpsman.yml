@@ -180,7 +180,7 @@
   roundSide: Opfor
   roundForce: OPFOR
   icon: "AU14JobIconOPFORCorpsman"
-  spawnMenuRoleName: Hospital Corpsman (OPFOR)
+  spawnMenuRoleName: cmu-spawn-role-hospital-corpsman-govfor #RUMC edit
   supervisors: au14-job-supervisors-opfor
   startingGear: AU14GearopforPlatoonCorpsman
   dummyStartingGear: AU14GearopforCorpsmanDummy

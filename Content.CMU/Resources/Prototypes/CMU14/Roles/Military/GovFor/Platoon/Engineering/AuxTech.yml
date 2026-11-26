@@ -145,7 +145,7 @@
   roundSide: Opfor
   roundForce: OPFOR
   icon: "AU14JobIconOPFORAuxTech"
-  spawnMenuRoleName: Logistics Technician (OPFOR)
+  spawnMenuRoleName: cmu-spawn-role-logistics-technician-govfor #RUMC edit
   supervisors: au14-job-supervisors-opfor
   startingGear: AU14GearOPFORAuxTech
   dummyStartingGear: AU14GearOPFORAuxTechDummy

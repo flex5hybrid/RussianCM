@@ -162,7 +162,7 @@
   icon: "AU14JobIconOPFORFTL"
   startingGear: AU14GearopforRadioTelephoneOperator
   dummyStartingGear: AU14GearopforRadioTelephoneOperatorDummy
-  spawnMenuRoleName: Fireteam Leader (OPFOR)
+  spawnMenuRoleName: cmu-spawn-role-fireteam-leader-govfor #RUMC edit
   supervisors: au14-job-supervisors-opfor
   accessGroups:
   - AU14OpforFTL

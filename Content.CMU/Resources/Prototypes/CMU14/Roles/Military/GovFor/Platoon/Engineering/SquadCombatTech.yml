@@ -151,7 +151,7 @@
   roundSide: Opfor
   roundForce: OPFOR
   icon: "AU14JobIconOPFORCT"
-  spawnMenuRoleName: Combat Technician (OPFOR)
+  spawnMenuRoleName: cmu-spawn-role-combat-technician-govfor #RUMC edit
   supervisors: au14-job-supervisors-opfor
   startingGear: AU14GearOPFORSquadCombatTech
   dummyStartingGear: AU14GearOPFORCTDummy

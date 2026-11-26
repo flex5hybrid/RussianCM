@@ -110,7 +110,7 @@
   roundSide: Opfor
   roundForce: OPFOR
   icon: "AU14JobIconOPFORDoctor"
-  spawnMenuRoleName: Medical Officer (OPFOR)
+  spawnMenuRoleName: cmu-spawn-role-medical-officer-govfor #RUMC edit
   supervisors: au14-job-supervisors-opfor
   startingGear: AU14GearOPFORMilitaryDoctor
   dummyStartingGear: AU14GearOPFORMilitaryDoctorDummy

@@ -104,7 +104,7 @@
   roundSide: Opfor
   roundForce: OPFOR
   icon: "AU14JobIconOPFOROpsOfc"
-  spawnMenuRoleName: Staff Officer (OPFOR)
+  spawnMenuRoleName: au14-spawn-role-name-govfor-staff-officer #RUMC edit
   supervisors: au14-job-supervisors-opfor
   startingGear: AU14GearOpforPlatOp
   dummyStartingGear: AU14GearOpforPlatOpDummy
