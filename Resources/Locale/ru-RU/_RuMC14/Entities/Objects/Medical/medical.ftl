@@ -1,10 +1,10 @@
-ent-AU14PillCanisterEthylredoxrazine = таблетница этилредоксразина
-ent-AU14PillCanisterOsteoCalc = таблетница остеокалька 
-ent-AU14PillCanisterCardiocaine = таблетница кардиоцина
+ent-AU14PillCanisterEthylredoxrazine = таблетница этилредоксазина
+ent-AU14PillCanisterOsteoCalc = таблетница остеокальция
+ent-AU14PillCanisterCardiocaine = таблетница кардиокаина
 ent-CMU14PillCanisterAlkysine = таблетница алкизина
 ent-AU14PillCanisterNephronate = таблетница нефроната
 ent-AU14PillCanisterPulmovine = таблетница пульмовина 
-ent-AU14PillCanisterHepatocytin = таблетница гепатоцина
+ent-AU14PillCanisterHepatocytin = таблетница гепатоцитина
 ent-AU14PillCanisterParacetamol = таблетница парацетамола
 ent-AU14PillCanisterTramadol = таблетница трамадола
 ent-AU14PillCanisterOxycodone = таблетница оксикодона 
@@ -31,7 +31,7 @@ ent-AU14TramadolAutoInjector = автоинъектор трамадола
 ent-AU14OxycodoneAutoInjector = автоинъектор оксикодона
   .desc = Автоинъектор, рассчитанный на 3 применения.
 
-ent-AU14BaseDefibrillator = lifepak 15f
+ent-AU14CMDefibrillator = lifepak 15f
   .desc = Портативный аварийный дефибриллятор с монитором пациента, предназначенный для помощи пациентам с фибрилляцией сердца. Он подаёт мощный электрический разряд, чтобы восстановить нормальный сердечный ритм, иногда даже возвращая пациента с порога смерти.
 ent-CMUSplintItem = шина
   .desc = Аварийный стабилизатор конечностей. Смягчает штрафы за простой перелом, но не излечивает его.
@@ -61,3 +61,9 @@ ent-AU14FirstAidAutoInjectorNoSkill = автоинъектор первой по
   .desc = Автоинъектор с дозой трикордразина и небольшим количеством парацетамола и дексалина для стабилизации раненых солдат.
 ent-CMUMaskCPR = маска СЛР
   .desc = Маска с односторонним клапаном, накладываемая на лицо пациента без сознания. Позволяет более эффективно проводить СЛР, поддерживая жизнеспособность пациента дольше.
+
+# СМУшная хирургичка
+ent-CMUOrganClampItem = зажим для органов
+  .desc = Хирургический зажим для герметизации сосудов органов во время операции.
+ent-CMUBoneGraftItem = костный трансплантат
+  .desc = Флакон с синтетическим костным материалом для операций, связанных с раздробленными переломами.
