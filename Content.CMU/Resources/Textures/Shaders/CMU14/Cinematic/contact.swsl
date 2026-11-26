@@ -1,0 +1,25 @@
+light_mode unshaded;
+blend_mode add;
+
+#include "/Textures/Shaders/CMU14/Cinematic/frame.swsl"
+
+uniform highp vec2 contact_origin;
+uniform highp vec2 contact_center;
+uniform highp vec2 contact_axis;
+uniform highp vec2 contact_size;
+uniform highp float contact_strength;
+
+void fragment()
+{
+    highp vec2 world = frameWorld(frameUv(FRAGCOORD.xy));
+    if (visibleAt(contact_origin) < 0.5 || visibleAt(world) < 0.5)
+        discard;
+    highp vec2 delta = world - contact_center;
+    highp vec2 normal = vec2(-contact_axis.y, contact_axis.x);
+    highp vec2 local = vec2(dot(delta, contact_axis), dot(delta, normal)) / (contact_size * 0.5);
+    highp float shadow = contact_strength * (1.0 - smoothstep(0.15, 1.4, length(local)));
+    if (shadow < 0.001)
+        discard;
+    // RG remain the exact blocker and front-surface receiver. B is a separate contact term.
+    COLOR = vec4(0.0, 0.0, shadow, 1.0);
+}

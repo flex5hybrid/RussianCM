@@ -1,0 +1,123 @@
+{
+  "tests": {
+    "unit": {
+      "trx": "Content.Tests/TestResults/cinematic-v4-water-unit.trx",
+      "counters": {
+        "total": "28",
+        "executed": "28",
+        "passed": "28",
+        "failed": "0",
+        "error": "0",
+        "timeout": "0",
+        "aborted": "0",
+        "inconclusive": "0",
+        "passedButRunAborted": "0",
+        "notRunnable": "0",
+        "notExecuted": "0",
+        "disconnected": "0",
+        "warning": "0",
+        "completed": "0",
+        "inProgress": "0",
+        "pending": "0"
+      },
+      "sha256": "3c5d65655e3a6dbbc84e23b1e1e27fd1106d777d308a26a4081027efceccd82e"
+    },
+    "integration": {
+      "trx": "Content.IntegrationTests\\TestResults\\cinematic-v4-submersion-fixed.trx",
+      "sha256": "74dd91fcc680db0c19cb71db7bcde44efeba58e2a07fa320fab1554b3837d7ee",
+      "counters": {
+        "total": "6",
+        "executed": "6",
+        "passed": "6",
+        "failed": "0",
+        "error": "0",
+        "timeout": "0",
+        "aborted": "0",
+        "inconclusive": "0",
+        "passedButRunAborted": "0",
+        "notRunnable": "0",
+        "notExecuted": "0",
+        "disconnected": "0",
+        "warning": "0",
+        "completed": "0",
+        "inProgress": "0",
+        "pending": "0"
+      },
+      "cases": [
+        {
+          "name": "OddSizeResizeViewportPurgeAndDisableReleaseEveryOwnedTargetExactlyOnce",
+          "outcome": "Passed",
+          "duration": "00:03:33.8183450"
+        },
+        {
+          "name": "ExistingLightAndPowerStatesImmediatelyGateEmissionIncludingChildBeacons",
+          "outcome": "Passed",
+          "duration": "00:03:36.2740420"
+        },
+        {
+          "name": "AuthoredMasksAndIndependentSurfaceResponsesAreValid",
+          "outcome": "Passed",
+          "duration": "00:03:33.6334290"
+        },
+        {
+          "name": "ShaderSourcesAndInheritedEmitterDataLoad",
+          "outcome": "Passed",
+          "duration": "00:00:00.1197180"
+        },
+        {
+          "name": "PresetsSwitchLiveAndViewportScopeCannotLeakIntoAnotherCameraOrZLevel",
+          "outcome": "Passed",
+          "duration": "00:03:33.6336520"
+        },
+        {
+          "name": "WaterCoverageRejectsHiddenSpritesAndAnyLayerAtOrAboveCarpets",
+          "outcome": "Passed",
+          "duration": "00:00:02.6280710"
+        }
+      ]
+    }
+  },
+  "binaries": {
+    "bin/Content.Client/Content.Client.dll": {
+      "sha256": "0eb799c91a670f1c22ce4bc093764406dad150ef899065d56ee740fd11b0aacf"
+    },
+    "bin/Content.Client/Content.Shared.dll": {
+      "sha256": "9fbcf1c2859961d7a75c83ce6af0cd4dd717178951f11641d2e4bdc0b18e791c"
+    },
+    "bin/Content.Client/Robust.Client.dll": {
+      "sha256": "3cbc0079795035cdc499aadc78a8888486c6657b42a3cdf3c00439c49763b276"
+    },
+    "bin/Content.Server/Content.Server.dll": {
+      "sha256": "01a423f723f03446716e8897d0fe86acc6c0fd5ba047fc855de7a78c68267e9f"
+    }
+  },
+  "full_yaml_linter": "Historical V4 baseline only: 0 errors in 773078 ms. New shader prototypes parsed by current integration tests and native client.",
+  "test_harness_repair": "First run: 5/6 passed; Castle/Moq generated invalid IL for unrelated DrawRectsUnmodulated(ReadOnlySpan). Receiver test now invokes real water draw callback directly, same assertions retained. Repeat 6/6.",
+  "binaries_debug": {
+    "bin\\Content.Client\\Content.Client.dll": {
+      "sha256": "f8d33244a21d1b575c86e5baee9205949d8701be319fab1dc93d69d248e6591d"
+    },
+    "bin\\Content.Client\\Content.Shared.dll": {
+      "sha256": "4ba80a8d8c5ba46c4e15d0e5da8bd0baa7875487ce16cf4147cdce002f645222"
+    },
+    "bin\\Content.Client\\Robust.Client.dll": {
+      "sha256": "8a70ab95660820b18553f81f55bef8c5c1b6c07fec2e694a45de92081de967ac"
+    },
+    "bin\\Content.Server\\Content.Server.dll": {
+      "sha256": "a26b466e95aa39f478a4d504ea483eb4f1444f9ffb3934e4dee075b500104544"
+    }
+  },
+  "builds": {
+    "debug_client": {
+      "errors": 0,
+      "warnings": 243,
+      "log": "cinematic-v4-submersion-client.log"
+    },
+    "server": {
+      "errors": 0,
+      "warnings": 614,
+      "log": "cinematic-v4-capture-freeze-build.log"
+    }
+  },
+  "submersion_regression": "Initial direct subscription duplicated the native RMCWaterVisuals handler; setup rejected it. CMU now listens through SpriteComponent after the native handler; repeat 6/6 passed."
+}

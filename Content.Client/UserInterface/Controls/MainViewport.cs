@@ -26,6 +26,7 @@ namespace Content.Client.UserInterface.Controls
             {
                 AlwaysRender = true,
                 RenderZLevels = true,
+                CinematicLighting = true, // CMU14: opt in only the main gameplay view.
                 RenderScaleMode = ScalingViewportRenderScaleMode.CeilInt,
                 MouseFilter = MouseFilterMode.Stop
             };

@@ -1,0 +1,55 @@
+light_mode unshaded;
+blend_mode none;
+
+#include "/Textures/Shaders/CMU14/Cinematic/frame.swsl"
+
+uniform sampler2D irradiance_texture;
+uniform sampler2D blocker_texture;
+uniform sampler2D native_light_texture;
+uniform highp float local_exposure;
+uniform bool native_only;
+
+highp vec3 wallProbe(highp vec2 uv, highp vec2 offset)
+{
+    highp vec2 point = clamp(uv + offset, 0.0, 1.0);
+    highp float free_surface = 1.0 - step(0.08, texture2D(blocker_texture, point).r);
+    return texture2D(irradiance_texture, point).rgb * free_surface;
+}
+
+void fragment()
+{
+    highp vec2 uv = frameUv(FRAGCOORD.xy);
+    if (native_only)
+        discard;
+    if (visibleAt(frameWorld(uv)) < 0.5)
+        discard;
+    highp vec3 radiance = texture2D(irradiance_texture, uv).rgb;
+    if (texture2D(blocker_texture, uv).r > 0.08)
+    {
+        // Receive room-side light on the visible opaque wall face. This never expands the
+        // source visibility mesh or writes light to the floor on the far side of a thin wall.
+        highp vec2 near_step = vec2(0.20) / max(vec2(length(world_x), length(world_y)), vec2(0.001));
+        highp vec2 far_step = near_step * 2.25;
+        highp vec3 face = max(wallProbe(uv, vec2(near_step.x, 0.0)), wallProbe(uv, vec2(-near_step.x, 0.0)));
+        face = max(face, max(wallProbe(uv, vec2(0.0, near_step.y)), wallProbe(uv, vec2(0.0, -near_step.y))));
+        highp vec3 outer = max(wallProbe(uv, vec2(far_step.x, 0.0)), wallProbe(uv, vec2(-far_step.x, 0.0)));
+        outer = max(outer, max(wallProbe(uv, vec2(0.0, far_step.y)), wallProbe(uv, vec2(0.0, -far_step.y))));
+        radiance = max(radiance, max(face * 0.8, outer * 0.45));
+    }
+    radiance *= local_exposure;
+    highp float peak = max(max(radiance.r, radiance.g), radiance.b);
+    // Leave untouched pixels in the original native target, including the exact edge samples.
+    // Reading a reduced copy everywhere would unnecessarily filter light outside our footprint.
+    if (peak < 0.0001)
+        discard;
+    highp vec3 native = texture2D(native_light_texture, uv).rgb;
+    // Irradiance already contains only the positive authored excess over the native model.
+    // Keep the original native field intact; no second per-source pass or subtraction target.
+    // Native radiance keeps its own hue. Even a faint broad tail must not recolor the
+    // neutral background; local color comes only from physically added source energy.
+    // Added light remains independent from the retained native contribution.
+    // The engine applies the completed field to original sprite/tile albedo before hard FOV.
+    // This destination stores lighting energy, not display color. A shoulder at one would
+    // silently cap local illumination below ordinary overlapping native lights.
+    COLOR = vec4(native + radiance / (1.0 + peak / 6.0), 1.0);
+}

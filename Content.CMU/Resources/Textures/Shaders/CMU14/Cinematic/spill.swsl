@@ -1,0 +1,166 @@
+light_mode unshaded;
+blend_mode add;
+
+#include "/Textures/Shaders/CMU14/Cinematic/source.swsl"
+
+uniform sampler2D material_texture;
+uniform sampler2D scene_texture;
+uniform sampler2D emission_texture;
+uniform highp float spill_strength;
+uniform highp float reflection_strength;
+uniform highp float emitter_span;
+uniform bool reflection_pass;
+uniform highp float native_replacement_weight;
+uniform highp vec3 native_color;
+uniform highp float native_radius;
+uniform highp float native_energy;
+uniform highp float native_falloff;
+uniform highp float native_curve;
+uniform highp vec2 reflection_direction;
+uniform highp vec2 emitter_size;
+uniform highp int source_shape;
+uniform highp int area_samples;
+uniform bool wall_mounted;
+uniform highp float light_falloff;
+uniform highp float indirect_strength;
+uniform bool direct_enabled;
+uniform bool indirect_enabled;
+uniform bool reflection_enabled;
+
+// Quadrature weights sum to one, independently of quality. Samples only shape the
+// radiance inside the source's conservative visibility mesh; they cannot expand it.
+highp float areaResponse(highp vec2 delta, highp vec2 tangent, highp vec2 normal)
+{
+    if (source_shape == 0 || source_shape == 3)
+        return 1.0 / (1.0 + dot(delta, delta) * light_falloff);
+    highp float sum = 0.0;
+    for (int i = 0; i < 5; i++)
+    {
+        if (i >= area_samples)
+            break;
+        highp float x = (float(i) / float(area_samples - 1) * 2.0 - 1.0) * emitter_size.x;
+        highp vec2 sample_delta = delta - tangent * x;
+        if (source_shape == 2 || source_shape == 4)
+        {
+            highp vec2 upper = sample_delta - normal * emitter_size.y;
+            highp vec2 lower = sample_delta + normal * emitter_size.y;
+            sum += 0.5 / (1.0 + dot(upper, upper) * light_falloff)
+                + 0.5 / (1.0 + dot(lower, lower) * light_falloff);
+        }
+        else
+            sum += 1.0 / (1.0 + dot(sample_delta, sample_delta) * light_falloff);
+    }
+    return sum / float(area_samples);
+}
+
+void fragment()
+{
+    highp vec2 uv = frameUv(FRAGCOORD.xy);
+    highp vec2 world = frameWorld(uv);
+    highp vec2 delta = world - source_position;
+    highp float distance = length(delta);
+    highp float edge = 1.0 - smoothstep(source_radius * 0.65, source_radius, distance);
+    // All additional contributions stay inside the authored
+    // footprint. Reject its empty exterior before the relatively expensive FOV samples.
+    if (edge < 0.00001)
+        discard;
+    if (visibleAt(source_position) < 0.5 || visibleAt(world) < 0.5)
+        discard;
+    highp float mask = sourceMask(world, 1.0);
+    highp vec2 tangent = vec2(-reflection_direction.y, reflection_direction.x);
+    highp float along = dot(delta, reflection_direction);
+    highp float across = dot(delta, tangent);
+    if (wall_mounted)
+        mask *= smoothstep(-0.15, 0.12, along);
+    if (edge * mask < 0.00001)
+        discard;
+    if (reflection_pass)
+    {
+        if (!reflection_enabled)
+            discard;
+        highp vec4 material = texture2D(material_texture, uv);
+        if (material.a < 0.01 || material.r < 0.005)
+            discard;
+        // A floor's response is a filtered area-source lobe, not a second image of the
+        // lamp's rectangular RSI frame. Rough tile broadens it, polished metal concentrates
+        // it, and a water film extends the grazing response along the open surface.
+        highp float roughness = clamp(material.g, 0.08, 1.0);
+        highp float wet = clamp(material.b, 0.0, 1.0);
+        highp float spread = 0.14 + emitter_span * 0.65 + roughness * roughness * 0.75;
+        highp float reach = 0.32 + roughness * roughness * 0.9;
+        highp float center = 0.62 + roughness * 0.25;
+        highp vec2 slope = vec2(across / spread, (along - center) / reach);
+        // A rough microfacet distribution with finite area-emitter width. Texture gradients
+        // modulate the facet response, retaining real grout and panel detail at camera scale.
+        highp float distribution = 1.0 + dot(slope, slope) * 0.55;
+        highp float lobe = 1.0 / (distribution * distribution);
+        highp vec3 reflected_color = source_color * source_energy;
+        if (wet > 0.001)
+        {
+            // Blend responses, not projection lengths. Interpolating the lobe's centre/length
+            // across a wet boundary can create a second bright band at the edge of a pool.
+            highp float wet_width = max(0.14, emitter_span * 0.40 + roughness * 0.12)
+                * (1.0 + max(along, 0.0) * 0.13);
+            highp vec2 film = vec2(across / wet_width, (along - 0.85) / 1.1);
+            highp float film_tail = 1.0 - smoothstep(source_radius * 0.45, source_radius * 0.85, distance);
+            highp float film_lobe = exp(-0.5 * dot(film, film)) * film_tail;
+            // A finite rough emitter has a faint wide microfacet skirt as well as its
+            // narrow image. It remains tied to source size, roughness, radius and shadows.
+            highp float skirt = roughness * (0.25 + emitter_span)
+                / (1.0 + dot(delta, delta) * 0.8);
+            highp float wet_lobe = film_lobe + skirt * (1.0 - film_lobe);
+            lobe = mix(lobe, wet_lobe, wet);
+            // Only a small luminous patch is sampled, never the sprite's rectangular frame.
+            // Roughness integrates five taps of the real current emissive field. The bounded
+            // source mesh, wet receiver coverage and the original source mask still clip it.
+            highp vec2 patch = emission_position + tangent * across * 0.28;
+            highp vec2 step_uv = worldUv(patch + tangent * (0.04 + roughness * 0.18)) - worldUv(patch);
+            highp vec2 sample_uv = worldUv(patch);
+            highp vec3 live = texture2D(emission_texture, sample_uv).rgb * 0.4;
+            live += texture2D(emission_texture, sample_uv + step_uv).rgb * 0.2;
+            live += texture2D(emission_texture, sample_uv - step_uv).rgb * 0.2;
+            live += texture2D(emission_texture, sample_uv + step_uv * 2.0).rgb * 0.1;
+            live += texture2D(emission_texture, sample_uv - step_uv * 2.0).rgb * 0.1;
+            reflected_color = mix(reflected_color, reflected_color * 0.45 + live * 0.12, wet);
+        }
+        lobe *= smoothstep(0.02, 0.30, along);
+        if (lobe * edge * mask < 0.0001)
+            discard;
+        highp vec2 texel = vec2(1.0) / target_size;
+        highp vec3 weights = vec3(0.2126, 0.7152, 0.0722);
+        highp float detail = dot(texture2D(scene_texture, uv).rgb, weights);
+        highp float dx = dot(texture2D(scene_texture, uv + vec2(texel.x, 0.0)).rgb, weights) - detail;
+        highp float dy = dot(texture2D(scene_texture, uv + vec2(0.0, texel.y)).rgb, weights) - detail;
+        highp float facet = clamp(1.0 + (dx * tangent.x + dy * tangent.y) * 4.0, 0.55, 1.5);
+        highp float texture_response = (0.35 + 0.65 * sqrt(clamp(detail * 6.0, 0.0, 1.0))) * facet;
+        highp float fresnel = (1.0 - roughness * 0.62) * (1.0 + wet * 0.4);
+        highp vec3 radiance = reflected_color * (material.r * 4.0) * reflection_strength * 2.6
+            * fresnel * lobe * texture_response * edge * mask;
+        COLOR = vec4(radiance, 1.0);
+    }
+    else
+    {
+        // Integrate three points on the real emitter axis. A flat max(abs(x)-span,0)
+        // distance creates a plateau with rectangular shoulders on neighbouring floor tiles.
+        highp float direct = direct_enabled ? areaResponse(delta, tangent, reflection_direction) : 0.0;
+        highp vec2 bounce_delta = delta - reflection_direction * 0.55;
+        highp float bounce = indirect_enabled
+            ? 1.0 / (1.0 + dot(bounce_delta, bounce_delta) * 7.0) : 0.0;
+        bounce *= 1.0 - smoothstep(source_radius * 0.35, source_radius * 0.7, distance);
+        highp vec3 direct_radiance = source_color * spill_strength * direct * 2.5 * edge * mask * source_energy;
+        if (direct_enabled && native_energy > 0.0)
+        {
+            // Estimate only this neutral point light, in the same visibility mesh.
+            // Subtract from the added field, never from the original native light buffer.
+            highp float s = clamp(sqrt(dot(delta, delta) + 1.0) / max(native_radius, 0.001), 0.0, 1.0);
+            highp float s2 = s * s;
+            highp float curve = mix(s, s2, clamp(native_curve, 0.0, 1.0));
+            highp float value = clamp((1.0 - s2) * (1.0 - s2) / (1.0 + native_falloff * curve), 0.0, 1.0);
+            highp vec3 native_estimate = native_color * value * native_energy
+                * sourceMaskRadius(world, 1.0, native_radius) * edge;
+            direct_radiance = max(direct_radiance - native_estimate * native_replacement_weight, vec3(0.0));
+        }
+        highp vec3 indirect_radiance = source_color * indirect_strength * bounce * edge * mask * source_energy;
+        COLOR = vec4(direct_radiance + indirect_radiance, 1.0);
+    }
+}

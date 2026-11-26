@@ -1,0 +1,27 @@
+# Review-only controls. Production sources retain their native mask/animation behavior.
+- type: entity
+  id: CMUCinematicReviewBeacon
+  parent: CMUWarshipAlertBeaconRed
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: PointLight
+    autoRot: true
+    netsync: true
+
+- type: entity
+  id: CMUCinematicReviewSmallFloodlight
+  parent: RMCSmallFloodlight
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: PointLight
+    autoRot: true
+    netsync: true
+
+- type: entity
+  id: CMUCinematicReviewTallFloodlight
+  parent: RMCTallFloodlight
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: PointLight
+    autoRot: true
+    netsync: true

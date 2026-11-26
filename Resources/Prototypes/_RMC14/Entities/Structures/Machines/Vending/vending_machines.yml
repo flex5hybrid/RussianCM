@@ -236,6 +236,8 @@
   name: Souto Softdrinks
   description: A softdrink vendor provided by Souto Soda Company, Havana.
   components:
+  - type: CMUCinematicEmitter # CMU14: match the red illuminated fascia.
+    profile: CMUVendorRed
   - type: XenoCrusherChargable
     setDamage:
       types:

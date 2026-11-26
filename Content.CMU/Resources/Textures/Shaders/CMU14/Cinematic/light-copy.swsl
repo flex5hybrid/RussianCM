@@ -1,0 +1,10 @@
+light_mode unshaded;
+blend_mode none;
+
+uniform sampler2D native_copy_texture;
+uniform highp vec2 target_size;
+
+void fragment()
+{
+    COLOR = vec4(texture2D(native_copy_texture, FRAGCOORD.xy / target_size).rgb, 1.0);
+}

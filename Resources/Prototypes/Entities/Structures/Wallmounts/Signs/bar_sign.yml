@@ -1,9 +1,11 @@
-﻿- type: entity
+- type: entity
   id: BaseBarSign
   parent: [ BaseWallmountGlass, BaseWallmountMachine, StructureHealthMachineWeak ]
   name: bar sign
   abstract: true
   components:
+  - type: CMUCinematicEmitter # CMU14
+    profile: CMUNeon
   - type: WallMount
     arc: 360
   - type: Sprite
