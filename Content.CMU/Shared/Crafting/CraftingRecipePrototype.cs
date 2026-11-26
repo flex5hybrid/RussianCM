@@ -29,6 +29,11 @@ public sealed partial class CraftingRecipePrototype : IPrototype
     [DataField]
     public int OutputCount { get; private set; } = 1;
 
+    // How many come out of a craft that went better than usual, when that is set; otherwise one more of a product made several at
+    // a time, or a material spared for a single thing.
+    [DataField]
+    public int? GoodOutputCount { get; private set; }
+
     [DataField]
     public TimeSpan Time { get; private set; } = TimeSpan.FromSeconds(3);
 

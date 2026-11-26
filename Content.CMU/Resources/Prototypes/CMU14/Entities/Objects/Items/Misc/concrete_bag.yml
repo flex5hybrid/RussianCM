@@ -40,6 +40,8 @@
   - type: RMCConstructionItem
     buildable:
     - RUMCConcreteWallBuild
+    - RUMCConcretePillarBuild
+    - RUMCConcreteSlabBagBuild
   - type: UserInterface
     interfaces:
       enum.RMCConstructionUiKey.Key:

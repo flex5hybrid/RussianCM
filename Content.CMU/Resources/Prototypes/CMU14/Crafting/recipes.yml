@@ -335,6 +335,20 @@
   - stack: RUMCBrassParts
     amount: 2
 
+- type: craftRecipe
+  id: RUMCCraftBrassWaterPipeUp
+  name: au14-craft-recipe-brass-water-pipe-up
+  output: RUMCBrassPipeUp
+  time: 6
+  minigames: [Rhythm]
+  tools:
+  - Hammering
+  consumables:
+  - stack: RUMCBrassSheet
+    amount: 1
+  - stack: RUMCBrassParts
+    amount: 2
+
 # The mechanisms.
 - type: craftRecipe
   id: RUMCCraftBrassPump
@@ -468,6 +482,18 @@
   id: RUMCCraftSteelWaterPipeDown
   name: au14-craft-recipe-steel-water-pipe-down
   output: RUMCSteelPipeDown
+  time: 6
+  minigames: [Rhythm]
+  tools:
+  - Hammering
+  consumables:
+  - stack: CMSteel
+    amount: 3
+
+- type: craftRecipe
+  id: RUMCCraftSteelWaterPipeUp
+  name: au14-craft-recipe-steel-water-pipe-up
+  output: RUMCSteelPipeUp
   time: 6
   minigames: [Rhythm]
   tools:

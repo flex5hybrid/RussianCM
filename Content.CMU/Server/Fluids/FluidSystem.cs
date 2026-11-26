@@ -376,34 +376,57 @@ public sealed partial class FluidSystem : EntitySystem
             }
         }
 
-        var down = EntityQueryEnumerator<FluidPipeComponent, TransformComponent>();
-        while (down.MoveNext(out var uid, out var pipe, out var xform))
+        // The pipes that go down or up join the pipe in the same place on the level below or above. A pipe going down above
+        // a pipe going up is one joint, not two.
+        var vertical = EntityQueryEnumerator<FluidPipeComponent, TransformComponent>();
+        while (vertical.MoveNext(out var uid, out var pipe, out var xform))
         {
-            if (!pipe.Down || pipe.Isolated || !xform.Anchored || xform.MapUid is not { } map)
+            if (!pipe.Down && !pipe.Up || pipe.Isolated || !xform.Anchored || xform.MapUid is not { } map)
                 continue;
 
-            foreach (var below in PipesBelow(uid, map))
-            {
-                if (!_pipeQuery.TryComp(below, out var lower) || lower.Isolated)
-                    continue;
-                pipe.Neighbours.Add(below);
-                lower.Neighbours.Add(uid);
-            }
+            if (pipe.Down)
+                JoinLevel(uid, pipe, map, false);
+
+            if (pipe.Up)
+                JoinLevel(uid, pipe, map, true);
         }
     }
 
-    // The anchored pipes in the same place on the level under the map.
-    private IEnumerable<EntityUid> PipesBelow(EntityUid uid, EntityUid map)
+    private void JoinLevel(EntityUid uid, FluidPipeComponent pipe, EntityUid map, bool up)
     {
-        if (!_zLevels.TryMapDown(new Entity<CMUZLevelMapComponent?>(map, null), out var below))
+        foreach (var other in PipesOnLevel(uid, map, up))
+        {
+            if (!_pipeQuery.TryComp(other, out var otherPipe) || otherPipe.Isolated || pipe.Neighbours.Contains(other))
+                continue;
+
+            pipe.Neighbours.Add(other);
+            otherPipe.Neighbours.Add(uid);
+        }
+    }
+
+    // The anchored pipes in the same place on the level under the map, or over it.
+    private IEnumerable<EntityUid> PipesOnLevel(EntityUid uid, EntityUid map, bool up)
+    {
+        var mapEntity = new Entity<CMUZLevelMapComponent?>(map, null);
+        Entity<CMUZLevelMapComponent>? level;
+        if (up ? !_zLevels.TryMapUp(mapEntity, out level) : !_zLevels.TryMapDown(mapEntity, out level))
             yield break;
 
-        // The levels are maps that are grids themselves.
-        var gridUid = below.Value.Owner;
+        // The grid under the pipe on that level: the dug levels are maps that are grids themselves, but a level above a cave may
+        // have a grid of its own on it (the colony's).
+        var levelUid = level.Value.Owner;
+        var world = _transform.GetWorldPosition(uid);
+        var gridUid = levelUid;
+        if (TryComp<MapComponent>(levelUid, out var levelMap) &&
+            _map.TryFindGridAt(new MapCoordinates(world, levelMap.MapId), out var found, out _))
+        {
+            gridUid = found;
+        }
+
         if (!TryComp<MapGridComponent>(gridUid, out var grid))
             yield break;
 
-        var tile = _map.WorldToTile(gridUid, grid, _transform.GetWorldPosition(uid));
+        var tile = _map.WorldToTile(gridUid, grid, world);
         var anchored = _map.GetAnchoredEntitiesEnumerator(gridUid, grid, tile);
         while (anchored.MoveNext(out var other))
         {
@@ -420,7 +443,7 @@ public sealed partial class FluidSystem : EntitySystem
 
         pipe.Look = mask;
         _appearance.SetData(uid, FluidPipeVisuals.Connections, mask);
-        _appearance.SetData(uid, FluidPipeVisuals.Down, pipe.Down);
+        _appearance.SetData(uid, FluidPipeVisuals.Down, pipe.Down || pipe.Up);
     }
 
     private void StepPipes(float step)

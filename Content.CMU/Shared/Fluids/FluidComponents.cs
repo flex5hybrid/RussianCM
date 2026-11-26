@@ -67,6 +67,10 @@ public sealed partial class FluidPipeComponent : Component
     [DataField]
     public bool Down;
 
+    // A pipe that goes up: it also passes its liquid to the pipe in the same place on the level above.
+    [DataField]
+    public bool Up;
+
     // A pipe cut off from everything (the "disconnect from everything" button): it keeps what is in it and levels out with no pipe, and no pipe with it.
     [DataField]
     public bool Isolated;
