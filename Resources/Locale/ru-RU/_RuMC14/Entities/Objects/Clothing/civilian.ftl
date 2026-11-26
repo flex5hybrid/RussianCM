@@ -1,0 +1,85 @@
+ent-AU14CivilianBrownTrenchCoat = коричневый тренчкот
+    .desc = Прочный и хорошо сшитый плащ, подойдет для дождливой погоды.
+
+ent-AU14CivilianWorkwearBlue = синяя рабочая одежда
+    .desc = Рабочая одежда, предназначенная для грязной работы без ущерба для внешнего вида.
+ent-AU14CivilianWorkwearGreen = зелёная рабочая одежда
+    .desc = {ent-AU14CivilianWorkwearBlue.desc}
+ent-AU14CivilianWorkwearPink = розовая рабочая одежда
+    .desc = {ent-AU14CivilianWorkwearBlue.desc}
+ent-AU14CivilianWorkwearYellow = жёлтая рабочая одежда
+    .desc = {ent-AU14CivilianWorkwearBlue.desc}
+
+ent-AU14CivilianBoilerSuitCyan = бирюзовый рабочий комбинезон
+    .desc = Прочный водонепроницаемый комбинезон для тех, кто привык много работать.
+ent-AU14CivilianBoilerSuitDarkBlue = тёмно-синий рабочий комбинезон
+    .desc = {ent-AU14CivilianBoilerSuitCyan.desc}
+ent-AU14CivilianBoilerSuitDarkBlueSynth = форма синтетика службы поддержки
+    .desc = Прочный водонепроницаемый комбинезон для трудолюбивых синтетиков.
+ent-AU14CivilianBoilerSuitGray = серый рабочий комбинезон
+    .desc = {ent-AU14CivilianBoilerSuitCyan.desc}
+ent-AU14CivilianBoilerSuitGreen = зелёный рабочий комбинезон
+    .desc = {ent-AU14CivilianBoilerSuitCyan.desc}
+ent-AU14CivilianBoilerSuitKhaki = рабочий комбинезон цвета хаки
+    .desc = {ent-AU14CivilianBoilerSuitCyan.desc}
+ent-AU14CivilianBoilerSuitLightBlue = светло-синий рабочий комбинезон
+    .desc = {ent-AU14CivilianBoilerSuitCyan.desc}
+ent-AU14CivilianBoilerSuitWhite = белый рабочий комбинезон
+    .desc = {ent-AU14CivilianBoilerSuitCyan.desc}
+ent-AU14CivilianPrisonJumpsuit = тюремный комбинезон
+    .desc = Комбинезон, предназначенный для заключённых.
+
+ent-AU14CivilianWeYuEngineerClothes = одежда инженера Вей-Ю
+    .desc = Одежда, предназначенная для инженеров Вей-Ю.
+ent-AU14JoeHazmat = защитный комбинезон "Рабочего Джо"
+    .desc = Укреплённая форма для работы синтетиков в опасных зонах. Вместе - к завтрашнему дню. Судя по всему, его жизненно важный датчик и маяк слежения включены.
+ent-AU14CivilianParamedicClothesRed = красная форма парамедика
+    .desc = Одежда, предназначенная для парамедиков.
+ent-AU14CivilianParamedicClothesGreen = зелёная форма парамедика
+    .desc = Одежда, предназначенная для парамедиков.
+ent-AU14CivilianSanitationClothes = форма санитарного рабочего
+    .desc = Одежда, предназначенная для работников санитарной службы.
+ent-CMUJumpsuitCivilianForeman = форма прораба инженерного отдела Вей-Ю
+    .desc = Одежда, предназначенная для прорабов инженерного отдела Вей-Ю.
+ent-AU14CivilianKellandMiningClothes = форма корпорации "Келланд Майнинг"
+    .desc = Одежда, предназначенная для шахтёров корпорации "Келланд Майнинг".
+ent-AU14CivilianBaristaClothes = форма бариста
+    .desc = Одежда, предназначенная для тех, кто готовит кофе.
+ent-RMCJumpsuitKhakiWorkwearJacketless = рубашка хаки
+    .desc = Пара джинсов в сочетании с рабочей рубашкой цвета хаки. Распространенная пара среди рабочих из-за своего унылого вида.
+
+ent-AU14ScrubsGreenDoctorSurgical = зелёная хирургическая форма
+ent-AU14WYSecurityUniformRig = разгрузочная форма службы безопасности Вей-Ю
+
+ent-AU14CivilianFlannelPurple = фиолетовая фланелевая рубашка
+ent-AU14CivilianFlannelRed = красная фланелевая рубашка
+ent-AU14CivilianFlannelWhite = белая фланелевая рубашка
+
+ent-AU14CivilianFloralBlue = синяя рубашка с цветочным узором
+ent-AU14CivilianFloralRed = красная рубашка с цветочным узором
+ent-AU14CivilianFloralYellow = жёлтая рубашка с цветочным узором
+
+ent-AU14CivBallCapBlack = чёрная бейсболка
+    .desc = Простая бейсболка.
+ent-AU14CivFedoraTan = песочная федора
+    .desc = Стильная шляпа.
+ent-AU14CivFedoraBrown = коричневая федора
+    .desc = Стильная шляпа.
+ent-AU14CivFedoraGray = серая федора
+    .desc = Стильная шляпа.
+ent-AU14CivBallCapBlueTrucker = синяя бейсболка дальнобойщика
+    .desc = Бейсболка дальнобойщика.
+ent-AU14CivBallCapRedTrucker = красная бейсболка дальнобойщика
+    .desc = Бейсболка дальнобойщика.
+ent-CMUCivBoonieHatTan = песочная панама
+    .desc = Панама с широкими полями, защищающая лицо от солнца во время долгих дней на открытом воздухе.
+ent-CMUCivBoonieHatGreen = зелёная панама
+    .desc = Панама с широкими полями, защищающая лицо от солнца во время долгих дней на открытом воздухе.
+ent-CMUCivWorkCapTan = песочная рабочая кепка
+    .desc = Простая хлопковая рабочая кепка.
+ent-CMUCivWorkCapGreen = зелёная рабочая кепка
+    .desc = Простая хлопковая рабочая кепка.
+ent-CMUCivSunCapTan = песочная кепка с защитой от солнца
+    .desc = Хлопковая рабочая кепка с тканевым клапаном, защищающим шею от солнца.
+ent-CMUCivSunCapGreen = зелёная кепка с защитой от солнца
+    .desc = Хлопковая рабочая кепка с тканевым клапаном, защищающим шею от солнца.
