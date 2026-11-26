@@ -125,26 +125,6 @@
     rate: 300
     down: true
 
-- type: entity
-  parent: RUMCBrassPipe
-  id: RUMCBrassPipeUp
-  name: brass pipe going up
-  description: A brass pipe that goes up through the ceiling, and the liquid it carries goes to the pipe in the same place on the level above.
-  components:
-  - type: FluidPipe
-    up: true
-
-- type: entity
-  parent: RUMCSteelPipe
-  id: RUMCSteelPipeUp
-  name: steel pipe going up
-  description: A steel pipe that goes up through the ceiling, and the liquid it carries goes to the pipe in the same place on the level above.
-  components:
-  - type: FluidPipe
-    capacity: 100
-    rate: 300
-    up: true
-
 # Molten slag, left by the smelter.
 - type: reagent
   id: RUMCSlag

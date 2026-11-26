@@ -432,18 +432,3 @@
   extras:
   - result: RUMCStonePowder
     amount: 2
-
-# Stone for the concrete: a stone fragment makes two of stone powder, and four of stone powder make four of sand.
-- type: cmuGrinderRecipe
-  id: RUMCGrinderRecipeStonePowder
-  input: RUMCStone
-  inputAmount: 1
-  result: RUMCStonePowder
-  resultAmount: 2
-
-- type: cmuGrinderRecipe
-  id: RUMCGrinderRecipeSand
-  input: RUMCStonePowder
-  inputAmount: 4
-  result: RUMCSand
-  resultAmount: 4

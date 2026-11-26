@@ -171,13 +171,16 @@
   placementMode: SnapgridCenter
   canRotate: false
   isCM: true
-  spawnlist: AU14 # RUMC: was ZLevel; the concrete supports are in the main list with the concrete walls
+  # spawnlist: ZLevel # RuMC edit
+  spawnlist: AU14 # RuMC edit: the concrete supports are in the main list of the construction menu, with the concrete walls
   conditions:
   - !type:TileNotBlocked
   - !type:ZBuildAllowed
+  # RuMC edit start: the skill of the concrete walls
   - !type:AU14MinimumSkill
     skill: RMCSkillConstruction
     level: 1
+  # RuMC edit end
 
 - type: constructionGraph
   id: RUMCSupportBeamReinforcedConcreteGraph
@@ -207,13 +210,16 @@
   placementMode: SnapgridCenter
   canRotate: false
   isCM: true
-  spawnlist: AU14 # RUMC: was ZLevel; the concrete supports are in the main list with the concrete walls
+  # spawnlist: ZLevel # RuMC edit
+  spawnlist: AU14 # RuMC edit: the concrete supports are in the main list of the construction menu, with the concrete walls
   conditions:
   - !type:TileNotBlocked
   - !type:ZBuildAllowed
+  # RuMC edit start: the skill of the concrete walls
   - !type:AU14MinimumSkill
     skill: RMCSkillConstruction
     level: 1
+  # RuMC edit end
 
 - type: constructionGraph
   id: RUMCConcreteSlabGraph

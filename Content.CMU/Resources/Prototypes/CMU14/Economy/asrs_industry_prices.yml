@@ -356,12 +356,6 @@
   price: 55
 
 - type: cmuIndustryPrice
-  id: CMUIndustryPriceEntityRUMCBrassPipeUp
-  entity: RUMCBrassPipeUp
-  product: "brass pipe going up"
-  price: 55
-
-- type: cmuIndustryPrice
   id: CMUIndustryPriceStackRUMCBrassSheet
   stack: RUMCBrassSheet
   product: "brass sheet"
@@ -2369,12 +2363,6 @@
   id: CMUIndustryPriceEntityRUMCSteelPipeDown
   entity: RUMCSteelPipeDown
   product: "steel pipe going down"
-  price: 80
-
-- type: cmuIndustryPrice
-  id: CMUIndustryPriceEntityRUMCSteelPipeUp
-  entity: RUMCSteelPipeUp
-  product: "steel pipe going up"
   price: 80
 
 - type: cmuIndustryPrice

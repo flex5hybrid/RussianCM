@@ -346,7 +346,7 @@ public sealed class CraftingSystem : SharedCraftingSystem
         }
 
         var spared = false;
-        if (outcome == CraftOutcome.Good && recipe.OutputCount <= 1 && recipe.GoodOutputCount == null)
+        if (outcome == CraftOutcome.Good && recipe.OutputCount <= 1 && recipe.GoodOutputCount == null) // RuMC edit: nothing spared when goodOutputCount is set
         {
             // A single thing cannot come out larger, so one of the materials is spared instead (only where there is more than one of it).
             for (var i = 0; i < claims.Count; i++)
@@ -386,8 +386,10 @@ public sealed class CraftingSystem : SharedCraftingSystem
 
         // One more of the product when the craft makes several of it.
         var count = outcome == CraftOutcome.Good && recipe.OutputCount > 1 ? recipe.OutputCount + 1 : recipe.OutputCount;
+        // RuMC edit start: a recipe can set how many come out of a craft better than usual
         if (outcome == CraftOutcome.Good && recipe.GoodOutputCount is { } goodCount)
             count = goodCount;
+        // RuMC edit end
 
         var coords = Transform(user).Coordinates;
         var result = Spawn(recipe.Output, coords);

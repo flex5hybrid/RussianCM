@@ -1,3 +1,4 @@
+// RuMC: the liquid pipes going up (FluidSystem.RuMC.cs).
 using System.Linq;
 using Content.IntegrationTests.Fixtures;
 using Content.Server.CMU14.Fluids;
@@ -7,11 +8,11 @@ using Content.Shared.CMU14.ZLevelBuilding;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 
-namespace Content.IntegrationTests.CMU.Industry;
+namespace Content.IntegrationTests._RuCM.Industry;
 
 // The liquid pipes that go through the floor: one going up from a level joins the pipe over it, and one going down over a pipe
 // going up joins it once, not twice.
-public sealed class CMUFluidPipeLevelsTest : GameTest
+public sealed class RuFluidPipeLevelsTest : GameTest
 {
     public override PoolSettings PoolSettings => new() { Connected = false };
 

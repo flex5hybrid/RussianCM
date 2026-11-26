@@ -3461,7 +3461,7 @@
   name: au14-craft-recipe-electricmachinehull
   output: RUMCMachineHullItem
   outputCount: 1
-  goodOutputCount: 2 # a craft better than usual makes two
+  goodOutputCount: 2 # RuMC edit: a craft better than usual makes two
   time: 12
   minigames: [Rhythm, Center]
   tools:
