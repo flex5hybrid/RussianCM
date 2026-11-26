@@ -171,10 +171,13 @@
   placementMode: SnapgridCenter
   canRotate: false
   isCM: true
-  spawnlist: ZLevel
+  spawnlist: AU14 # RUMC: was ZLevel; the concrete supports are in the main list with the concrete walls
   conditions:
   - !type:TileNotBlocked
   - !type:ZBuildAllowed
+  - !type:AU14MinimumSkill
+    skill: RMCSkillConstruction
+    level: 1
 
 - type: constructionGraph
   id: RUMCSupportBeamReinforcedConcreteGraph
@@ -204,10 +207,13 @@
   placementMode: SnapgridCenter
   canRotate: false
   isCM: true
-  spawnlist: ZLevel
+  spawnlist: AU14 # RUMC: was ZLevel; the concrete supports are in the main list with the concrete walls
   conditions:
   - !type:TileNotBlocked
   - !type:ZBuildAllowed
+  - !type:AU14MinimumSkill
+    skill: RMCSkillConstruction
+    level: 1
 
 - type: constructionGraph
   id: RUMCConcreteSlabGraph
@@ -240,35 +246,3 @@
   spawnlist: ZLevel
   conditions:
   - !type:ZBuildAllowed
-
-# The same supports and the slab, built from the bags in the hands (hold the bags and pick what to build), as the concrete walls are:
-# as many bags as in the construction menu.
-- type: rmcConstruction
-  id: RUMCConcretePillarBuild
-  name: concrete support
-  prototype: RUMCConcretePillar
-  noRotate: true
-  doAfterTime: 6
-  materialCost: 6
-  skill: RMCSkillConstruction
-  requiredSkillLevel: 1
-
-- type: rmcConstruction
-  id: RUMCReinforcedConcretePillarBuild
-  name: reinforced concrete support
-  prototype: RUMCReinforcedConcretePillar
-  noRotate: true
-  doAfterTime: 8
-  materialCost: 6
-  skill: RMCSkillConstruction
-  requiredSkillLevel: 1
-
-- type: rmcConstruction
-  id: RUMCConcreteSlabBagBuild
-  name: concrete slab
-  prototype: RUMCConcreteSlab
-  noRotate: true
-  doAfterTime: 4
-  materialCost: 3
-  skill: RMCSkillConstruction
-  requiredSkillLevel: 1
