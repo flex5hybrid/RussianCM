@@ -4,7 +4,7 @@ au14-department-govforces = ГОВФОР
 au14-job-supervisors-govforplatco = Верховному командованию
 au14-job-supervisors-govfor = Командиру взвода
 
-au14-job-name-govforplatco = Командир
+au14-job-name-govforplatco = Командующий офицер
 au14-job-description-govforplatco = Командуйте подразделением. Определяйте стратегию, координируйте действия подразделения и поддерживайте связь с командованием из БИЦ.
 au14-job-prefix-govforplatco = CMNDR
 
@@ -56,7 +56,7 @@ au14-job-name-govforfightersystemsofficer = Оператор вооружени�
 au14-job-description-govforfightersystemsofficer = Занимайте заднее место в кабине истребителя. Управляйте системами вооружения и поражайте цели.
 au14-job-prefix-govforfightersystemsofficer = FSO
 
-au14-job-name-govfordcc = Старший пилот транспортника
+au14-job-name-govfordcc = Бортмеханик
 au14-job-description-govfordcc = Обслуживайте десантные челноки. Координируйте размещение грузов и пассажиров и помогайте пилотам.
 au14-job-prefix-govfordcc = DCC
 
