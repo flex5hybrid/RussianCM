@@ -44,14 +44,15 @@ public sealed class RecipeMachineWindow : DefaultWindow
     private readonly BoxContainer _liquids;
     private MachineWindowKit.FluidGauge? _steam;
     private readonly BoxContainer _recipeList;
-    private readonly Label _recipesTitle;
     private bool _listed;
 
-    // On a machine tool each recipe of the list is a button that chooses it; the chosen one is pressed, and pressing it again
-    // clears the choice.
+    // RuMC edit start: on a machine tool each recipe of the list is a button that chooses it; the chosen one is pressed, and
+    // pressing it again clears the choice.
+    private readonly Label _recipesTitle;
     private readonly List<(Button Button, string Recipe)> _recipeButtons = new();
 
     public event Action<string?>? OnRecipeChosen;
+    // RuMC edit end
 
     public event Action<string>? OnSlotPressed;
     public event Action<int>? OnCircuitChosen;
@@ -143,8 +144,11 @@ public sealed class RecipeMachineWindow : DefaultWindow
         _progressBar = MachineWindowKit.Bar(400);
         root.AddChild(_progressBar);
 
+        // root.AddChild(new Label { Text = Loc.GetString("au14-machine-recipes"), FontColorOverride = MachineWindowKit.SectionTitle }); // RuMC edit
+        // RuMC edit start: the title says when the recipes can be chosen
         _recipesTitle = new Label { Text = Loc.GetString("au14-machine-recipes"), FontColorOverride = MachineWindowKit.SectionTitle };
         root.AddChild(_recipesTitle);
+        // RuMC edit end
 
         _recipeList = MachineWindowKit.Column(2);
         var scroll = new ScrollContainer { VerticalExpand = true, MinSize = new Vector2(480, 200), HScrollEnabled = false };
@@ -217,8 +221,10 @@ public sealed class RecipeMachineWindow : DefaultWindow
             .ToList();
 
         _circuitRow.Visible = recipes.Any(recipe => recipe.Circuit != null);
+        // RuMC edit start
         if (comp.RecipeSelection)
-            _recipesTitle.Text = Loc.GetString("au14-machine-recipes-choose");
+            _recipesTitle.Text = Loc.GetString("rumc-machine-recipes-choose");
+        // RuMC edit end
 
         FillFilters(recipes);
 
@@ -226,7 +232,8 @@ public sealed class RecipeMachineWindow : DefaultWindow
         {
             var text = new RichTextLabel { HorizontalExpand = true };
             text.SetMessage(FormattedMessage.FromUnformatted(Describe(recipe)));
-
+            // _recipeList.AddChild(text); // RuMC edit
+            // RuMC edit start: a machine tool shows each recipe as a button
             if (!comp.RecipeSelection)
             {
                 _recipeList.AddChild(text);
@@ -244,6 +251,7 @@ public sealed class RecipeMachineWindow : DefaultWindow
             };
             _recipeButtons.Add((button, id));
             _recipeList.AddChild(button);
+            // RuMC edit end
         }
     }
 
@@ -333,8 +341,10 @@ public sealed class RecipeMachineWindow : DefaultWindow
             MachineWindowKit.Refresh(_entMan, _itemSlots, _stacks, _owner, slot);
 
         _circuitLabel.Text = comp.Circuit.ToString();
+        // RuMC edit start
         foreach (var (button, recipe) in _recipeButtons)
             button.Pressed = recipe == comp.SelectedRecipe;
+        // RuMC edit end
 
         // The switches show what the machine has; a click on one of them is not echoed back.
         var auto = _entMan.GetComponentOrNull<AutoPortsComponent>(_owner);

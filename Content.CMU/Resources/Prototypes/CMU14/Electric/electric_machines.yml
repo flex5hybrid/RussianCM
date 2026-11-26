@@ -179,7 +179,7 @@
   - type: ActivatableUIRequiresPower
   - type: RecipeMachine
     kind: wiremill
-    recipeSelection: true
+    recipeSelection: true # RuMC edit
 
 - type: entity
   parent: [ RUMCRecipeMachineBase, BaseMachinePowered, BaseMachineDestructible ]
@@ -204,7 +204,7 @@
   - type: ActivatableUIRequiresPower
   - type: RecipeMachine
     kind: bender
-    recipeSelection: true
+    recipeSelection: true # RuMC edit
 
 - type: entity
   parent: [ RUMCRecipeMachineBase, BaseMachinePowered, BaseMachineDestructible ]
@@ -229,7 +229,7 @@
   - type: ActivatableUIRequiresPower
   - type: RecipeMachine
     kind: lathe
-    recipeSelection: true
+    recipeSelection: true # RuMC edit
 
 - type: entity
   parent: [ RUMCRecipeMachineBase, BaseMachinePowered, BaseMachineDestructible ]
@@ -254,7 +254,7 @@
   - type: ActivatableUIRequiresPower
   - type: RecipeMachine
     kind: cutter
-    recipeSelection: true
+    recipeSelection: true # RuMC edit
     maxCircuit: 2
 
 - type: entity
@@ -398,7 +398,7 @@
   - type: ActivatableUIRequiresPower
   - type: RecipeMachine
     kind: assembler
-    recipeSelection: true
+    recipeSelection: true # RuMC edit
   - type: FluidPorts
     ports:
     - id: liquid_in
@@ -695,7 +695,7 @@
   - type: ActivatableUIRequiresPower
   - type: RecipeMachine
     kind: cannery
-    recipeSelection: true
+    recipeSelection: true # RuMC edit
   - type: FluidPorts
     ports:
     - id: liquid_in
@@ -736,7 +736,7 @@
   - type: ActivatableUIRequiresPower
   - type: RecipeMachine
     kind: jeweler
-    recipeSelection: true
+    recipeSelection: true # RuMC edit
 
 - type: entity
   parent: [ RUMCRecipeMachineBase, BaseMachinePowered, BaseMachineDestructible ]
@@ -761,7 +761,7 @@
   - type: ActivatableUIRequiresPower
   - type: RecipeMachine
     kind: engraver
-    recipeSelection: true
+    recipeSelection: true # RuMC edit
 
 - type: entity
   parent: [ RUMCRecipeMachineBase, RUMCFluidMachineBase, BaseMachinePowered, BaseMachineDestructible ]
@@ -1008,7 +1008,7 @@
   - type: ActivatableUIRequiresPower
   - type: RecipeMachine
     kind: extruder
-    recipeSelection: true
+    recipeSelection: true # RuMC edit
 
 - type: entity
   parent: [ RUMCRecipeMachineBase, RUMCFluidMachineBase, BaseMachinePowered, BaseMachineDestructible ]
@@ -1033,7 +1033,7 @@
   - type: ActivatableUIRequiresPower
   - type: RecipeMachine
     kind: pharma
-    recipeSelection: true
+    recipeSelection: true # RuMC edit
   - type: FluidPorts
     ports:
     - id: liquid_in
@@ -1101,7 +1101,7 @@
   - type: ActivatableUIRequiresPower
   - type: RecipeMachine
     kind: sewing
-    recipeSelection: true
+    recipeSelection: true # RuMC edit
 
 - type: entity
   parent: [ RUMCRecipeMachineBase, RUMCFluidMachineBase, BaseMachinePowered, BaseMachineDestructible ]
@@ -1160,7 +1160,7 @@
   - type: ActivatableUIRequiresPower
   - type: RecipeMachine
     kind: fabricator
-    recipeSelection: true
+    recipeSelection: true # RuMC edit
     inputSlots: 18
     outputSlots: 1
 
@@ -1187,7 +1187,7 @@
   - type: ActivatableUIRequiresPower
   - type: RecipeMachine
     kind: circuitassembler
-    recipeSelection: true
+    recipeSelection: true # RuMC edit
 
 - type: entity
   parent: [ RUMCRecipeMachineBase, RUMCFluidMachineBase, RUMCSteamMachineBase ]
