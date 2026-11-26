@@ -2109,13 +2109,11 @@ public sealed partial class YautjaHuntConsoleComponent : Component
 
         return new List<YautjaHuntCallOption>
         {
-            YoungbloodCall("youngblood_solo", "cmu-yautja-blooding-call-solo", 1, 1, 2, 0, 5, youngblood),
-            YoungbloodCall("youngblood_solo_experienced", "cmu-yautja-blooding-call-solo-experienced", 1, 1, 7, 5, 5, youngblood),
-            YoungbloodCall("youngblood_three_inexperienced", "cmu-yautja-blooding-call-three-inexperienced", 2, 3, 2, 0, 5, youngblood),
-            YoungbloodCall("youngblood_three_intermediate", "cmu-yautja-blooding-call-three-intermediate", 2, 3, 5, 2, 10, youngblood),
-            YoungbloodCall("youngblood_three_experienced", "cmu-yautja-blooding-call-three-experienced", 2, 3, 10, 3, 20, youngblood),
-            YoungbloodCall("youngblood_three_mixed", "cmu-yautja-blooding-call-three-mixed", 2, 3, 10, 0, 5, youngblood),
-            YoungbloodCall("youngblood_pack", "cmu-yautja-blooding-call-pack", 4, 6, 10, 0, 5, youngblood),
+            // RuMC edit start
+            YoungbloodCall("youngblood_solo", "cmu-yautja-blooding-call-solo", 1, 1, youngblood),
+            YoungbloodCall("youngblood_three", "cmu-yautja-blooding-call-three", 2, 3, youngblood),
+            YoungbloodCall("youngblood_pack", "cmu-yautja-blooding-call-pack", 4, 6, youngblood),
+            // RuMC edit end
         };
     }
 
@@ -2141,16 +2139,10 @@ public sealed partial class YautjaHuntConsoleComponent : Component
         string displayName,
         int minSpawnCount,
         int spawnCount,
-        int maximumYoungbloodHours,
-        int rejectionYoungbloodHours,
-        int requiredSquadAndXenoHours,
-        List<YautjaHuntSpawnEntry> spawns)
+        List<YautjaHuntSpawnEntry> spawns) // RuMC edit
     {
         var call = HuntCall(id, displayName, spawnCount, 1f, spawns);
         call.MinSpawnCount = minSpawnCount;
-        call.MaximumYoungbloodTime = TimeSpan.FromHours(maximumYoungbloodHours);
-        call.RejectionYoungbloodTime = TimeSpan.FromHours(rejectionYoungbloodHours);
-        call.RequiredSquadAndXenoTime = TimeSpan.FromHours(requiredSquadAndXenoHours);
         return call;
     }
 
@@ -2270,15 +2262,6 @@ public sealed partial class YautjaHuntCallOption
 
     [DataField]
     public int MinSpawnCount = 1;
-
-    [DataField]
-    public TimeSpan MaximumYoungbloodTime;
-
-    [DataField]
-    public TimeSpan RejectionYoungbloodTime;
-
-    [DataField]
-    public TimeSpan RequiredSquadAndXenoTime;
 
     [DataField]
     public float CooldownMultiplier = 1f;

@@ -51,6 +51,12 @@
   name: cmu-yautja-job-name-youngblood
   description: cmu-yautja-job-description-youngblood
   playTimeTracker: CMUYautjaYoungblood
+  # RuMC edit start
+  requirements:
+  - !type:TotalDepartmentsTimeRequirement
+    group: CMUDepartmentsMilitary
+    time: 18000 # 5 hours
+  # RuMC edit end
   icon: CMJobIconEmpty
   supervisors: cmu-job-supervisors-yautja-youngblood
   joinNotifyCrew: false

@@ -36,7 +36,6 @@ using Content.Server.Hands.Systems;
 using Content.Server.Ghost.Roles;
 using Content.Server.Mind;
 using Content.Server.Physics.Controllers;
-using Content.Server.Players.PlayTimeTracking;
 using Content.Server.Power.Components;
 using Content.Shared.Speech.Components;
 using Content.Server.Verbs;
@@ -4344,7 +4343,7 @@ public sealed class YautjaSmokeTest
                     new YautjaHuntCallSelectedEvent(entMan.GetNetEntity(hunter), mixedSmall.Id));
 
                 var blooding = entMan.GetComponent<YautjaHuntConsoleComponent>(bloodingConsole);
-                var solo = blooding.BloodingCallOptions.Single(candidate => candidate.Id == "youngblood_solo_experienced");
+                var solo = blooding.BloodingCallOptions.Single(candidate => candidate.Id == "youngblood_solo"); // RuMC edit
                 entMan.EventBus.RaiseLocalEvent(
                     bloodingConsole,
                     new YautjaHuntCallSelectedEvent(entMan.GetNetEntity(hunter), solo.Id));
@@ -4362,7 +4361,6 @@ public sealed class YautjaSmokeTest
                     Assert.That(youngbloodRole.JobProto, Is.EqualTo("CMUYautjaYoungblood"));
                     Assert.That(youngbloodRole.ReregisterOnGhost, Is.False);
                     Assert.That(youngbloodRole.RaffleConfig, Is.Not.Null);
-                    Assert.That(metadata.CallId, Is.EqualTo("youngblood_solo_experienced"));
                     Assert.That(metadata.BypassEligibility, Is.False);
                 });
 
@@ -4460,7 +4458,6 @@ public sealed class YautjaSmokeTest
         {
             var entMan = server.EntMan;
             var ghostRoles = entMan.System<GhostRoleSystem>();
-            var playtime = server.ResolveDependency<PlayTimeTrackingManager>();
             var session = server.PlayerMan.Sessions.Single();
             previousAttached = session.AttachedEntity;
 
@@ -4474,15 +4471,13 @@ public sealed class YautjaSmokeTest
                 entMan.EnsureComponent<YautjaComponent>(hunter);
 
                 var blooding = entMan.GetComponent<YautjaHuntConsoleComponent>(console);
-                var solo = blooding.BloodingCallOptions.Single(candidate => candidate.Id == "youngblood_solo_experienced");
+                var solo = blooding.BloodingCallOptions.Single(candidate => candidate.Id == "youngblood_solo"); // RuMC edit
                 entMan.EventBus.RaiseLocalEvent(console, new YautjaHuntCallSelectedEvent(entMan.GetNetEntity(hunter), solo.Id));
 
                 var query = entMan.EntityQueryEnumerator<GhostRoleComponent, GhostTakeoverAvailableComponent, YautjaYoungbloodGhostRoleComponent>();
                 Assert.That(query.MoveNext(out var youngblood, out var ghostRole, out _, out var metadata), Is.True);
                 Assert.That(metadata.BypassEligibility, Is.False);
 
-                playtime.AddTimeToTracker(session, "CMJobRifleman", TimeSpan.FromHours(5));
-                playtime.AddTimeToTracker(session, "CMJobSelectableXeno", TimeSpan.FromHours(5));
 
                 server.PlayerMan.SetAttachedEntity(session, null);
                 ghostRoles.Request(session, ghostRole.Identifier);
@@ -4545,7 +4540,7 @@ public sealed class YautjaSmokeTest
                 entMan.EnsureComponent<YautjaComponent>(hunter);
 
                 var blooding = entMan.GetComponent<YautjaHuntConsoleComponent>(console);
-                var solo = blooding.BloodingCallOptions.Single(candidate => candidate.Id == "youngblood_solo_experienced");
+                var solo = blooding.BloodingCallOptions.Single(candidate => candidate.Id == "youngblood_solo"); // RuMC edit
                 var huntConsole = entMan.System<YautjaHuntConsoleSystem>();
                 Assert.That(huntConsole.TryCreateYoungbloodCall((console, blooding), hunter, solo, bypassEligibility: true), Is.True);
 
@@ -4606,7 +4601,6 @@ public sealed class YautjaSmokeTest
         {
             var entMan = server.EntMan;
             var ghostRoles = entMan.System<GhostRoleSystem>();
-            var playtime = server.ResolveDependency<PlayTimeTrackingManager>();
             var session = server.PlayerMan.Sessions.Single();
             previousAttached = session.AttachedEntity;
             previousStatus = session.Status;
@@ -4621,14 +4615,12 @@ public sealed class YautjaSmokeTest
                 entMan.EnsureComponent<YautjaComponent>(hunter);
 
                 var blooding = entMan.GetComponent<YautjaHuntConsoleComponent>(console);
-                var solo = blooding.BloodingCallOptions.Single(candidate => candidate.Id == "youngblood_solo_experienced");
+                var solo = blooding.BloodingCallOptions.Single(candidate => candidate.Id == "youngblood_solo"); // RuMC edit
                 entMan.EventBus.RaiseLocalEvent(console, new YautjaHuntCallSelectedEvent(entMan.GetNetEntity(hunter), solo.Id));
 
                 var query = entMan.EntityQueryEnumerator<GhostRoleComponent, GhostTakeoverAvailableComponent, YautjaYoungbloodGhostRoleComponent>();
                 Assert.That(query.MoveNext(out var youngblood, out var ghostRole, out _, out var metadata), Is.True);
 
-                playtime.AddTimeToTracker(session, "CMJobRifleman", TimeSpan.FromHours(5));
-                playtime.AddTimeToTracker(session, "CMJobSelectableXeno", TimeSpan.FromHours(5));
 
                 server.PlayerMan.SetAttachedEntity(session, null);
                 ghostRoles.Request(session, ghostRole.Identifier);
@@ -4686,7 +4678,6 @@ public sealed class YautjaSmokeTest
             var entMan = server.EntMan;
             var ghostRoles = entMan.System<GhostRoleSystem>();
             var mobState = entMan.System<MobStateSystem>();
-            var playtime = server.ResolveDependency<PlayTimeTrackingManager>();
             var session = server.PlayerMan.Sessions.Single();
             previousAttached = session.AttachedEntity;
 
@@ -4701,14 +4692,12 @@ public sealed class YautjaSmokeTest
                 entMan.EnsureComponent<YautjaComponent>(hunter);
 
                 var blooding = entMan.GetComponent<YautjaHuntConsoleComponent>(console);
-                var solo = blooding.BloodingCallOptions.Single(candidate => candidate.Id == "youngblood_solo_experienced");
+                var solo = blooding.BloodingCallOptions.Single(candidate => candidate.Id == "youngblood_solo"); // RuMC edit
                 entMan.EventBus.RaiseLocalEvent(console, new YautjaHuntCallSelectedEvent(entMan.GetNetEntity(hunter), solo.Id));
 
                 var query = entMan.EntityQueryEnumerator<GhostRoleComponent, GhostTakeoverAvailableComponent, YautjaYoungbloodGhostRoleComponent>();
                 Assert.That(query.MoveNext(out var youngblood, out var ghostRole, out _, out var metadata), Is.True);
 
-                playtime.AddTimeToTracker(session, "CMJobRifleman", TimeSpan.FromHours(5));
-                playtime.AddTimeToTracker(session, "CMJobSelectableXeno", TimeSpan.FromHours(5));
 
                 server.PlayerMan.SetAttachedEntity(session, null);
                 ghostRoles.Request(session, ghostRole.Identifier);
@@ -4771,7 +4760,6 @@ public sealed class YautjaSmokeTest
             {
                 var entMan = server.EntMan;
                 var ghostRoles = entMan.System<GhostRoleSystem>();
-                var playtime = server.ResolveDependency<PlayTimeTrackingManager>();
                 session = server.PlayerMan.Sessions.Single();
                 previousAttached = session.AttachedEntity;
                 previousStatus = session.Status;
@@ -4784,7 +4772,7 @@ public sealed class YautjaSmokeTest
                 entMan.EnsureComponent<YautjaComponent>(hunter);
 
                 var blooding = entMan.GetComponent<YautjaHuntConsoleComponent>(console);
-                var solo = blooding.BloodingCallOptions.Single(candidate => candidate.Id == "youngblood_solo_experienced");
+                var solo = blooding.BloodingCallOptions.Single(candidate => candidate.Id == "youngblood_solo"); // RuMC edit
                 entMan.EventBus.RaiseLocalEvent(console, new YautjaHuntCallSelectedEvent(entMan.GetNetEntity(hunter), solo.Id));
 
                 var query = entMan.EntityQueryEnumerator<GhostRoleComponent, GhostTakeoverAvailableComponent, YautjaYoungbloodGhostRoleComponent>();
@@ -4792,8 +4780,6 @@ public sealed class YautjaSmokeTest
                 youngblood = spawnedYoungblood;
                 ghostRoleIdentifier = ghostRole.Identifier;
 
-                playtime.AddTimeToTracker(session!, "CMJobRifleman", TimeSpan.FromHours(5));
-                playtime.AddTimeToTracker(session!, "CMJobSelectableXeno", TimeSpan.FromHours(5));
 
                 server.PlayerMan.SetAttachedEntity(session!, null);
                 ghostRoles.Request(session!, ghostRole.Identifier);
@@ -4817,11 +4803,8 @@ public sealed class YautjaSmokeTest
             {
                 var entMan = server.EntMan;
                 var ghostRoles = entMan.System<GhostRoleSystem>();
-                var playtime = server.ResolveDependency<PlayTimeTrackingManager>();
                 Assert.That(session, Is.Not.Null);
 
-                playtime.AddTimeToTracker(session!, "CMJobRifleman", TimeSpan.FromHours(5));
-                playtime.AddTimeToTracker(session!, "CMJobSelectableXeno", TimeSpan.FromHours(5));
 
                 server.PlayerMan.SetAttachedEntity(session!, null);
                 ghostRoles.Request(session!, ghostRoleIdentifier);
