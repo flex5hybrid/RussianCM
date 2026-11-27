@@ -6,7 +6,6 @@ ent-AU14PillCanisterNephronate = таблетница нефроната
 ent-AU14PillCanisterPulmovine = таблетница пульмовина 
 ent-AU14PillCanisterHepatocytin = таблетница гепатоцитина
 ent-AU14PillCanisterParacetamol = таблетница парацетамола
-ent-AU14PillCanisterTramadol = таблетница трамадола
 ent-AU14PillCanisterOxycodone = таблетница оксикодона 
 ent-AU14PillCanisterDermaline = таблетница дермалина
 ent-AU14PillCanisterMeralyne = таблетница мералина

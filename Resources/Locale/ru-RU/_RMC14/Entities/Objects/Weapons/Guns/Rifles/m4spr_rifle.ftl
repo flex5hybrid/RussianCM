@@ -15,15 +15,6 @@ ent-CMMagazineRifleM4SPR = магазин M4SPR (10x24мм)
 ent-CMMagazineRifleM4SPRExt = увеличенный магазин M4SPR (10x24мм)
     .desc = Увеличенный магазин для винтовки M4SPR с патронами 10x24мм.
 
-ent-RMCMagazineRifleM5SPRHVHIP = магазин M5SPR ВС (10x24мм)
-    .desc = Магазин для винтовки M5SPR с высокоскоростными патронами 10x24мм.
-
-ent-RMCMagazineRifleM5SPRHVP = магазин M5SPR ГС (10x24мм)
-    .desc = Магазин для винтовки M5SPR с гиперскоростными патронами 10x24мм.
-
-ent-CMMagazineRifleM4SPRAP = магазин M4SPR ББ (10x24мм)
-    .desc = Магазин для винтовки M4SPR с бронебойными патронами 10x24мм.
-
 # Патроны
 ent-RMCCartridgeRifleM5SPRHVHIP = патрон ВС (10x24мм)
     .desc = Высокоскоростной винтовочный патрон для винтовки M5SPR.

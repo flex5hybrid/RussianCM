@@ -215,9 +215,6 @@ ent-AU14ChevronCMBMarshal = лычки маршала БКМ
 
 # офицерские лычки
 
-ent-AU14ChevronRMCBase = лычки КМП
-    .desc = Лычки со знаками различия воинских званий Королевской морской пехоты.
-
 ent-AU14ChevronSecondLT = лычки второго лейтенанта
     .desc = { ent-AU14ChevronRMCBase.desc }
 ent-AU14ChevronFirstLT = лычки первого лейтенанта
@@ -315,9 +312,6 @@ ent-AU14ChevronCWPSChiefRanger = лычки главного рейнджера
     .desc = { ent-AU14ChevronCWPSBase.desc }
 
 # лычки рекрута
-
-ent-CMUChevronRecruit = шеврон рекрута
-    .desc = Универсальные знаки различия E0 для новобранцев, проходящих обучение.
 
 # лычки САС
 

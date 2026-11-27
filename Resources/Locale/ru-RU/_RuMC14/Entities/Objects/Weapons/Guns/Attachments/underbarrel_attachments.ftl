@@ -14,3 +14,5 @@ ent-AU14AttachmentM20AUnderbarrelShotgun = подствольный дробов
 
 ent-AU14AttachmentM20AUnderbarrelShotgun-action-name = Переключиться на подствольный дробовик U7
 ent-AU14AttachmentM20AUnderbarrelShotgun-action-desc = Переключиться на использование подствольного дробовика.
+ent-AU14AttachmentM203A4GrenadeLauncher = подствольный гранатомёт M203A4
+    .desc = Перезаряжаемый гранатомёт, устанавливаемый на оружие.
