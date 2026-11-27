@@ -53,6 +53,13 @@
   artist: cmu-lobby-background-cmu14lobbyxenowar-artist
 
 - type: lobbyBackground
+  id: CMU14ForceOnForce
+  background: /Textures/CMU14/Lobby/ForceOnForce.png
+  title: cmu-lobby-background-cmu14ForceOnForce-title
+  artist: cmu-lobby-background-cmu14ForceOnForce-artist
+
+# RuMC edit start
+- type: lobbyBackground
   id: RuCMU14LobbyWooby
   background: /Textures/CMU14/Lobby/wooby.png
 
@@ -63,3 +70,4 @@
 - type: lobbyBackground
   id: RuCMU14LobbyTuffGuy
   background: /Textures/CMU14/Lobby/tuff_guy.png
+# RuMC edit end

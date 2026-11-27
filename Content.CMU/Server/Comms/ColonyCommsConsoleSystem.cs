@@ -1,6 +1,5 @@
 using Content.Server.CMU14.Chat; // CMU14
 using Content.Server.CMU14.Round.ColonyShift; // RuMC edit ColonyShift
-using Content.Server.Chat.Systems;
 using Content.Shared.Access.Systems; // RuMC edit ColonyShift
 using Content.Shared.Popups; // RuMC edit ColonyShift
 using Content.Server.Radio.EntitySystems;
@@ -16,8 +15,6 @@ public sealed partial class ColonyCommsConsoleSystem : EntitySystem
     [Dependency] private CMUApolloAnnouncementSystem _apollo = default!;
     [Dependency] private RadioSystem _radioSystem = default!;
     [Dependency] private SharedAmbientSoundSystem _ambientSound = default!;
-    [Dependency] private IEntityManager _entityManager = default!;
-    [Dependency] private ChatSystem _chatSystem = default!;
     [Dependency] private AccessReaderSystem _accessReader = default!; // RuMC edit ColonyShift
     [Dependency] private ColonyRotationRuleSystem _rotation = default!; // RuMC edit ColonyShift
     [Dependency] private SharedPopupSystem _popup = default!; // RuMC edit ColonyShift
@@ -102,8 +99,7 @@ public sealed partial class ColonyCommsConsoleSystem : EntitySystem
         }
 
         _radioSystem.SendRadioMessage(source, message, "colonyAlert", source);
-        _chatSystem.DispatchFilteredAnnouncement(ColonyAnnouncements.Recipients(_entityManager), message, source,
-            sender, playSound: true, announcementSound: sound);
+        _apollo.AnnounceColony(message, sender, sound, source);
     }
 
     private void OnSendMessageBuiMsg(EntityUid uid, ColonyCommsConsoleComponent component, ColonyCommsConsoleSendMessageBuiMsg args)

@@ -13,6 +13,9 @@
   components:
   - type: Sprite
     sprite: _RuMC14/Objects/Flags/bear.rsi
+  - type: CMUFlagAllegiance
+    allegiances: [ UPP ]
+    reinforcements: CMUFlagReinforcementsUPP
 
 - type: entity
   parent: RMCFlagCarriableBase
@@ -21,3 +24,6 @@
   components:
   - type: Sprite
     sprite: _RuMC14/Objects/Flags/vdv.rsi
+  - type: CMUFlagAllegiance
+    allegiances: [ UPP ]
+    reinforcements: CMUFlagReinforcementsUPP
