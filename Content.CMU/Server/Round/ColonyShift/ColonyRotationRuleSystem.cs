@@ -470,7 +470,7 @@ public sealed partial class ColonyRotationRuleSystem : GameRuleSystem<ColonyRota
 
     private void Announce(ColonyRotationRuleComponent comp, string message)
     {
-        _chat.DispatchFilteredAnnouncement(ColonyAnnouncements.Recipients(EntityManager),
+        _chat.DispatchFilteredAnnouncement(ColonyAnnouncements.Recipients(),
             message,
             sender: Loc.GetString("colony-rotation-announcement-sender"),
             announcementSound: comp.AnnouncementSound);
