@@ -1,0 +1,79 @@
+# RuMC additions to the industry of CMU.
+
+# ---------------------------------------------------------------- the liquid pipes going up
+# They join the pipe in the same place on the level above (FluidPipe up), as the pipes going down join the one below.
+- type: entity
+  parent: RUMCBrassPipe
+  id: RUMCBrassPipeUp
+  name: brass pipe going up
+  description: A brass pipe that goes up through the ceiling, and the liquid it carries goes to the pipe in the same place on the level above.
+  components:
+  - type: FluidPipe
+    up: true
+
+- type: entity
+  parent: RUMCSteelPipe
+  id: RUMCSteelPipeUp
+  name: steel pipe going up
+  description: A steel pipe that goes up through the ceiling, and the liquid it carries goes to the pipe in the same place on the level above.
+  components:
+  - type: FluidPipe
+    capacity: 100
+    rate: 300
+    up: true
+
+# Crafted as the pipes going down are.
+- type: craftRecipe
+  id: RUMCCraftBrassWaterPipeUp
+  name: au14-craft-recipe-brass-water-pipe-up
+  output: RUMCBrassPipeUp
+  time: 6
+  minigames: [Rhythm]
+  tools:
+  - Hammering
+  consumables:
+  - stack: RUMCBrassSheet
+    amount: 1
+  - stack: RUMCBrassParts
+    amount: 2
+
+- type: craftRecipe
+  id: RUMCCraftSteelWaterPipeUp
+  name: au14-craft-recipe-steel-water-pipe-up
+  output: RUMCSteelPipeUp
+  time: 6
+  minigames: [Rhythm]
+  tools:
+  - Hammering
+  consumables:
+  - stack: CMSteel
+    amount: 3
+
+- type: cmuIndustryPrice
+  id: CMUIndustryPriceEntityRUMCBrassPipeUp
+  entity: RUMCBrassPipeUp
+  product: "brass pipe going up"
+  price: 55
+
+- type: cmuIndustryPrice
+  id: CMUIndustryPriceEntityRUMCSteelPipeUp
+  entity: RUMCSteelPipeUp
+  product: "steel pipe going up"
+  price: 80
+
+# ---------------------------------------------------------------- stone in the grinders
+# Stone for the concrete: a stone fragment makes two of stone powder, and four of stone powder make four of sand. Every grinder
+# (electric, steam and industrial steam) takes them.
+- type: cmuGrinderRecipe
+  id: RUMCGrinderRecipeStonePowder
+  input: RUMCStone
+  inputAmount: 1
+  result: RUMCStonePowder
+  resultAmount: 2
+
+- type: cmuGrinderRecipe
+  id: RUMCGrinderRecipeSand
+  input: RUMCStonePowder
+  inputAmount: 4
+  result: RUMCSand
+  resultAmount: 4

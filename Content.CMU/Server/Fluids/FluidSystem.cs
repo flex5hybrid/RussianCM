@@ -390,6 +390,8 @@ public sealed partial class FluidSystem : EntitySystem
                 lower.Neighbours.Add(uid);
             }
         }
+
+        RuMCJoinPipesGoingUp(); // RuMC edit: the pipes going up, in FluidSystem.RuMC.cs
     }
 
     // The anchored pipes in the same place on the level under the map.
@@ -420,7 +422,7 @@ public sealed partial class FluidSystem : EntitySystem
 
         pipe.Look = mask;
         _appearance.SetData(uid, FluidPipeVisuals.Connections, mask);
-        _appearance.SetData(uid, FluidPipeVisuals.Down, pipe.Down);
+        _appearance.SetData(uid, FluidPipeVisuals.Down, pipe.Down || pipe.Up); // RuMC edit: a pipe going up shows the same opening
     }
 
     private void StepPipes(float step)
