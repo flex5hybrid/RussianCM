@@ -258,8 +258,8 @@ ent-AU14HelmetGarbM10RainCover = дождевик для шлема M10
 ent-AU14HelmetGarbM10Netting = сетка для шлема M10
     .desc = Сетчатый чехол для шлема M10.
 
-ent-AU14HelmetGarbRiotVisor = противоударный визор
-    .desc = Визор, который можно установить на многие модели шлемов.
+ent-AU14HelmetGarbRiotVisor = противоударный щиток
+    .desc = Щиток, который можно установить на многие модели шлемов.
 
 ent-AU14ArmorGarbJungleBracer = наручи M3 для джунглей
     .desc = Элемент брони, предназначенный для использования с бронёй образца M3.

@@ -90,6 +90,9 @@ ent-AU14Packet20MMGrenadeNeuroRMCFilled = ящик с 20мм гранатами 
 ent-AU14PacketGrenadeHighExplosiveRMCFilled = пакет с гранатами R2175/A HEDP
     .suffix = Заполненный, КМП
 
+ent-AU14Bangalore = подрывной заряд «Бангалор»
+    .desc = Подрывной заряд для расчистки препятствий и проделывания проходов в укреплениях. После установки на землю автоматически взводится и взрывается через 20 секунд.
+
 ent-AU14GrenadeHighExplosiveRMC = граната R2175/A HEDP
     .suffix = КМП
 ent-AU14GrenadeIncendiaryRMC = зажигательная граната R2175/B HIDP
