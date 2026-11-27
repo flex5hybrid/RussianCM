@@ -1571,7 +1571,7 @@
   id: CMUIndustryPriceStackRUMCMachineHull
   stack: RUMCMachineHull
   product: "machine casing parts"
-  price: 160
+  price: 80 # RuMC edit
 
 - type: cmuIndustryPrice
   id: CMUIndustryPriceEntityRMCPouchMagazine

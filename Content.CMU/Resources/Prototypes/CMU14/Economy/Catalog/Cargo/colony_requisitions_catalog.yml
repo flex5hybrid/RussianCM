@@ -73,15 +73,15 @@
       entries:
       - cost: 350
         crate: RMCCrateResearchPhoron
-      - cost: 350
+      - cost: 450 # RuMC edit
         crate: RMCCrateResearchPlastic
       - cost: 900
         crate: RMCCrateEmptySandbags
-      - cost: 1200
+      - cost: 700 # RuMC edit
         crate: RMCCrateMetalSheets
       - cost: 1400
         crate: RMCCratePlasteelSheets
-      - cost: 350
+      - cost: 450 # RuMC edit
         crate: RMCCrateGlassSheets
       - cost: 350
         crate: RMCCrateWoodenPlanks
