@@ -1,8 +1,10 @@
 using System.Diagnostics.CodeAnalysis; // RuMC edit
 using System.Linq;
 using Content.Server.CMU14.Ops.ThirdParty;
+using Content.Server.CMU14.Round;
 using Content.Server.CMU14.WorldMarket; // RUMC: the world map
 using Content.Server.Chat.Systems;
+using Content.Server.GameTicking;
 using Content.Server.Popups;
 using Content.Server.Radio;
 using Content.Server.Radio.EntitySystems;
@@ -37,6 +39,7 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
     [Dependency] private StackSystem _stack = default!;
     [Dependency] private IPrototypeManager _proto = default!;
     [Dependency] private ThirdPartySystem _thirdParty = default!;
+    [Dependency] private GameTicker _ticker = default!;
     [Dependency] private ChatSystem _chat = default!;
     [Dependency] private RadioSystem _radio = default!;
     [Dependency] private IRobustRandom _random = default!;
@@ -648,7 +651,8 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
         var thirdParties = new Dictionary<string, (string DisplayName, float Cost)>();
         foreach (var (id, cost) in comp.CallableParties)
         {
-            if (_proto.TryIndex<ThirdPartyPrototype>(id, out var proto))
+            if (_proto.TryIndex<ThirdPartyPrototype>(id, out var proto) &&
+                !AuRoundSelectionRules.IsBlacklistedForGamemode(proto, _ticker.CurrentPreset?.ID))
             {
                 var displayName = proto.DisplayName ?? proto.ID;
                 thirdParties[id] = (displayName, cost);
@@ -775,6 +779,7 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
                _timing.CurTime >= comp.NextCallInAt &&
                comp.Budget >= cost &&
                _proto.TryIndex<ThirdPartyPrototype>(thirdPartyId, out partyProto) &&
+               !AuRoundSelectionRules.IsBlacklistedForGamemode(partyProto, _ticker.CurrentPreset?.ID) && // CMU14: no gamemode-blacklisted parties
                _proto.TryIndex(partyProto.PartySpawn, out spawnProto);
     }
     // RuMC edit end

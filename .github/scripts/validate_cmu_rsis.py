@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""CMU14: run the engine's RSI checks with CMU's existing asset licenses."""
+"""CMU14: run the engine's RSI checks with CMU's additional asset licenses."""
 
 import json
 from pathlib import Path
@@ -17,6 +17,7 @@ def main() -> int:
         "CLA",
         "MIT",
         "Proprietary Donor Cape Asset License (see ../LICENSE.txt)",
+        "AGPL-3.0-only",  # CMU14: permit AGPL-licensed sprites.
     ):
         if license_name not in licenses:
             licenses.append(license_name)

@@ -1,1 +1,3 @@
 cmu-ui-options-jukebox-volume = Громкость музыкального автомата:
+cmu-jukebox-search = Поиск песен…
+cmu-jukebox-no-matches = Песни не найдены.

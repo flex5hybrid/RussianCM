@@ -59,6 +59,8 @@
     - name: Headgear
       excludeSquadSpecializations: [ UPPSpecVDV, UPPSpecRecon ]
       entries:
+      - id: AU14UPPConscriptHelmetmask
+        amount: 40
       - id: ArmorHelmetSPP
         amount: 2
       - id: AU14UPPNavalInfantryHelmet
@@ -1271,6 +1273,7 @@
       - id: AU14CaseSentry
       - id: AU14CaseSentryFlamer
       - id: CMUConstructionRobotKit
+      - id: CMUPlantedFlagUPP
       - id: RMCM271A2BruteLauncherRigFilled
     - name: Sentry Gun Upgrade Kit
       entries:
