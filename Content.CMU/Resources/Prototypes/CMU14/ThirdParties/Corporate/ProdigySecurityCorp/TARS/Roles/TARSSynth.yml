@@ -57,6 +57,12 @@
       types:
         Blunt: 35
   - type: Synth
+  # RuMC edit start
+  - type: Language
+    preset: AU14LanguagePresetSynth
+  - type: LanguageLearning
+    preset: AU14LanguageLearningPresetSynth
+  # RuMC edit end
 
   name: Support Synthetic
   description: au14-prodigyrescue-description
