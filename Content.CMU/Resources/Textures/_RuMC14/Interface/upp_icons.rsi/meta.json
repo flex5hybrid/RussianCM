@@ -63,6 +63,15 @@
         },
         {
             "name": "UPP-Norcomm_ChiefEngineer"
+        },
+        {
+            "name": "UPP-Norcomm_Doctor"
+        },
+        {
+            "name": "UPP-Norcomm_Medic"
+        },
+        {
+            "name": "UPP-Norcomm_Paramedic"
         }
     ]
 }

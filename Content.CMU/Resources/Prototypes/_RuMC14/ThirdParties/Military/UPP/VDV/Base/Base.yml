@@ -295,8 +295,7 @@
       - [ RMCBootsSPPBlack]
       - [ RMCBootsSPP]
     randomWeapon:
-    - [ RMCWeaponRifleAK4047, RuMCFatiguesVDV_officerFull, RuMCBeltMagazineVDVFull, RuMCPouchMagazineVDVFull ]
-    - [ RuMCWeaponRifleAK7074, RuMCFatiguesVDV_officerFull, RuMCBeltMagazineVDVFull, RuMCPouchMagazineVDVFull ]
+    - [ RuMCFatiguesVDV_officerFull, RuMCBeltMagazineVDVFull, RuMCPouchMagazineVDVFull ]
     tryEquipRandomWeapon: true
 
 - type: entity
@@ -322,8 +321,7 @@
       - [ RMCBootsSPPBlack]
       - [ RMCBootsSPP]
     randomWeapon:
-    - [ RMCWeaponRifleAK4047, RuMCFatiguesVDVFull, RuMCBeltMagazineVDVFull, RuMCPouchMagazineVDVFull ]
-    - [ RuMCWeaponRifleAK7074, RuMCFatiguesVDVFull, RuMCBeltMagazineVDVFull, RuMCPouchMagazineVDVFull ]
+    - [ RuMCFatiguesVDVFull, RuMCBeltMagazineVDVFull, RuMCPouchMagazineVDVFull ]
     tryEquipRandomWeapon: true
 
 - type: entity
@@ -356,7 +354,7 @@
       - [ CMMaskCoif]
       - [ RuMCMaskBalaklava]
     randomWeapon:
-    - [ RuMCMachineGunPKM_MS, RuMCFatiguesVDVFull, RuMCUPPBeltMachinegunnerVDVFull, RuMCUPPPouchDrumVDVFull ]
+    - [ RuMCFatiguesVDVFull, RuMCUPPBeltMachinegunnerVDVFull, RuMCUPPPouchDrumVDVFull ]
     tryEquipRandomWeapon: true
 
 - type: entity
@@ -392,7 +390,7 @@
     -
       - [ RMCGlassesMedicalHUDGlasses]
     randomWeapon:
-    - [ RuMCFatiguesVDV_medicFull, AU14BeltMedicalUPPFull, RuMCPouchMagazineVDVFull ]
+    - [ RuMCFatiguesVDV_medicFull, RuMCUPPNavalInfantryBeltMedicFill, RuMCPouchMagazineVDVFull ]
     tryEquipRandomWeapon: true
 
 - type: entity

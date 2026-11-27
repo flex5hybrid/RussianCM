@@ -1,0 +1,33 @@
+#SOF
+
+- type: entity
+  parent: RMCMarineUniformBase
+  id: RuMCFatiguesSOF
+  name: SOF combat fatigues
+  description: Standard fatigues for UPP Space Operating Forces. Light Kevlar lining for shrapnel protection. Worn by elite operators on missions where failure is not an option.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/SOF/uniform/SOF_uniform.rsi
+  - type: UniformAccessoryHolder
+    startingAccessories:
+    - AU14PatchUPP
+  - type: Tag
+    tags:
+    - RMCUniformSPP
+
+#Razbojniki
+
+- type: entity
+  parent: RMCMarineUniformBase
+  id: RuMCFatiguesRecon
+  name: Recon combat fatigues
+  description: Standard fatigues for UPP Recon. Light Kevlar lining for shrapnel protection. Worn by elite operators on missions where failure is not an option.
+  components:
+  - type: Sprite
+    sprite: _RuMC14/Clothing/SOF/uniform/Razbojniki.rsi
+  - type: UniformAccessoryHolder
+    startingAccessories:
+    - AU14PatchUPP
+  - type: Tag
+    tags:
+    - RMCUniformSPP

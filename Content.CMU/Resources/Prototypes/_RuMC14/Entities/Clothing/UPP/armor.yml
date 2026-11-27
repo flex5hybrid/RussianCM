@@ -22,7 +22,7 @@
   description: Armor vest for airborne pilots and dropship crews. Reinforced against explosions and shrapnel, but lighter than standard infantry armor. Made for those who fly into the fire.
   components:
   - type: Sprite
-    sprite: _RuMC14/Clothing/UPP/armor/armor_pilot.rsi
+    sprite: _RuMC14/Clothing/UPP/armor/pilot.rsi
   - type: CMArmor
     melee: 30
     bullet: 15
@@ -36,7 +36,7 @@
   description: Armor vest for airborne vehicle crews. Designed for tankers and drivers who need protection from explosions and shrapnel inside a vehicle. Light, practical, reliable.
   components:
   - type: Sprite
-    sprite: _RuMC14/Clothing/UPP/armor/armor_crew.rsi
+    sprite: _RuMC14/Clothing/UPP/armor/crew.rsi
   - type: CMArmor
     melee: 15
     bullet: 15
@@ -72,104 +72,3 @@
     bullet: 5
     bio: 10
     explosionArmor: 5
-
-#VDV
-
-- type: entity
-  parent: AU14UPPArmorBulky
-  id: RuMCUPPArmorVDV_Heavy
-  name: VDV heavy armor vest
-  description: Heavy assault armor for UPP Airborne Troops. Thick composite plates provide superior protection against shrapnel and heavy fire. Designed for breaching operations where survival is the only priority.
-  components:
-  - type: Sprite
-    sprite: _RuMC14/Clothing/UPP/armor/VDV/armor_heavy.rsi
-
-- type: entity
-  parent: AU14UPPArmor
-  id: RuMCUPPArmorVDV
-  name: VDV standard armor vest
-  description: Standard-issue body armor for UPP Airborne Troops. Lightweight composite plates offer balanced protection without restricting movement. Designed for rapid deployment and urban combat.
-  components:
-  - type: Sprite
-    sprite: _RuMC14/Clothing/UPP/armor/VDV/armor.rsi
-  - type: CMArmor
-    melee: 25
-    bullet: 25
-    bio: 15
-    explosionArmor: 15
-
-- type: entity
-  parent: AU14UPPArmorMinimalistic
-  id: RuMCUPPArmorVDV_Light
-  name: VDV light armor vest
-  description: Lightweight armor vest for airborne scouts and forward observers. Prioritizes mobility over heavy protection. For those who jump first and ask questions later.
-  components:
-  - type: Sprite
-    sprite: _RuMC14/Clothing/UPP/armor/VDV/armor_light.rsi
-  - type: CMArmor
-    melee: 15
-    bullet: 20
-    bio: 15
-    explosionArmor: 15
-
-#SOF
-
-- type: entity
-  parent: AU14UPPArmor
-  id: RuMCUPPArmorSOF
-  name: SOF combat armor
-  description: Standard-issue combat armor for UPP Space Operating Forces. Balanced protection against bullets, melee, and biological threats. Worn by the elite operators of the Union.
-  components:
-  - type: Sprite
-    sprite: _RuMC14/Clothing/UPP/armor/SOF/armor.rsi
-  - type: CMArmor
-    melee: 30
-    bullet: 25
-    bio: 20
-    explosionArmor: 20
-
-- type: entity
-  parent: AU14UPPArmor
-  id: RuMCUPPArmorSOF_Alt
-  name: SOF combat armor (variant)
-  description: Alternative variant of SOF combat armor. Same protection, different cut. Used by specialized SOF units and independent operators.
-  components:
-  - type: Sprite
-    sprite: _RuMC14/Clothing/UPP/armor/SOF/armor_alt.rsi
-  - type: CMArmor
-    melee: 30
-    bullet: 25
-    bio: 20
-    explosionArmor: 20
-
-- type: entity
-  parent: AU14UPPArmorBulky
-  id: RuMCUPPArmorSOF_Heavy
-  name: SOF heavy assault armor
-  description: Heavy assault armor for SOF breachers and shock troops. Thick composite plates provide superior protection at the cost of mobility. For those who walk into the fire and expect to walk out.
-  components:
-  - type: Sprite
-    sprite: _RuMC14/Clothing/UPP/armor/SOF/armor_large.rsi
-  - type: CMArmor
-    melee: 30
-    bullet: 30
-    bio: 20
-    explosionArmor: 20
-  - type: Corrodible
-    isCorrodible: false
-  - type: ClothingBlockBackpack
-  - type: SmartGunArmor
-
-- type: entity
-  parent: AU14UPPArmorMinimalistic
-  id: RuMCUPPArmorSOF_Command
-  name: SOF command armor
-  description: Command armor for SOF officers and mission commanders. Lighter than standard combat armor, but with reinforced communication systems and rank insignia. Worn by those who lead from the front.
-  components:
-  - type: Sprite
-    sprite: _RuMC14/Clothing/UPP/armor/SOF/armor_command.rsi
-  - type: CMArmor
-    melee: 30
-    bullet: 25
-    bio: 20
-    explosionArmor: 20

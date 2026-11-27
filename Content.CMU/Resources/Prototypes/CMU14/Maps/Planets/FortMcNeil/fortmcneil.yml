@@ -20,6 +20,7 @@
     - VAIPO
     platoonsOpfor:
     - LACN
+    - BEAR
     - UPP
     defaultgovfor: USCM
     defaultopfor: UPP
@@ -72,11 +73,11 @@
     # - ApeThreatCF
     jobScalingFof: DefaultGovforOpforScale
     jobScalingIns: DefaultInsurgencyScale
-    
+
 - type: lorePrimer
   id: CMUPrimerPlanetFortMcNeil
   planetText: "An automated distress signal has been received from the colony site of Fort McNeil, on the border world of White Antre. A response team has been dispatched to investigate."
-  
+
 - type: gameMap
   id: cmufortmcneil
   mapName: Fort McNeil

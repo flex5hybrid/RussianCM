@@ -1,5 +1,63 @@
 - type: entity
   parent: RMCAttachmentM54CStockCollapsible
+  id: RuMCAttachmentAK7074StockCollapsible
+  name: AK7074 folding stock
+  description: The standard back end of any gun starting with AK7074.
+  components:
+  - type: AttachableVisuals
+    suffix: ""
+  - type: ItemCamouflage
+    camouflageVariations: { }
+  - type: Sprite
+    sprite: _RuMC14/Objects/Weapons/Guns/Attachments/Stock/rumc_NewK_stock.rsi
+    state: stock_AK7074
+  - type: AttachableToggleable
+    active: true
+    doAfterBreakOnMove: false
+    doAfter: 0.5
+    icon:
+      sprite: _RuMC14/Objects/Weapons/Guns/Attachments/Stock/rumc_NewK_stock.rsi
+      state: stock_AK7074
+    iconActive:
+      sprite: _RuMC14/Objects/Weapons/Guns/Attachments/Stock/rumc_NewK_stock.rsi
+      state: stock_AK7074-on
+    actionName: Toggle AK7074 Folding Stock
+  - type: Tag
+    tags:
+    - RMCAttachmentStock
+    - RuMCAttachmentAK7074StockCollapsible
+
+- type: entity
+  parent: RMCAttachmentM54CStockCollapsible
+  id: RuMCAttachmentPKMStockCollapsible
+  name: PKM folding stock
+  description: The standard back end of any gun starting with PKM.
+  components:
+  - type: AttachableVisuals
+    suffix: ""
+  - type: ItemCamouflage
+    camouflageVariations: { }
+  - type: Sprite
+    sprite: _RuMC14/Objects/Weapons/Guns/Attachments/Stock/rumc_NewK_stock.rsi
+    state: stock_PKM
+  - type: AttachableToggleable
+    active: true
+    doAfterBreakOnMove: false
+    doAfter: 0.5
+    icon:
+      sprite: _RuMC14/Objects/Weapons/Guns/Attachments/Stock/rumc_NewK_stock.rsi
+      state: stock_PKM
+    iconActive:
+      sprite: _RuMC14/Objects/Weapons/Guns/Attachments/Stock/rumc_NewK_stock.rsi
+      state: stock_PKM-on
+    actionName: Toggle PKM Folding Stock
+  - type: Tag
+    tags:
+    - RMCAttachmentStock
+    - RuMCAttachmentPKMStockCollapsible
+
+- type: entity
+  parent: RMCAttachmentM54CStockCollapsible
   id: RuMCAttachmentAK13StockCollapsible
   name: AK13 folding stock
   description: The standard back end of any gun starting with 'AK'.
@@ -85,6 +143,38 @@
     - RMCAttachmentStock
     - RuMCAttachmentPP13MStockCollapsible
 
+- type: entity
+  parent: RMCAttachmentM54CStockCollapsible
+  id: RuMCAttachmentPLMStockCollapsible
+  name: PLM folding stock
+  description: The standard back end of any gun starting with PLM.
+  components:
+  - type: AttachableVisuals
+    suffix: ""
+  - type: ItemCamouflage
+    camouflageVariations: { }
+  - type: Sprite
+    sprite: _RuMC14/Objects/Weapons/Guns/Attachments/Stock/rumc_NewK_stock.rsi
+    state: stock_PLM
+  - type: AttachableToggleable
+    active: true
+    doAfterBreakOnMove: false
+    doAfter: 0.5
+    icon:
+      sprite: _RuMC14/Objects/Weapons/Guns/Attachments/Stock/rumc_NewK_stock.rsi
+      state: stock_PLM
+    iconActive:
+      sprite: _RuMC14/Objects/Weapons/Guns/Attachments/Stock/rumc_NewK_stock.rsi
+      state: stock_PLM-on
+    actionName: Toggle PLM Folding Stock
+  - type: Tag
+    tags:
+    - RMCAttachmentStock
+    - RuMCAttachmentPLMStockCollapsible
+
+- type: Tag
+  id: RuMCAttachmentPLMStockCollapsible
+
 - type: Tag
   id: RuMCAttachmentPP13MStockCollapsible
 
@@ -93,3 +183,9 @@
 
 - type: Tag
   id: RuMCAttachmentAK13StockCollapsible
+
+- type: Tag
+  id: RuMCAttachmentPKMStockCollapsible
+
+- type: Tag
+  id: RuMCAttachmentAK7074StockCollapsible
