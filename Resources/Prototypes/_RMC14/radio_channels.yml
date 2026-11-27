@@ -125,7 +125,7 @@
   id: MarineDelta
   name: chat-radio-marine-delta
   keycode: "Ɖ" #d in cm13
-  localizedKeycode: "д"
+  localizedKeycode: "ð" # RuMC edit
   frequency: 149.4
   color: "#038ae1"
   longRange: true
