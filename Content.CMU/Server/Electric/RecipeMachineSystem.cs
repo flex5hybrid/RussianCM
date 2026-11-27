@@ -102,6 +102,7 @@ public sealed class RecipeMachineSystem : EntitySystem
     {
         machine.Comp.NeedsRecipeCheck = true;
         machine.Comp.Circuit = Math.Clamp(args.Circuit, 0, machine.Comp.MaxCircuit);
+        machine.Comp.SelectedRecipe = null; // RuMC edit: a circuit set by hand clears a recipe chosen from the list
         Dirty(machine);
     }
 
@@ -220,6 +221,11 @@ public sealed class RecipeMachineSystem : EntitySystem
 
         foreach (var recipe in RecipesOf(comp.Kind))
         {
+            // RuMC edit start: a machine tool makes only the recipe chosen in its window
+            if (comp.SelectedRecipe != null && recipe.ID != comp.SelectedRecipe)
+                continue;
+            // RuMC edit end
+
             if (recipe.Circuit is { } circuit && circuit != comp.Circuit)
                 continue;
 
