@@ -20223,5 +20223,21 @@ Entries:
   labels:
   - 'Changes: Translations'
   - M
+- author: RomiGur
+  time: '2026-11-27T18:44:34Z'
+  changes:
+  - type: Tweak
+    message: В записи серийного убийцы больше нет ДНК и отпечатков с начала раунда
+  - type: Tweak
+    message: Синты Продиджи знают стандартный набор языков для синтетиков
+  - type: Tweak
+    message: Исправлены абузы с перепродажей стали, стекла, пластика. В 2 раза снижена
+      цена на детали корпуса машин
+  - type: Fix
+    message: Клавиши частот ООН и дюжины Датча заменены на валидные
+  id: 1180
+  url: https://github.com/flex5hybrid/RussianCM/pull/656
+  labels:
+  - S
 Name: CMU
 Order: -1
