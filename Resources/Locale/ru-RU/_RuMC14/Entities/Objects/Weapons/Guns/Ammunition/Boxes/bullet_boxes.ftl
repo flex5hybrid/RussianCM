@@ -443,3 +443,15 @@ ent-CMUBoxBulletsPistol50 = ящик пистолетных патронов (.5
 ent-CMUBoxBulletsPistol50.desc = Ящик с патронами калибра .50 JP. Используется для снаряжения магазинов под патрон .50 JP. Оснащён кожаным ремнём, позволяющим носить его за спиной.
 ent-CMUBoxBulletsPistol50Empty = ящик пистолетных патронов (.50 JP)
 ent-CMUBoxBulletsPistol50Empty.suffix = Пустой
+
+ent-RMCBoxBulletsRifleL24 = коробка винтовочных патронов (8,88×51 мм)
+    .desc = Коробка с патронами калибра 8,88×51 мм. Используется для пополнения магазинов винтовок L24 и L64A3. Оснащена кожаным ремнём, позволяющим носить её за спиной.
+
+ent-RMCBoxBulletsRifleTSEEmpty = { ent-RMCBoxBulletsRifleL24 }
+    .suffix = Пустая
+
+ent-RMCBoxBulletsRifleL24AP = коробка бронебойных винтовочных патронов (8,88×51 мм)
+    .desc = Коробка с бронебойными патронами калибра 8,88×51 мм. Используется для пополнения бронебойных магазинов винтовок L24 и L64A3. Оснащена кожаным ремнём, позволяющим носить её за спиной.
+
+ent-RMCBoxBulletsRifleTSEAPEmpty = { ent-RMCBoxBulletsRifleL24AP }
+    .suffix = Пустая
