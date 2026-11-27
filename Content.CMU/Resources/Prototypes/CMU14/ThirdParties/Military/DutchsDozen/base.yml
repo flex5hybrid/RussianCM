@@ -15,7 +15,7 @@
 - type: radioChannel
   id: CMUDutchsDozen
   name: cmu-radio-dutchs-dozen
-  keycode: "ð"
+  keycode: "д" # RuMC edit
   frequency: 158.9
   color: "#6b8e23"
   longRange: true

@@ -23,8 +23,8 @@
     bounty: 2250
     reason: Wanted for multiple homicides - suspect at large
     recordName: Serial Killer (Unknown)
-    includePrints: true
-    includeDna: true
+    includePrints: false # RuMC edit
+    includeDna: false # RuMC edit
     includeLanguages: true
     capturedFaxPaper: AUPaperSerialKillerCaptured
   mindRoles:

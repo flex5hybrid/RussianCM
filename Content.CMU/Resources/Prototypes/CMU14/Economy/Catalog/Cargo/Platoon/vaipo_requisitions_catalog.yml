@@ -21,7 +21,7 @@
         crate: RMCCratePlasteelSheets
       - cost: 650
         crate: RMCCrateGlassSheets
-      - cost: 100
+      - cost: 350 # RuMC edit
         crate: RMCCrateWoodenPlanks
     - name: Engineering
       entries:
