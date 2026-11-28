@@ -26,6 +26,7 @@
   maxplayers: 400
   ghostsNeeded: 0
   roundstart: true
+  allowSavedCharacters: true # RuMC edit
 
 - type: partySpawn
   id: IASFSurvSpawnMedium
@@ -55,6 +56,7 @@
   maxplayers: 99
   ghostsNeeded: 0
   roundstart: true
+  allowSavedCharacters: true # RuMC edit
 
 - type: partySpawn
   id: IASFSurvSpawnSmall
@@ -84,3 +86,4 @@
   maxplayers: 50
   ghostsNeeded: 0
   roundstart: true
+  allowSavedCharacters: true # RuMC edit
