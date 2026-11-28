@@ -14,7 +14,6 @@ ent-CMULACNArmorGarbPauldrons = наплечники BL-1
 ent-CMULACNArmorGarbPlate = бронеплита BL-1
     .desc = {ent-CMULACNArmorGarbArms.desc}
 
-    .desc = Маскировочная куртка, предназначенная для крепления на броню ЛАКФ модели BL-1. Размывает силуэт владельца.
 ent-CMULACNArmorGarbGhillieLegs = пустынные маскировочные штаны GS-3
     .desc = Пустынные маскировочные штаны, предназначенные для крепления на броню ЛАКФ модели BL-1.
 ent-CMULACNArmorGarbHeatChest = утеплённая накладка на торс HW-2
