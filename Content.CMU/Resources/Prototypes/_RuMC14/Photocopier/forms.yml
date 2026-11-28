@@ -1,25 +1,291 @@
 #region Документы ОА
 - type: cmuPaperworkForm
   id: CMUFormOA1
-  name: заглушка
+  name: Контракт в ВС ОА
   category: OA
   text: /Paperwork/OA/1.xml
+  paperPrototype: CMUPaperFlagUA
+
+- type: cmuPaperworkForm
+  id: CMUFormOA2
+  name: Набор в состав ОА
+  category: OA
+  text: /Paperwork/OA/2.xml
+  paperPrototype: CMUPaperFlagUA
+
+- type: cmuPaperworkForm
+  id: CMUFormOA3
+  name: Апелляция
+  category: OA
+  text: /Paperwork/OA/3.xml
+  paperPrototype: CMUPaperFlagUA
+
+- type: cmuPaperworkForm
+  id: CMUFormOA4
+  name: Запрос развертывания
+  category: OA
+  text: /Paperwork/OA/4.xml
+  paperPrototype: CMUPaperFlagUA
+
+- type: cmuPaperworkForm
+  id: CMUFormOA5
+  name: Отчёт об аресте
+  category: OA
+  text: /Paperwork/OA/5.xml
+  paperPrototype: CMUPaperFlagUA
+
+- type: cmuPaperworkForm
+  id: CMUFormOA6
+  name: Переписка с провостами
+  category: OA
+  text: /Paperwork/OA/6.xml
+  paperPrototype: CMUPaperFlagUA
+
+- type: cmuPaperworkForm
+  id: CMUFormOA7
+  name: Протокол превышения полномочий
+  category: OA
+  text: /Paperwork/OA/7.xml
+  paperPrototype: CMUPaperFlagUA
+
+- type: cmuPaperworkForm
+  id: CMUFormOA8
+  name: Чек-лист приёма колониста
+  category: OA
+  text: /Paperwork/OA/8.xml
+  paperPrototype: CMUPaperFlagUA
+
+- type: cmuPaperworkForm
+  id: CMUFormOA9
+  name: Психиатрическая экспертиза
+  category: OA
+  text: /Paperwork/OA/9.xml
+  paperPrototype: CMUPaperFlagUA
+
+- type: cmuPaperworkForm
+  id: CMUFormOA10
+  name: Свидетельство о смерти
+  category: OA
+  text: /Paperwork/OA/10.xml
+  paperPrototype: CMUPaperFlagUA
+
+- type: cmuPaperworkForm
+  id: CMUFormOA11
+  name: Старт приветствие
+  category: OA
+  text: /Paperwork/OA/11.xml
+  paperPrototype: CMUPaperFlagUA
+
+- type: cmuPaperworkForm
+  id: CMUFormOA12
+  name: Шаблон стандарт
+  category: OA
+  text: /Paperwork/OA/12.xml
+  paperPrototype: CMUPaperFlagUA
+
+- type: cmuPaperworkForm
+  id: CMUFormOA13
+  name: Титульники
+  category: OA
+  text: /Paperwork/OA/13.xml
+  paperPrototype: CMUPaperFlagUA
+
+- type: cmuPaperworkForm
+  id: CMUFormOA14
+  name: Шаблон КМП
+  category: OA
+  text: /Paperwork/OA/14.xml
   paperPrototype: CMUPaperFlagUA
 
 #region Документы СПН
 - type: cmuPaperworkForm
   id: CMUFormUPP1
-  name: заглушка
+  name: Апелляция
   category: UPP
   text: /Paperwork/UPP/1.xml
+  paperPrototype: CMUPaperFlagUPP
+
+- type: cmuPaperworkForm
+  id: CMUFormUPP2
+  name: Отчёт об аресте
+  category: UPP
+  text: /Paperwork/UPP/2.xml
+  paperPrototype: CMUPaperFlagUPP
+
+- type: cmuPaperworkForm
+  id: CMUFormUPP3
+  name: Переписка с РУВК
+  category: UPP
+  text: /Paperwork/UPP/3.xml
+  paperPrototype: CMUPaperFlagUPP
+
+- type: cmuPaperworkForm
+  id: CMUFormUPP4
+  name: Протокол превышения полномочий
+  category: UPP
+  text: /Paperwork/UPP/4.xml
+  paperPrototype: CMUPaperFlagUPP
+
+- type: cmuPaperworkForm
+  id: CMUFormUPP5
+  name: Запрос развертывания
+  category: UPP
+  text: /Paperwork/UPP/5.xml
+  paperPrototype: CMUPaperFlagUPP
+
+- type: cmuPaperworkForm
+  id: CMUFormUPP6
+  name: Психологическая экспертиза
+  category: UPP
+  text: /Paperwork/UPP/6.xml
+  paperPrototype: CMUPaperFlagUPP
+
+- type: cmuPaperworkForm
+  id: CMUFormUPP7
+  name: Свидетельство о смерти
+  category: UPP
+  text: /Paperwork/UPP/7.xml
+  paperPrototype: CMUPaperFlagUPP
+
+- type: cmuPaperworkForm
+  id: CMUFormUPP8
+  name: Старт приветствие
+  category: UPP
+  text: /Paperwork/UPP/8.xml
+  paperPrototype: CMUPaperFlagUPP
+
+- type: cmuPaperworkForm
+  id: CMUFormUPP9
+  name: Шаблон стандарт (Респондер)
+  category: UPP
+  text: /Paperwork/UPP/9.xml
+  paperPrototype: CMUPaperFlagUPP
+
+- type: cmuPaperworkForm
+  id: CMUFormUPP10
+  name: Шаблон стандарт
+  category: UPP
+  text: /Paperwork/UPP/10.xml
+  paperPrototype: CMUPaperFlagUPP
+
+- type: cmuPaperworkForm
+  id: CMUFormUPP11
+  name: Общая форма
+  category: UPP
+  text: /Paperwork/UPP/11.xml
+  paperPrototype: CMUPaperFlagUPP
+
+- type: cmuPaperworkForm
+  id: CMUFormUPP12
+  name: Паспорт
+  category: UPP
+  text: /Paperwork/UPP/12.xml
+  paperPrototype: CMUPaperFlagUPP
+
+- type: cmuPaperworkForm
+  id: CMUFormUPP13
+  name: Торговый пакт
+  category: UPP
+  text: /Paperwork/UPP/13.xml
+  paperPrototype: CMUPaperFlagUPP
+
+- type: cmuPaperworkForm
+  id: CMUFormUPP14
+  name: Шапка 2
+  category: UPP
+  text: /Paperwork/UPP/14.xml
   paperPrototype: CMUPaperFlagUPP
 
 #region Документы ИТМ
 - type: cmuPaperworkForm
   id: CMUFormTWE1
-  name: заглушка
+  name: Апелляция
   category: TWE
   text: /Paperwork/TWE/1.xml
+  paperPrototype: CMUPaperTWE
+
+- type: cmuPaperworkForm
+  id: CMUFormTWE2
+  name: Отчёт об аресте
+  category: TWE
+  text: /Paperwork/TWE/2.xml
+  paperPrototype: CMUPaperTWE
+
+- type: cmuPaperworkForm
+  id: CMUFormTWE3
+  name: Переписка с провост-маршалами
+  category: TWE
+  text: /Paperwork/TWE/3.xml
+  paperPrototype: CMUPaperTWE
+
+- type: cmuPaperworkForm
+  id: CMUFormTWE4
+  name: Протокол злоупотребления служебных положением
+  category: TWE
+  text: /Paperwork/TWE/4.xml
+  paperPrototype: CMUPaperTWE
+
+- type: cmuPaperworkForm
+  id: CMUFormTWE5
+  name: Запрос развертывания
+  category: TWE
+  text: /Paperwork/TWE/5.xml
+  paperPrototype: CMUPaperTWE
+
+- type: cmuPaperworkForm
+  id: CMUFormTWE6
+  name: Псих экспертиза
+  category: TWE
+  text: /Paperwork/TWE/6.xml
+  paperPrototype: CMUPaperTWE
+
+- type: cmuPaperworkForm
+  id: CMUFormTWE7
+  name: Свидетельство о смерти
+  category: TWE
+  text: /Paperwork/TWE/7.xml
+  paperPrototype: CMUPaperTWE
+
+- type: cmuPaperworkForm
+  id: CMUFormTWE8
+  name: Старт приветствие
+  category: TWE
+  text: /Paperwork/TWE/8.xml
+  paperPrototype: CMUPaperTWE
+
+- type: cmuPaperworkForm
+  id: CMUFormTWE9
+  name: Шаблон стандарт (Респондер)
+  category: TWE
+  text: /Paperwork/TWE/9.xml
+  paperPrototype: CMUPaperTWE
+
+- type: cmuPaperworkForm
+  id: CMUFormTWE10
+  name: Шаблон стандарт
+  category: TWE
+  text: /Paperwork/TWE/10.xml
+  paperPrototype: CMUPaperTWE
+
+- type: cmuPaperworkForm
+  id: CMUFormTWE11
+  name: Дипломатическое сообщение
+  category: TWE
+  text: /Paperwork/TWE/11.xml
+  paperPrototype: CMUPaperTWE
+
+- type: cmuPaperworkForm
+  id: CMUFormTWE12
+  name: Паспорт
+  category: TWE
+  text: /Paperwork/TWE/12.xml
+  paperPrototype: CMUPaperTWE
+
+- type: cmuPaperworkForm
+  id: CMUFormTWE13
+  name: Шаблон
+  category: TWE
+  text: /Paperwork/TWE/13.xml
   paperPrototype: CMUPaperTWE
 
 #region Документы ООН
@@ -476,15 +742,281 @@
 #region Документы колонии
 - type: cmuPaperworkForm
   id: CMUFormColony1
-  name: заглушка
+  name: Жалобы
   category: Colony
   text: /Paperwork/Colony/1.xml
+  paperPrototype: CMUPaperCream
+
+- type: cmuPaperworkForm
+  id: CMUFormColony2
+  name: Отчет об инциденте
+  category: Colony
+  text: /Paperwork/Colony/2.xml
+  paperPrototype: CMUPaperCream
+
+- type: cmuPaperworkForm
+  id: CMUFormColony3
+  name: Лицензия на оружие (Маршал)
+  category: Colony
+  text: /Paperwork/Colony/3.xml
+  paperPrototype: CMUPaperCream
+
+- type: cmuPaperworkForm
+  id: CMUFormColony4
+  name: Ордер
+  category: Colony
+  text: /Paperwork/Colony/4.xml
+  paperPrototype: CMUPaperCream
+
+- type: cmuPaperworkForm
+  id: CMUFormColony5
+  name: Уведомление об угрозе
+  category: Colony
+  text: /Paperwork/Colony/5.xml
+  paperPrototype: CMUPaperCream
+
+- type: cmuPaperworkForm
+  id: CMUFormColony6
+  name: Лицензия на оружие (ПДСН)
+  category: Colony
+  text: /Paperwork/Colony/6.xml
+  paperPrototype: CMUPaperCream
+
+- type: cmuPaperworkForm
+  id: CMUFormColony7
+  name: Общий шаблон
+  category: Colony
+  text: /Paperwork/Colony/7.xml
+  paperPrototype: CMUPaperCream
+
+- type: cmuPaperworkForm
+  id: CMUFormColony8
+  name: Ордер на арест
+  category: Colony
+  text: /Paperwork/Colony/8.xml
+  paperPrototype: CMUPaperCream
+
+- type: cmuPaperworkForm
+  id: CMUFormColony9
+  name: Отчет об аресте
+  category: Colony
+  text: /Paperwork/Colony/9.xml
+  paperPrototype: CMUPaperCream
+
+- type: cmuPaperworkForm
+  id: CMUFormColony10
+  name: Звёздные соглашения
+  category: Colony
+  text: /Paperwork/Colony/10.xml
+  paperPrototype: CMUPaperCream
+
+- type: cmuPaperworkForm
+  id: CMUFormColony11
+  name: Права колонистов
+  category: Colony
+  text: /Paperwork/Colony/11.xml
+  paperPrototype: CMUPaperCream
+
+- type: cmuPaperworkForm
+  id: CMUFormColony12
+  name: Сообщение для респондера
+  category: Colony
+  text: /Paperwork/Colony/12.xml
+  paperPrototype: CMUPaperCream
+
+- type: cmuPaperworkForm
+  id: CMUFormColony13
+  name: Шаблон формы
+  category: Colony
+  text: /Paperwork/Colony/13.xml
+  paperPrototype: CMUPaperCream
+
+- type: cmuPaperworkForm
+  id: CMUFormColony14
+  name: Стандарт
+  category: Colony
+  text: /Paperwork/Colony/14.xml
+  paperPrototype: CMUPaperCream
+
+- type: cmuPaperworkForm
+  id: CMUFormColony15
+  name: Шапка 1 звезда
+  category: Colony
+  text: /Paperwork/Colony/15.xml
+  paperPrototype: CMUPaperCream
+
+- type: cmuPaperworkForm
+  id: CMUFormColony16
+  name: Шапка 2 маршал
+  category: Colony
+  text: /Paperwork/Colony/16.xml
+  paperPrototype: CMUPaperCream
+
+- type: cmuPaperworkForm
+  id: CMUFormColony17
+  name: Шапка 3 Респондер
+  category: Colony
+  text: /Paperwork/Colony/17.xml
+  paperPrototype: CMUPaperCream
+
+- type: cmuPaperworkForm
+  id: CMUFormColony18
+  name: Шапка 4 уведомление
+  category: Colony
+  text: /Paperwork/Colony/18.xml
   paperPrototype: CMUPaperCream
 
 #region Общие документы
 - type: cmuPaperworkForm
   id: CMUFormGlobal1
-  name: заглушка
+  name: Администрация
   category: Global
   text: /Paperwork/Global/1.xml
+  paperPrototype: CMUPaperBase
+
+- type: cmuPaperworkForm
+  id: CMUFormGlobal2
+  name: Трудоустройство
+  category: Global
+  text: /Paperwork/Global/2.xml
+  paperPrototype: CMUPaperBase
+
+- type: cmuPaperworkForm
+  id: CMUFormGlobal3
+  name: Газета ВеЮ
+  category: Global
+  text: /Paperwork/Global/3.xml
+  paperPrototype: CMUPaperBase
+
+- type: cmuPaperworkForm
+  id: CMUFormGlobal4
+  name: Газета КОФ
+  category: Global
+  text: /Paperwork/Global/4.xml
+  paperPrototype: CMUPaperBase
+
+- type: cmuPaperworkForm
+  id: CMUFormGlobal5
+  name: Газета ОА
+  category: Global
+  text: /Paperwork/Global/5.xml
+  paperPrototype: CMUPaperBase
+
+- type: cmuPaperworkForm
+  id: CMUFormGlobal6
+  name: Запрос медикаментов
+  category: Global
+  text: /Paperwork/Global/6.xml
+  paperPrototype: CMUPaperBase
+
+- type: cmuPaperworkForm
+  id: CMUFormGlobal7
+  name: Общий шаблон
+  category: Global
+  text: /Paperwork/Global/7.xml
+  paperPrototype: CMUPaperBase
+
+- type: cmuPaperworkForm
+  id: CMUFormGlobal8
+  name: Псих экспертиза
+  category: Global
+  text: /Paperwork/Global/8.xml
+  paperPrototype: CMUPaperBase
+
+- type: cmuPaperworkForm
+  id: CMUFormGlobal9
+  name: Свидетельство о смерти
+  category: Global
+  text: /Paperwork/Global/9.xml
+  paperPrototype: CMUPaperBase
+
+- type: cmuPaperworkForm
+  id: CMUFormGlobal10
+  name: Чек об оплате
+  category: Global
+  text: /Paperwork/Global/10.xml
+  paperPrototype: CMUPaperBase
+
+- type: cmuPaperworkForm
+  id: CMUFormGlobal11
+  name: Меню ресторана
+  category: Global
+  text: /Paperwork/Global/11.xml
+  paperPrototype: CMUPaperBase
+
+- type: cmuPaperworkForm
+  id: CMUFormGlobal12
+  name: Угроза о нечто
+  category: Global
+  text: /Paperwork/Global/12.xml
+  paperPrototype: CMUPaperBase
+
+- type: cmuPaperworkForm
+  id: CMUFormGlobal13
+  name: Черные козырьки
+  category: Global
+  text: /Paperwork/Global/13.xml
+  paperPrototype: CMUPaperBase
+
+- type: cmuPaperworkForm
+  id: CMUFormGlobal14
+  name: Код зелёный (объявление)
+  category: Global
+  text: /Paperwork/Global/14.xml
+  paperPrototype: CMUPaperBase
+
+- type: cmuPaperworkForm
+  id: CMUFormGlobal15
+  name: Код красный (объявление)
+  category: Global
+  text: /Paperwork/Global/15.xml
+  paperPrototype: CMUPaperBase
+
+- type: cmuPaperworkForm
+  id: CMUFormGlobal16
+  name: Код синий (объявление)
+  category: Global
+  text: /Paperwork/Global/16.xml
+  paperPrototype: CMUPaperBase
+
+- type: cmuPaperworkForm
+  id: CMUFormGlobal17
+  name: Старт (объявление)
+  category: Global
+  text: /Paperwork/Global/17.xml
+  paperPrototype: CMUPaperBase
+
+- type: cmuPaperworkForm
+  id: CMUFormGlobal18
+  name: Тревога ПОБ (объявление)
+  category: Global
+  text: /Paperwork/Global/18.xml
+  paperPrototype: CMUPaperBase
+
+- type: cmuPaperworkForm
+  id: CMUFormGlobal19
+  name: Тревога корабль (объявление)
+  category: Global
+  text: /Paperwork/Global/19.xml
+  paperPrototype: CMUPaperBase
+
+- type: cmuPaperworkForm
+  id: CMUFormGlobal20
+  name: Эвакуация (объявление)
+  category: Global
+  text: /Paperwork/Global/20.xml
+  paperPrototype: CMUPaperBase
+
+- type: cmuPaperworkForm
+  id: CMUFormGlobal21
+  name: Кол-во бойцов
+  category: Global
+  text: /Paperwork/Global/21.xml
+  paperPrototype: CMUPaperBase
+
+- type: cmuPaperworkForm
+  id: CMUFormGlobal22
+  name: Продиджи
+  category: Global
+  text: /Paperwork/Global/22.xml
   paperPrototype: CMUPaperBase
