@@ -33,6 +33,12 @@ public sealed partial class CMUPaperworkCopierComponent : Component
     [DataField]
     public float UseTimeout = 2.6f;
 
+    /// <summary>
+    /// Состояние работы принтера
+    /// </summary>
+    [ViewVariables]
+    public float JobDuration;
+
     [DataField]
     public float ScanningTimeRemaining;
 

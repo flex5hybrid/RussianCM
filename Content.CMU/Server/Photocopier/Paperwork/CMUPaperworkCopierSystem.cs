@@ -163,6 +163,7 @@ public sealed class CMUPaperworkCopierSystem : EntitySystem
             UpdateAppearance(uid, component);
 
         _itemSlotsSystem.SetLock(uid, component.PaperSlot, !args.Powered);
+        UpdateUserInterface(uid, component);
     }
 
     private void OnToggleInterface(EntityUid uid, CMUPaperworkCopierComponent component, AfterActivatableUIOpenEvent args)
@@ -184,7 +185,7 @@ public sealed class CMUPaperworkCopierSystem : EntitySystem
 
     private void OnPrintButtonPressed(EntityUid uid, CMUPaperworkCopierComponent component, CMUPaperworkCopierPrintMessage args)
     {
-        if (component.UseTimeoutRemaining <= 0 && component.ScanningTimeRemaining <= 0)
+        if (IsPowered(uid) && component.UseTimeoutRemaining <= 0 && component.ScanningTimeRemaining <= 0)
         {
             switch (args.Mode)
             {
@@ -207,6 +208,7 @@ public sealed class CMUPaperworkCopierSystem : EntitySystem
 
         component.ScanningTimeRemaining = component.ScanningTime;
         component.UseTimeoutRemaining += component.UseTimeout + component.ScanningTime;
+        component.JobDuration = component.UseTimeoutRemaining;
         _itemSlotsSystem.SetLock(uid, component.PaperSlot, true);
         _audioSystem.PlayPvs(component.ScanSound, uid);
         UpdateAppearance(uid, component);
@@ -234,6 +236,7 @@ public sealed class CMUPaperworkCopierSystem : EntitySystem
 
         component.PrintingQueue.Enqueue(printout);
         component.UseTimeoutRemaining += component.UseTimeout;
+        component.JobDuration = component.UseTimeoutRemaining;
 
         _adminLogger.Add(LogType.Action, LogImpact.Low, $"{ToPrettyString(actor):actor} started printing form '{GetFormName(formPrototype)}' on photocopier");
     }
@@ -282,10 +285,49 @@ public sealed class CMUPaperworkCopierSystem : EntitySystem
         if (!Resolve(uid, ref component))
             return;
 
-        var isPaperInserted = component.PaperSlot.Item != null;
-        var canPrint = component.UseTimeoutRemaining <= 0 && component.ScanningTimeRemaining <= 0;
-        var state = new CMUPaperworkCopierUiState(canPrint, isPaperInserted, component.ChosenPaper, component.AllowedFormCategories);
+        string? paperName = null;
+        string? paperContent = null;
+
+        if (component.PaperSlot.Item is { } paperUid)
+        {
+            paperName = Name(paperUid);
+            paperContent = TryComp<PaperComponent>(paperUid, out var paper) ? paper.Content : null;
+        }
+
+        var powered = IsPowered(uid);
+        var stage = GetStage(component);
+        var busyRemaining = Math.Max(0f, component.UseTimeoutRemaining);
+        var busyTotal = Math.Max(component.JobDuration, busyRemaining);
+
+        var state = new CMUPaperworkCopierUiState(
+            powered && stage == CMUPaperworkCopierStage.Idle,
+            powered,
+            stage,
+            busyRemaining,
+            busyTotal,
+            paperName,
+            paperContent,
+            component.ChosenPaper,
+            component.AllowedFormCategories);
         _userInterface.SetUiState(uid, CMUPaperworkCopierUiKey.Key, state);
+    }
+
+    private bool IsPowered(EntityUid uid)
+    {
+        return !TryComp<ApcPowerReceiverComponent>(uid, out var receiver) || receiver.Powered;
+    }
+
+    private static CMUPaperworkCopierStage GetStage(CMUPaperworkCopierComponent component)
+    {
+        if (component.ScanningTimeRemaining > 0)
+            return CMUPaperworkCopierStage.Scanning;
+
+        if (component.PrintingTimeRemaining > 0 || component.PrintingQueue.Count > 0)
+            return CMUPaperworkCopierStage.Printing;
+
+        return component.UseTimeoutRemaining > 0
+            ? CMUPaperworkCopierStage.Cooldown
+            : CMUPaperworkCopierStage.Idle;
     }
 
     private void SpawnPaperFromQueue(EntityUid uid, CMUPaperworkCopierComponent? component = null)

@@ -10,21 +10,49 @@ public enum CMUPaperworkCopierUiKey : byte
 }
 
 [Serializable, NetSerializable]
+public enum CMUPaperworkCopierStage : byte
+{
+    Idle,
+    Scanning,
+    Printing,
+    Cooldown,
+}
+
+[Serializable, NetSerializable]
 public sealed class CMUPaperworkCopierUiState : BoundUserInterfaceState
 {
     public bool CanPrint { get; }
-    public bool IsPaperInserted { get; }
+    public bool IsPowered { get; }
+    public CMUPaperworkCopierStage Stage { get; }
+
+    public float BusyRemaining { get; }
+    public float BusyTotal { get; }
+
+    public string? InsertedPaperName { get; }
+    public string? InsertedPaperContent { get; }
     public ProtoId<CMUPaperworkFormPrototype>? ChosenForm { get; }
     public HashSet<CMUPaperworkFormCategory> AllowedFormCategories { get; }
 
+    public bool IsPaperInserted => InsertedPaperName != null;
+
     public CMUPaperworkCopierUiState(
         bool canPrint,
-        bool isPaperInserted,
+        bool isPowered,
+        CMUPaperworkCopierStage stage,
+        float busyRemaining,
+        float busyTotal,
+        string? insertedPaperName,
+        string? insertedPaperContent,
         ProtoId<CMUPaperworkFormPrototype>? chosenForm,
         HashSet<CMUPaperworkFormCategory> allowedFormCategories)
     {
         CanPrint = canPrint;
-        IsPaperInserted = isPaperInserted;
+        IsPowered = isPowered;
+        Stage = stage;
+        BusyRemaining = busyRemaining;
+        BusyTotal = busyTotal;
+        InsertedPaperName = insertedPaperName;
+        InsertedPaperContent = insertedPaperContent;
         ChosenForm = chosenForm;
         AllowedFormCategories = allowedFormCategories;
     }
@@ -81,6 +109,7 @@ public static class CMUPaperworkTextSubstitutions
     {
         text = text.Replace("DOCUMENT NAME", documentName);
         text = text.Replace("{{HOUR.MINUTE.SECOND}}", roundDuration.ToString("hh\\:mm\\:ss"));
+        text = text.Replace("{{DAY.MONTH.YEAR}}", DateTime.UtcNow.AddHours(3).ToString("dd.MM") + ".2710");
 
         if (stationName != null)
             text = text.Replace("STATION XX-00", stationName);

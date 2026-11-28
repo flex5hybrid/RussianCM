@@ -2032,4 +2032,4 @@ RUMCTransformerDown: RUMCMachineTransformerDown
 RUMCTransformerUp: RUMCMachineTransformerUp
 RUMCWiremill: RUMCMachineWiremill
 RMCPhotocopier: RuCMPaperworkCopier
-RMCPhotocopierPro: RuCMaperworkCopierPro
+RMCPhotocopierPro: RuCMPaperworkCopierPro
