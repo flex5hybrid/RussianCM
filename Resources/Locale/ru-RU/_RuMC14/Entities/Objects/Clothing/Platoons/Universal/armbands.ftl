@@ -21,7 +21,7 @@ ent-AU14PortableVendorSEALACN = кейс со знаками различия Л
     .suffix = ЛАКФ
     .desc = Автоматизированная система хранения и выдачи размером с чемодан. Предназначена для эффективного хранения и выборочной выдачи знаков различия военно-морских званий.
 
-#лычки ИТМ
+# лычки ИТМ
 
 ent-AU14ChevronRMCBase = лычки Королевской морской пехоты
     .suffix = ИТМ
@@ -173,9 +173,9 @@ ent-CMU14ChevronLACNAdmiralGeneral = лычки адмирала-генерал�
 ent-CMU14ChevronLACNCaptainGeneral = лычки генерал-капитана флота
     .desc = { ent-CMU14ChevronLACNBase.desc }
 
-# лычки НСПА
+# лычки ПДСН
 
-ent-AU14ChevronNSPABase = лычки НСПА
+ent-AU14ChevronNSPABase = лычки ПДСН
     .desc = Знаки различия званий гражданской полиции. Последняя серия значков была металлической, но старший инспектор пожаловался, что его ими колют, поэтому теперь их делают из пластика.
 
 ent-AU14ChevronNSPAProbationaryConstable = лычки стажёра полиции
@@ -311,8 +311,6 @@ ent-AU14ChevronCWPSDeputyChiefRanger = лычки заместителя гла�
 ent-AU14ChevronCWPSChiefRanger = лычки главного рейнджера
     .desc = { ent-AU14ChevronCWPSBase.desc }
 
-# лычки рекрута
-
 # лычки САС
 
 ent-CMU14ChevronSASBase = лычки SAS
@@ -324,7 +322,7 @@ ent-CMU14ChevronSASPrivate = лычки рядового
 ent-CMU14ChevronSASSergeant = лычки сержанта
     .desc = Я предпочитаю приберечь это для ближнего боя.
 
-# Лычки регуляров ИТМ
+# лычки регуляров ИТМ
 
 ent-AU14ChevronIASFBase = лычки ВКС ИТМ
     .desc = Знаки различия званий Имперских вооружённых космических сил. Знак солдата, служащего Империи среди звёзд.
