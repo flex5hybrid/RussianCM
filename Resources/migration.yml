@@ -1948,3 +1948,7 @@ CMDefibrillator: AU14CMDefibrillator
 CMDefibrillatorEmpty: AUCMDefibrillatorEmpty
 RMCDefibrillatorCompact: AU14CMDefibrillator
 # cmu edit end
+
+#RuCM 2026-11-28
+RMCPhotocopier: RuCMPaperworkCopier
+RMCPhotocopierPro: RuCMaperworkCopierPro

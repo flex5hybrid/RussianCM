@@ -1,0 +1,51 @@
+<controls:FancyWindow xmlns="https://spacestation14.io"
+    xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+    Title="{Loc 'cmu-paperwork-copier-ui-title'}"
+    MinSize="600 480">
+    <BoxContainer Orientation="Vertical">
+        <!-- Status bar -->
+        <controls:StripeBack>
+            <BoxContainer Orientation="Horizontal" Margin="10 4">
+                <Label Text="{Loc 'cmu-paperwork-copier-ui-status-label'}" StyleClasses="LabelSubText"/>
+                <Control MinWidth="6"/>
+                <Label Name="StatusLabel"/>
+            </BoxContainer>
+        </controls:StripeBack>
+
+        <BoxContainer Orientation="Vertical" Margin="10 8" HorizontalExpand="True" VerticalExpand="True">
+            <!-- Copying -->
+            <Label Text="{Loc 'cmu-paperwork-copier-ui-copy-title'}" StyleClasses="LabelHeading"/>
+            <Control MinSize="0 4"/>
+            <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
+                <Label Name="PaperLabel" HorizontalExpand="True" VerticalAlignment="Center"/>
+                <Button Name="CopyButton" Text="{Loc 'cmu-paperwork-copier-ui-copy-button'}" MinWidth="200"/>
+            </BoxContainer>
+
+            <Control MinSize="0 14"/>
+
+            <!-- Forms -->
+            <Label Text="{Loc 'cmu-paperwork-copier-ui-forms-title'}" StyleClasses="LabelHeading"/>
+            <Control MinSize="0 4"/>
+            <BoxContainer Name="FactionRow" Orientation="Horizontal" HorizontalExpand="True"/>
+            <Control MinSize="0 4"/>
+            <LineEdit Name="SearchBar" PlaceHolder="{Loc 'cmu-paperwork-copier-ui-search-placeholder'}" HorizontalExpand="True"/>
+            <Control MinSize="0 4"/>
+            <ScrollContainer HorizontalExpand="True" VerticalExpand="True" HScrollEnabled="False" MinSize="0 200">
+                <BoxContainer Name="FormList" Orientation="Vertical" HorizontalExpand="True"/>
+            </ScrollContainer>
+            <Control MinSize="0 6"/>
+            <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
+                <Label Name="SelectedFormLabel" HorizontalExpand="True" VerticalAlignment="Center" ClipText="True"/>
+                <Button Name="PrintFormButton" Text="{Loc 'cmu-paperwork-copier-ui-print-button'}" MinWidth="200"/>
+            </BoxContainer>
+        </BoxContainer>
+
+        <!-- Footer -->
+        <BoxContainer Orientation="Vertical">
+            <PanelContainer StyleClasses="LowDivider"/>
+            <BoxContainer Orientation="Horizontal" Margin="10 2 5 0" VerticalAlignment="Bottom">
+                <Label Text="{Loc 'cmu-paperwork-copier-ui-footer'}" StyleClasses="WindowFooterText"/>
+            </BoxContainer>
+        </BoxContainer>
+    </BoxContainer>
+</controls:FancyWindow>

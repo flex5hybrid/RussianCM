@@ -1,0 +1,490 @@
+#region Документы ОА
+- type: cmuPaperworkForm
+  id: CMUFormOA1
+  name: заглушка
+  category: OA
+  text: /Paperwork/OA/1.xml
+  paperPrototype: CMUPaperFlagUA
+
+#region Документы СПН
+- type: cmuPaperworkForm
+  id: CMUFormUPP1
+  name: заглушка
+  category: UPP
+  text: /Paperwork/UPP/1.xml
+  paperPrototype: CMUPaperFlagUPP
+
+#region Документы ИТМ
+- type: cmuPaperworkForm
+  id: CMUFormTWE1
+  name: заглушка
+  category: TWE
+  text: /Paperwork/TWE/1.xml
+  paperPrototype: CMUPaperTWE
+
+#region Документы ООН
+- type: cmuPaperworkForm
+  id: CMUFormUN1
+  name: Извещание о прилёте
+  category: UN
+  text: /Paperwork/UN/1.xml
+  paperPrototype: CMUPaperUN
+
+- type: cmuPaperworkForm
+  id: CMUFormUN2
+  name: Акт о нарушении
+  category: UN
+  text: /Paperwork/UN/2.xml
+  paperPrototype: CMUPaperUN
+
+- type: cmuPaperworkForm
+  id: CMUFormUN3
+  name: Пропуск в лагерь
+  category: UN
+  text: /Paperwork/UN/3.xml
+  paperPrototype: CMUPaperUN
+
+- type: cmuPaperworkForm
+  id: CMUFormUN4
+  name: Рапорт об инциденте
+  category: UN
+  text: /Paperwork/UN/4.xml
+  paperPrototype: CMUPaperUN
+
+- type: cmuPaperworkForm
+  id: CMUFormUN5
+  name: Регистрационная карта беженца
+  category: UN
+  text: /Paperwork/UN/5.xml
+  paperPrototype: CMUPaperUN
+
+- type: cmuPaperworkForm
+  id: CMUFormUN6
+  name: Акт изъятия оружия
+  category: UN
+  text: /Paperwork/UN/6.xml
+  paperPrototype: CMUPaperUN
+
+- type: cmuPaperworkForm
+  id: CMUFormUN7
+  name: Медицинская карта
+  category: UN
+  text: /Paperwork/UN/7.xml
+  paperPrototype: CMUPaperUN
+
+- type: cmuPaperworkForm
+  id: CMUFormUN8
+  name: Протокол переговоров
+  category: UN
+  text: /Paperwork/UN/8.xml
+  paperPrototype: CMUPaperUN
+
+- type: cmuPaperworkForm
+  id: CMUFormUN9
+  name: Акт передачи задержанного
+  category: UN
+  text: /Paperwork/UN/9.xml
+  paperPrototype: CMUPaperUN
+
+- type: cmuPaperworkForm
+  id: CMUFormUN10
+  name: Разрешение на перемещение
+  category: UN
+  text: /Paperwork/UN/10.xml
+  paperPrototype: CMUPaperUN
+
+- type: cmuPaperworkForm
+  id: CMUFormUN11
+  name: Акт о состоянии лагеря
+  category: UN
+  text: /Paperwork/UN/11.xml
+  paperPrototype: CMUPaperUN
+
+- type: cmuPaperworkForm
+  id: CMUFormUN12
+  name: Извещание об убытии
+  category: UN
+  text: /Paperwork/UN/12.xml
+  paperPrototype: CMUPaperUN
+
+- type: cmuPaperworkForm
+  id: CMUFormUN13
+  name: Донесение о потерях
+  category: UN
+  text: /Paperwork/UN/13.xml
+  paperPrototype: CMUPaperUN
+
+- type: cmuPaperworkForm
+  id: CMUFormUN14
+  name: Запрос эвакуации
+  category: UN
+  text: /Paperwork/UN/14.xml
+  paperPrototype: CMUPaperUN
+
+- type: cmuPaperworkForm
+  id: CMUFormUN15
+  name: Свидетельство о смерти
+  category: UN
+  text: /Paperwork/UN/15.xml
+  paperPrototype: CMUPaperUN
+
+- type: cmuPaperworkForm
+  id: CMUFormUN16
+  name: Регистрационный бланк
+  category: UN
+  text: /Paperwork/UN/16.xml
+  paperPrototype: CMUPaperUN
+
+- type: cmuPaperworkForm
+  id: CMUFormUN17
+  name: Резолюция ООН №2901
+  category: UN
+  text: /Paperwork/UN/17.xml
+  paperPrototype: CMUPaperUN
+
+- type: cmuPaperworkForm
+  id: CMUFormUN18
+  name: Шаблон документа
+  category: UN
+  text: /Paperwork/UN/18.xml
+  paperPrototype: CMUPaperUN
+
+#region Документы ВеЮ
+- type: cmuPaperworkForm
+  id: CMUFormWeY1
+  name: Заявка на патент
+  category: WeY
+  text: /Paperwork/WeY/1.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY2
+  name: Отчёт об исследовании
+  category: WeY
+  text: /Paperwork/WeY/2.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY3
+  name: Соглашение о неразглашении
+  category: WeY
+  text: /Paperwork/WeY/3.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY4
+  name: APOLLO 1
+  category: WeY
+  text: /Paperwork/WeY/4.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY5
+  name: APOLLO 2
+  category: WeY
+  text: /Paperwork/WeY/5.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY6
+  name: Сенсорная Аномалия
+  category: WeY
+  text: /Paperwork/WeY/6.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY7
+  name: ID-карта
+  category: WeY
+  text: /Paperwork/WeY/7.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY8
+  name: Научная корреспонденция
+  category: WeY
+  text: /Paperwork/WeY/8.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY9
+  name: Жалоба на корпоративный персонал
+  category: WeY
+  text: /Paperwork/WeY/9.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY10
+  name: Запрос ЧВК
+  category: WeY
+  text: /Paperwork/WeY/10.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY11
+  name: Запрос оборудования невоенного назначения
+  category: WeY
+  text: /Paperwork/WeY/11.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY12
+  name: Отказ от претензий
+  category: WeY
+  text: /Paperwork/WeY/12.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY13
+  name: Отчёт для компании
+  category: WeY
+  text: /Paperwork/WeY/13.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY14
+  name: Перевод в департамент
+  category: WeY
+  text: /Paperwork/WeY/14.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY15
+  name: Свидетельство о смерти
+  category: WeY
+  text: /Paperwork/WeY/15.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY16
+  name: Соглашение о защите актива
+  category: WeY
+  text: /Paperwork/WeY/16.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY17
+  name: Увольнительная из-за выявления секретной информации
+  category: WeY
+  text: /Paperwork/WeY/17.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY18
+  name: Введение цербера
+  category: WeY
+  text: /Paperwork/WeY/18.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY19
+  name: ID-карта
+  category: WeY
+  text: /Paperwork/WeY/19.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY20
+  name: Подарочная карта магазина
+  category: WeY
+  text: /Paperwork/WeY/20.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY21
+  name: Эксперимент и NDA
+  category: WeY
+  text: /Paperwork/WeY/21.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY22
+  name: NDA
+  category: WeY
+  text: /Paperwork/WeY/22.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY23
+  name: Трудовой договор
+  category: WeY
+  text: /Paperwork/WeY/23.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY24
+  name: Журнал посещений
+  category: WeY
+  text: /Paperwork/WeY/24.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY25
+  name: Криминальный учет
+  category: WeY
+  text: /Paperwork/WeY/25.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY26
+  name: Отчет об инциденте
+  category: WeY
+  text: /Paperwork/WeY/26.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY27
+  name: Предупреждение
+  category: WeY
+  text: /Paperwork/WeY/27.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY28
+  name: Коды угроз
+  category: WeY
+  text: /Paperwork/WeY/28.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY29
+  name: Памятка при налёте
+  category: WeY
+  text: /Paperwork/WeY/29.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY30
+  name: Техника безопасности
+  category: WeY
+  text: /Paperwork/WeY/30.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY31
+  name: Договор купли-продажи
+  category: WeY
+  text: /Paperwork/WeY/31.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY32
+  name: Заём
+  category: WeY
+  text: /Paperwork/WeY/32.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY33
+  name: Квитанция об выплате
+  category: WeY
+  text: /Paperwork/WeY/33.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY34
+  name: Информация об отделах и корпоративных кодах
+  category: WeY
+  text: /Paperwork/WeY/34.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY35
+  name: Грифы секретности
+  category: WeY
+  text: /Paperwork/WeY/35.xml
+  paperPrototype: CMUPaperWEYLAND
+
+- type: cmuPaperworkForm
+  id: CMUFormWeY36
+  name: Шаблон документа
+  category: WeY
+  text: /Paperwork/WeY/36.xml
+  paperPrototype: CMUPaperWEYLAND
+
+#region Документы КОФа
+- type: cmuPaperworkForm
+  id: CMUFormCLF1
+  name: Приветственное сообщение
+  category: CLF
+  text: /Paperwork/CLF/1.xml
+  paperPrototype: CMUPaperCLF
+
+- type: cmuPaperworkForm
+  id: CMUFormCLF2
+  name: Общий вариант документа
+  category: CLF
+  text: /Paperwork/CLF/2.xml
+  paperPrototype: CMUPaperCLF
+
+- type: cmuPaperworkForm
+  id: CMUFormCLF3
+  name: Запрос выполнения задач
+  category: CLF
+  text: /Paperwork/CLF/3.xml
+  paperPrototype: CMUPaperCLF
+
+- type: cmuPaperworkForm
+  id: CMUFormCLF4
+  name: Ответное сообщение
+  category: CLF
+  text: /Paperwork/CLF/4.xml
+  paperPrototype: CMUPaperCLF
+
+- type: cmuPaperworkForm
+  id: CMUFormCLF5
+  name: Агитация 1
+  category: CLF
+  text: /Paperwork/CLF/5.xml
+  paperPrototype: CMUPaperCLF
+
+- type: cmuPaperworkForm
+  id: CMUFormCLF6
+  name: Агитация 2
+  category: CLF
+  text: /Paperwork/CLF/6.xml
+  paperPrototype: CMUPaperCLF
+
+- type: cmuPaperworkForm
+  id: CMUFormCLF7
+  name: Агитация 3
+  category: CLF
+  text: /Paperwork/CLF/7.xml
+  paperPrototype: CMUPaperCLF
+
+- type: cmuPaperworkForm
+  id: CMUFormCLF8
+  name: Агитация 4
+  category: CLF
+  text: /Paperwork/CLF/8.xml
+  paperPrototype: CMUPaperCLF
+
+- type: cmuPaperworkForm
+  id: CMUFormCLF9
+  name: Агитация 5
+  category: CLF
+  text: /Paperwork/CLF/9.xml
+  paperPrototype: CMUPaperCLF
+
+- type: cmuPaperworkForm
+  id: CMUFormCLF10
+  name: Агитация 6
+  category: CLF
+  text: /Paperwork/CLF/10.xml
+  paperPrototype: CMUPaperCLF
+
+#region Документы колонии
+- type: cmuPaperworkForm
+  id: CMUFormColony1
+  name: заглушка
+  category: Colony
+  text: /Paperwork/Colony/1.xml
+  paperPrototype: CMUPaperCream
+
+#region Общие документы
+- type: cmuPaperworkForm
+  id: CMUFormGlobal1
+  name: заглушка
+  category: Global
+  text: /Paperwork/Global/1.xml
+  paperPrototype: CMUPaperBase
