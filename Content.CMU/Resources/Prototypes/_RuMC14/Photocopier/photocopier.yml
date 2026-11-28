@@ -42,7 +42,7 @@
     state: bigscanner
 
 - type: entity
-  parent: CMUPaperworkCopier
+  parent: RuCMPaperworkCopier
   id: RuCMaperworkCopierPro
   name: принтер Вейланд-Ютани
   description: Принтер, подключенный к огромной базе данных документов. Позволяет копировать документы и печатать новые по форме.
