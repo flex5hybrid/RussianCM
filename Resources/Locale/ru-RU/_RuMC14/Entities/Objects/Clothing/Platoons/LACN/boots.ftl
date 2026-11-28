@@ -1,0 +1,10 @@
+ent-AU14LACNBoots = ботинки ЛАКФ
+    .desc = Стандартные армейские ботинки Латиноамериканского колониального флота.
+ent-AU14LACNBootsFilled = ботинки ЛАКФ
+    .desc = { ent-AU14LACNBoots.desc }
+    .suffix = Заполненные
+ent-CMULACNBootsWhite = белые ботинки ЛАКФ
+    .desc = Белые ботинки, которые носит экипаж кораблей Латиноамериканского колониального флота.
+ent-CMULACNBootsWhiteFilled = белые ботинки ЛАКФ
+    .desc = { ent-CMULACNBootsWhite.desc }
+    .suffix = Заполненные

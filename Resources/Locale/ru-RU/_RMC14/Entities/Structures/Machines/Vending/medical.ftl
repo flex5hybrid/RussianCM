@@ -10,19 +10,19 @@ ent-RMCNanoMed = НаноМед
 ent-ColMarTechMarineMedical = КолМарТек МаринМед
   .desc = Медицинский фармацевтический дозатор с основными медикаментами для морской пехоты.
 
-ent-CMVendorChemistry = Ве-Я-Мед Плюс
+ent-CMVendorChemistry = фармаПлюс Ве-Ю
   .desc = Дозатор медицинской химии. 
 
-ent-CMVendorMedicalAllAccess = Ве-Я-Мед Плюс
+ent-CMVendorMedicalAllAccess = фармаПлюс Ве-Ю
   .desc = Медицинский фармацевтический дозатор. 
 
 ent-CMMedilinkSupplyPort = порт питания Medilink
   .desc = Сложная сеть труб и механизмов, соединяющаяся с большими системами хранения под палубой. 
 
-ent-CMVendorMedical = Ве-Я-Мед Плюс
+ent-CMVendorMedical = фармаПлюс Ве-Ю
   .desc = Медицинский фармацевтический дозатор. 
 
-ent-RMCVendorMedicalPVE = Ве-Я-Мед Плюс
+ent-RMCVendorMedicalPVE = фармаПлюс Ве-Ю
   .desc = Медицинский фармацевтический дозатор. 
 
 ent-ColMarTechMarineMedicalPowered = КолМарТек МаринМед

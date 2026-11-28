@@ -78,7 +78,7 @@ ent-VehicleTankGrenadeLauncher = башенный гранатомёт
     .desc = Башенный противопехотный гранатомёт для танков.
     .suffix = Модуль, Танк
 
-ent-VehicleTankSnowplow = снегоочиститель для танка
+ent-VehicleTankSnowplow = снегоуборочный ковш
     .desc = Большой ковш для уборки снега с пути танка.
     .suffix = Модуль, Танк
 
