@@ -12,41 +12,17 @@ ent-CMUActionYautjaFoldCombistick = { cmu-yautja-combistick-fold-action-name }
 ent-CMUActionYautjaCallCombi = { cmu-yautja-combistick-call-action-name }
     .desc = { cmu-yautja-combistick-call-action-desc }
 
-ent-CMUActionYautjaChangeExplosionType = Изменить тип взрыва
-    .desc = изменить наруч самоуничтожение mode.
-
-ent-CMUActionYautjaToggleBracerNotificationSound = Переключить звуки уведомлений наруча
-    .desc = Переключить звуки уведомлений наруча.
-
-ent-CMUActionYautjaToggleBracerName = Переключить отображение имени наруча
-    .desc = переключить наруч name витрина.
-
-ent-CMUActionYautjaTrackGear = Отслеживать снаряжение
-    .desc = открыть tracked снаряжение list.
-
-ent-CMUActionYautjaAddTrackedItem = Добавить отслеживаемый предмет
-    .desc = добавить item для tracked снаряжение list.
-
-ent-CMUActionYautjaRemoveTrackedItem = Удалить отслеживаемый предмет
-    .desc = удалить item из tracked снаряжение list.
-
-ent-CMUActionYautjaAudioPanel = Аудиопанель
-    .desc = Открыть аудиопанель яутжа.
-
-ent-CMUActionYautjaCallDisc = вызвать Disc
-    .desc = Вернуть свой смарт-диск.
+ent-CMUActionYautjaCreateHealingCapsule = Создать лечебную капсулу
+    .desc = Создать капсулу для исцеления.
 
 ent-CMUActionYautjaButcher = Разделать
-    .desc = разделать труп you're standing next для для его вкусный мясо.
+    .desc = Разделать труп рядом с вами ради вкусного мяса.
 
-ent-CMUActionYautjaFalconControl = управление Falcon дрон
-    .desc = Активирует вашего дрона-сокола.
+ent-CMUActionYautjaFalconControl = Управлять дроном-соколом
+    .desc = Активировать управление вашим дроном-соколом.
 
-ent-CMUActionYautjaFalconRecall = вернуть falcon дрон
-    .desc = Вернуть вашего дрона-сокола.
-
-ent-CMUActionYautjaUsePlasmaCannons = использовать плазма пушки
-    .desc = Выстрелить из плазменных пушек.
+ent-CMUActionYautjaFalconRecall = Вернуть дрон-сокол
+    .desc = Вызывает назад ваш дрон-сокол.
 
 ent-CMUActionYautjaGuardChainGauntlet = { cmu-yautja-chain-gauntlet-guard-action-name }
     .desc = { cmu-yautja-chain-gauntlet-guard-action-desc }
@@ -54,29 +30,58 @@ ent-CMUActionYautjaGuardChainGauntlet = { cmu-yautja-chain-gauntlet-guard-action
 ent-CMUActionYautjaRemoveBracerAttachments = { cmu-yautja-remove-bracer-attachments-action-name }
     .desc = { cmu-yautja-remove-bracer-attachments-action-desc }
 
-ent-CMUActionYautjaMarkForHunt = пометить для Hunt
+ent-CMUYautjaAncientAlienArmor = древняя инопланетная броня
+    .desc = Древняя броня сделанная из странного сплав. Она ощущается холодной, обладая чужеродной тяжестью.
+
+ent-CMUYautjaStoneArmor = инопланетная каменная броня
+    .desc = Бронекостюм сделанный полностью из камня. Выглядит невероятно тяжёлым.
+
+ent-CMUYautjaClanArmor = клановая броня
+    .desc = Бронекостюм с лёгкими накладками. Выглядит старым, но функциональным.
+
+ent-CMUYautjaThrallArmorEbony = инопланетная броня
+    .desc = Броня сделанная из странного сплава. Она ощущается холодной, обладая чужеродной тяжестью.
+
+ent-CMUYautjaHeavyClanArmor = тяжёлая клановая броня
+    .desc = Бронекостюм с тяжёлыми накладками. Выглядит старым, но функциональным.
+
+ent-CMUYautjaEmissaryArmorClassic = клановая броня YM4
+    .desc = Смесь стандартной брони морпеха и брони оператора смартгана. Создана явно для чего то крупнее человека.
+
+ent-CMUYautjaBodyMesh = нательная сетка
+    .desc = Набор очень тонких цепей соединённых в сетку для комфорта и функциональности.
+
+ent-CMUActionYautjaChangeExplosionType = Изменить тип взрыва
+    .desc = Изменить размер взрыва при самоуничтожении.
+
+ent-CMUActionYautjaToggleBracerNotificationSound = Переключить звуки уведомлений наруча
+    .desc = Сменить звуки уведомлений наруча.
+
+ent-CMUActionYautjaToggleBracerName = Переключить отображение имени наруча
+    .desc = Изменить отображение имени наруча.
+
+ent-CMUActionYautjaTrackGear = Посмотреть отслеживаемое снаряжение
+    .desc = Открыть список отслеживаемого снаряжения.
+
+ent-CMUActionYautjaAddTrackedItem = Добавить отслеживаемый предмет
+    .desc = Добавить предмет в список отслеживаемого снаряжения.
+
+ent-CMUActionYautjaRemoveTrackedItem = Удалить отслеживаемый предмет
+    .desc = Убрать предмет из списка отслеживаемого снаряжения.
+
+ent-CMUActionYautjaAudioPanel = Аудиопанель
+    .desc = Открыть аудиопанель яутжа.
+
+ent-CMUActionYautjaCallDisc = Вызвать смарт-диск
+    .desc = Вернуть свой смарт-диск.
+
+ent-CMUActionYautjaUsePlasmaCannons = Переключить плазма-пушки
+    .desc = Активировать или деактивировать плазма-пушки.
+
+ent-CMUActionYautjaMarkForHunt = Пометить добычу
     .desc = Пометить цель для охоты.
 
-ent-CMUYautjaAncientAlienArmor = древний инопланетный броня
-    .desc = древний броня сделанный из странный сплав. он feels холодный с инопланетный вес.
-
-ent-CMUYautjaStoneArmor = инопланетный каменный броня
-    .desc = suit броня сделанный полностью out каменный. Looks невероятно тяжёлый.
-
-ent-CMUYautjaClanArmor = клановый броня
-    .desc = suit броня с лёгкий padding. он looks old, но функциональный.
-
-ent-CMUYautjaThrallArmorEbony = инопланетный броня
-    .desc = броня сделанный из странный сплав. он feels холодный с инопланетный вес. он has адаптированный для переносить оба человеческий и инопланетный melee weaponry.
-
-ent-CMUYautjaHeavyClanArmor = тяжёлый клановый броня
-    .desc = suit броня с тяжёлый padding. он looks old, но функциональный.
-
-ent-CMUYautjaEmissaryArmorClassic = YM4 модель клановый броня
-    .desc = suit oversized броня созданный из M3 модель plating и смарт-пулемётный mesh, созданный для something larger than any normal man.
-
-ent-CMUYautjaBodyMesh = Снаряжение яутжа
-    .desc = набор очень тонкий chainlink в meshwork для comfort и utility.
+# Дальше идет старый нейрослоп
 
 ent-CMUYautjaAncientAlienMesh = древний инопланетный mesh suit
     .desc = странный сплав weave в форма vest. он feels холодный с инопланетный вес.
@@ -180,9 +185,6 @@ ent-CMUYautjaBloodedThrallBracer = окровавленный thrall наруч�
 
 ent-CMUYautjaThrallGearBox = инопланетный box
     .desc = странный, runed box.
-
-ent-CMUYautjaNightVisionGlasses = биомаска ночное зрение
-    .desc = vision overlay generated биомаска. используемый для low-light conditions.
 
 ent-CMUYautjaMask = клановый маска
     .desc = Искусно изготовленная металлическая маска — украшенная и функциональная.

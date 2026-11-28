@@ -3,6 +3,7 @@ using Content.Shared._RMC14.Construction;
 using Content.Shared._RMC14.Entrenching;
 using Content.Shared._RMC14.Folded;
 using Content.Shared._RMC14.Map;
+using Content.Shared.CMU14.Placement; // CMU14
 using Content.Shared._RMC14.Scoping;
 using Content.Shared._RMC14.Weapons.Ranged.IFF;
 using Content.Shared._RMC14.Weapons.Ranged.Overheat;
@@ -69,6 +70,7 @@ public abstract partial class SharedWeaponMountSystem : EntitySystem
     [Dependency] private SharedMapSystem _mapSystem = default!;
     [Dependency] private MetaDataSystem _metaData = default!;
     [Dependency] private INetManager _net = default!;
+    [Dependency] private CMUPlacementSystem _placement = default!; // CMU14
     [Dependency] private SharedPopupSystem _popup = default!;
     [Dependency] private RMCFoldableSystem _rmcFoldable = default!;
     [Dependency] private RMCMapSystem _rmcMap = default!;
@@ -336,11 +338,17 @@ public abstract partial class SharedWeaponMountSystem : EntitySystem
 
     private void OnDetachFromMount(Entity<WeaponMountComponent>ent, ref DetachFromMountDoAfterEvent args)
     {
-        if (args.Cancelled)
+        if (args.Cancelled || !DetachWeapon(ent)) // CMU14
             return;
 
+        _audio.PlayPredicted(ent.Comp.DetachSound, ent, args.User);
+    }
+
+    // CMU14: detachable guns use the same cleanup on tripod breakage and manual disassembly.
+    private bool DetachWeapon(Entity<WeaponMountComponent> ent)
+    {
         if (!_container.TryGetContainer(ent, ent.Comp.WeaponSlotId, out var container))
-            return;
+            return false;
 
         _container.EmptyContainer(container);
         if (TryComp(ent.Comp.MountedEntity, out MountableWeaponComponent? mountableWeapon))
@@ -363,7 +371,7 @@ public abstract partial class SharedWeaponMountSystem : EntitySystem
         DirtyField(ent.Owner, ent.Comp, nameof(WeaponMountComponent.MountedEntity));
 
         UpdateAppearance(ent);
-        _audio.PlayPredicted(ent.Comp.DetachSound, ent, args.User);
+        return true;
     }
 
     private void OnMountDeploy(Entity<WeaponMountComponent>ent, ref MountDeployDoafterEvent args)
@@ -471,6 +479,10 @@ public abstract partial class SharedWeaponMountSystem : EntitySystem
             _popup.PopupEntity(msg, user, user, PopupType.SmallCaution);
             return false;
         }
+
+        // CMU14: placement restrictions apply alongside CMU's mount exclusion rules.
+        if (!_placement.CanPlacePopup(ent, coordinates, user))
+            return false;
 
         var grid = _transform.GetGrid((user, Transform(user)));
         if (TryComp(grid, out MapGridComponent? mapGrid))
@@ -762,6 +774,9 @@ public abstract partial class SharedWeaponMountSystem : EntitySystem
     /// <returns>True if the mount can be assembled</returns>
     private bool CanAssembleMount(Entity<WeaponMountComponent> ent, EntityUid user)
     {
+        if (!_placement.CanPlacePopup(ent, _transform.GetMoverCoordinates(ent), user)) // CMU14: placement restrictions
+            return false;
+
         if (ent.Comp.MountExclusionAreaSize == 0)
             return true;
 
@@ -890,6 +905,10 @@ public abstract partial class SharedWeaponMountSystem : EntitySystem
         TryComp(ent, out FoldableComponent? foldable);
         ent.Comp.Broken = true;
         DirtyField(ent.Owner, ent.Comp, nameof(WeaponMountComponent.Broken));
+
+        // CMU14: a broken, folded tripod can no longer run its normal dismantling interaction.
+        if (_net.IsServer && !ent.Comp.IsWeaponLocked && ent.Comp.MountedEntity != null)
+            DetachWeapon(ent);
 
         UndeployMount(ent, null, foldable);
         UpdateAppearance(ent);

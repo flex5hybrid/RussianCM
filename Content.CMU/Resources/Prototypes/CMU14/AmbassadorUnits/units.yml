@@ -728,9 +728,9 @@
   id: RUMCGearUPPMedic
   equipment:
     outerClothing: RMCOuterClothingExternalWebbingBrownFull
-    jumpsuit: CMJumpsuitSPPEngi
+    jumpsuit: CMJumpsuitSPPMedic
     shoes: RMCBootsSPPFilled
-    head: RMCHardhatOrange
+    head: CMHeadCapSPP
     belt: AU14BeltMedicBagProdigyFilled
     pocket1: AU14PouchIFAKFill
     pocket2: AU14PouchIFAKFill
@@ -793,6 +793,17 @@
       RMCSkillFireman: 2
   - type: JobPrefix
     prefix: rumc-unit-prefix-medic
+  - type: Language
+    spokenLanguages:
+    - Russian
+    - English
+    - Mandarin
+    understoodLanguages:
+    - Russian
+    - English
+    - Mandarin
+    currentLanguage: Russian
+    defaultLanguage: Russian
   name: rumc-unit-rumcjobuppmedic-name
   description: rumc-unit-rumcjobuppmedic-desc
   playTimeTracker: RUMCJobUPPMedic
@@ -1266,6 +1277,7 @@
 
 - type: thirdParty
   id: RUMCMercsUPP
+  allowSavedCharacters: true
   displayName: Nameless mercenaries (UPP)
   announceAsSurvivors: false
   announcearrival: ''
@@ -1290,6 +1302,7 @@
 
 - type: thirdParty
   id: RUMCMercsTWE
+  allowSavedCharacters: true
   displayName: Nameless mercenaries (TWE)
   announceAsSurvivors: false
   announcearrival: ''
@@ -1314,6 +1327,7 @@
 
 - type: thirdParty
   id: RUMCMercsUA
+  allowSavedCharacters: true
   displayName: Nameless mercenaries (UA)
   announceAsSurvivors: false
   announcearrival: ''
@@ -1338,6 +1352,7 @@
 
 - type: thirdParty
   id: RUMCMercsICSC
+  allowSavedCharacters: true
   displayName: Nameless mercenaries (ICSC)
   announceAsSurvivors: false
   announcearrival: ''
@@ -1362,6 +1377,8 @@
 
 - type: thirdParty
   id: RUMCMedicsUPP
+  allowSavedCharacters: true
+  speaksColonyLanguage: true
   displayName: UPP medics
   announceAsSurvivors: false
   partyspawn: RUMCMedicsSpawnUPP
@@ -1384,6 +1401,8 @@
 
 - type: thirdParty
   id: RUMCEngineersUPP
+  allowSavedCharacters: true
+  speaksColonyLanguage: true
   displayName: UPP engineers
   announceAsSurvivors: false
   partyspawn: RUMCEngineersSpawnUPP
@@ -1406,6 +1425,7 @@
 
 - type: thirdParty
   id: RUMCMedicsTWE
+  allowSavedCharacters: true
   displayName: TWE medics
   announceAsSurvivors: false
   partyspawn: RUMCMedicsSpawnTWE
@@ -1428,6 +1448,7 @@
 
 - type: thirdParty
   id: RUMCEngineersTWE
+  allowSavedCharacters: true
   displayName: TWE engineers
   announceAsSurvivors: false
   partyspawn: RUMCEngineersSpawnTWE
@@ -1450,6 +1471,7 @@
 
 - type: thirdParty
   id: RUMCMedicsUA
+  allowSavedCharacters: true
   displayName: UA medics
   announceAsSurvivors: false
   partyspawn: RUMCMedicsSpawnUA
@@ -1472,6 +1494,7 @@
 
 - type: thirdParty
   id: RUMCEngineersUA
+  allowSavedCharacters: true
   displayName: UA engineers
   announceAsSurvivors: false
   partyspawn: RUMCEngineersSpawnUA

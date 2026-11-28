@@ -16,8 +16,6 @@ import actions_changelogs_since_last_run as discord
 import update_changelog as assembler
 import update_changelog_parts as parts
 from changelog_discord_state import FileStateStore, GitHubStateStore, empty_state
-from changelog_translation import RussianTranslator, TranslationError, TranslationRateLimitError, protect, restore, retry_after_seconds
-from changelog_translation_cache import load_translation_cache, save_translation_cache
 
 
 def entry(number=1, source="CMU", timestamp="2026-10-01T12:00:00Z", message="Исправлены ошибки."):
@@ -58,10 +56,14 @@ class AssemblyTests(unittest.TestCase):
         self.assertEqual(data["Order"], -1)
         self.assertFalse(list(self.parts.glob("*.yml")))
 
-    def test_duplicate_url_ignores_changed_timestamp_and_author_and_consumes_part(self):
-        self.add_part(url=entry(30)["url"], author="other", time="2026-10-02T00:00:00Z")
+    def test_duplicate_url_combines_changes_and_preserves_metadata(self):
+        self.add_part(url=entry(30)["url"], author="other", time="2026-10-02T00:00:00Z",
+                      changes=[{"type": "Add", "message": "Added a map."}])
         assembler.assemble(str(self.file), str(self.parts), "CMU")
-        self.assertEqual(len(assembler.load_yaml(self.file)["Entries"]), 1)
+        retained, = assembler.load_yaml(self.file)["Entries"]
+        self.assertEqual((retained["author"], retained["time"], retained["id"]),
+                         ("author", "2026-10-01T12:00:00Z", 30))
+        self.assertEqual(len(retained["changes"]), 2)
         self.assertFalse(list(self.parts.glob("*.yml")))
 
     def test_existing_duplicate_url_merges_distinct_changes(self):
@@ -112,20 +114,34 @@ class AssemblyTests(unittest.TestCase):
         assembler.assemble(str(self.file), str(self.parts), "CMU")
         self.assertEqual(self.file.read_bytes(), before)
 
-    def test_pruning_never_renumbers_survivors(self):
-        self.save(self.file, {"Entries": [entry(30), entry(31), entry(32)]})
-        self.add_part(url=entry(33)["url"])
-        with patch.object(assembler, "MAX_ENTRIES", 2):
-            assembler.assemble(str(self.file), str(self.parts), "CMU")
-        self.assertEqual([e["id"] for e in assembler.load_yaml(self.file)["Entries"]], [32, 33])
+    def test_upstream_merge_restores_ids_and_assigns_old_arrival_a_new_id(self):
+        previous = {"Entries": [entry(90), entry(100)]}
+        old, removed = previous["Entries"]
+        upstream = entry(101, timestamp="2025-01-01")
+        upstream.update(id=1, url="https://github.com/upstream/game/pull/90")
+        self.save(self.file, {"Entries": [{**old, "id": 1}, upstream]})
+        assembler.assemble(str(self.file), str(self.parts), "CMU", previous=previous)
+        incoming, retained = assembler.load_yaml(self.file)["Entries"]
+        self.assertEqual(retained["id"], old["id"])
+        self.assertGreater(incoming["id"], removed["id"])
 
-    def test_pruning_old_upstream_high_id_never_reuses_issued_ids(self):
-        self.save(self.file, {"Entries": [entry(1000, timestamp="2020-01-01"), entry(31), entry(32)]})
-        with patch.object(assembler, "MAX_ENTRIES", 2):
-            assembler.assemble(str(self.file), str(self.parts), "CMU")
-        self.add_part(url=entry(33)["url"])
+    def test_removed_high_water_id_is_not_reused(self):
+        previous = {"Entries": [entry(30), entry(80)]}
+        assembler.assemble(str(self.file), str(self.parts), "CMU", previous=previous)
+        self.assertEqual(assembler.load_yaml(self.file)["LastId"], 80)
+        self.add_part()
         assembler.assemble(str(self.file), str(self.parts), "CMU")
-        self.assertEqual(max(e["id"] for e in assembler.load_yaml(self.file)["Entries"]), 1001)
+        self.assertEqual(max(e["id"] for e in assembler.load_yaml(self.file)["Entries"]), 81)
+
+    def test_file_replacement_retains_downstream_prs(self):
+        local = entry(30)
+        upstream = entry(1, timestamp="2024-01-01")
+        upstream["url"] = "https://github.com/upstream/game/pull/30"
+        self.save(self.file, {"Entries": [upstream]})
+        assembler.assemble(str(self.file), str(self.parts), "CMU",
+                           previous={"Entries": [local]}, repository="example/game")
+        self.assertEqual({e["url"] for e in assembler.load_yaml(self.file)["Entries"]},
+                         {local["url"], upstream["url"]})
 
     def test_all_categories_consume_tagged_parts_into_correct_files(self):
         for category, filename in assembler.CHANGELOG_CATEGORIES.items():
@@ -145,12 +161,12 @@ class SelectionTests(unittest.TestCase):
         old = entry()
         new = entry()
         new.update(id=900, time="2026-10-04", author="new author")
-        self.assertEqual(discord.diff_changelog({"Entries": [old]}, {"Entries": [new]}), [])
+        self.assertEqual(discord.delivery_key("CMU", old), discord.delivery_key("CMU", new))
 
     def test_same_pr_number_from_another_repository_is_new(self):
         old, new = entry(), entry()
         new["url"] = "https://github.com/upstream/game/pull/1"
-        self.assertEqual(len(discord.diff_changelog({"Entries": [old]}, {"Entries": [new]})), 1)
+        self.assertNotEqual(discord.delivery_key("CMU", old), discord.delivery_key("CMU", new))
 
     def test_sections_have_independent_identity(self):
         self.assertNotEqual(entry(source="CMU")["key"], entry(source="RMC14")["key"])
@@ -192,208 +208,15 @@ class SelectionTests(unittest.TestCase):
         entries = discord.load_entries(discord.DEFAULT_FILES)
         self.assertEqual({e["source"] for e in entries}, set(discord.SECTION_NAMES))
         self.assertEqual(len({e["key"] for e in entries}), len(entries))
-
-
-class TranslationTests(unittest.TestCase):
-    def test_numbers_urls_code_and_terms_are_preserved(self):
-        source = "Increased FOB speed by 30% using `CMU.CVar` https://example.org/test."
-        masked, tokens = protect(source, ["FOB"])
-        self.assertNotIn("30%", masked)
-        self.assertEqual(restore(masked, tokens), source)
-        with self.assertRaises(TranslationError):
-            restore(masked.replace("__KEEP_0__", ""), tokens)
-
-    def test_preserved_english_code_is_not_mistaken_for_untranslated_prose(self):
-        translator = RussianTranslator({}, request=Mock(return_value=["Исправлена обработка __KEEP_0__."]))
-        self.assertEqual(translator.translate(["Fixed `the energy sword` handling."]),
-                         ["Исправлена обработка `the energy sword`."])
-
-    def test_russian_entries_do_not_call_provider(self):
-        request = Mock(side_effect=AssertionError("should not translate"))
-        translator = RussianTranslator({}, request=request)
-        source = "Исправлена связь GOVFOR на FOB."
-        self.assertEqual(translator.translate([source]), [source])
-        request.assert_not_called()
-
-    def test_mixed_language_is_translated_and_cached(self):
-        request = Mock(return_value=["Исправлено восстановление связи."])
-        cache = {}
-        translator = RussianTranslator(cache, request=request)
-        source = "Исправлен radio connection recovery."
-        self.assertEqual(translator.translate([source, source]), ["Исправлено восстановление связи."] * 2)
-        self.assertEqual(translator.translate([source]), ["Исправлено восстановление связи."])
-        request.assert_called_once()
-
-    def test_bad_translation_is_not_cached_or_sent(self):
-        for translated in ["", "Fixed the radio connection.", "Русский текст with untranslated English prose"]:
-            cache = {}
-            translator = RussianTranslator(cache, request=Mock(return_value=[translated]))
-            with self.assertRaises(TranslationError):
-                translator.translate(["Fixed the radio connection."])
-            self.assertEqual(cache, {})
-
-    def test_partial_translation_batch_must_not_mutate_cache(self):
-        cache = {}
-        translator = RussianTranslator(cache, request=Mock(return_value=["Связь исправлена."]))
-        with self.assertRaises(TranslationError):
-            translator.translate(["Fixed radio.", "Added a map."])
-        self.assertEqual(cache, {})
-
-    def test_dropped_protected_fact_fails_validation(self):
-        translator = RussianTranslator({}, request=Mock(return_value=["Скорость повышена."]))
-        with self.assertRaises(TranslationError):
-            translator.translate(["Increased speed by 30%."])
-
-    def test_missing_secret_fails_without_english_fallback(self):
-        with patch.dict(os.environ, {}, clear=True):
-            with self.assertRaises(TranslationError):
-                RussianTranslator({}).translate(["Fixed radio."])
-
-    def test_mistral_response_ids_restore_input_order(self):
-        response = Mock(status_code=200)
-        response.json.return_value = {"choices": [{"finish_reason": "stop", "message": {"content": json.dumps(
-            {"messages": [{"id": 1, "text": "Добавлена карта."}, {"id": 0, "text": "Связь исправлена."}]})}}]}
-        with patch.dict(os.environ, {"MISTRAL_API_KEY": "test"}), patch("changelog_translation.requests.post", return_value=response):
-            self.assertEqual(RussianTranslator({}).translate(["Fixed radio.", "Added a map."]),
-                             ["Связь исправлена.", "Добавлена карта."])
-
-
-class FakeClock:
-    def __init__(self):
-        self.now = 0.0
-        self.sleeps = []
-
-    def monotonic(self):
-        return self.now
-
-    def sleep(self, seconds):
-        self.sleeps.append(seconds)
-        self.now += seconds
-
-
-def service_response(status=200, translations=None, headers=None, error=None):
-    response = Mock(status_code=status, headers=headers or {})
-    if status == 200:
-        response.json.return_value = {"choices": [{"finish_reason": "stop", "message": {"content": json.dumps(
-            {"messages": [{"id": i, "text": value} for i, value in enumerate(translations or ["Связь исправлена."])]})}}]}
-    else:
-        response.json.return_value = error or {"message": "Rate limit exceeded"}
-    return response
-
-
-class TranslationRetryTests(unittest.TestCase):
-    def setUp(self):
-        self.clock = FakeClock()
-        self.addCleanup(patch.stopall)
-        patch.dict(os.environ, {"MISTRAL_API_KEY": "test", "CHANGELOG_TRANSLATION_INTERVAL_SECONDS": "15"}).start()
-        patch("changelog_translation.time.monotonic", side_effect=self.clock.monotonic).start()
-        patch("changelog_translation.time.sleep", side_effect=self.clock.sleep).start()
-
-    def test_429_without_header_waits_for_minute_then_recovers(self):
-        with patch("changelog_translation.requests.post", side_effect=[service_response(429), service_response()]) as post:
-            self.assertEqual(RussianTranslator({}).translate(["Fixed radio."]), ["Связь исправлена."])
-        self.assertEqual(post.call_count, 2)
-        self.assertEqual(self.clock.sleeps, [60])
-
-    def test_retry_after_seconds_is_respected(self):
-        with patch("changelog_translation.requests.post", side_effect=[
-                service_response(429, headers={"Retry-After": "75"}), service_response()]):
-            RussianTranslator({}).translate(["Fixed radio."])
-        self.assertEqual(self.clock.sleeps, [75])
-
-    def test_retry_after_http_date_and_invalid_values(self):
-        now = dt.datetime(2026, 10, 6, 0, 0, 0, tzinfo=dt.timezone.utc)
-        self.assertEqual(retry_after_seconds("Tue, 06 Oct 2026 00:01:30 GMT", now), 90)
-        self.assertEqual(retry_after_seconds("-1", now), 0)
-        for value in [None, "bad", "NaN", "inf"]:
-            self.assertIsNone(retry_after_seconds(value, now))
-
-    def test_server_wait_larger_than_budget_is_not_shortened(self):
-        with patch("changelog_translation.requests.post", return_value=service_response(429, headers={"Retry-After": "7200"})) as post:
-            with self.assertRaisesRegex(TranslationRateLimitError, "retry_after=7200"):
-                RussianTranslator({}).translate(["Fixed radio."])
-        post.assert_called_once()
-        self.assertEqual(self.clock.sleeps, [])
-
-    def test_persistent_429_has_bounded_wait_and_clear_diagnostic(self):
-        with patch("changelog_translation.requests.post", return_value=service_response(429)) as post:
-            with self.assertRaisesRegex(TranslationRateLimitError, "API/Limits"):
-                RussianTranslator({}).translate(["Fixed radio."])
-        self.assertLessEqual(post.call_count, 6)
-        self.assertLessEqual(sum(self.clock.sleeps), 600)
-        self.assertGreaterEqual(sum(self.clock.sleeps), 60)
-
-    def test_explicit_monthly_quota_does_not_retry_or_echo_service_body(self):
-        response = service_response(429, error={"message": "Monthly spending limit reached SECRET"})
-        with patch("changelog_translation.requests.post", return_value=response) as post:
-            with self.assertRaisesRegex(TranslationRateLimitError, "monthly quota") as caught:
-                RussianTranslator({}).translate(["Fixed radio."])
-        self.assertNotIn("SECRET", str(caught.exception))
-        post.assert_called_once()
-        self.assertEqual(self.clock.sleeps, [])
-
-    def test_batches_are_paced_and_max_tokens_is_bounded(self):
-        first = service_response(translations=["Связь исправлена __KEEP_0__."] * 6)
-        second = service_response(translations=["Связь исправлена __KEEP_0__."])
-        with patch("changelog_translation.requests.post", side_effect=[first, second]) as post:
-            translated = RussianTranslator({}).translate([f"Fixed radio {i}." for i in range(7)])
-        self.assertEqual(len(translated), 7)
-        self.assertEqual(self.clock.sleeps, [15])
-        self.assertTrue(all(256 <= call.kwargs["json"]["max_tokens"] <= 4096 for call in post.call_args_list))
-
-    def test_long_notes_are_split_by_text_size_not_only_count(self):
-        counts = []
-        def request(messages):
-            counts.append(len(messages))
-            return ["Связь исправлена __KEEP_0__." for _ in messages]
-        originals = [f"Fixed radio {i}. " + "Some description. " * 60 for i in range(3)]
-        self.assertEqual(len(RussianTranslator({}, request=request).translate(originals)), 3)
-        self.assertEqual(counts, [1, 1, 1])
-
-    def test_progress_is_saved_before_next_batch_failure_and_resumed(self):
-        with tempfile.TemporaryDirectory() as directory:
-            target = Path(directory) / "translations.json"
-            cache = {}
-            originals = [f"Fixed radio {i}." for i in range(7)]
-            request = Mock(side_effect=[["Связь исправлена __KEEP_0__."] * 6, TranslationRateLimitError("429")])
-            translator = RussianTranslator(cache, request=request, checkpoint=lambda: save_translation_cache(target, cache))
-            with self.assertRaises(TranslationRateLimitError):
-                translator.translate(originals)
-            recovered = load_translation_cache(target)
-            self.assertEqual(len(recovered), 6)
-            request = Mock(return_value=["Связь исправлена __KEEP_0__."])
-            translated = RussianTranslator(recovered, request=request).translate(originals)
-            self.assertEqual(len(translated), 7)
-            request.assert_called_once()
-            self.assertEqual(len(request.call_args.args[0]), 1)
-            self.assertEqual(set(json.loads(target.read_text(encoding="utf-8"))), {"version", "translations"})
-
-    def test_preview_failure_saves_translations_but_never_changes_delivery_state(self):
-        with tempfile.TemporaryDirectory() as directory:
-            journal_path = Path(directory) / "journal.json"
-            cache_path = Path(directory) / "translations.json"
-            store = FileStateStore(journal_path)
-            store.save(empty_state())
-            before = journal_path.read_bytes()
-            selected = [entry(i + 1, message=f"Fixed radio {i}.") for i in range(7)]
-            request = Mock(side_effect=[["Связь исправлена __KEEP_0__."] * 6, TranslationRateLimitError("429")])
-            with patch.object(sys, "argv", ["publisher", "--dry-run", "--state-file", str(journal_path),
-                    "--translation-cache", str(cache_path)]), \
-                    patch.object(discord, "load_entries", return_value=selected), \
-                    patch.object(RussianTranslator, "request_mistral", request), \
-                    patch.object(discord, "send_discord_webhook", side_effect=AssertionError("No Discord sends")):
-                with self.assertRaises(TranslationRateLimitError):
-                    discord.main()
-            self.assertEqual(journal_path.read_bytes(), before)
-            self.assertEqual(len(load_translation_cache(cache_path)), 6)
-
-    def test_invalid_cache_is_not_delivery_reset(self):
-        with tempfile.TemporaryDirectory() as directory:
-            target = Path(directory) / "bad.json"
-            target.write_text('{"version":1,"delivered":{}}', encoding="utf-8")
-            with self.assertRaisesRegex(ValueError, "delivery journal"):
-                load_translation_cache(target)
-
+        for filename in discord.DEFAULT_FILES:
+            with self.subTest(filename=filename):
+                raw = assembler.load_yaml(filename)["Entries"]
+                self.assertEqual(len(raw), len({e["id"] for e in raw}))
+                for entry in raw:
+                    self.assertIsInstance(entry["author"], str)
+                    for change in entry["changes"]:
+                        self.assertIn(change["type"], assembler.CHANGE_TYPES)
+                        self.assertIsInstance(change["message"], str)
 
 
 class DeliveryTests(unittest.TestCase):
@@ -488,24 +311,59 @@ class DeliveryTests(unittest.TestCase):
         self.assertEqual(self.store.path.read_bytes(), before)
         self.assertIn("Исправлены ошибки.", output.read_text(encoding="utf-8"))
 
-    def test_translation_failure_never_marks_entry_delivered(self):
-        self.state["pending"] = None
-        self.store.save(self.state)
-        with patch.object(sys, "argv", ["publisher", "--state-file", str(self.store.path)]), \
-                patch.dict(os.environ, {"DISCORD_WEBHOOK_URL": "dummy"}), \
-                patch.object(discord, "load_entries", return_value=[entry(message="Fixed radio.")]), \
-                patch.object(discord.RussianTranslator, "translate", side_effect=TranslationError("no translation")):
-            with self.assertRaises(TranslationError):
-                discord.main()
-        self.assertEqual(self.store.load()["delivered"], {})
-        self.assertIsNone(self.store.load()["pending"])
-
     def test_missing_journal_on_existing_branch_does_not_reset(self):
         session = Mock()
         missing, branch = Mock(status_code=404), Mock(status_code=200)
         session.request.side_effect = [missing, branch]
         with self.assertRaisesRegex(RuntimeError, "refusing to reset"):
             GitHubStateStore("repo/name", "test", session=session).load()
+
+    def test_v1_preview_and_resume_preserve_partial_queue_and_delivered_keys(self):
+        self.state.update(version=1, baseline=["baseline"], delivered={"previous": "2026-09-10"},
+                          translations={"old": "translation"})
+        self.state["pending"].update(next=1, in_flight=1, receipts=["receipt1"])
+        self.store.path.write_text(json.dumps(self.state), encoding="utf-8")
+        before = self.store.path.read_bytes()
+        output = self.store.path.with_name("preview.md")
+        argv = ["publisher", "--state-file", str(self.store.path)]
+        english = entry(message="Fixed radio @everyone.")
+        with patch.object(discord, "load_entries", return_value=[english]), patch.dict(
+            os.environ, {"DISCORD_WEBHOOK_URL": "https://example.invalid"}, clear=True
+        ), patch.object(discord.requests, "post") as post:
+            with patch.object(sys, "argv", argv + ["--dry-run", "--output", str(output)]):
+                discord.main()
+            post.assert_not_called()
+            self.assertEqual(self.store.path.read_bytes(), before)
+            preview = output.read_text(encoding="utf-8")
+            self.assertIn("Второе", preview)
+            self.assertNotIn("\nПервое\n", preview)
+            self.assertIn(english["changes"][0]["message"], preview)
+            self.assertIn("требует сверки", preview)
+            post.return_value = Mock(status_code=200, **{"json.return_value": {"id": "123"}})
+            with patch.object(sys, "argv", argv + ["--resolve-ambiguous", "delivered"]):
+                discord.main()
+            post.assert_called_once()
+            self.assertIn(english["changes"][0]["message"], post.call_args.kwargs["json"]["content"])
+        migrated = self.store.load()
+        self.assertEqual(migrated["version"], 2)
+        self.assertNotIn("translations", migrated)
+        self.assertEqual(migrated["baseline"], ["baseline"])
+        self.assertEqual(migrated["delivered"]["previous"], "2026-09-10")
+        self.assertIn("key", migrated["delivered"])
+        self.assertIn(english["key"], migrated["delivered"])
+
+    def test_requested_backfill_stays_eligible_when_existing_queue_is_paused(self):
+        historical = entry()
+        self.state["baseline"] = [historical["key"]]
+        self.state["pending"]["in_flight"] = 0
+        self.store.save(self.state)
+        argv = ["publisher", "--state-file", str(self.store.path), "--start-date", "2026-09-30"]
+        with patch.object(discord, "load_entries", return_value=[historical]), patch.dict(
+            os.environ, {"DISCORD_WEBHOOK_URL": "https://example.invalid"}, clear=True
+        ), patch.object(sys, "argv", argv):
+            with self.assertRaisesRegex(RuntimeError, "verification"):
+                discord.main()
+        self.assertEqual(discord.select_entries([historical], self.store.load()), [historical])
 
 
 class ParserTests(unittest.TestCase):
@@ -521,18 +379,121 @@ class ParserTests(unittest.TestCase):
         self.assertEqual(parts.parse_cl_block(body, "fallback"),
                          ("Author", [{"type": "Fix", "message": "Исправлена связь."}]))
         self.assertIsNone(parts.parse_cl_block(":cl:\n- add: Added fun!", "fallback"))
+        self.assertIsNone(parts.parse_cl_block(":cl:\r\n- fix: Исправлено что-то сломанное!\r\n", "fallback"))
+        self.assertEqual(parts.parse_cl_block("🆑\r\n- fix: Fixed A\r\n## Other\r\n- add: unrelated", "fallback"),
+                         ("fallback", [{"type": "Fix", "message": "Fixed A"}]))
+        self.assertEqual(parts.parse_cl_block("```md\n:cl:\n- fix: Example.\n```\n:cl:\n- fix: Actual.", "fallback"),
+                         ("fallback", [{"type": "Fix", "message": "Actual."}]))
 
     def test_scan_uses_local_repo_cursor_not_newer_upstream_time(self):
         local, upstream = entry(), entry(2, timestamp="2026-10-05")
         upstream["url"] = "https://github.com/upstream/game/pull/2"
         self.assertEqual(parts.get_scan_start([local, upstream], "example/game", None), "2026-09-24T12:00:00Z")
 
-    def test_search_filters_target_base_and_has_timeout(self):
-        sess = Mock()
-        sess.get.return_value.json.return_value = {"items": []}
-        parts.get_merged_prs(sess, "repo/name", "2026-10-01", "master")
-        self.assertIn("base:master", sess.get.call_args.kwargs["params"]["q"])
-        self.assertEqual(sess.get.call_args.kwargs["timeout"], 30)
+    def test_scan_paginates_closed_prs_filters_merge_time_and_stops_at_cutoff(self):
+        session = Mock()
+        page1, page2 = Mock(links={"next": {}}), Mock(links={"next": {}})
+        session.get.side_effect = [page1, page2]
+        merged = {"number": 11, "updated_at": "2026-10-02", "merged_at": "2026-10-01"}
+        page1.json.return_value = [{**merged, "number": 10, "merged_at": None},
+                                   {**merged, "number": 9, "merged_at": "2026-09-01"}, merged]
+        page2.json.return_value = [merged, {**merged, "updated_at": "2026-09-20"}]
+        self.assertEqual(parts.get_merged_prs(session, "repo/name", "2026-10-01", "master"), [merged])
+        self.assertEqual(session.get.call_count, 2)
+        self.assertEqual(session.get.call_args.args[0], f"{parts.GITHUB_API_URL}/repos/repo/name/pulls")
+        self.assertEqual(session.get.call_args.kwargs["params"]["base"], "master")
+        self.assertEqual(session.get.call_args.kwargs["timeout"], 30)
+
+
+class PipelineTests(unittest.TestCase):
+    def test_collect_assemble_preview_deliver_and_retry_without_provider_key(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            parts_dir = root / "Parts"
+            parts_dir.mkdir()
+            files = [str(root / f"{name}.yml") for name in assembler.CHANGELOG_CATEGORIES.values()]
+            for file in files:
+                Path(file).write_text("Entries: []\n", encoding="utf-8")
+            upstream = entry(1, timestamp="2024-01-01", message="Upstream arrived late.")
+            upstream.update(url="https://github.com/upstream/game/pull/1")
+            Path(files[0]).write_text(yaml.safe_dump({"Entries": [upstream]}), encoding="utf-8")
+
+            def merged(number, body, labels=()):
+                return {"number": number, "html_url": f"https://github.com/example/game/pull/{number}",
+                        "body": body, "user": {"login": "author"}, "merged_at": "2026-10-01T12:00:00Z",
+                        "labels": [{"name": label} for label in labels]}
+
+            prs = [merged(1, ":cl: Алиса\n- fix: Исправлена связь."), merged(
+                2, ":cl:\n- add: Added a радио.", ["Changelog: Maps", "Intent: Experimental"]),
+                merged(3, "No changelog"), merged(4, ":cl:\n- fix: Fixed chat.")]
+            journal = FileStateStore(root / "journal.json")
+            journal.save(empty_state())
+            preview = root / "preview.md"
+            collect = ["collect", str(parts_dir), "--changelog-file", files[0], "--all", "--category", "CMU"]
+            assemble = ["assemble", files[0], str(parts_dir), "--all"]
+            deliver = ["deliver", "--state-file", str(journal.path), "--files", *files]
+            env = {"GITHUB_TOKEN": "fake", "GITHUB_REPOSITORY": "example/game",
+                   "START_DATE": "2026-10-01", "DISCORD_WEBHOOK_URL": "https://example.invalid"}
+            with patch.dict(os.environ, env, clear=True), patch.object(parts, "get_merged_prs", return_value=prs):
+                for _ in range(2):
+                    with patch.object(sys, "argv", collect):
+                        parts.main()
+                    with patch.object(sys, "argv", assemble):
+                        assembler.main()
+                self.assertEqual(len(discord.load_entries(files)), 4)
+                self.assertEqual(len(assembler.load_yaml(files[3])["Entries"]), 1)
+                self.assertEqual(list(parts_dir.iterdir()), [])
+                before = journal.path.read_bytes()
+                with patch.object(sys, "argv", deliver + ["--dry-run", "--output", str(preview)]), patch.object(
+                    discord.requests, "post"
+                ) as post:
+                    discord.main()
+                    post.assert_not_called()
+                self.assertEqual(journal.path.read_bytes(), before)
+                for expected in ("Алиса", "Исправлена связь.", "Fixed chat.", "Added a радио.", "Upstream arrived late."):
+                    self.assertIn(expected, preview.read_text(encoding="utf-8"))
+
+                accepted = Mock(status_code=200, **{"json.return_value": {"id": "123"}})
+                rejected = Mock(status_code=400)
+                with patch.object(sys, "argv", deliver), patch.object(
+                    discord.requests, "post", side_effect=[accepted, rejected]
+                ) as post:
+                    with self.assertRaises(discord.DeliveryRejected):
+                        discord.main()
+                    sent = post.call_args_list[0].kwargs["json"]["content"]
+                with patch.object(sys, "argv", deliver), patch.object(
+                    discord.requests, "post", return_value=accepted
+                ) as post:
+                    discord.main()
+                    discord.main()
+                    self.assertEqual(post.call_count, 3)
+                    self.assertNotIn(sent, [call.kwargs["json"]["content"] for call in post.call_args_list])
+                self.assertEqual(len(journal.load()["delivered"]), 4)
+
+    def test_both_publish_workflows_use_one_commit_and_only_wait_for_assembly(self):
+        workflows = Path(__file__).resolve().parents[3] / ".github" / "workflows"
+        workflow = yaml.load((workflows / "update-changelog.yml").read_text(), Loader=yaml.BaseLoader)
+        self.assertEqual(workflow["on"]["workflow_call"]["inputs"]["assembly_only"]["default"], "true")
+        self.assertIn("inputs.assembly_only != true", workflow["jobs"]["discord"]["if"])
+        self.assertIn("inputs.dry_run != true", workflow["jobs"]["discord"]["if"])
+        self.assertEqual(workflow["on"]["workflow_run"]["workflows"], ["Publish", "Fast Publish"])
+        self.assertEqual(workflow["jobs"]["discord"]["concurrency"]["queue"], "max")
+        for filename in ("publish.yml", "publish-fast.yml"):
+            with self.subTest(workflow=filename):
+                jobs = yaml.load((workflows / filename).read_text(), Loader=yaml.BaseLoader)["jobs"]
+                self.assertEqual(jobs["changelog"]["uses"], "./.github/workflows/update-changelog.yml")
+                start = jobs["publish_start"]
+                self.assertEqual(start["needs"], "changelog")
+                self.assertIn("needs.changelog.outputs.commit_hash || github.sha", start["steps"][0]["with"]["ref"])
+                self.assertIn("steps.checkout.outputs.commit", start["outputs"]["ref"])
+                for name, job in jobs.items():
+                    if name in ("changelog", "publish_start"):
+                        continue
+                    self.assertIn("publish_start", job["needs"])
+                    self.assertIn("needs.publish_start.outputs.ref", job["steps"][0]["with"]["ref"])
+                    for step in job["steps"]:
+                        if "PUBLISH_TOKEN" in step.get("env", {}):
+                            self.assertIn("needs.publish_start.outputs.ref", step["env"]["PUBLISH_VERSION"])
 
 
 if __name__ == "__main__":

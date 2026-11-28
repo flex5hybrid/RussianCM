@@ -1,3 +1,4 @@
+using Content.Shared.CMU14.ColonyEconomy; // CMU14
 using Content.Shared.Hands.Components;
 using JetBrains.Annotations;
 using Robust.Shared.Map;
@@ -44,29 +45,35 @@ public abstract partial class SharedStackSystem
     [PublicAPI]
     public void MergeStacks(ref HashSet<EntityUid> stacks)
     {
-        // Filter out the non-stacks and separate them by their stack types
-        var stacksByType = new Dictionary<ProtoId<StackPrototype>, List<Entity<StackComponent>>>();
+        // CMU14 Begin: bulk compaction must retain the export eligibility of each unit.
+        // CMU14: bulk merges keep ordinary, manufactured and mined stacks separate.
+        // var stacksByType = new Dictionary<(ProtoId<StackPrototype> Type, bool Exportable), List<Entity<StackComponent>>>();
+        var stacksByType = new Dictionary<(ProtoId<StackPrototype> Type, bool? FromOreDeposit), List<Entity<StackComponent>>>();
         foreach (var uid in stacks)
         {
             if (!_stackQuery.TryComp(uid, out var stackComponent))
                 continue;
 
-            if (stacksByType.TryGetValue(stackComponent.StackTypeId, out var list))
+            // CMU14: bulk merges keep ordinary, manufactured and mined stacks separate.
+            // var key = (stackComponent.StackTypeId, HasComp<ASRSSellableComponent>(uid));
+            var key = (stackComponent.StackTypeId, CompOrNull<ASRSSellableComponent>(uid)?.FromOreDeposit);
+            if (stacksByType.TryGetValue(key, out var list))
                 list.Add((uid, stackComponent));
             else
             {
                 list = new List<Entity<StackComponent>>();
                 list.Add((uid, stackComponent));
-                stacksByType[stackComponent.StackTypeId] = list;
+                stacksByType[key] = list;
             }
         }
 
         stacks.Clear();
 
         // Set the count
-        foreach (var (type, stackList) in stacksByType)
+        foreach (var (key, stackList) in stacksByType)
         {
-            var count = GetCount(stackList, type);
+            var count = GetCount(stackList, key.Type);
+            // CMU14 End
 
             foreach (var stack in stackList)
             {

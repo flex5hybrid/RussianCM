@@ -19,7 +19,7 @@ public sealed partial class QualificationService
     }
 
     public bool IsActiveInstructor(Guid player) =>
-        Volatile.Read(ref _cache).Instructors.TryGetValue(player, out var instructor) && instructor.Active;
+        QualificationRules.GetInstructorRank(false, Volatile.Read(ref _cache).Instructors.GetValueOrDefault(player)) != null;
 
     public bool IsJobAllowed(Guid player, string job)
     {
@@ -29,7 +29,7 @@ public sealed partial class QualificationService
         cache.Roles.TryGetValue(job, out var requirement);
         // Old stores may omit instructor roles. The mandatory rank/accreditation gate still applies.
         if (requirement == null && QualificationRules.IsDrillInstructor(job))
-            return QualificationRules.EffectiveLevel(state) >= MilitaryLevel.Sergeant && instructor is { Active: true };
+            return QualificationRules.EffectiveLevel(state) >= MilitaryLevel.Sergeant && QualificationRules.GetInstructorRank(false, instructor) != null;
         return QualificationRules.IsJobAllowed(state, requirement, instructor);
     }
 

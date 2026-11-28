@@ -1280,6 +1280,8 @@
       entries:
       - id: AU14CaseSentry
       - id: AU14CaseSentryFlamer
+      - id: CMUConstructionRobotKit
+      - id: CMUPlantedFlag
       - id: RMCM271A2BruteLauncherRigFilled
     - name: Sentry Gun Upgrade Kit
       entries:
@@ -1293,8 +1295,6 @@
         recommended: true
       - id: AU14BeltUtilityFilled
         name: M276 pattern toolbelt rig (filled)
-      - id: RMCBeltConstruction
-        name: M277 pattern construction rig
       - id: AU14PouchToolsFilledComtech
         name: tactical tools pouch (filled)
     - name: Engineering Storage Bag
@@ -1307,6 +1307,8 @@
     - name: Engineering Storage Pouch
       choices: { CMUPouchesCT: 2 }
       entries:
+      - id: RMCBeltConstruction
+        name: M277 pattern construction rig
       - id: RMCPouchConstruction
         recommended: true
       - id: RMCPouchEngineerKit
@@ -1686,7 +1688,7 @@
         amount: 5
       - id: CMMagazineSMGM63
         amount: 200
-      - id: RMCMagazineSMGM63Rubber
+      - id: CMU14MagazineSMGM63Rubber
         amount: 20
       - id: CMMagazineSMGM63AP
         amount: 15
@@ -1694,7 +1696,7 @@
         amount: 10
       - id: CMMagazineRifleM4SPR
         amount: 60
-      - id: RMCMagazineRifleM4SPRRubber
+      - id: CMU14MagazineRifleM4SPRRubber
         amount: 20
       - id: CMMagazineRifleM4SPRAP
         amount: 15
@@ -1704,7 +1706,7 @@
         amount: 5
       - id: CMMagazineRifleM54C
         amount: 100
-      - id: RMCMagazineRifleM54CRubber
+      - id: CMU14MagazineRifleM54CRubber
         amount: 20
       - id: CMMagazineRifleM54CAP
         amount: 15
@@ -1730,7 +1732,7 @@
       entries:
       - id: CMMagazinePistolM1984
         amount: 200
-      - id: RMCMagazinePistolM1984Rubber
+      - id: CMU14MagazinePistolM1984Rubber
         amount: 20
       - id: RMCMagazinePistolM1984AP
         amount: 15
@@ -1738,7 +1740,7 @@
         amount: 5
       - id: CMMagazinePistolM77AP
         amount: 200
-      - id: RMCMagazinePistolM77Rubber
+      - id: CMU14MagazinePistolM77Rubber
         amount: 20
       - id: RMCSpeedLoaderM44
         amount: 100
@@ -1776,11 +1778,19 @@
       entries:
       - id: RMCBoxBulletsRifle
         amount: 5
+      - id: CMU14BoxBulletsRifle10x24mmRubber
+        amount: 5
       - id: RMCBoxBulletsSMG
+        amount: 5
+      - id: CMU14BoxBulletsSMG10x20mmRubber
         amount: 5
       - id: RMCBoxBulletsSmartGun
         amount: 5
       - id: CMUBoxBulletsPistol9MM
+        amount: 5
+      - id: CMU14BoxBulletsPistol9MMRubber
+        amount: 5
+      - id: CMU14BoxBulletsPistol45Rubber
         amount: 5
       - id: CMUBoxBulletsPistol9MMAP
         amount: 5

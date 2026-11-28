@@ -354,6 +354,29 @@ public sealed class CmuHudLayoutController : UIController, IOnStateExited<Gamepl
         screen.InvalidateArrange();
     }
 
+    // RuMC edit start
+    public bool TryResizeByDrag(Control control, Vector2 position, Vector2 size, bool commit)
+    {
+        if (UIManager.ActiveScreen is not InGameScreen screen)
+            return false;
+        foreach (var entry in GetCachedEntries(screen))
+        {
+            if (entry.Control != control)
+                continue;
+            if (!_settings.Items.ContainsKey(Profile + entry.Id))
+                return false;
+            Place(entry, position, size, true);
+            if (commit && _editor == null)
+            {
+                _cfg.SetCVar(CCVars.CMUHudLayout, _settings.Serialize());
+                _cfg.SaveToFile();
+            }
+            return true;
+        }
+        return false;
+    }
+    // RuMC edit end
+
     public UIBox2 GetAnnouncementArea(InGameScreen screen)
     {
         var left = 12f;

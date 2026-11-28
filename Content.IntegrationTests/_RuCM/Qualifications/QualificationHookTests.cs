@@ -60,7 +60,7 @@ public sealed class QualificationHookTests : GameTest
             var request = new QualificationRequest { Target = target, TargetName = "RecruitNick", RequestId = actor, Configuration = new()
             {
                 Role = new() { JobId = "AU14JobGOVFORSquadRifleman", MinimumLevel = MilitaryLevel.Enlisted },
-                Instructor = new(true, true, false, new() { "medical" }, actor, at, actor, at),
+                Instructor = new(true, InstructorRank.SeniorInstructor, actor, at, actor, at),
                 MigrationGroups = new() { ["medical"] = new() { "job" } }, TrackerAliases = new() { ["old"] = "new" }
             } };
             Client.ResolveDependency<IRobustSerializer>().Serialize(output, new QualificationEuiRequest(QualificationAction.SaveRole, request));
@@ -71,7 +71,7 @@ public sealed class QualificationHookTests : GameTest
             using var stream = new System.IO.MemoryStream(bytes);
             var request = Server.ResolveDependency<IRobustSerializer>().Deserialize<QualificationEuiRequest>(stream).Request;
             Assert.That(request.Configuration.Role.MinimumLevel, Is.EqualTo(MilitaryLevel.Enlisted));
-            Assert.That(request.Configuration.Instructor.Professional, Does.Contain("medical"));
+            Assert.That(request.Configuration.Instructor.Rank, Is.EqualTo(InstructorRank.SeniorInstructor));
             Assert.That(request.Configuration.TrackerAliases["old"], Is.EqualTo("new"));
             Assert.That(request.TargetName, Is.EqualTo("RecruitNick")); Assert.That(request.RequestId, Is.EqualTo(actor));
         });

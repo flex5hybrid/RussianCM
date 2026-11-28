@@ -1,4 +1,4 @@
-ent-CMAnestheticTankFilled = анестезиологический резервуар
+ent-CMAnestheticTankFilled = анестезиологический баллон
   .desc = Резервуар с газовой смесью N2O/O2.
 
 ent-RMCGasTankOxygenFilled = кислородный баллон
@@ -13,6 +13,6 @@ ent-RMCExtendedEmergencyOxygenTankFilled = аварийный кислородн
 ent-RMCDoubleEmergencyOxygenTankFilled = двойной аварийный кислородный баллон
   .desc = Высококачественный двухбаковый контейнер аварийного жизнеобеспечения. 
 
-ent-RMCGasTankPhoronFilled = форонный резервуар
-  .desc = Резервуар с жидким фороном. 
+ent-RMCGasTankPhoronFilled = баллон плазмы
+  .desc = Резервуар с жидкой плазмой. 
 

@@ -2,8 +2,6 @@
   id: StrikeOrganizer
   prefRoles: [ StrikeOrganizerRole ]
   jobBlacklistGroup:
-  - RuMCColonyLeadershipJobs # RuMC edit
-  - RuMCNoColonialAntagsJobs # RuMC edit
   - AllGovforJobs
   - AllOpforJobs
   - AllCLFJobs
@@ -28,14 +26,35 @@
   components:
   - type: GameRule
   - type: StrikeOrganizerRule
+    goal: 12
   - type: AntagSelection
     selectionTime: JobsAssigned
     antags:
-    - !type:RandomAntagCount
+    - !type:FixedAntagCount
       proto: StrikeOrganizer
-      range:
-        min: 1
-        max: 2
+      count: 1
+
+# Mid-round conversion target: granted by signing a strike petition. Never round-start selected.
+- type: entity
+  parent: BaseMindRoleAntag
+  id: MindRoleStrikeParticipant
+  name: Strike Participant Mind Role
+  components:
+  - type: MindRole
+    antagPrototype: StrikeParticipantRole
+    exclusiveAntag: true
+    roleType: TeamAntagonist
+    subtype: cmu-role-subtype-strike-participant
+  - type: CMUAdminRoleIcon
+    icon:
+      sprite: /Textures/CMU14/Interface/au14colonyjobicons.rsi
+      state: colonist
+
+- type: antag
+  parent: CMUAntagColonyBase
+  id: StrikeParticipantRole
+  name: roles-antag-strikeparticipant-name
+  objective: roles-antag-strikeparticipant-objective
 
 - type: entity
   parent: BaseMindRoleAntag
@@ -65,20 +84,43 @@
   id: AU14GearStrikeOrganizer
   equipment:
     back: AU14StrikeOrganizerBackpack
-    pocket1: CMUStrikePetition
+  # RuMC edit start
   storage:
     back:
+    - CMUStrikePetition
+    - RMCMegaphone
+    - RMCSpaceCash1000
+    - RMCSpaceCash1000
+    - RMCSpaceCash1000
+    - RMCSpaceCash1000
     - AUPaperStrikeOrganizer
     - RMCLighter
+  # RuMC edit end
 
 - type: entity
   parent: Paper
   id: CMUStrikePetition
   name: strike petition
-  description: A petition demanding better conditions and pay. Use it in hand to sign.
+  description: A petition demanding better conditions. Signing it joins the strike.
   components:
   - type: StrikePetition
-    goal: 12
+
+# Organizer action: the petition is paper, the strike is not. Redraft after a burn,
+# confiscation, or release.
+- type: entity
+  parent: ActionMarineBase
+  id: CMUActionStrikeRedraft
+  components:
+  - type: Action
+    itemIconStyle: NoItem
+    useDelay: 60
+  - type: Sprite
+    layers:
+    - sprite: Objects/Misc/bureaucracy.rsi
+      state: paper
+      map: ["enum.ActionVisuals.Icon"]
+  - type: InstantAction
+    event: !type:StrikeRedraftActionEvent
 
 - type: entity
   parent: RMCBackpackRTO
@@ -86,8 +128,22 @@
   name: organizer's radio pack
   description: A radio telephone pack carried by a labor organizer.
   components:
-  - type: StorageFill
-    contents:
-    - id: RMCMegaphone
-    - id: RMCSpaceCash1000
-      amount: 4
+  # RuMC edit: megaphone and cash are given via AU14GearStrikeOrganizer storage instead of StorageFill.
+  - type: StrikeOrganizerPack
+
+# Pack action: transmit a one-way communique. No fax machine exists on the organizer's
+# side of the wire; sends land at the CMB, replies cannot route back.
+- type: entity
+  parent: ActionMarineBase
+  id: CMUActionStrikeFax
+  components:
+  - type: Action
+    itemIconStyle: NoItem
+    useDelay: 30
+  - type: Sprite
+    layers:
+    - sprite: _RMC14/Objects/Tools/megaphone.rsi
+      state: megaphone
+      map: ["enum.ActionVisuals.Icon"]
+  - type: InstantAction
+    event: !type:StrikeFaxTransmitActionEvent

@@ -932,6 +932,43 @@ namespace Content.Server.Database.Migrations.Sqlite
                         });
                 });
 
+            modelBuilder.Entity("Content.Server.Database.RuMCModerationOutbox", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("id");
+
+                    b.Property<DateTime>("AvailableAt")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("available_at");
+
+                    b.Property<DateTime?>("FailedAt")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("failed_at");
+
+                    b.Property<Guid?>("LeaseId")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("lease_id");
+
+                    b.Property<string>("Payload")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("payload");
+
+                    b.Property<string>("WebhookId")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("webhook_id");
+
+                    b.HasKey("Id")
+                        .HasName("PK_rumc_moderation_outbox");
+
+                    b.HasIndex("WebhookId", "AvailableAt")
+                        .HasDatabaseName("IX_rumc_moderation_outbox_webhook_id_available_at");
+
+                    b.ToTable("rumc_moderation_outbox");
+                });
+
             modelBuilder.Entity("Content.Server.Database.CMURoundOutcome", b =>
                 {
                     b.Property<int>("RoundId")
@@ -2272,6 +2309,10 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.Property<string>("YautjaProfile")
                         .HasColumnType("TEXT")
                         .HasColumnName("yautja_profile");
+
+                    b.Property<string>("SelectedDonorCape")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("selected_donor_cape");
 
                     b.HasKey("Id")
                         .HasName("PK_profile");

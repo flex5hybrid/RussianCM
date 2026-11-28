@@ -189,7 +189,7 @@
   roundSide: Opfor
   roundForce: OPFOR
   icon: "AU14JobIconOPFORDCC"
-  spawnMenuRoleName: Dropship Crew Chief (OPFOR)
+  spawnMenuRoleName: au14-spawn-role-name-govfor-dropship-crew-chief # RUMC edit
   supervisors: au14-job-supervisors-opfor
   startingGear: AU14GearopforDCC
   dummyStartingGear: AU14GearopforDCCDummy

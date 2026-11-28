@@ -1,5 +1,6 @@
 using Content.Shared._RMC14.NightVision;
 using Content.Shared._RuMC14.BatteryDrain; // RuMC edit
+using Content.Shared._RuMC14.NightVision; // RuMC edit
 using Content.Shared.CMU14.Clothing;
 using Content.Shared.Item.ItemToggle;
 using Content.Shared.Item.ItemToggle.Components;
@@ -27,6 +28,7 @@ public sealed class CMUHelmetGarbNightVisionSystem : EntitySystem
     public override void Initialize()
     {
         SubscribeLocalEvent<CMUHelmetGarbNightVisionComponent, ItemToggledEvent>(OnToggled);
+        SubscribeLocalEvent<CMUHelmetGarbNightVisionComponent, RuMCNightVisionItemDisplacedEvent>(OnDisplaced); // RuMC edit
     }
 
     private void OnToggled(Entity<CMUHelmetGarbNightVisionComponent> ent, ref ItemToggledEvent args)
@@ -34,6 +36,13 @@ public sealed class CMUHelmetGarbNightVisionSystem : EntitySystem
         if (TryComp(ent, out NightVisionItemComponent? nightVision))
             Refresh(ent, nightVision);
     }
+
+    // RuMC edit start
+    private void OnDisplaced(Entity<CMUHelmetGarbNightVisionComponent> ent, ref RuMCNightVisionItemDisplacedEvent args)
+    {
+        _itemToggle.TryDeactivate(ent.Owner, args.User, predicted: false);
+    }
+    // RuMC edit end
 
     public override void Update(float frameTime)
     {

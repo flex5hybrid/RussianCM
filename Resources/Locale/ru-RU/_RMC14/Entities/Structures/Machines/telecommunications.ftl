@@ -40,7 +40,7 @@ ent-RMCTelecomBroadcaster = Подпространственный вещате�
 ent-RMCTelecomReceiver = Подпространственный приемник
   .desc = Эта машина имеет тарелкообразную форму и зеленую подсветку. 
 
-ent-RMCTelecomBusMainframe = Автобусный мейнфрейм
+ent-RMCTelecomBusMainframe = телекоммуникационный мейнфрейм
   .desc = Мощное оборудование, используемое для быстрой отправки огромных объемов данных.
 
 ent-RMCTelecomBroadcasterDD = Подпространственный вещатель

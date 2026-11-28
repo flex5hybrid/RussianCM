@@ -116,6 +116,8 @@
 - type: job
   parent: AU14JobNurseBase
   id: AU14JobGOVFORNurse
+  access:
+  - CMAccessChemistry
   hidden: false
   setPreference: true
   basePlaytimeTracker: true
@@ -140,7 +142,7 @@
   roundSide: Opfor
   roundForce: OPFOR
   icon: "AU14JobIconOPFORCorpsman"
-  spawnMenuRoleName: Nurse (OPFOR)
+  spawnMenuRoleName: cmu-spawn-role-nurse-govfor #RUMC edit
   supervisors: au14-job-supervisors-opfor
   startingGear: AU14GearOPFORNurse
   dummyStartingGear: AU14GearOPFORNurseDummy

@@ -92,23 +92,23 @@
   - type: XenoAcid
   - type: CMArmor
     xenoArmor: 35
-    explosionArmor: 40
+    explosionArmor: 45 # RuMC edit
   - type: XenoDevour
   - type: XenoTailStab
     toggle: false
     # CMU14: reduce ability damage by 30%.
     tailDamage:
       types:
-        Blunt: 4.66
-        Slash: 4.67
-        Piercing: 4.67
+        Blunt: 8.66 # RuMC edit
+        Slash: 8.67 # RuMC edit
+        Piercing: 8.67 # RuMC edit
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 6
-        Slash: 6
-        Piercing: 6
-        Heat: 7
+        Blunt: 7.8 # RuMC edit
+        Slash: 7.8 # RuMC edit
+        Piercing: 7.8 # RuMC edit
+        Heat: 9.1 # RuMC edit
   - type: XenoDespoiler
     # CMU14: reduce finishing-stab bonuses by 30%.
     finishingStabBonusByTier:

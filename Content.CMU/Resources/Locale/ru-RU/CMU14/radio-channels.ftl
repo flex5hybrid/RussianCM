@@ -18,10 +18,10 @@ chat-radio-opformp = ЦСТД
 
 chat-radio-colony = КОЛОНИЯ
 chat-radio-alert = АЛРТ
-chat-radio-WEYU = WEYU
+chat-radio-WEYU = Ве-Ю
 chat-radio-CMB = БКМ
 chat-radio-CLF = КОФ
-chat-radio-CLFCommand = КОФ Командование
+chat-radio-CLFCommand = КОФ КМД
 chat-radio-mob = СЕМЬЯ
 
 chat-radio-hivemind = УЛЕЙ
@@ -36,3 +36,5 @@ chat-radio-icsc = НКВС
 chat-radio-cca = КЦА
 chat-radio-vai = VAI
 chat-radio-part = Продиджи
+chat-radio-unisc = МКК ООН
+cmu-radio-dutchs-dozen = Дюжина Датча

@@ -75,7 +75,7 @@ public sealed class DocumentationPublisherTest
         {
             "GuideEntityEmbed", "GuideReagentEmbed", "GuideReagentGroupEmbed", "GuideMicrowaveEmbed",
             "GuideMicrowaveGroupEmbed", "CMUGuideImage", "CMUGuideZoomImage", "CMUGuideOutfitEmbed", "CMUFobGuideText",
-            "CMUGuideCraftingRecipes",
+            "CMUGuideCraftingRecipes", "CMUGuidePriceSheet", "CMUGuideRecipeCards", // RuMC edit
         };
         var count = 0;
         foreach (var file in files)

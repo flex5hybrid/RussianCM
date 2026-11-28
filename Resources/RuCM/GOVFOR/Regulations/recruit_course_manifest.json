@@ -1,14 +1,14 @@
 {
   "id": "RuCMGOVFORRecruitCourse",
   "source": "Resources/RuCM/GOVFOR/Regulations/RecruitCourse.md",
-  "source_sha256": "f2a2588b5ba04230d78c1f3780ccbaf0d81f04d8be51f60c13bece7552547d38",
-  "prose_sha256": "cf21cb8c18fb22f886311a600723cdc61ae83ba3ac6a67cd67158ae4efc14398",
+  "source_sha256": "965929488d53a668926c8907d451924589218d4646faa166ab2317985cc31bcf",
+  "prose_sha256": "a2cb1bff338912bfb1709da8187e3cf4379c46482c53885111f7e6472dd347c1",
   "chapters": [
     {
       "id": "RuCMGOVFORRecruitCourseIntroduction",
       "xml": "Resources/ServerInfo/Guidebook/_RuCM/GOVFOR/RecruitCourse/Introduction.xml",
       "checklist_item": null,
-      "prose_sha256": "ffefddd25a5c1b8882cd8f0976c1ac0eec1caf6187eab0591cd1fe0e95a278f7"
+      "prose_sha256": "f5ee04e1273bd37b7184a17be5a3e79a645fe8264f539da1edd247a342636596"
     },
     {
       "id": "RuCMGOVFORRecruitCourseMilitaryRegulations",
@@ -62,7 +62,7 @@
       "id": "RuCMGOVFORRecruitCourseFieldExercise",
       "xml": "Resources/ServerInfo/Guidebook/_RuCM/GOVFOR/RecruitCourse/FieldExercise.xml",
       "checklist_item": "field_exercise",
-      "prose_sha256": "a412c63103c74f8b4215bab06fa2013a32f9526f9c7c3957b3583d8264743b4f"
+      "prose_sha256": "eb51d3b8b907a1031c05c07b74df4ec274699c7896bc59467d0917f3c6cd5c05"
     },
     {
       "id": "RuCMGOVFORRecruitCourseReference",

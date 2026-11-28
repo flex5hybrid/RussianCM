@@ -163,7 +163,7 @@
   roundSide: Opfor
   roundForce: OPFOR
   icon: "AU14JobIconOPFORTankCommander"
-  spawnMenuRoleName: Vehicle Commander (OPFOR)
+  spawnMenuRoleName: au14-spawn-role-name-govfor-vehicle-commander #RUMC edit
   supervisors: au14-job-supervisors-opfor
   startingGear: AU14GearOPFORVehicleCommander
   dummyStartingGear: AU14GearOPFORVehicleCommanderDummy

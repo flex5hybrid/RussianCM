@@ -293,20 +293,19 @@ public sealed partial class StationSpawningSystem : SharedStationSpawningSystem
         if (prototype?.ID is { } id)
             (loadoutKey, loadoutProto) = LoadoutSystem.GetJobLoadoutInfo(id, _prototypeManager);
 
-        // Need to get the loadout up-front to handle names if we use an entity spawn override.
+        // CMU14 Begin: the lobby stores selections under the concrete job key. Older profiles can use the shared job.
+        if (prototype?.UseLoadoutOfJob is { } sharedJob && profile != null &&
+            (loadoutProto == null || loadoutKey == null || !profile.Loadouts.ContainsKey(loadoutKey)) &&
+            _prototypeManager.TryIndex(sharedJob, out var usedPrototype))
+        {
+            var (sharedKey, sharedProto) = LoadoutSystem.GetJobLoadoutInfo(usedPrototype.ID, _prototypeManager);
+            if (sharedProto != null)
+                (loadoutKey, loadoutProto) = (sharedKey, sharedProto);
+        }
+
         if (loadoutProto != null && loadoutKey != null)
             loadout = profile?.GetLoadoutOrDefault(loadoutKey, _actors.GetSession(entity), profile.Species, EntityManager, _prototypeManager);
-
-        // RMC14 UseLoadoutOfJob
-        if (prototype?.UseLoadoutOfJob != null && _prototypeManager.Resolve(prototype.UseLoadoutOfJob, out var usedPrototype))
-        {
-            var (newKey, newProto) = LoadoutSystem.GetJobLoadoutInfo(usedPrototype.ID, _prototypeManager);
-            if (newProto != null && newKey != null && profile != null)
-            {
-                loadout = profile.GetLoadoutOrDefault(newKey, _actors.GetSession(entity), profile.Species, EntityManager, _prototypeManager);
-                loadoutProto = newProto;
-            }
-        }
+        // CMU14 End
 
         // Spawn a custom JobEntity (e.g. Working Joe, rAI), this skips a lot of the humanoid stuff
         // Only apply player profile when UsePlayerProfile: true (default)
@@ -766,7 +765,10 @@ public sealed partial class StationSpawningSystem : SharedStationSpawningSystem
     }
 
     // cmu edit start: the job, so traits it leaves off aren't listed
-    private void BakeCharacterDescription(EntityUid uid, HumanoidCharacterProfile profile, string? job = null)
+    // CMU14: call-ins keep the traits of their assigned role.
+    // private void BakeCharacterDescription(EntityUid uid, HumanoidCharacterProfile profile, string? job = null)
+    private void BakeCharacterDescription(EntityUid uid, HumanoidCharacterProfile profile, string? job = null,
+        IEnumerable<ProtoId<TraitPrototype>>? appliedTraits = null)
     // cmu edit end
     {
         var comp = AddComp<CharacterDescriptionComponent>(uid);
@@ -786,7 +788,9 @@ public sealed partial class StationSpawningSystem : SharedStationSpawningSystem
         // cmu edit end
         comp.HideMetaInformation = profile.HideMetaInformation;
 
-        foreach (var traitId in profile.TraitPreferences)
+        // CMU14: describe only traits applied to this body.
+        // foreach (var traitId in profile.TraitPreferences)
+        foreach (var traitId in appliedTraits ?? profile.TraitPreferences)
         {
             if (!_prototypeManager.TryIndex(traitId, out TraitPrototype? traitProto))
                 continue;
@@ -1075,7 +1079,7 @@ public sealed partial class StationSpawningSystem : SharedStationSpawningSystem
         _cmuIdBloodType.Stamp(cardId, entity); // CMU14: print the blood type on the ID
 
         // Respect cards with a prototype-defined title (e.g. fixed-role/faction IDs).
-        if (card.JobTitle == null)
+        if (card.JobTitle == null && !HasClfCoverId(cardId, jobPrototype)) // CMU14
         {
             _cardSystem.TryChangeJobTitle(cardId, jobPrototype.LocalizedName, card);
 
@@ -1121,7 +1125,7 @@ public sealed partial class StationSpawningSystem : SharedStationSpawningSystem
         // Set name and (unless fixed by prototype) job title/icon from the selected job.
         _cardSystem.TryChangeFullName(cardId, characterName, card);
         _cmuIdBloodType.Stamp(cardId, entity); // CMU14: print the blood type on the ID
-        if (card.JobTitle == null)
+        if (card.JobTitle == null && !HasClfCoverId(cardId, accessJobPrototype)) // CMU14
         {
             _cardSystem.TryChangeJobTitle(cardId, titleJobPrototype.LocalizedName, card);
             if (_prototypeManager.TryIndex(titleJobPrototype.Icon, out var jobIcon))

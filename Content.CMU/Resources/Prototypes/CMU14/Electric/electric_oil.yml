@@ -37,7 +37,7 @@
 # ---------------------------------------------------------------- the pump, the tank, the barrel
 - type: entity
   parent: [ BaseMachinePowered, BaseMachineDestructible ]
-  id: RUMCOilPump
+  id: RUMCMachineOilPump
   name: oil pump
   description: A pump that goes down into a deposit of crude oil and brings it up into its tank. Set it on a deposit, give it power, and join a pipe to its outlet with a screwdriver.
   components:
@@ -231,7 +231,7 @@
 # ---------------------------------------------------------------- the diesel generator
 - type: entity
   parent: [ BaseGenerator ]
-  id: RUMCDieselGenerator
+  id: RUMCMachineDieselGenerator
   name: diesel generator
   description: A generator that burns diesel. Pour diesel into it from a canister (or pipe it in), join a high voltage cable, and it makes power for as long as the fuel lasts.
   components:
@@ -294,7 +294,7 @@
 # The turbine burns gas: the refinery gas, benzene and naphtha, each at its own pace, the cleaner the slower.
 - type: entity
   parent: [ BaseGenerator ]
-  id: RUMCGasTurbine
+  id: RUMCMachineGasTurbine
   name: gas turbine
   description: A turbine that burns the gas of the refinery, benzene or naphtha. Join the pipes with the fuel to its inlets (or pour it in), join a high voltage cable, and it makes power for as long as the fuel lasts.
   components:
@@ -363,7 +363,7 @@
 # The tower: oil in; naphtha, light fuel, heavy fuel and gas out, each on its own port.
 - type: entity
   parent: [ RUMCRecipeMachineBase, RUMCFluidMachineBase, BaseMachinePowered, BaseMachineDestructible ]
-  id: RUMCDistillationTower
+  id: RUMCMachineDistillationTower
   name: distillation tower
   description: A tower that splits crude oil into naphtha, light fuel, heavy fuel and gas, each coming out of a port of its own. Join the pipe with the oil to the inlet.
   components:
@@ -374,7 +374,7 @@
   - type: Sprite
     sprite: CMU14/Production/Oil/tower.rsi
     noRot: true
-    offset: 0,0.47
+    offset: 0.5,0.47
     layers:
     - state: off
       map: [ "off" ]
@@ -388,7 +388,7 @@
       fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.45,-0.45,0.45,1.45"
+          bounds: "-0.45,-0.45,1.45,0.45"
         density: 190
         mask:
         - MachineMask
@@ -401,16 +401,18 @@
   - type: FluidTank
     capacity: 600
   - type: FluidPorts
-    connectionTiles: ["0,0", "0,1"]
+    connectionTiles: ["0,0", "1,0"]
     ports:
     - id: liquid_in
       rate: 30
     - id: crude_in
       kind: RUMCCrudeOil
       rate: 30
+      limit: 300
     - id: resin_in
       kind: RUMCResin
       rate: 12
+      limit: 120
     - id: naphtha_out
       kind: RUMCNaphtha
       output: true
@@ -427,12 +429,16 @@
       kind: RUMCRefineryGas
       output: true
       rate: 20
+    - id: benzene_out
+      kind: Benzene
+      output: true
+      rate: 20
   - type: RecipeMachine
     kind: distillation
 
 - type: entity
   parent: [ RUMCRecipeMachineBase, RUMCFluidMachineBase, BaseMachinePowered, BaseMachineDestructible ]
-  id: RUMCFuelBlender
+  id: RUMCMachineFuelBlender
   name: fuel blender
   description: Mixes light and heavy fuel into diesel in the right proportion.
   components:
@@ -469,18 +475,21 @@
     - id: light_in
       kind: RUMCLightFuel
       rate: 10
+      limit: 100
     - id: heavy_in
       kind: RUMCHeavyFuel
       rate: 10
+      limit: 100
     - id: naphtha_in
       kind: RUMCNaphtha
       rate: 10
+      limit: 60
   - type: RecipeMachine
     kind: blender
 
 - type: entity
   parent: [ RUMCRecipeMachineBase, RUMCFluidMachineBase, BaseMachinePowered, BaseMachineDestructible ]
-  id: RUMCSteamCracker
+  id: RUMCMachineSteamCracker
   name: steam cracker
   description: Breaks naphtha and gas apart with steam into ethylene, the gas that plastic is made of.
   components:
@@ -513,21 +522,28 @@
     - id: liquid_out
       output: true
       rate: 8
+    - id: ethylene_out
+      kind: RUMCEthylene
+      output: true
+      rate: 8
     - id: naphtha_in
       kind: RUMCNaphtha
       rate: 10
+      limit: 90
     - id: gas_in
       kind: RUMCRefineryGas
       rate: 10
+      limit: 120
     - id: water_in
       kind: Water
       rate: 10
+      limit: 90
   - type: RecipeMachine
     kind: cracker
 
 - type: entity
   parent: [ RUMCRecipeMachineBase, RUMCFluidMachineBase, BaseMachinePowered, BaseMachineDestructible ]
-  id: RUMCPolymerizer
+  id: RUMCMachinePolymerizer
   name: polymerizer
   description: Turns ethylene into plastic pellets. The pellets are pressed into sheets in the bending machine.
   components:
@@ -563,9 +579,11 @@
     - id: ethylene_in
       kind: RUMCEthylene
       rate: 10
+      limit: 150
     - id: water_in
       kind: Water
       rate: 10
+      limit: 60
   - type: RecipeMachine
     kind: polymerizer
 
@@ -573,7 +591,7 @@
 - type: craftRecipe
   id: RUMCCraftBuildOilPump
   name: au14-craft-recipe-buildoilpump
-  output: RUMCOilPump
+  output: RUMCMachineOilPump
   time: 25
   minigames: [Center, Hold, Trace]
   tools:
@@ -634,7 +652,7 @@
 - type: craftRecipe
   id: RUMCCraftBuildDieselGenerator
   name: au14-craft-recipe-builddieselgenerator
-  output: RUMCDieselGenerator
+  output: RUMCMachineDieselGenerator
   time: 25
   minigames: [Center, Hold, Trace]
   tools:
@@ -656,7 +674,7 @@
 - type: craftRecipe
   id: RUMCCraftBuildDistillationTower
   name: au14-craft-recipe-builddistillationtower
-  output: RUMCDistillationTower
+  output: RUMCMachineDistillationTower
   time: 30
   minigames: [Rhythm, Hold, Trace]
   tools:
@@ -678,7 +696,7 @@
 - type: craftRecipe
   id: RUMCCraftBuildFuelBlender
   name: au14-craft-recipe-buildfuelblender
-  output: RUMCFuelBlender
+  output: RUMCMachineFuelBlender
   time: 20
   minigames: [Center, Hold, Trace]
   tools:
@@ -698,7 +716,7 @@
 - type: craftRecipe
   id: RUMCCraftBuildSteamCracker
   name: au14-craft-recipe-buildsteamcracker
-  output: RUMCSteamCracker
+  output: RUMCMachineSteamCracker
   time: 25
   minigames: [Rhythm, Hold, Trace]
   tools:
@@ -720,7 +738,7 @@
 - type: craftRecipe
   id: RUMCCraftBuildPolymerizer
   name: au14-craft-recipe-buildpolymerizer
-  output: RUMCPolymerizer
+  output: RUMCMachinePolymerizer
   time: 25
   minigames: [Rhythm, Hold, Trace]
   tools:
@@ -740,7 +758,7 @@
 - type: craftRecipe
   id: RUMCCraftBuildGasTurbine
   name: au14-craft-recipe-buildgasturbine
-  output: RUMCGasTurbine
+  output: RUMCMachineGasTurbine
   time: 25
   minigames: [Center, Hold, Trace]
   tools:

@@ -3,6 +3,7 @@
 using System.Linq;
 using Content.Server.CMU14.Fluids;
 using Content.Server.Power.EntitySystems;
+using Content.Shared.CMU14.ColonyEconomy;
 using Content.Shared.CMU14.Mining;
 using Content.Shared.CMU14.Portable;
 using Content.Shared.Containers.ItemSlots;
@@ -79,7 +80,7 @@ public sealed class OreDrillSystem : EntitySystem
             Dirty(drill);
         }
 
-        var ready = onDeposit && HasRoom(drill);
+        var ready = onDeposit && HasRoom(drill, deposit != null);
 
         // Without steam or power, or with nothing to do, the drill stands.
         if (!ready || !HasEnergy(drill, steamMode, frameTime))
@@ -148,14 +149,15 @@ public sealed class OreDrillSystem : EntitySystem
     }
 
     // Some output slot is empty, or holds a stack that has room for more.
-    private bool HasRoom(Entity<OreDrillComponent> drill)
+    private bool HasRoom(Entity<OreDrillComponent> drill, bool fromDeposit)
     {
         foreach (var slotId in OreDrillComponent.OutputSlotIds)
         {
             if (_itemSlots.GetItemOrNull(drill.Owner, slotId) is not { } held)
                 return true;
 
-            if (TryComp<StackComponent>(held, out var stack) && _stack.GetAvailableSpace(stack) > 0)
+            if (CompOrNull<ASRSSellableComponent>(held)?.FromOreDeposit == fromDeposit &&
+                TryComp<StackComponent>(held, out var stack) && _stack.GetAvailableSpace(stack) > 0)
                 return true;
         }
 
@@ -198,7 +200,7 @@ public sealed class OreDrillSystem : EntitySystem
     private void CompleteRock(Entity<OreDrillComponent> drill, ProtoId<StackPrototype> fragments)
     {
         var comp = drill.Comp;
-        Output(drill, fragments, _random.Next(comp.MinPerCycle, comp.MaxPerCycle + 1));
+        Output(drill, fragments, _random.Next(comp.MinPerCycle, comp.MaxPerCycle + 1), fromDeposit: false);
         Dirty(drill);
     }
 
@@ -236,7 +238,7 @@ public sealed class OreDrillSystem : EntitySystem
         }
 
         foreach (var (ore, count) in taken)
-            Output(drill, ore, count);
+            Output(drill, ore, count, fromDeposit: true);
 
         // The deposit is used up when nothing is left of it.
         if (deposit.Comp.Ores.Count == 0)
@@ -246,13 +248,16 @@ public sealed class OreDrillSystem : EntitySystem
     }
 
     // Puts the ore into the output slots, onto the stacks that are there or into an empty slot; what does not fit lies in front.
-    private void Output(Entity<OreDrillComponent> drill, ProtoId<StackPrototype> oreId, int count)
+    private void Output(Entity<OreDrillComponent> drill, ProtoId<StackPrototype> oreId, int count, bool fromDeposit)
     {
         if (!_proto.TryIndex(oreId, out var stackProto) || string.IsNullOrEmpty(stackProto.Spawn.Id))
             return;
 
         var coords = Transform(drill).Coordinates;
         var made = Spawn(stackProto.Spawn, coords);
+        var origin = EnsureComp<ASRSSellableComponent>(made);
+        origin.FromOreDeposit = fromDeposit;
+        Dirty(made, origin);
         if (!TryComp<StackComponent>(made, out var madeStack))
         {
             Del(made);
@@ -271,7 +276,7 @@ public sealed class OreDrillSystem : EntitySystem
             }
 
             _stack.TryMergeStacks((made, madeStack), (held, heldStack), out _);
-            if (TerminatingOrDeleted(made))
+            if (madeStack.Count == 0)
                 return;
         }
 

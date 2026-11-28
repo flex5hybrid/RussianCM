@@ -32,6 +32,7 @@
     - AU14JobCivilianOrbitalArbiter
     - AU14JobCivilianOrbitalManager
     - AU14JobCivilianCMBMarshal
+    - AU14JobCivilianCWPSMarshal
 
 - type: antagJobBlacklist
   id: CMUAmbassadorJobs
@@ -51,6 +52,7 @@
     - AU14JobCivilianCMBDetective
     - AU14JobCivilianCMBMarshal
     - AU14JobCivilianCWPSRanger
+    - AU14JobCivilianCWPSMarshal
     - AU14JobCivilianPaPOfficer
     - AU14JobCivilianNSPAConstable
     - AU14JobCivilianNSPAInspector
@@ -219,21 +221,21 @@
 
 # RuMC edit start
 - type: antagJobBlacklist
-  id: RuMCColonyLeadershipJobs
+  id: RuMCNoColonialAntagsJobs
   jobs:
     - AU14JobCivilianColonyAdministrator
     - AU14JobCivilianCMBMarshal
+    - AU14JobCivilianNSPAInspector
     - AU14JobCivilianAmbassadorCCA
     - AU14JobCivilianAmbassadorICSC
     - AU14JobCivilianAmbassadorTWE
     - AU14JobCivilianAmbassadorUA
     - AU14JobCivilianAmbassadorUPP
-# RuMC edit end
-
-# RuMC edit start
-- type: antagJobBlacklist
-  id: RuMCNoColonialAntagsJobs
-  jobs:
+    - AU14JobCivilianColonySynthetic
+    - AU14JobGOVFORAuxSupportSynth
+    - AU14JobGOVFORAuxSupportSynthRMC
+    - AU14JobGOVFORAuxSupportSynthUPP
+    - AU14JobOPFORAuxSupportSynth
     - AU14JobGOVFORPlatCo
     - AU14JobGOVFORAdjutant
     - AU14JobGOVFORPlatOp
@@ -276,4 +278,12 @@
     - AU14JobGOVFOROfficerMPUPP
     - AU14JobGOVFOROfficerMPWYPMC
     - AU14JobCivilianCorporateLiaison
+# RuMC edit end
+
+# RuMC edit start
+- type: antagJobBlacklist
+  id: RuMCLawJobs
+  jobs:
+    - AU14JobCivilianCMBDeputy
+    - AU14JobCivilianNSPAConstable
 # RuMC edit end

@@ -91,17 +91,6 @@
     back: CMUDroneOperatorChoicePackFilled
 
 - type: entity
-  parent: CMIDCardBase
-  id: CMUIDCardDroneOperator
-  name: drone operator ID card
-  components:
-  - type: PresetIdCard
-    job: CMUJobGOVFORDroneOperator
-  - type: ItemIFF
-    factions:
-    - GOVFOR
-
-- type: entity
   parent: CMSpawnPointJobBase
   id: CMUSpawnPointGOVFORDroneOperator
   name: Spawn Point GOVFOR Drone Operator
@@ -153,7 +142,7 @@
   roundSide: Opfor
   roundForce: OPFOR
   icon: "AU14JobIconOPFORRifleman"
-  spawnMenuRoleName: Drone Operator (OPFOR)
+  spawnMenuRoleName: cmu-spawn-role-drone-operator-govfor #RUMC edit
   supervisors: au14-job-supervisors-opfor
   startingGear: CMUGearOPFORDroneOperator
   dummyStartingGear: CMUGearOPFORDroneOperatorDummy
@@ -177,17 +166,6 @@
     jumpsuit: AU14JungleFatigues
     ears: CMUHeadsetOpforDroneOperator
     back: CMUDroneOperatorChoicePackFilled
-
-- type: entity
-  parent: CMIDCardBase
-  id: CMUIDCardOPFORDroneOperator
-  name: drone operator ID card
-  components:
-  - type: PresetIdCard
-    job: CMUJobOPFORDroneOperator
-  - type: ItemIFF
-    factions:
-    - OPFOR
 
 - type: entity
   parent: CMSpawnPointJobBase

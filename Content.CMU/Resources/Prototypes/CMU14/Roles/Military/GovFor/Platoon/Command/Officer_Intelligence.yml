@@ -65,27 +65,16 @@
   - !type:TraitsRequirement
     inverted: true
     traits:
-    - SocialAnxiety
-    - SocialAnxietyHeavy
-    - FrontalLisp
     - NonResuscitable
     - Epilepsy
     - CMUHeartCondition
     - CMUHemophilia
-    - CMUHardOfHearing
     - CMUClaustrophobic
     - CMUFearOfBlood
-    - CMUWeakThrow
-    - CMUProstheticLeftArm
-    - CMUProstheticRightArm
-    - CMUProstheticLeftLeg
-    - CMUProstheticRightLeg
-    - SlowRunner
     - Anemic
     - Asthmatic
     - CMUAlcoholic
     - CMUDrugAddict
-    - CMUBadLeg
   ranks:
     RMCRankCivilian: []
   chevrons:
@@ -111,7 +100,7 @@
   roundSide: Opfor
   roundForce: OPFOR
   icon: "AU14JobIconOPFORIO"
-  spawnMenuRoleName: Intelligence Officer (OPFOR)
+  spawnMenuRoleName: au14-spawn-role-name-govfor-intelligence-officer #RUMC edit
   supervisors: au14-job-supervisors-opforplatco
   startingGear: AU14GearOPFOROfficerIntel
   dummyStartingGear: AU14GearOPFOROfficerIntelDummy

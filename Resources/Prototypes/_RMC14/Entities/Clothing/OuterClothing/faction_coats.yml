@@ -6,6 +6,7 @@
   name: brown trench-coat
   description: A worn, brown, old style trench-coat. When a bum sees a cop coming, he don't stick around.
   components:
+  - type: CMUConcealsHolsters # CMU14
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/Bureau/trench_brown.rsi
   - type: Clothing
@@ -40,6 +41,7 @@
   name: CMB deputy jacket
   description: A thick and stylish black leather jacket with a Marshal's Deputy badge pinned to it. The back is enscribed with the powerful letters of 'DEPUTY' representing justice, authority, and protection in the outer rim.
   components:
+  - type: CMUConcealsHolsters # CMU14
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/Bureau/deputy.rsi
   - type: Clothing
@@ -132,7 +134,10 @@
   parent: RMCOuterClothingExternalWebbing
   id: RMCCoatTSEPA
   name: NSPA police jacket
-  description: A black polyester jacket with a silver Sakura emblem of the Neroid Sector Policing Authority pinned to it. Empire and Honor, Bound by Duty. Duty Beyond Borders, Justice Across Worlds.
+  # cmu edit start
+  # description: A black polyester jacket with a silver Sakura emblem of the Neroid Sector Policing Authority pinned to it. Empire and Honor, Bound by Duty. Duty Beyond Borders, Justice Across Worlds.
+  description: A black polyester jacket with a silver Sakura emblem of the Neroid Sector Policing Authority pinned to it. Empire and Honor, Bound by Duty. Duty Beyond Borders, Justice Across Worlds. Kevlar padding sewn into the lining helps turn aside knife attacks.
+  # cmu edit end
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/TSEPA/jacket.rsi
@@ -148,8 +153,12 @@
   parent: RMCCoatTSEPA
   id: RMCCoatTSEPAFormal
   name: NSPA police formal jacket
-  description: A heavy woolen formal coat commonly used by Neroid Sector Policing Authority Constables. Empire and Honor, Bound by Duty. Duty Beyond Borders, Justice Across Worlds.
+  # cmu edit start
+  # description: A heavy woolen formal coat commonly used by Neroid Sector Policing Authority Constables. Empire and Honor, Bound by Duty. Duty Beyond Borders, Justice Across Worlds.
+  description: A heavy woolen formal coat commonly used by Neroid Sector Policing Authority Constables. Empire and Honor, Bound by Duty. Duty Beyond Borders, Justice Across Worlds. Kevlar padding sewn into the lining helps turn aside knife attacks.
+  # cmu edit end
   components:
+  - type: CMUConcealsHolsters # CMU14
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/TSEPA/formal_jacket.rsi
   - type: Clothing
@@ -159,7 +168,10 @@
   parent: RMCCoatTSEPA
   id: RMCCoatTSEPAHighVis
   name: NSPA high-vis jacket
-  description: A green and white striped (high-visibility) polyester vest commonly used by Neroid Sector Policing Authority personnel.
+  # cmu edit start
+  # description: A green and white striped (high-visibility) polyester vest commonly used by Neroid Sector Policing Authority personnel.
+  description: A green and white striped (high-visibility) polyester vest commonly used by Neroid Sector Policing Authority personnel. Kevlar padding sewn into the lining helps turn aside knife attacks. 
+  # cmu edit end
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/TSEPA/highvis_jacket.rsi
@@ -170,7 +182,10 @@
   parent: RMCCoatTSEPA
   id: RMCCoatTSEPAHighVisVest
   name: NSPA hazard vest
-  description: A green and white striped (high-visibility) polyester vest commonly used by Neroid Sector Policing Authority personnel.
+  # cmu edit start
+  # description: A green and white striped (high-visibility) polyester vest commonly used by Neroid Sector Policing Authority personnel.
+  description: A green and white striped (high-visibility) polyester vest commonly used by Neroid Sector Policing Authority personnel. Kevlar padding sewn into the lining helps turn aside knife attacks. 
+  # cmu edit end
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/TSEPA/highvis_vest.rsi
@@ -197,6 +212,7 @@
   name: Weyland-Yutani Pilot formal-jacket
   description: A suit-style jacket with a fur lined collar and golden epaulettes signifying rank. Worn by Weyland-Yutani qualified civilian Pilots, akin to old Earth formal Pilots-wear.
   components:
+  - type: CMUConcealsHolsters # CMU14
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/weya_pilot.rsi
   - type: Clothing

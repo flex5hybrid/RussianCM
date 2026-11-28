@@ -2,6 +2,8 @@ using System.IO;
 using System.Linq;
 using System.Numerics;
 using Content.Client.CMU14.Yautja.Lobby;
+using Content.Client._RMC14.DonorCapes;
+using Content.Client._RMC14.LinkAccount;
 using Content.Client._RMC14.NamedItems;
 using Content.Client.Humanoid;
 using Content.Client.Message;
@@ -23,6 +25,7 @@ using Robust.Client.Utility;
 using Robust.Shared.Configuration;
 using Robust.Shared.ContentPack;
 using Robust.Shared.Enums;
+using Robust.Shared.IoC;
 using Robust.Shared.Prototypes;
 using Direction = Robust.Shared.Maths.Direction;
 
@@ -44,6 +47,8 @@ namespace Content.Client.Lobby.UI
 
         private readonly SpriteSystem _sprite;
 
+        private readonly DonorCapeTab _donorCapeTab;
+
         private YautjaProfileEditor? _yautjaTab;
 
         private void RefreshYautjaTab()
@@ -64,7 +69,9 @@ namespace Content.Client.Lobby.UI
                 _yautjaTab = new YautjaProfileEditor();
                 _yautjaTab.OnProfileChanged += profile =>
                 {
-                    Profile = profile;
+                    // Only take the yautja part: the tab holds a snapshot that predates other edits,
+                    // such as the donor cape selected in its own tab.
+                    Profile = Profile?.WithYautjaProfile(profile.YautjaProfile) ?? profile;
                     SetDirty();
                 };
                 TabContainer.AddChild(_yautjaTab);
@@ -138,6 +145,15 @@ namespace Content.Client.Lobby.UI
             _requirements = requirements;
             _controller = UserInterfaceManager.GetUIController<LobbyUIController>();
             _sprite = _entManager.System<SpriteSystem>();
+            _donorCapeTab = new DonorCapeTab(_prototypeManager, IoCManager.Resolve<LinkAccountManager>(), _sprite);
+            _donorCapeTab.OnCapeSelected += cape =>
+            {
+                Profile = Profile?.WithSelectedDonorCape(cape);
+                _donorCapeTab.SetProfile(Profile);
+                SetDirty();
+            };
+            TabContainer.AddChild(_donorCapeTab);
+            TabContainer.SetTabTitle(TabContainer.ChildCount - 1, Loc.GetString("rmc-donor-capes-tab"));
             _requirements.Updated += RefreshRoleRequirements; // CMU14: refresh every role when event access changes.
 
             _maxNameLength = _cfgManager.GetCVar(CCVars.MaxNameLength);
@@ -454,6 +470,7 @@ namespace Content.Client.Lobby.UI
             RefreshSpecies();
             RefreshTraits();
             RefreshFlavorText();
+            _donorCapeTab.SetProfile(Profile);
             RefreshYautjaTab();
             ReloadPreview();
 

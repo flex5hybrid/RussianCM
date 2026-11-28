@@ -55,6 +55,10 @@
     - CMUFearOfBlood
     - CMUWeakThrow
     - NonResuscitable
+    - CMUProstheticLeftArm
+    - CMUProstheticRightArm
+    - CMUProstheticLeftLeg
+    - CMUProstheticRightLeg
     - SlowRunner
     - Anemic
     - CMUAlcoholic
@@ -126,7 +130,7 @@
   roundSide: Opfor
   roundForce: OPFOR
   icon: "AU14JobIconOPFORRTO"
-  spawnMenuRoleName: Radio Traffic Operator (OPFOR)
+  spawnMenuRoleName: cmu-spawn-role-radio-traffic-operator-govfor #RUMC edit
   supervisors: au14-job-supervisors-opfor
   startingGear: AU14GearopforRadioTrafficOperator
   dummyStartingGear: AU14GearopforRadioTrafficOperatorDummy

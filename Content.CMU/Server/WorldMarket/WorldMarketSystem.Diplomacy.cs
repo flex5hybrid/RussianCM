@@ -336,6 +336,11 @@ public sealed partial class WorldMarketSystem
         if (InfluenceOf(market, faction, cityId) < Math.Max(JointMinInfluence, action.MinInfluence))
             return Loc.GetString("rumc-map-need-influence", ("value", Math.Max(JointMinInfluence, action.MinInfluence)));
 
+        // RuMC edit start
+        if (LimitBlocked(market, faction, cityId, action) is { } limit)
+            return limit.Localize(Loc);
+        // RuMC edit end
+
         if (budget < action.Cost)
             return Loc.GetString("rumc-map-need-budget");
 
@@ -350,7 +355,7 @@ public sealed partial class WorldMarketSystem
         if (partner == faction || !comp.KnownFactions.Contains(partner) || ActiveCities(market).All(c => c.ID != cityId)
             || !_proto.TryIndex<WorldCityActionPrototype>(actionId, out var action) || !action.Joint
             || JointBlocked(market, faction, cityId, action, budget) != null
-            || comp.JointOffers.Any(o => o.From == faction && o.To == partner && o.City == cityId && o.Action == actionId && o.Until > now))
+            || comp.JointOffers.Any(o => o.From == faction && o.City == cityId && o.Action == actionId && o.Until > now)) // RuMC edit: to any partner
         {
             return null;
         }
@@ -385,6 +390,11 @@ public sealed partial class WorldMarketSystem
 
         if (JointBlocked(market, faction, offer.City, action, budget) != null)
             return null;
+
+        // RuMC edit start
+        if (LimitBlocked(market, offer.From, offer.City, action) != null)
+            return null;
+        // RuMC edit end
 
         comp.JointOffers.Remove(offer);
         StartJointProject(market, offer.From, offer.To, offer.City, action);

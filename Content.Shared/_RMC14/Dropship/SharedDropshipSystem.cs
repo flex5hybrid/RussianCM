@@ -7,6 +7,7 @@ using Content.Shared.CMU14.Dropship.MultiDeck; // CMU14
 using Content.Shared.CMU14.Dropship.DirectFire; // CMU14
 using Content.Shared.CMU14.Dropship.GunshipControls; // CMU14
 using Content.Shared.CMU14.Xenomorphs.Pathogen;
+using Content.Shared.CMU14.Xenomorphs.Pathogen.Overmind; // CMU14
 using Content.Shared._RMC14.AntiAir; // CMU14: IX-50 MGAD
 using Content.Shared._RMC14.ARES;
 using Content.Shared._RMC14.ARES.Logs;
@@ -895,14 +896,9 @@ public abstract partial class SharedDropshipSystem : EntitySystem
         if (!TryComp(grid, out FTLComponent? ftl) || !TryComp(grid, out DropshipComponent? dropship))
             return;
 
-        if (dropship.WithdrawEvacuating)
-            return;
-
-        // CMU14: the cancel button aborts flights, not refuels; the landing cooldown is the refuel window
-        if (ftl.State == FTLState.Cooldown)
-            return;
-
-        if (dropship.Destination != dropship.DepartureLocation ||
+        // CMU14: shared with the server's flight screen. Original destination check:
+        // if (dropship.Destination != dropship.DepartureLocation ||
+        if (!CanCancelFlyby(dropship, ftl) ||
             _timing.CurTime + dropship.CancelFlightTime >= ftl.StateTime.End)
             return;
 
@@ -1006,6 +1002,15 @@ public abstract partial class SharedDropshipSystem : EntitySystem
             if (!TryComp(ent, out TransformComponent? xform) || !xform.ParentUid.Valid)
                 return;
 
+            // CMU14 Begin: hijack destroys every planet-side core left behind.
+            if (_net.IsServer && HasComp<CMUXenoOvermindComponent>(args.Actor) &&
+                !HasSurvivingBlightCore(args.Actor, xform.ParentUid))
+            {
+                _popup.PopupEntity(Loc.GetString("cmu14-overmind-hijack-needs-core"), ent, args.Actor, PopupType.MediumCaution);
+                return;
+            }
+            // CMU14 End
+
             var originalDestination = destination.Value;
             var antiAirEv = new RMCGetHijackDestinationEvent(xform.ParentUid, originalDestination, args.Actor);
             RaiseLocalEvent(ref antiAirEv);
@@ -1083,7 +1088,7 @@ public abstract partial class SharedDropshipSystem : EntitySystem
     private bool IsQueenHijacker(EntityUid user)
     {
         return TryComp<XenoComponent>(user, out var xeno) &&
-               xeno.Role == QueenRole &&
+               (xeno.Role == QueenRole || HasComp<CMUXenoOvermindComponent>(user)) && // CMU14: the overmind leads the pathogen hive
                TryComp<DropshipHijackerComponent>(user, out var hijacker) &&
                !hijacker.IsHumanHijacker;
     }
@@ -1171,7 +1176,9 @@ public abstract partial class SharedDropshipSystem : EntitySystem
         bool hijack = false,
         float? startupTime = null,
         float? hyperspaceTime = null,
-        bool offset = false)
+        // CMU14: bool offset = false)
+        bool offset = false,
+        bool fleetTransfer = false)
     {
         return false;
     }

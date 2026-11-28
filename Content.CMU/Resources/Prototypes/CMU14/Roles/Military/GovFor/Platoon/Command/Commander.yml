@@ -28,6 +28,7 @@
   roundProfiles:
   - AU14RoundJobProfileMilitaryBase
   roundComponents:
+  - type: CMUMutinyLoyalist # command and MPs side with command in a mutiny
   - type: AU14CallsignRole
     suffix: "01"
     commandElement: true
@@ -36,7 +37,7 @@
   - type: ANPRCRadioUser
   - type: ANPRCCryptoAuthority
   - type: Skills
-    preset: AU14SkillPresetPlatoonCommander
+    preset: CMUSkillPresetPlatoonCommanderBattalion
   - type: JobPrefix
     prefix: au14-job-prefix-govforplatco
   - type: AU14SilenceOrderAbility
@@ -71,23 +72,16 @@
   - !type:TraitsRequirement
     inverted: true
     traits:
-    - SocialAnxiety
-    - SocialAnxietyHeavy
-    - FrontalLisp
     - NonResuscitable
     - Epilepsy
     - CMUHeartCondition
     - CMUHemophilia
-    - CMUHardOfHearing
     - CMUClaustrophobic
     - CMUFearOfBlood
-    - CMUWeakThrow
-    - SlowRunner
     - Anemic
     - Asthmatic
     - CMUAlcoholic
     - CMUDrugAddict
-    - CMUBadLeg
   ranks:
     RMCRankCivilian: []
   chevrons:
@@ -119,7 +113,7 @@
   roundSide: Opfor
   roundForce: OPFOR
   icon: "AU14JobIconOPFORPlatCo"
-  spawnMenuRoleName: Commanding Officer (OPFOR)
+  spawnMenuRoleName: au14-spawn-role-name-govfor-platoon-commander
   supervisors: au14-job-supervisors-opforplatco
   startingGear: AU14GearOPFORPlatCo
   dummyStartingGear: AU14GearOPFORPlatCoDummy
@@ -169,6 +163,7 @@
   - CannedDrinksAU14
   - SmokablesRMC
   - GOVFORPlatCOSidearmBeltAU14
+  - CMUForceWeylandResetKeyCommand # EW Joe RB-40
 
 - type: startingGear
   id: AU14GearGOVFORPlatCoDummy

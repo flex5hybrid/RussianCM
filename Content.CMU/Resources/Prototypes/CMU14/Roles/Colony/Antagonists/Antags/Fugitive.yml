@@ -2,7 +2,6 @@
   id: Fugitive
   prefRoles: [ FugitiveRole ]
   jobBlacklistGroup:
-  - RuMCColonyLeadershipJobs # RuMC edit
   - RuMCNoColonialAntagsJobs # RuMC edit
   - AllGovforJobs
   - AllOpforJobs
@@ -25,8 +24,6 @@
     bounty: 1550
     reason: Fugitive from justice
     recordName: Fugitive (Unknown)
-    includePrints: true
-    includeDna: true
     includeLanguages: true
     deadCounts: false
     capturedFaxPaper: AUPaperFugitiveCaptured

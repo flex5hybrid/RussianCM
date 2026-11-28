@@ -412,7 +412,6 @@ public sealed partial class YautjaHuntConsoleSystem : EntitySystem
             {
                 EnsureComp<YautjaYoungbloodComponent>(spawned.Value);
                 var metadata = EnsureComp<YautjaYoungbloodGhostRoleComponent>(spawned.Value);
-                metadata.CallId = option.Id;
                 metadata.BypassEligibility = bypassEligibility;
             }
 
@@ -421,6 +420,10 @@ public sealed partial class YautjaHuntConsoleSystem : EntitySystem
             {
                 ghostRole.JobProto = "CMUYautjaYoungblood";
                 ghostRole.ReregisterOnGhost = false;
+                // RuMC edit start
+                if (bypassEligibility)
+                    ghostRole.Requirements = new();
+                // RuMC edit end
                 // Apply the raffle after the Youngblood job metadata is finalized.
                 // This preserves the existing registration flow while using the same
                 // 30/10/90 guest-role window as regular prey.

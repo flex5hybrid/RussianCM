@@ -3,6 +3,7 @@
 import base64
 import json
 import os
+import time
 from pathlib import Path
 from urllib.parse import quote
 
@@ -10,26 +11,41 @@ import requests
 
 
 def empty_state():
-    return {"version": 1, "baseline": [], "delivered": {}, "translations": {}, "pending": None}
+    return {"version": 2, "baseline": [], "delivered": {}, "pending": None}
+
+
+def load_state(raw):
+    state = json.loads(raw)
+    if isinstance(state, dict) and state.get("version") == 1:
+        # Preserve the prepared payload verbatim, including confirmed chunks.
+        state.pop("translations", None)
+        state["version"] = 2
+    return validate_state(state)
 
 
 def validate_state(state):
-    if (not isinstance(state, dict) or state.get("version") != 1
+    if (not isinstance(state, dict) or state.get("version") != 2
             or not isinstance(state.get("baseline"), list)
+            or any(not isinstance(key, str) for key in state["baseline"])
             or not isinstance(state.get("delivered"), dict)
-            or not isinstance(state.get("translations"), dict)):
+            or "pending" not in state):
         raise ValueError("Invalid Discord delivery journal; refusing to reset it")
     pending = state.get("pending")
     if pending is not None:
         if (not isinstance(pending, dict) or not isinstance(pending.get("keys"), list)
+                or not pending["keys"] or any(not isinstance(key, str) for key in pending["keys"])
                 or not isinstance(pending.get("chunks"), list)
+                or not pending["chunks"]
                 or not isinstance(pending.get("receipts"), list)
+                or any(not isinstance(receipt, str) or not receipt for receipt in pending["receipts"])
                 or len(pending["receipts"]) != pending.get("next")
                 or any(not isinstance(chunk, str) for chunk in pending["chunks"])
                 or not isinstance(pending.get("next"), int)
                 or not 0 <= pending["next"] <= len(pending["chunks"])):
             raise ValueError("Invalid pending Discord delivery")
-        if pending.get("in_flight") is not None and pending["in_flight"] != pending["next"]:
+        if pending.get("in_flight") is not None and (
+            pending["in_flight"] != pending["next"] or pending["next"] == len(pending["chunks"])
+        ):
             raise ValueError("Invalid in-flight Discord delivery")
     return state
 
@@ -41,7 +57,7 @@ class FileStateStore:
     def load(self):
         if not self.path.exists():
             return None
-        return validate_state(json.loads(self.path.read_text(encoding="utf-8")))
+        return load_state(self.path.read_text(encoding="utf-8"))
 
     def save(self, state):
         validate_state(state)
@@ -61,8 +77,15 @@ class GitHubStateStore:
         self.base = f"{os.environ.get('GITHUB_API_URL', 'https://api.github.com')}/repos/{repo}"
         self.path = "discord-delivery.json"
         self.sha = None
+        self.last_write = None
 
     def call(self, method, path, **kwargs):
+        if method != "GET":
+            # A backlog requires two writes per Discord message. Leave room
+            # under GitHub's per-minute content creation limit.
+            if self.last_write is not None:
+                time.sleep(max(0, 1 - (time.monotonic() - self.last_write)))
+            self.last_write = time.monotonic()
         response = self.session.request(method, self.base + path, timeout=30, **kwargs)
         if response.status_code not in {200, 201, 404}:
             # Never print request URLs/headers or provider exception text containing credentials.
@@ -86,7 +109,7 @@ class GitHubStateStore:
             if blob.status_code == 404:
                 raise RuntimeError("Delivery journal blob is missing")
             raw = base64.b64decode(blob.json()["content"])
-        return validate_state(json.loads(raw))
+        return load_state(raw)
 
     def save(self, state):
         validate_state(state)

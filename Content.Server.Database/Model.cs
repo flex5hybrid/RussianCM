@@ -616,6 +616,7 @@ namespace Content.Server.Database
                 .Property(h => h.Type)
                 .HasDefaultValue(HwidType.Legacy);
             ModelBan.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<RuMCModerationOutbox>(); // RuMC edit
             ModelCustomVoteLog.OnModelCreating(modelBuilder);
         }
 
@@ -697,6 +698,7 @@ namespace Content.Server.Database
         public string? GamemodeAntagPreferences { get; set; }
         public string? GamemodeThreatPreferences { get; set; }
         [Column("yautja_profile")] public string? YautjaProfile { get; set; }
+        [Column("selected_donor_cape")] public string? SelectedDonorCape { get; set; }
         public string ShortExamine { get; set; } = string.Empty;
         public string FullDescription { get; set; } = string.Empty;
         public string MedicalRecord { get; set; } = string.Empty;

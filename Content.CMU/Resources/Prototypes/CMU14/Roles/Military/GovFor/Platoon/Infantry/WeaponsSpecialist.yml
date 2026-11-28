@@ -129,7 +129,7 @@
   roundSide: Opfor
   roundForce: OPFOR
   icon: "AU14JobIconOPFORWeaponsSpecialist"
-  spawnMenuRoleName: Weapons Specialist (OPFOR)
+  spawnMenuRoleName: cmu-spawn-role-weapons-specialist-govfor #RUMC edit
   supervisors: au14-job-supervisors-opfor
   startingGear: AU14GearopforWeaponsSpecialist
   dummyStartingGear: AU14GearopforWeaponsSpecialistDummy

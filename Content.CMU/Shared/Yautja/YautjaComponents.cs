@@ -113,6 +113,15 @@ public sealed partial class YautjaComponent : Component
     [DataField]
     public ProtoId<ReagentPrototype> RawMeatDigestsAs = "Protein";
 
+    // cmss13 never runs chemicals on yautja, so the acid in xeno meat doesn't burn them. dropped on the bite
+    [DataField]
+    public HashSet<ProtoId<ReagentPrototype>> IgnoredFoodReagents =
+    [
+        "CMUXenoBlood",
+        "CMUXenoRoyalBlood",
+        "SulfuricAcid",
+    ];
+
     [DataField]
     public float AlcoholClearanceMultiplier = 2f;
 
@@ -998,18 +1007,6 @@ public sealed partial class YautjaMaskComponent : Component, IClothingSlots
     [DataField, AutoNetworkedField]
     public bool VisorEnabled;
 
-    /// <summary>
-    /// CMU14: server-side record of the field of view cone being held off while the bio overlay is up, with the
-    /// wearer's own setting saved so it can be handed back. The client cannot do this - the eye component is
-    /// networked, so the next server state puts the cone straight back.
-    /// </summary>
-    public bool VisorFovSuppressed;
-
-    /// <summary>
-    /// The wearer's field of view setting captured when the overlay suppressed it.
-    /// </summary>
-    public bool VisorDrawFovBefore = true;
-
     [DataField, AutoNetworkedField]
     public bool Zoomed;
 
@@ -1028,15 +1025,6 @@ public sealed partial class YautjaMaskComponent : Component, IClothingSlots
 
     [DataField]
     public EntityUid? User;
-
-    [DataField]
-    public EntProtoId VisorGlassesPrototype = "CMUYautjaNightVisionGlasses";
-
-    [DataField]
-    public EntityUid? VisorGlasses;
-
-    [DataField]
-    public bool PreserveVisorOnUnequip;
 
     [DataField]
     public FixedPoint2 Drain = 0;
@@ -1151,29 +1139,6 @@ public sealed partial class YautjaCannonPackProjectileRefundComponent : Componen
 
 [RegisterComponent, NetworkedComponent]
 public sealed partial class YautjaHudViewerComponent : Component;
-
-[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
-[Access(typeof(YautjaMaskSystem))]
-public sealed partial class YautjaMaskVisorGlassesComponent : Component
-{
-    /// <summary>
-    /// Mask that created this visor. A loose pair of glasses must not grant thermal wall vision.
-    /// </summary>
-    [DataField, AutoNetworkedField]
-    public EntityUid? Mask;
-
-    /// <summary>
-    /// Wearer currently receiving this visor's thermal sight.
-    /// </summary>
-    [DataField, AutoNetworkedField]
-    public EntityUid? User;
-
-    /// <summary>
-    /// Server-authoritative thermal source state for the wall-vision overlay.
-    /// </summary>
-    [DataField, AutoNetworkedField]
-    public bool ThermalVisionEnabled;
-}
 
 [RegisterComponent]
 public sealed partial class YautjaCommunicatorComponent : Component
@@ -2153,13 +2118,11 @@ public sealed partial class YautjaHuntConsoleComponent : Component
 
         return new List<YautjaHuntCallOption>
         {
-            YoungbloodCall("youngblood_solo", "cmu-yautja-blooding-call-solo", 1, 1, 2, 0, 5, youngblood),
-            YoungbloodCall("youngblood_solo_experienced", "cmu-yautja-blooding-call-solo-experienced", 1, 1, 7, 5, 5, youngblood),
-            YoungbloodCall("youngblood_three_inexperienced", "cmu-yautja-blooding-call-three-inexperienced", 2, 3, 2, 0, 5, youngblood),
-            YoungbloodCall("youngblood_three_intermediate", "cmu-yautja-blooding-call-three-intermediate", 2, 3, 5, 2, 10, youngblood),
-            YoungbloodCall("youngblood_three_experienced", "cmu-yautja-blooding-call-three-experienced", 2, 3, 10, 3, 20, youngblood),
-            YoungbloodCall("youngblood_three_mixed", "cmu-yautja-blooding-call-three-mixed", 2, 3, 10, 0, 5, youngblood),
-            YoungbloodCall("youngblood_pack", "cmu-yautja-blooding-call-pack", 4, 6, 10, 0, 5, youngblood),
+            // RuMC edit start
+            YoungbloodCall("youngblood_solo", "cmu-yautja-blooding-call-solo", 1, 1, youngblood),
+            YoungbloodCall("youngblood_three", "cmu-yautja-blooding-call-three", 2, 3, youngblood),
+            YoungbloodCall("youngblood_pack", "cmu-yautja-blooding-call-pack", 4, 6, youngblood),
+            // RuMC edit end
         };
     }
 
@@ -2185,16 +2148,10 @@ public sealed partial class YautjaHuntConsoleComponent : Component
         string displayName,
         int minSpawnCount,
         int spawnCount,
-        int maximumYoungbloodHours,
-        int rejectionYoungbloodHours,
-        int requiredSquadAndXenoHours,
-        List<YautjaHuntSpawnEntry> spawns)
+        List<YautjaHuntSpawnEntry> spawns) // RuMC edit
     {
         var call = HuntCall(id, displayName, spawnCount, 1f, spawns);
         call.MinSpawnCount = minSpawnCount;
-        call.MaximumYoungbloodTime = TimeSpan.FromHours(maximumYoungbloodHours);
-        call.RejectionYoungbloodTime = TimeSpan.FromHours(rejectionYoungbloodHours);
-        call.RequiredSquadAndXenoTime = TimeSpan.FromHours(requiredSquadAndXenoHours);
         return call;
     }
 
@@ -2256,7 +2213,7 @@ public sealed partial class YautjaHuntConsoleComponent : Component
             Entity("AU14MobTribalLeader"),
             Entity("AU14MobTribalSpear", 4),
             Entity("AU14MobTribalBowman", 2),
-            Entity("AU14MobTribalShaman", 2),
+            Entity("CMUYautjaHuntTribalShaman", 2),
         };
     }
 
@@ -2314,15 +2271,6 @@ public sealed partial class YautjaHuntCallOption
 
     [DataField]
     public int MinSpawnCount = 1;
-
-    [DataField]
-    public TimeSpan MaximumYoungbloodTime;
-
-    [DataField]
-    public TimeSpan RejectionYoungbloodTime;
-
-    [DataField]
-    public TimeSpan RequiredSquadAndXenoTime;
 
     [DataField]
     public float CooldownMultiplier = 1f;
@@ -3709,6 +3657,26 @@ public sealed partial class YautjaCasterSingleLethalProjectileComponent : Compon
 // cmss13 plasma lance: ishuman_strict gets ex_act(300) on top of the blast, which gibs. synths aren't strict humans
 [RegisterComponent]
 public sealed partial class YautjaGibHumansOnHitComponent : Component;
+
+/// <summary>
+/// CMU14: cmss13 ammo with a do_at_max_range proc acts where the shot runs out. RMC's max range just deletes the
+/// projectile with no event, so this fires the trigger or drops the item (an arrow's handful_type) there instead.
+/// </summary>
+[RegisterComponent]
+public sealed partial class YautjaMaxRangeEffectComponent : Component
+{
+    /// <summary>Fire the projectile's trigger (explosion, EMP) at the point it ran out of range.</summary>
+    [DataField]
+    public bool Trigger;
+
+    /// <summary>Item left lying where the projectile ran out of range.</summary>
+    [DataField]
+    public EntProtoId? Drop;
+}
+
+/// <summary>Raised on a projectile that has just run out of range, before its max-range effects resolve.</summary>
+[ByRefEvent]
+public readonly record struct YautjaProjectileReachedMaxRangeEvent;
 
 [RegisterComponent]
 public sealed partial class YautjaCasterEradicatorProjectileComponent : Component

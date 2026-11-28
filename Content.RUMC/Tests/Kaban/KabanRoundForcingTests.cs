@@ -249,7 +249,7 @@ public sealed class KabanRoundForcingTests : GameTest
         {
             // Exercise the administrative lock and the same stop/set path used by round commands.
             Server.System<GameTicker>().PauseStart();
-            Server.System<CMUPresetVoteSystem>().LockPreset("DistressSignal");
+            Server.System<CMUPresetVoteSystem>().LockPresets(["DistressSignal"]);
             var round = Server.System<AuRoundSystem>();
             round.StopVoteSequence();
             Server.System<GameTicker>().SetGamePreset("DistressSignal");

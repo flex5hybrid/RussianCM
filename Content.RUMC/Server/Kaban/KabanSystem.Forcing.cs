@@ -26,7 +26,7 @@ public sealed partial class KabanSystem
     public bool TryBeginForcing(Action<KabanForceChoice?> continuation)
     {
         if (!ForcingEnabled || !_ticker.CanUpdateMap() || _forceConsidered == _lobby || _forceSettlements.Count != 0
-            || EntityManager.System<CMUPresetVoteSystem>().LockedPreset != null)
+            || EntityManager.System<CMUPresetVoteSystem>().LockedPresets.Count > 0)
             return false;
         _forceConsidered = _lobby;
         _forceLoadedMaps.Clear();
@@ -51,7 +51,7 @@ public sealed partial class KabanSystem
         {
             var payload = request == null ? null : KabanEconomy.ForcePayload(request);
             var valid = generation == _forceGeneration && _forceWaiting != null && ForcingEnabled
-                && _ticker.CanUpdateMap() && EntityManager.System<CMUPresetVoteSystem>().LockedPreset == null;
+                && _ticker.CanUpdateMap() && EntityManager.System<CMUPresetVoteSystem>().LockedPresets.Count == 0;
             if (request != null && (!valid || payload == null
                 || !EntityManager.System<AuRoundSystem>().KabanCatalog(fresh: true).Any(payload.Choice.Matches)))
             {
@@ -92,7 +92,7 @@ public sealed partial class KabanSystem
         }
         var round = EntityManager.System<AuRoundSystem>();
         if (_forceActive != null && round.KabanSelectionOpen
-            && (!ForcingEnabled || EntityManager.System<CMUPresetVoteSystem>().LockedPreset != null))
+            && (!ForcingEnabled || EntityManager.System<CMUPresetVoteSystem>().LockedPresets.Count > 0))
             round.StopVoteSequence();
         if (!_forceSaving && _forceSettlements.TryPeek(out var item) && DateTime.UtcNow >= _forceRetry)
         {

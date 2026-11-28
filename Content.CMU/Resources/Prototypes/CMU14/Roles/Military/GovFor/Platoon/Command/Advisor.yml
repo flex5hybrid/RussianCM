@@ -25,6 +25,7 @@
   roundProfiles:
   - AU14RoundJobProfileMilitaryBase
   roundComponents:
+  - type: CMUMutinyLoyalist # command and MPs side with command in a mutiny
   - type: AU14CallToAttentionAbility
   - type: AU14CallsignRole
     suffix: "05"
@@ -59,15 +60,11 @@
     - Epilepsy
     - CMUHeartCondition
     - CMUHemophilia
-    - CMUHardOfHearing
     - CMUClaustrophobic
     - CMUFearOfBlood
-    - CMUWeakThrow
-    - SlowRunner
     - Anemic
     - CMUAlcoholic
     - CMUDrugAddict
-    - CMUBadLeg
   ranks:
     RMCRankCivilian: []
   chevrons:
@@ -129,7 +126,7 @@
   roundSide: Opfor
   roundForce: OPFOR
   icon: "AU14JobIconOPFORAdvisor"
-  spawnMenuRoleName: Advisor (OPFOR)
+  spawnMenuRoleName: au14-spawn-role-name-govfor-platoon-advisor #RUMC edit
   startingGear: AU14GearOPFORadvisor
   dummyStartingGear: AU14GearOPFORadvisorDummy
   supervisors: au14-job-supervisors-opfor

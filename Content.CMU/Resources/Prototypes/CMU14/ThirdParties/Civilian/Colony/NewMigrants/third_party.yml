@@ -11,6 +11,7 @@
 
 - type: thirdParty
   id: MigratingCivs
+  allowSavedCharacters: true
   speaksColonyLanguage: true
   speaksCallerLanguage: true
   partyspawn: MigratingCivsSpawn
@@ -20,6 +21,8 @@
   maxplayers: 54
   ghostsNeeded: 5
   roundstart: false
+  blacklistedGamemodes:
+  - DistressSignal
   ghostsCallable: true
 
 - type: partySpawn
@@ -33,6 +36,7 @@
 
 - type: thirdParty
   id: MigratingCivsMedium
+  allowSavedCharacters: true
   speaksColonyLanguage: true
   speaksCallerLanguage: true
   partyspawn: MigratingCivsMediumSpawn
@@ -42,6 +46,8 @@
   maxplayers: 100
   ghostsNeeded: 5
   roundstart: false
+  blacklistedGamemodes:
+  - DistressSignal
   ghostsCallable: true
 
 - type: partySpawn
@@ -55,6 +61,7 @@
 
 - type: thirdParty
   id: MigratingCivsLarge
+  allowSavedCharacters: true
   speaksColonyLanguage: true
   speaksCallerLanguage: true
   partyspawn: MigratingCivsLargeSpawn
@@ -64,4 +71,6 @@
   maxplayers: 400
   ghostsNeeded: 6
   roundstart: false
+  blacklistedGamemodes:
+  - DistressSignal
   ghostsCallable: true

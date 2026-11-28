@@ -114,6 +114,7 @@
     suitstorage: RMCWeaponSMGPDW90
   storage:
     back:
+    - CMUCameraGearM3aCivilian
     - AU14PacketGrenadeTearGasFilled
     - RMCExplosiveBreachingCharge
     - RMCZipties
@@ -124,6 +125,7 @@
   id: CMUGearNSPATacticalLeader
   storage:
     back:
+    - CMUCameraGearM3aCivilian
     - AU14PacketGrenadeTearGasFilled
     - RMCExplosiveBreachingCharge
     - RMCZipties
@@ -153,6 +155,7 @@
 
 - type: thirdParty
   id: CMUNSPATacticalTeam
+  allowSavedCharacters: true
   displayName: NSPA Tactical Team
   partyspawn: CMUNSPATacticalTeamSpawn
   entrymethod: shuttle

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using Content.Shared.Administration;
 using Content.Shared.Chat;
+using Content.Shared.CMU14.Cassette;
 using Content.Shared.Eui;
 using Content.Shared.Mapping;
 using Content.Shared.Players;
@@ -49,6 +50,18 @@ public sealed class CMUNetworkMessageBoundsTest
         yield return Case(new MentorMessagesReceivedMsg(), fixedLength: true);
         yield return Case(new RMCExcludedTimersMsg());
         yield return Case(new MappingMapDataMessage(), prefix: b => b.WriteVariableInt32(1));
+        yield return Case(new CMUCassetteUploadStartMsg(), prefix: b => b.Write(Guid.Empty.ToByteArray()), suffix: "Title");
+        yield return Case(new CMUCassetteUploadChunkMsg(), prefix: b =>
+        {
+            b.Write(Guid.Empty.ToByteArray());
+            b.WriteVariableInt32(0);
+        }, suffix: "Audio");
+        yield return Case(new CMUCassetteTrackDataMsg(), prefix: b => b.Write(Guid.Empty.ToByteArray()));
+        yield return Case(new CMUCassetteTrackCacheMsg(), prefix: b =>
+        {
+            b.Write(Guid.Empty.ToByteArray());
+            b.Write(byte.MaxValue);
+        });
     }
 
     [TestCaseSource(nameof(TruncatedMessages))]
@@ -94,13 +107,67 @@ public sealed class CMUNetworkMessageBoundsTest
         Assert.That(receivedRoles.JobBans, Is.EqualTo(roles.JobBans));
         Assert.That(receivedRoles.AntagBans, Is.EqualTo(roles.AntagBans));
 
-        var mentors = new MentorMessagesReceivedMsg();
+        var mentors = new MentorMessagesReceivedMsg { IsHistory = true };
         var destination = new NetUserId(Guid.Parse("b15a7c70-c0ea-4934-a01c-f61425aaa274"));
         var time = new DateTime(2026, 11, 5, 0, 0, 0, DateTimeKind.Utc);
         mentors.Messages.Add(new MentorMessage(destination, "", null, "", "", time, false, false, true));
         mentors.Messages.Add(new MentorMessage(destination, "Marine", destination, "Mentor", "Help", time, true, false, false));
         var receivedMentors = RoundTrip(mentors, new MentorMessagesReceivedMsg());
         Assert.That(receivedMentors.Messages, Is.EqualTo(mentors.Messages));
+        Assert.That(receivedMentors.IsHistory, Is.True);
+
+        var cache = new CMUCassetteTrackCacheMsg
+        {
+            RequestId = Guid.Parse("f5bb8042-a3b2-491e-8161-315c31ab1343"),
+            TrackIds = new[]
+            {
+                Guid.Parse("5d5ae21f-61de-4b88-845e-7bf8d1271f0d"),
+                Guid.Parse("e2bf70f3-22fa-4607-bf64-7c60ec7c297f"),
+            },
+        };
+        var receivedCache = RoundTrip(cache, new CMUCassetteTrackCacheMsg());
+        Assert.Multiple(() =>
+        {
+            Assert.That(receivedCache.RequestId, Is.EqualTo(cache.RequestId));
+            Assert.That(receivedCache.TrackIds, Is.EqualTo(cache.TrackIds));
+        });
+    }
+
+    [Test]
+    public void CassetteTransferMessagesUseBoundedOrderedUploads()
+    {
+        var permit = Guid.Parse("4e15d9a8-a8d5-4f84-b4f6-61ce78ea26cb");
+        var start = new CMUCassetteUploadStartMsg
+        {
+            Permit = permit,
+            Title = "Трек",
+            TotalBytes = CMUDynamicCassetteLimits.MaxUploadChunkBytes,
+        };
+        var receivedStart = RoundTrip(start, new CMUCassetteUploadStartMsg());
+
+        var data = new byte[CMUDynamicCassetteLimits.MaxUploadChunkBytes];
+        data[^1] = 42;
+        var chunk = new CMUCassetteUploadChunkMsg
+        {
+            Permit = permit,
+            Offset = 0,
+            Data = data,
+        };
+        var receivedChunk = RoundTrip(chunk, new CMUCassetteUploadChunkMsg());
+
+        Assert.Multiple(() =>
+        {
+            Assert.That(start.DeliveryMethod, Is.EqualTo(NetDeliveryMethod.ReliableOrdered));
+            Assert.That(chunk.DeliveryMethod, Is.EqualTo(NetDeliveryMethod.ReliableOrdered));
+            Assert.That(new CMUCassetteTrackDataMsg().DeliveryMethod,
+                Is.EqualTo(NetDeliveryMethod.ReliableUnordered));
+            Assert.That(receivedStart.Permit, Is.EqualTo(permit));
+            Assert.That(receivedStart.Title, Is.EqualTo(start.Title));
+            Assert.That(receivedStart.TotalBytes, Is.EqualTo(start.TotalBytes));
+            Assert.That(receivedChunk.Permit, Is.EqualTo(permit));
+            Assert.That(receivedChunk.Offset, Is.Zero);
+            Assert.That(receivedChunk.Data, Is.EqualTo(data));
+        });
     }
 
     [Test]

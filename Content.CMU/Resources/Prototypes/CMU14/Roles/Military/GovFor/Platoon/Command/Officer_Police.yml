@@ -26,6 +26,7 @@
   roundProfiles:
   - AU14RoundJobProfileMilitaryBase
   roundComponents:
+  - type: CMUMutinyLoyalist # command and MPs side with command in a mutiny
   - type: AU14CallsignRole
     suffix: "05"
     commandElement: true
@@ -66,23 +67,16 @@
   - !type:TraitsRequirement
     inverted: true
     traits:
-    - SocialAnxiety
-    - SocialAnxietyHeavy
-    - FrontalLisp
     - NonResuscitable
     - Epilepsy
     - CMUHeartCondition
     - CMUHemophilia
-    - CMUHardOfHearing
     - CMUClaustrophobic
     - CMUFearOfBlood
-    - CMUWeakThrow
-    - SlowRunner
     - Anemic
     - Asthmatic
     - CMUAlcoholic
     - CMUDrugAddict
-    - CMUBadLeg
   ranks:
     RMCRankCivilian: []
   chevrons:
@@ -108,7 +102,7 @@
   roundSide: Opfor
   roundForce: OPFOR
   icon: "AU14JobIconOPFORCMP"
-  spawnMenuRoleName: Chief Military Police (OPFOR)
+  spawnMenuRoleName: au14-spawn-role-name-govfor-chief-military-police #RUMC edit
   supervisors: au14-job-supervisors-opforplatco
   startingGear: AU14GearOPFOROfficerMP
   dummyStartingGear: AU14GearOPFOROfficerMPDummy

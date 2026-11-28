@@ -334,6 +334,9 @@
       - id: AU14IEDLarge
         amount: 3
         points: 15
+      - id: CMULungeMine
+        amount: 2
+        points: 20
     - name: Protective Equipment
       entries:
       - id: CMUArmorProdigyFlakVestAlt
@@ -620,7 +623,7 @@
     layers:
     - state: inkgon
   - type: Storage
-    maxItemSize: Normal
+    maxItemSize: Tiny # only holds ink cartridges; Normal made bags refuse the gun
     grid:
     - 0,0,1,1
     whitelist:

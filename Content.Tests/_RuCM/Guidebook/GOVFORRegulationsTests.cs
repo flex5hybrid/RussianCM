@@ -131,6 +131,8 @@ public sealed class GOVFORRegulationsTests : ContentUnitTest
         var seed = JsonSerializer.Deserialize<QualificationStore>(File.ReadAllText(Find("Resources/RuCM/Qualifications/seed.json")));
         Assert.That(items, Is.EquivalentTo(seed.Definitions["enlisted"].Items.Select(i => i.Id)));
         Assert.That(items.Distinct().Count(), Is.EqualTo(9));
+        Assert.That(seed.Definitions["enlisted"].Items.Where(i => i.Enabled && i.Required).Select(i => i.Id),
+            Is.EquivalentTo(new[] { "drill", "military_regulations", "firearms" }));
     }
 
     [TestCase("enlisted", "drill", GOVFORTrainingGuides.Drill)]

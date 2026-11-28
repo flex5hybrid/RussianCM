@@ -33,6 +33,54 @@ public sealed class VehicleSupplyPlatoonTest : GameTest
 
     private readonly record struct Depot(Entity<VehicleSupplyConsoleComponent> Console, Entity<VehicleSupplyLiftComponent> Lift);
 
+    // CMU14 Platoon Restore Begin: pooled pairs keep the platoon selection, so put it back for later tests
+    private PlatoonPrototype? _originalGovfor;
+    private PlatoonPrototype? _originalOpfor;
+
+    [SetUp]
+    public async Task SavePlatoons()
+    {
+        await Server.WaitPost(() =>
+        {
+            var platoons = Server.System<PlatoonSpawnRuleSystem>();
+            _originalGovfor = platoons.SelectedGovforPlatoon;
+            _originalOpfor = platoons.SelectedOpforPlatoon;
+        });
+    }
+
+    [TearDown]
+    public async Task RestorePlatoons()
+    {
+        await Server.WaitPost(() =>
+        {
+            var platoons = Server.System<PlatoonSpawnRuleSystem>();
+            platoons.SelectedGovforPlatoon = _originalGovfor;
+            platoons.SelectedOpforPlatoon = _originalOpfor;
+        });
+    }
+    // CMU14 End
+
+    [Test]
+    public async Task FactoryLoadoutsFitTheirVehicleMounts()
+    {
+        var map = await Pair.CreateTestMap();
+        await Server.WaitAssertion(() =>
+        {
+            var depot = CreateDepot(map.GridCoords);
+            var topology = SEntMan.System<VehicleTopologySystem>();
+            var hardpoints = SEntMan.System<HardpointSystem>();
+            foreach (var entry in depot.Console.Comp.Vehicles.Where(entry => entry.FactoryModules.Count > 0))
+            {
+                var vehicle = SEntMan.SpawnEntity(entry.Vehicle, map.GridCoords);
+                var before = topology.GetMountedSlots(vehicle).Count(slot => slot.Item != null);
+                hardpoints.FitFactoryModules(vehicle, entry.FactoryModules);
+                Assert.That(topology.GetMountedSlots(vehicle).Count(slot => slot.Item != null) - before,
+                    Is.EqualTo(entry.FactoryModules.Count), $"Factory loadout must fit {entry.Vehicle}");
+                SEntMan.DeleteEntity(vehicle);
+            }
+        });
+    }
+
     // CMU14 method: reject foreign chassis while allowing each platoon's current catalog.
 
     [Test]

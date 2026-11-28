@@ -429,6 +429,7 @@ cmu-yautja-trap-recover-verb = Забрать охотничью ловушку
 cmu-yautja-trap-triggered = Вы попались в {$trap}!
 cmu-yautja-cleanser-denied = Вы понятия не имеете, что делает этот гель.
 cmu-yautja-cleanser-invalid = Вы не можете это растворить.
+cmu-yautja-cleanser-verb = Растворить
 cmu-yautja-cleanser-already = Этот предмет уже покрыт растворяющим гелем.
 cmu-yautja-cleanser-anchored = Этот предмет невозможно сдвинуть никаким способом.
 cmu-yautja-cleanser-held = Нельзя растворить {$target}, пока его держат.
@@ -625,15 +626,11 @@ cmu-yautja-power-examine-charge = Текущий заряд: [bold]{$charge}/{$m
 cmu-yautja-spike-launcher-examine-spikes = Текущий боезапас: [bold]{$count}/{$capacity}[/bold] шипов.
 cmu-yautja-plasma-weapon-examine-charge = Текущий заряд: [bold]{$charge}/{$max}[/bold].
 
-cmu-yautja-blooding-call-three-inexperienced = Группа неопытных молодых охотников (от двух до трёх участников)
+cmu-yautja-blooding-call-solo = Одиночный молодой хищник
+cmu-yautja-blooding-call-three = Группа молодых хищников
+cmu-yautja-blooding-call-pack = Стая молодых хищников
+cmu-yautja-youngblood-raffle-restricted = С вайтлистом взрослого яутжа нельзя участвовать в розыгрыше молодого хищника.
 
-cmu-yautja-blooding-call-three-intermediate = Группа молодых охотников среднего опыта (от двух до трёх участников)
-
-cmu-yautja-blooding-call-three-experienced = Группа опытных молодых охотников (от двух до трёх участников)
-
-cmu-yautja-blooding-call-three-mixed = Группа молодых охотников разного опыта (от двух до трёх участников)
-
-cmu-yautja-blooding-call-pack = Охотничья стая молодых охотников (от четырёх до шести участников)
 ent-CMUActionYautjaLeap = прыжок
     .desc = Быстро прыгнуть в ближайшее место.
 

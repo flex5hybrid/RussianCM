@@ -94,7 +94,7 @@
   roundSide: Opfor
   roundForce: OPFOR
   icon: "AU14JobIconOPFORTankCrewman"
-  spawnMenuRoleName: Vehicle Crewman (OPFOR)
+  spawnMenuRoleName: au14-spawn-role-name-govfor-vehicle-crewman #RUMC edit
   supervisors: au14-job-supervisors-opfor
   startingGear: AU14GearOPFORVehicleCrewman
   dummyStartingGear: AU14GearOPFORVehicleCrewmanDummy

@@ -118,6 +118,11 @@ management decisions. The selected nickname and online status remain visible in 
 Enter a reason and confirm the selected name before crediting a skill or certifying a qualification.
 Missing mandatory skills, self-assessment, off-duty instructors and disconnected recruits have visible
 explanations. Accreditation applies to the selected account; it does not grant management authority.
+Project management accounts and active Host administrators are Chief Instructors. In **Instructor
+accreditation**, they can activate or assign Instructor or Senior Instructor to a selected account.
+Existing accreditations start at Instructor. Instructors can assess Enlisted, Squad Leader, Heavy
+Weapons, and Field Engineering. Senior Instructors can assess all programmes through the training
+checklist except Commanding Officer. Chief Instructors can assess Commanding Officer as well.
 Instructor Complete/Certify/Note requests recheck live Connected/InGame session status when dequeued,
 including stale session entries after disconnection. Management operations can still target offline accounts.
 EUI and BUI acknowledge request IDs so unsolicited roster/name notifications cannot release pending
@@ -134,6 +139,9 @@ assemblies together when changing these network contracts.
 
 Definitions and checklist items are soft-disabled. Removed item IDs are retained disabled automatically.
 Definition versions increase on edits; existing grants keep their original version and requirement snapshot.
+The Enlisted programme requires drill, SOP/ЕКВЮ, and firearms. Squad and Fireteam Leader positions
+require the Enlisted level and Squad Leader qualification. An effective Sergeant level also meets
+those requirements unless the Squad Leader qualification has been separately suspended or revoked.
 An Officer implies the lower military levels, but an explicitly suspended/revoked prerequisite interrupts
 inheritance. Professional suspensions are independent. CO admission is an independent management-only
 grant and never follows from Officer or migration.

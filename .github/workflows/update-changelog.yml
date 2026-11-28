@@ -1,78 +1,72 @@
 # CMU14 Begin: downstream changelog workflow.
 name: Changelog
 
-concurrency:
-  group: update-changelog
-  cancel-in-progress: false
-
 on:
   schedule:
     - cron: "0 10 * * *"
   push:
     branches: [master]
-    paths:
-      - Resources/Changelog/**
+  workflow_run:
+    workflows: [Publish, Fast Publish]
+    types: [completed]
+    branches: [master]
   workflow_dispatch:
     inputs:
       start_date:
-        description: "Recover missing entries since ISO-8601 date; already delivered entries are skipped"
-        required: false
+        description: "Recover missing entries since an ISO-8601 date"
         type: string
       category:
-        description: "Category for local PRs (all six sections are sent to Discord)"
-        required: false
+        description: "Default category for local PRs without a changelog label"
         default: CMU
         type: choice
         options: [CMU, RMC14, Main, Maps, Admin, Rules]
       dry_run:
-        description: "Preview only: no commit, Discord messages, or delivery journal writes"
+        description: "Preview without a commit, Discord messages, or journal writes"
         type: boolean
         default: true
       delivery_resolution:
-        description: "Only after a paused request: check channel, then retry or confirm delivery"
+        description: "After checking Discord, resolve an interrupted request"
         type: choice
         options: [none, retry, delivered]
         default: none
   workflow_call:
     inputs:
-      start_date:
-        required: false
-        type: string
-        default: ""
-      category:
-        required: false
-        type: string
-        default: CMU
-      dry_run:
-        required: false
+      assembly_only:
         type: boolean
-        default: false
-      delivery_resolution:
-        required: false
-        type: string
-        default: none
+        default: true
     outputs:
       changes_detected:
         value: ${{ jobs.update.outputs.changes_detected }}
       commit_hash:
-        description: "Assembled changelog commit or original SHA"
+        description: "Commit containing the assembled changelog"
         value: ${{ jobs.update.outputs.commit_hash }}
 
 jobs:
   update:
+    if: github.event_name != 'workflow_run' && (vars.DONT_UPDATE_CHANGELOG != 'true' || inputs.dry_run == true)
     runs-on: ubuntu-latest
-    timeout-minutes: 30
-    if: vars.DONT_UPDATE_CHANGELOG != 'true'
+    timeout-minutes: 15
+    concurrency:
+      group: update-changelog-${{ github.ref }}
+      queue: max
     outputs:
-      changes_detected: ${{ steps.auto-commit.outputs.changes_detected }}
-      commit_hash: ${{ steps.resolve-ref.outputs.commit_hash }}
+      changes_detected: ${{ steps.assemble.outputs.changes_detected }}
+      commit_hash: ${{ steps.assemble.outputs.commit_hash }}
     permissions:
       contents: write
+      pull-requests: read
+    env:
+      PREVIEW: ${{ inputs.dry_run == true || github.ref != format('refs/heads/{0}', github.event.repository.default_branch) }}
+      CHANGELOG_CATEGORY: ${{ inputs.category || 'CMU' }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_REPOSITORY: ${{ github.repository }}
+      GITHUB_BASE_BRANCH: ${{ github.event.repository.default_branch }}
+      START_DATE: ${{ inputs.start_date || '' }}
     steps:
       - uses: actions/checkout@v7
         with:
-          # Reusable callers may target a custom ref; previews may inspect it safely.
-          ref: ${{ github.ref_name }}
+          ref: ${{ (inputs.dry_run == true || github.ref != format('refs/heads/{0}', github.event.repository.default_branch)) && github.sha || github.ref }}
+          fetch-depth: 0
 
       - uses: actions/setup-python@v7.0.0
         with:
@@ -81,87 +75,103 @@ jobs:
       - name: Install dependencies
         run: python3 -m pip install --disable-pip-version-check requests pyyaml
 
-      - name: Verify changelog tools
-        run: python3 -m unittest discover -s Tools/_CMU14/Changelog -p 'test_changelog*.py'
-
-      - name: Parse merged local PRs
-        run: >-
-          python3 Tools/update_changelog_parts.py Resources/Changelog/Parts
-          --changelog-file Resources/Changelog/CMU.yml --category "$CHANGELOG_CATEGORY"
-        env:
-          CHANGELOG_CATEGORY: ${{ inputs.category || 'CMU' }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
-          GITHUB_BASE_BRANCH: ${{ github.ref_name }}
-          START_DATE: ${{ inputs.start_date || '' }}
-
-      - name: Assemble changelog
-        run: >-
-          python3 Tools/update_changelog.py Resources/Changelog/CMU.yml
-          Resources/Changelog/Parts --category "$CHANGELOG_CATEGORY" --all
-        env:
-          CHANGELOG_CATEGORY: ${{ inputs.category || 'CMU' }}
-
-      - uses: stefanzweifel/git-auto-commit-action@v7.2.1
-        id: auto-commit
-        if: inputs.dry_run != true && github.ref_name == github.event.repository.default_branch
-        with:
-          commit_message: "Auto-update changelog [skip ci]"
-          commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
-
-      - name: Resolve changelog commit
-        id: resolve-ref
-        run: echo "commit_hash=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
-
-      # Translation work is disposable/reusable; it is separate from delivery state.
-      - name: Restore Russian translation progress
-        id: translation-cache
-        uses: actions/cache/restore@v5
-        with:
-          path: .tmp/changelog-translation-cache.json
-          key: changelog-ru-v1-${{ github.repository_id }}-${{ hashFiles('Tools/_CMU14/Changelog/changelog-russian.yml') }}-${{ github.run_id }}-${{ github.run_attempt }}
-          restore-keys: |
-            changelog-ru-v1-${{ github.repository_id }}-${{ hashFiles('Tools/_CMU14/Changelog/changelog-russian.yml') }}-
-
-      # Always inspect the journal, including when assembly changed nothing.
-      # This picks up upstream YAML already committed by a merge and resumes failures.
-      - name: Translate and deliver or preview
+      - name: Collect and assemble the changelog
+        id: assemble
         run: |
-          args=()
-          if [[ "$DRY_RUN" == "true" || "$CURRENT_BRANCH" != "$DEFAULT_BRANCH" ]]; then
-            args+=(--dry-run)
-          fi
-          if [[ "$DELIVERY_RESOLUTION" != "none" && -n "$DELIVERY_RESOLUTION" ]]; then
-            args+=(--resolve-ambiguous "$DELIVERY_RESOLUTION")
-          fi
-          python3 Tools/actions_changelogs_since_last_run.py "${args[@]}" --output discord-preview.md
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3; do
+            previous=$(git log --first-parent -1 --format=%H --fixed-strings --grep='Auto-update changelog [skip ci]')
+            scan_start="$START_DATE"
+            # Recover the reviewed backlog on the first run from the old collector's last commit.
+            if [[ -z "$scan_start" && "$previous" == "4e8b016e44cced14033496eb01df55d8e4e51a31" ]]; then
+              scan_start="2026-10-31"
+            fi
+            START_DATE="$scan_start" python3 Tools/update_changelog_parts.py Resources/Changelog/Parts \
+              --all --ref HEAD --category "$CHANGELOG_CATEGORY"
+            args=()
+            if [[ -n "$previous" ]]; then
+              args+=(--previous-ref "$previous")
+            fi
+            python3 Tools/update_changelog.py Resources/Changelog/CMU.yml Resources/Changelog/Parts \
+              --all --repository "$GITHUB_REPOSITORY" "${args[@]}"
+            git add -- Resources/Changelog
+            if git diff --cached --quiet; then
+              echo "changes_detected=false" >> "$GITHUB_OUTPUT"
+              break
+            fi
+            if [[ "$PREVIEW" == "true" ]]; then
+              echo "changes_detected=true" >> "$GITHUB_OUTPUT"
+              break
+            fi
+
+            git commit -m 'Auto-update changelog [skip ci]'
+            if git push origin "HEAD:$GITHUB_REF"; then
+              echo "changes_detected=true" >> "$GITHUB_OUTPUT"
+              break
+            fi
+            git fetch origin "$GITHUB_REF"
+            if [[ "$attempt" == 3 || "$(git rev-parse FETCH_HEAD)" == "$(git rev-parse HEAD^)" ]]; then
+              exit 1
+            fi
+            git reset --hard FETCH_HEAD
+          done
+          echo "commit_hash=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Preview Discord delivery
+        if: env.PREVIEW == 'true' && inputs.assembly_only != true
+        run: python3 Tools/actions_changelogs_since_last_run.py --dry-run --output discord-preview.md
         env:
-          DRY_RUN: ${{ inputs.dry_run == true }}
-          CURRENT_BRANCH: ${{ github.ref_name }}
-          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
           CHANGELOG_START_DATE: ${{ inputs.start_date || '' }}
-          DISCORD_WEBHOOK_URL: ${{ secrets.CHANGELOG_DISCORD_WEBHOOK }}
-          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
-          CHANGELOG_TRANSLATION_MODEL: ${{ vars.CHANGELOG_TRANSLATION_MODEL || 'mistral-small-latest' }}
-          DELIVERY_RESOLUTION: ${{ inputs.delivery_resolution || 'none' }}
-          CHANGELOG_TRANSLATION_CACHE: .tmp/changelog-translation-cache.json
-          CHANGELOG_TRANSLATION_INTERVAL_SECONDS: ${{ vars.CHANGELOG_TRANSLATION_INTERVAL_SECONDS || '15' }}
-          PYTHONUNBUFFERED: '1'
 
-      - name: Save Russian translation progress even after failure
-        if: always() && hashFiles('.tmp/changelog-translation-cache.json') != ''
-        uses: actions/cache/save@v5
-        with:
-          path: .tmp/changelog-translation-cache.json
-          key: ${{ steps.translation-cache.outputs.cache-primary-key }}
-
-      - name: Upload preview
-        if: inputs.dry_run == true || github.ref_name != github.event.repository.default_branch
-        uses: actions/upload-artifact@v7
+      - uses: actions/upload-artifact@v7
+        if: env.PREVIEW == 'true' && inputs.assembly_only != true
         with:
           name: discord-changelog-preview
           path: discord-preview.md
           if-no-files-found: error
+
+  discord:
+    name: Deliver to Discord
+    needs: update
+    if: >-
+      !cancelled() && vars.DONT_UPDATE_CHANGELOG != 'true' && inputs.assembly_only != true &&
+      inputs.dry_run != true && github.ref == format('refs/heads/{0}', github.event.repository.default_branch) &&
+      (needs.update.result == 'success' ||
+       (github.event_name == 'workflow_run' &&
+        github.event.workflow_run.head_repository.full_name == github.repository &&
+        github.event.workflow_run.head_branch == github.event.repository.default_branch))
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    concurrency:
+      group: changelog-discord-delivery
+      queue: max
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ needs.update.outputs.commit_hash || github.ref }}
+          persist-credentials: false
+
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: python3 -m pip install --disable-pip-version-check requests pyyaml
+
+      - name: Send outstanding entries
+        run: |
+          args=()
+          if [[ -n "$DELIVERY_RESOLUTION" && "$DELIVERY_RESOLUTION" != "none" ]]; then
+            args+=(--resolve-ambiguous "$DELIVERY_RESOLUTION")
+          fi
+          python3 Tools/actions_changelogs_since_last_run.py "${args[@]}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CHANGELOG_START_DATE: ${{ inputs.start_date || '' }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.CHANGELOG_DISCORD_WEBHOOK }}
+          DELIVERY_RESOLUTION: ${{ inputs.delivery_resolution || 'none' }}
+          PYTHONUNBUFFERED: '1'
 # CMU14 End

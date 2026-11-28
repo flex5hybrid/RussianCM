@@ -19,7 +19,7 @@ ent-RMCBootsPMCCommandoFilled = {ent-RMCBootsPMCCommando}
     .desc = {ent-RMCBootsPMCCommando.desc}
     .suffix = Заполнены
 
-ent-RMCBootsPMC = начищенные ботикни
+ent-RMCBootsPMC = начищенные ботинки
     .desc = Вершина моды, но они, кажется, сотканы из кевлара.
 ent-RMCBootsPMCFilled = {ent-RMCBootsPMC}
     .desc = {ent-RMCBootsPMC.desc}

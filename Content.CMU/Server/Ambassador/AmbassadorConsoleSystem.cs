@@ -1,8 +1,10 @@
 using System.Diagnostics.CodeAnalysis; // RuMC edit
 using System.Linq;
 using Content.Server.CMU14.Ops.ThirdParty;
+using Content.Server.CMU14.Round;
 using Content.Server.CMU14.WorldMarket; // RUMC: the world map
 using Content.Server.Chat.Systems;
+using Content.Server.GameTicking;
 using Content.Server.Popups;
 using Content.Server.Radio;
 using Content.Server.Radio.EntitySystems;
@@ -37,6 +39,7 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
     [Dependency] private StackSystem _stack = default!;
     [Dependency] private IPrototypeManager _proto = default!;
     [Dependency] private ThirdPartySystem _thirdParty = default!;
+    [Dependency] private GameTicker _ticker = default!;
     [Dependency] private ChatSystem _chat = default!;
     [Dependency] private RadioSystem _radio = default!;
     [Dependency] private IRobustRandom _random = default!;
@@ -193,10 +196,8 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
                 if (comp.EmbargoTimer >= 60f)
                 {
                     comp.EmbargoTimer -= 60f;
-                    comp.Budget -= comp.EmbargoCostPerMinute;
-                    if (comp.Budget < 0)
+                    if (!PayNextMinute(comp, comp.EmbargoCostPerMinute)) // RuMC edit
                     {
-                        comp.Budget = 0;
                         comp.EmbargoActive = false;
                         AnnounceStatus(
                             Loc.GetString("ambassador-console-embargo-ended-no-funds", ("faction", comp.FactionName)),
@@ -210,10 +211,8 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
                 if (comp.TradePactTimer >= 60f)
                 {
                     comp.TradePactTimer -= 60f;
-                    comp.Budget -= comp.TradePactCostPerMinute;
-                    if (comp.Budget < 0)
+                    if (!PayNextMinute(comp, comp.TradePactCostPerMinute)) // RuMC edit
                     {
-                        comp.Budget = 0;
                         comp.TradePactActive = false;
                         AnnounceStatus(
                             Loc.GetString("ambassador-console-trade-pact-ended-no-funds", ("faction", comp.FactionName)),
@@ -227,10 +226,8 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
                 if (comp.CommsJamTimer >= 60f)
                 {
                     comp.CommsJamTimer -= 60f;
-                    comp.Budget -= comp.CommsJamCostPerMinute;
-                    if (comp.Budget < 0)
+                    if (!PayNextMinute(comp, comp.CommsJamCostPerMinute)) // RuMC edit
                     {
-                        comp.Budget = 0;
                         comp.CommsJamActive = false;
                         AnnounceStatus(
                             Loc.GetString("ambassador-console-comms-jam-ended-no-funds", ("faction", comp.FactionName)),
@@ -244,10 +241,8 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
                 if (comp.SignalBoostTimer >= 60f)
                 {
                     comp.SignalBoostTimer -= 60f;
-                    comp.Budget -= comp.SignalBoostCostPerMinute;
-                    if (comp.Budget < 0)
+                    if (!PayNextMinute(comp, comp.SignalBoostCostPerMinute)) // RuMC edit
                     {
-                        comp.Budget = 0;
                         comp.SignalBoostActive = false;
                     }
                 }
@@ -258,10 +253,8 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
                 if (comp.SignalJamTimer >= 60f)
                 {
                     comp.SignalJamTimer -= 60f;
-                    comp.Budget -= comp.SignalJamCostPerMinute;
-                    if (comp.Budget < 0)
+                    if (!PayNextMinute(comp, comp.SignalJamCostPerMinute)) // RuMC edit
                     {
-                        comp.Budget = 0;
                         comp.SignalJamActive = false;
                     }
                 }
@@ -279,6 +272,27 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
                 RefreshFactionUi(comp);
         }
     }
+
+    // RuMC edit start
+    // Console effects are prepaid
+    private bool TryPayFirstMinute(EntityUid uid, AmbassadorConsoleComponent comp, float cost, EntityUid actor)
+    {
+        if (PayNextMinute(comp, cost))
+            return true;
+
+        _popup.PopupEntity(Loc.GetString("rumc-map-need-budget"), uid, actor);
+        return false;
+    }
+
+    private static bool PayNextMinute(AmbassadorConsoleComponent comp, float cost)
+    {
+        if (comp.Budget < cost)
+            return false;
+
+        comp.Budget -= cost;
+        return true;
+    }
+    // RuMC edit end
 
     private void AnnounceStatus(string message, string? factionName = null)
     {
@@ -637,7 +651,8 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
         var thirdParties = new Dictionary<string, (string DisplayName, float Cost)>();
         foreach (var (id, cost) in comp.CallableParties)
         {
-            if (_proto.TryIndex<ThirdPartyPrototype>(id, out var proto))
+            if (_proto.TryIndex<ThirdPartyPrototype>(id, out var proto) &&
+                !AuRoundSelectionRules.IsBlacklistedForGamemode(proto, _ticker.CurrentPreset?.ID))
             {
                 var displayName = proto.DisplayName ?? proto.ID;
                 thirdParties[id] = (displayName, cost);
@@ -672,17 +687,22 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
 
     private void OnWithdraw(EntityUid uid, AmbassadorConsoleComponent comp, AmbassadorWithdrawBuiMsg msg)
     {
-        if (msg.Amount <= 0 || msg.Amount > comp.Budget) return;
+        // RuMC edit start: NaN passes every comparison
+        if (!float.IsFinite(msg.Amount) || msg.Amount < 1 || msg.Amount > comp.Budget)
+            return;
+
+        var amount = (int) msg.Amount;
+        // RuMC edit end
 
         // RUMC: the first part of the account cannot be taken out as cash.
-        if (comp.Budget - msg.Amount < comp.WithdrawFloor)
+        if (comp.Budget - amount < comp.WithdrawFloor) // RuMC edit
         {
             _popup.PopupEntity(Loc.GetString("rumc-ambassador-withdraw-locked", ("floor", (int) comp.WithdrawFloor)), uid, msg.Actor);
             return;
         }
 
-        comp.Budget -= msg.Amount;
-        _stack.SpawnMultipleNextToOrDrop(CashPrototype, (int) msg.Amount, uid);
+        comp.Budget -= amount; // RuMC edit
+        _stack.SpawnMultipleNextToOrDrop(CashPrototype, amount, uid); // RuMC edit
         UpdateAllFactionUi(comp);
     }
 
@@ -759,12 +779,16 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
                _timing.CurTime >= comp.NextCallInAt &&
                comp.Budget >= cost &&
                _proto.TryIndex<ThirdPartyPrototype>(thirdPartyId, out partyProto) &&
+               !AuRoundSelectionRules.IsBlacklistedForGamemode(partyProto, _ticker.CurrentPreset?.ID) && // CMU14: no gamemode-blacklisted parties
                _proto.TryIndex(partyProto.PartySpawn, out spawnProto);
     }
     // RuMC edit end
 
     private void OnToggleEmbargo(EntityUid uid, AmbassadorConsoleComponent comp, AmbassadorToggleEmbargoBuiMsg msg)
     {
+        if (!comp.EmbargoActive && !TryPayFirstMinute(uid, comp, comp.EmbargoCostPerMinute, msg.Actor)) // RuMC edit
+            return;
+
         comp.EmbargoActive = !comp.EmbargoActive;
         if (comp.EmbargoActive)
         {
@@ -785,6 +809,9 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
 
     private void OnToggleTradePact(EntityUid uid, AmbassadorConsoleComponent comp, AmbassadorToggleTradePactBuiMsg msg)
     {
+        if (!comp.TradePactActive && !TryPayFirstMinute(uid, comp, comp.TradePactCostPerMinute, msg.Actor)) // RuMC edit
+            return;
+
         comp.TradePactActive = !comp.TradePactActive;
         if (comp.TradePactActive)
         {
@@ -805,6 +832,9 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
 
     private void OnToggleSignalBoost(EntityUid uid, AmbassadorConsoleComponent comp, AmbassadorToggleSignalBoostBuiMsg msg)
     {
+        if (!comp.SignalBoostActive && !TryPayFirstMinute(uid, comp, comp.SignalBoostCostPerMinute, msg.Actor)) // RuMC edit
+            return;
+
         comp.SignalBoostActive = !comp.SignalBoostActive;
         if (comp.SignalBoostActive)
         {
@@ -817,6 +847,9 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
 
     private void OnToggleSignalJam(EntityUid uid, AmbassadorConsoleComponent comp, AmbassadorToggleSignalJamBuiMsg msg)
     {
+        if (!comp.SignalJamActive && !TryPayFirstMinute(uid, comp, comp.SignalJamCostPerMinute, msg.Actor)) // RuMC edit
+            return;
+
         comp.SignalJamActive = !comp.SignalJamActive;
         if (comp.SignalJamActive)
         {
@@ -840,6 +873,9 @@ public sealed partial class AmbassadorConsoleSystem : EntitySystem
 
     private void OnToggleCommsJam(EntityUid uid, AmbassadorConsoleComponent comp, AmbassadorToggleCommsJamBuiMsg msg)
     {
+        if (!comp.CommsJamActive && !TryPayFirstMinute(uid, comp, comp.CommsJamCostPerMinute, msg.Actor)) // RuMC edit
+            return;
+
         comp.CommsJamActive = !comp.CommsJamActive;
         if (comp.CommsJamActive)
         {

@@ -74,23 +74,16 @@
   - !type:TraitsRequirement
     inverted: true
     traits:
-    - SocialAnxiety
-    - SocialAnxietyHeavy
-    - FrontalLisp
     - NonResuscitable
     - Epilepsy
     - CMUHeartCondition
     - CMUHemophilia
-    - CMUHardOfHearing
     - CMUClaustrophobic
     - CMUFearOfBlood
-    - CMUWeakThrow
-    - SlowRunner
     - Anemic
     - Asthmatic
     - CMUAlcoholic
     - CMUDrugAddict
-    - CMUBadLeg
   ranks:
     RMCRankCivilian: []
   chevrons:
@@ -116,7 +109,7 @@
   roundSide: Opfor
   roundForce: OPFOR
   icon: "AU14JobIconOPFORAdjutant"
-  spawnMenuRoleName: Executive Officer (OPFOR)
+  spawnMenuRoleName: au14-spawn-role-name-govfor-executive-officer #RUMC edit
   supervisors: au14-job-supervisors-opforplatco
   startingGear: AU14GearOPFORAdjutant
   dummyStartingGear: AU14GearOPFORAdjutantDummy

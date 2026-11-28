@@ -107,8 +107,8 @@
     plasmaRegenOnWeeds: 4
     plasmaTransferDelay: 0
   - type: CMArmor
-    xenoArmor: 30 # CMU14: RuCM queen survivability
-    explosionArmor: 80
+    xenoArmor: 35 # CMU14: RuCM queen survivability
+    explosionArmor: 100
   - type: XenoWordQueen
   - type: XenoPsychicCommunication
   - type: VehicleDamageMultiplier
@@ -127,9 +127,9 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 13.33
-        Slash: 13.33
-        Piercing: 13.34
+        Blunt: 17 # RuMC edit
+        Slash: 17 # RuMC edit
+        Piercing: 17 # RuMC edit
   - type: XenoTailStab
     tailDamage:
       types:
@@ -248,8 +248,8 @@
     message: cm-xeno-death-queen
     color: "#921992"
   - type: XenoMaturing
-    critThreshold: 1000 # CMU14: RuCM control queen, pre-rework health
-    deadThreshold: 1100
+    critThreshold: 1200 # CMU14: RuCM control queen, pre-rework health
+    deadThreshold: 1300
     addComponents:
     # CMU14: original RMC screech and spit toggle.
     - type: XenoScreech

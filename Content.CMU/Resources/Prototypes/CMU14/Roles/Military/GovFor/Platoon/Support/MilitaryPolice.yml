@@ -25,6 +25,7 @@
   roundProfiles:
   - AU14RoundJobProfileMilitaryBase
   roundComponents:
+  - type: CMUMutinyLoyalist # command and MPs side with command in a mutiny
   - type: AU14CallsignRole
     category: MP
   - type: Skills
@@ -146,7 +147,7 @@
   roundSide: Opfor
   roundForce: OPFOR
   icon: "AU14JobIconOPFORMP"
-  spawnMenuRoleName: Military Policeman (OPFOR)
+  spawnMenuRoleName: cmu-spawn-role-military-policeman-govfor #RUMC edit
   supervisors: au14-job-supervisors-opforplatco
   startingGear: AU14GearOPFORMilitaryPoliceMan
   dummyStartingGear: AU14GearOPFORMilitaryPoliceManDummy

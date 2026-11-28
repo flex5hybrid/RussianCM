@@ -244,12 +244,25 @@
   - type: GasBlock
   - type: YautjaMask
     requiresYautjaWearer: false
-    preserveVisorOnUnequip: true
     drain: 3
     drainEvery: 2
     zoomLevel: 1.6
     zoomOffset: 12
     slots: HEAD
+  # RuMC edit start: toggled by the visor action
+  - type: NightVisionItem
+    actionId:
+    toggleable: false
+    enableOnEquip: false
+    canChangeMode: false
+    slotFlags: HEAD
+    defaultState: Full
+    green: false
+    overlay: true
+    blockScopes: true
+    ignoreUserOnlyHalf: true
+    restorePreviousState: true
+  # RuMC edit end
   - type: ShowHealthBars
     damageContainers:
     - Biological

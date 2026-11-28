@@ -213,12 +213,10 @@
     shoes: AU14LACNBootsFilled
     ears: AU14HeadsetGovforMarine
     belt: CMULACNBeltToolbeltFilled
-    pocket1: RMCPouchPistol
+    pocket1: CMUPouchPistolTPR23BFilled
     pocket2: AU14PouchIFAKFill
     back: CMULACNBackpackEngineer
   storage:
-    pocket1:
-    - AU14WeaponPistolTPR23B
     back:
     - CMMagazinePistolM1984
     - CMMagazinePistolM1984
@@ -251,6 +249,16 @@
   equipment:
     id: CMUIDCardLACNConstructionEngineer
 
+- type: entity
+  parent: RMCPouchPistol
+  id: CMUPouchPistolTPR23BFilled
+  suffix: Filled, TPR23B
+  components:
+  - type: ContainerFill
+    containers:
+      pouch:
+      - AU14WeaponPistolTPR23B
+
 - type: partySpawn
   id: CMULACNConstructionTeamSpawn
   leadersToSpawn:
@@ -262,6 +270,7 @@
 
 - type: thirdParty
   id: CMULACNConstructionTeam
+  allowSavedCharacters: true
   displayName: LACN Engineering Construction Team
   partyspawn: CMULACNConstructionTeamSpawn
   entrymethod: shuttle

@@ -104,6 +104,7 @@ public sealed partial class GhostRoleComponent : Component
     /// When null, the linked role prototypes provide the requirements as usual.
     /// </summary>
     [DataField]
+    [Access(typeof(GhostRoleSystem), Other = AccessPermissions.ReadWriteExecute)] // RuMC edit
     public HashSet<JobRequirement>? Requirements;
 
     /// <summary>

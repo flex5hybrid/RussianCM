@@ -158,7 +158,7 @@
   roundSide: Opfor
   roundForce: OPFOR
   icon: "AU14JobIconOPFORAFN"
-  spawnMenuRoleName: Automatic Rifleman (OPFOR)
+  spawnMenuRoleName: cmu-spawn-role-automatic-rifleman-govfor #RUMC edit
   supervisors: au14-job-supervisors-opfor
   startingGear: AU14GearopforSquadAutomaticRifleman
   dummyStartingGear: AU14GearopforAutoRiflemanDummy

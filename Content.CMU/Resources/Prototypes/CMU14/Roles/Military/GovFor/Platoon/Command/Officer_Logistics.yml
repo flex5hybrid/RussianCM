@@ -66,22 +66,15 @@
   - !type:TraitsRequirement
     inverted: true
     traits:
-    - SocialAnxiety
-    - SocialAnxietyHeavy
-    - FrontalLisp
     - NonResuscitable
     - Epilepsy
     - CMUHeartCondition
     - CMUHemophilia
-    - CMUHardOfHearing
     - CMUClaustrophobic
     - CMUFearOfBlood
-    - CMUWeakThrow
-    - SlowRunner
     - Anemic
     - CMUAlcoholic
     - CMUDrugAddict
-    - CMUBadLeg
   ranks:
     RMCRankCivilian: []
   chevrons:
@@ -107,7 +100,7 @@
   roundSide: Opfor
   roundForce: OPFOR
   icon: "AU14JobIconOPFORLO"
-  spawnMenuRoleName: Logistics Officer (OPFOR)
+  spawnMenuRoleName: au14-spawn-role-name-govfor-logistics-officer #RUMC edit
   supervisors: au14-job-supervisors-opforplatco
   startingGear: AU14GearOPFOROfficerLogistics
   dummyStartingGear: AU14GearOPFOROfficerLogisticsDummy

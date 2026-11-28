@@ -31,6 +31,7 @@ rumc-map-influence = Влияние вашей фракции: { $value } из 1
 rumc-map-gift = Подарок · { $cost }
 rumc-map-gift-full = Влияние уже наибольшее
 rumc-map-gift-poor = Подарок · { $cost } (не хватает бюджета)
+rumc-map-gift-wait = Следующий подарок через { $time }
 
 rumc-map-kind-road = дорога
 rumc-map-kind-trail = тропа
