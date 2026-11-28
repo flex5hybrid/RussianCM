@@ -22,6 +22,7 @@
   maxplayers: 400
   ghostsNeeded: 0
   roundstart: true
+  allowSavedCharacters: true # RuMC edit
 
 - type: partySpawn
   id: CLFSurvsSpawnMedium
@@ -47,6 +48,7 @@
   maxplayers: 100
   ghostsNeeded: 0
   roundstart: true
+  allowSavedCharacters: true # RuMC edit
 
 - type: partySpawn
   id: CLFSurvsSpawnSmall
@@ -72,3 +74,4 @@
   maxplayers: 50
   ghostsNeeded: 0
   roundstart: true
+  allowSavedCharacters: true # RuMC edit
