@@ -2031,3 +2031,5 @@ RUMCThermalCentrifuge: RUMCMachineThermalCentrifuge
 RUMCTransformerDown: RUMCMachineTransformerDown
 RUMCTransformerUp: RUMCMachineTransformerUp
 RUMCWiremill: RUMCMachineWiremill
+RMCPhotocopier: RuCMPaperworkCopier
+RMCPhotocopierPro: RuCMPaperworkCopierPro

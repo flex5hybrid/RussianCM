@@ -1,0 +1,78 @@
+- type: entity
+  parent: RMCBasePhotocopier
+  id: RuCMPaperworkCopier
+  name: принтер документов
+  description: Принтер, подключенный к огромной базе данных документов. Позволяет копировать документы и печатать новые по форме.
+  components:
+  - type: CMUPaperworkCopier
+    paperSlot:
+      whitelist:
+        components:
+        - Paper
+    allowedFormCategories:
+    - OA
+    - UPP
+    - TWE
+    - UN
+    - WeY
+    - Colony
+    - Global
+  - type: ActivatableUI
+    key: enum.CMUPaperworkCopierUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.CMUPaperworkCopierUiKey.Key:
+        type: CMUPaperworkCopierBoundUi
+  - type: Sprite
+    sprite: _RMC14/Structures/Machines/photocopier.rsi
+    drawdepth: Objects
+    layers:
+    - state: bigscanner
+      map: ["enum.CMUPaperworkCopierVisuals.VisualState"]
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.CMUPaperworkCopierVisuals.VisualState:
+        enum.CMUPaperworkCopierVisuals.VisualState:
+          enum.CMUPaperworkCopierVisualState.Normal: { state: bigscanner }
+          enum.CMUPaperworkCopierVisualState.Scanning: { state: bigscannercopying }
+          enum.CMUPaperworkCopierVisualState.Printing: { state: bigscannercopying }
+  - type: Icon
+    sprite: _RMC14/Structures/Machines/photocopier.rsi
+    state: bigscanner
+
+- type: entity
+  parent: RuCMPaperworkCopier
+  id: RuCMPaperworkCopierPro
+  name: принтер Вейланд-Ютани
+  description: Принтер, подключенный к огромной базе данных документов. Позволяет копировать документы и печатать новые по форме.
+  components:
+  - type: Icon
+    sprite: _RMC14/Structures/Machines/photocopier.rsi
+    state: bigscannerpro
+  - type: Sprite
+    sprite: _RMC14/Structures/Machines/photocopier.rsi
+    drawdepth: Objects
+    layers:
+    - state: bigscannerpro
+      map: ["enum.CMUPhotocopierVisuals.Copying"]
+
+- type: entity
+  parent: RuCMPaperworkCopier
+  id: RuCMPaperworkCopierCLF
+  description: Взломанный принтер Вейланд-Ютани со встроенной библиотекой документов КОФа. Может печатать не только обычные формы документов, но и документы КОФа.
+  components:
+  - type: CMUPaperworkCopier
+    paperSlot:
+      whitelist:
+        components:
+        - Paper
+    allowedFormCategories:
+    - OA
+    - UPP
+    - TWE
+    - UN
+    - WeY
+    - CLF
+    - Colony
+    - Global

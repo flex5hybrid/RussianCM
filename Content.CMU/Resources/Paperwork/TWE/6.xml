@@ -1,0 +1,43 @@
+[mono]  [color=#222222]██████[/color]             
+[color=#222222]████[/color][color=#883333]██[/color][color=#222222]████[/color]           [head=3][bold]Коммандос[/bold][/head] 
+[color=#222222]██[/color][color=#553333]██[/color][color=#cc4444]██[/color][color=#553333]██[/color][color=#222222]██[/color]           [head=3][bold]Королевской[/bold][/head]   
+[color=#222222]██[/color][color=#553333]██[/color][color=#cc4444]██[/color][color=#553333]██[/color][color=#222222]██[/color]           [head=3][bold]Морской[/bold][/head]
+[color=#222222]██[/color][color=#cc3333]██[/color][color=#cc3333]██[/color][color=#cc3333]██[/color][color=#222222]██[/color]           [head=3][bold]Пехоты[/bold][/head]
+  [color=#222222]██[/color][color=#dd4444]██[/color][color=#222222]██[/color] 
+  [color=#222222]██[/color][color=#772222]██[/color][color=#222222]██[/color]           [italic]"Impetu et Fide"[/italic]
+    [color=#222222]██[/color]           [italic]"С натиском и верой"[/italic]
+[italic]Воинская часть: "[form]"[/italic]
+[italic]Департамент: Медицинский[/italic][/mono]
+[color=#58B38B]▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀[/color]
+                     [head=1][color=#5B97BC]Психиатрическая
+                 экспертиза[/color][/head]
+
+[color=#58B38B]▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀[/color]
+[head=3]Информация о пациенте[/head]
+[bold]Имя и фамилия пациента:[/bold] [form]
+[bold]Краткая информация:[/bold] [form]
+[color=gray][italic]Если пациент является зачисленным в ККМП ИТМ:[/italic][/color]
+[bold]Звание:[/bold] [form]
+[bold]Должность:[/bold] [form]
+[bold]Отряд:[/bold] [form]
+
+[head=3]Экспертиза[/head]
+[bold]Причина для экспертизы:[/bold] [form]
+[bold]Оценка поведения:[/bold]
+[italic][form][/italic]
+[bold]Дополнительные заметки:[/bold]
+[italic][form][/italic]
+
+[bold]Результат экспертизы:[/bold]
+[italic][form][/italic]
+
+[head=3]Пациент признан
+[color=red]НЕВМЕНЯЕМЫМ ( [check] ) [/color]
+[color=green]ВМЕНЯЕМЫМ ( [check] )[/color][/head]
+[color=#58B38B]▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬[/color]
+[italic][color=Gray]Я, уполномоченный врач Гарнизона, подтверждаю, что содержание этого документа соответствует действительности, насколько мне известно. Я признаю, что неправомерное определение персонала является нарушением военного закона и будет преследоваться по закону как халатное отношение к своим обязанностям[/color][/italic]
+
+Подписано,
+[italic][color=#1b67a5][signature][/color][/italic]
+[color=#8c0000]▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬[/color]
+[italic][color=#872a2a]Использование данного документа в нарушение Военного Закона или политики ИТМ карается заключением под стражу на срок предусмотренный Единым Кодексом Военной Юстиции. Несанкционированное чтение, обсуждение или воспроизведение содержимого документа является преступлением против Короны.[/color][/italic]
